@@ -1,0 +1,185 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+input::placeholder {
+  color: #1a1400 !important;
+  opacity: 1;
+}
+
+:root {
+  --slate:          #8b7355;
+  --surface:        #6b5640;
+  --surface-mid:    #5e4a36;
+  --surface-raised: #52402e;
+
+  --chalk:          #f0e8da;
+  --chalk-muted:    rgba(240, 232, 218, 0.5);
+  --chalk-faint:    rgba(240, 232, 218, 0.1);
+  --chalk-border:   rgba(240, 232, 218, 0.14);
+
+  --amber:          #c49a5c;
+  --amber-bg:       rgba(196, 154, 92, 0.14);
+  --sage:           #a08050;
+  --sage-bg:        rgba(160, 128, 80, 0.14);
+  --terra:          #b86b50;
+  --terra-bg:       rgba(184, 107, 80, 0.14);
+  --sale:           #ffd044;
+}
+
+body {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  background: var(--slate);
+  color: var(--chalk);
+  min-height: 100vh;
+  background-image:
+    radial-gradient(ellipse at 10% 0%,   rgba(90, 70, 45, 0.4) 0%, transparent 55%),
+    radial-gradient(ellipse at 90% 100%, rgba(75, 58, 38, 0.3) 0%, transparent 50%);
+}
+
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: all 0.15s ease;
+  letter-spacing: 0.03em;
+  outline: none;
+}
+
+button[role="tab"]:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+button:disabled { opacity: 0.35; cursor: not-allowed; }
+
+input, select, textarea {
+  font-family: 'JetBrains Mono', monospace;
+  box-shadow:
+    inset 3px 3px 6px rgba(0,0,0,0.4),
+    inset 1px 1px 2px rgba(0,0,0,0.3),
+    inset -2px -2px 4px rgba(255,255,255,0.06);
+}
+
+div[style*="var(--surface)"],
+div[style*="var(--surface-raised)"],
+.budget-bar,
+.controls-panel {
+  box-shadow:
+    5px 6px 14px rgba(0,0,0,0.45),
+    2px 3px 6px rgba(0,0,0,0.3),
+    0 1px 2px rgba(0,0,0,0.2),
+    inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+::selection {
+  background: rgba(232, 168, 23, 0.35);
+  color: #f0e8da;
+}
+
+input::selection, textarea::selection {
+  background: rgba(184, 107, 80, 0.45);
+  color: #f0e8da;
+}
+
+::-webkit-scrollbar { height: 6px; width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--chalk-border); border-radius: 99px; }
+
+main {
+  --amber:        #c43030;
+  --amber-bg:     rgba(196, 48, 48, 0.14);
+  --sage:         #4a7820;
+  --sage-bg:      rgba(74, 120, 32, 0.14);
+  --terra:        #5a2838;
+  --terra-bg:     rgba(90, 40, 56, 0.14);
+  --chalk-muted:  rgba(200, 168, 100, 0.75);
+}
+
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes barGrow {
+  from { width: 0%; }
+}
+
+/* ─── Responsive ─── */
+
+@media (max-width: 900px) {
+  .header-inner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .controls-panel {
+    width: 100%;
+  }
+  .budget-bar {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 16px !important;
+    padding: 18px 20px !important;
+  }
+  .budget-bar-center {
+    grid-column: 1 / -1;
+    order: -1;
+  }
+  .tabs-row {
+    flex-wrap: wrap !important;
+  }
+  .tabs-status {
+    margin-left: 0 !important;
+    width: 100%;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+  .grocery-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .meal-grid {
+    grid-template-columns: 1fr 1fr !important;
+    min-width: 0 !important;
+  }
+  .meal-grid .day-header {
+    display: none !important;
+  }
+  .meal-grid .row-label {
+    grid-column: 1 / -1;
+    justify-content: flex-start !important;
+    padding: 12px 0 4px !important;
+  }
+  .meal-grid .day-total-label {
+    grid-column: 1 / -1;
+    justify-content: flex-start !important;
+    padding: 12px 0 4px !important;
+  }
+  .meal-grid .corner {
+    display: none !important;
+  }
+  .card-day-label {
+    display: block !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-inner {
+    padding: 24px 16px 20px !important;
+  }
+  .meal-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .budget-bar {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+  .budget-bar > div {
+    text-align: center !important;
+  }
+}
