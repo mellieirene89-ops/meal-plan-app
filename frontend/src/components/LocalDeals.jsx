@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function LocalDeals({ sales, zip, scrapedAt }) {
+export default function LocalDeals({ sales, zip, scrapedAt, radiusMiles, noStoresInRadius }) {
   const [expandedStores, setExpandedStores] = useState({});
 
   if (!sales || sales.length === 0) {
@@ -21,18 +21,20 @@ export default function LocalDeals({ sales, zip, scrapedAt }) {
           color: '#3a2a18',
           marginBottom: 10,
         }}>
-          No deals found
+          {noStoresInRadius ? 'No grocery stores nearby' : 'No deals found'}
         </p>
         <p style={{
           fontFamily: 'Cormorant Garamond, serif',
-          fontSize: 15,
+          fontSize: 16,
           fontWeight: 600,
           color: '#8a7a66',
           lineHeight: 1.6,
         }}>
-          Hit "↻ Find Me Deals!" to scrape live flyers for ZIP {zip}.
-          <br />
-          Deals are pulled from Walmart &amp; Hy-Vee weekly ads.
+          {noStoresInRadius ? (
+            <>We couldn&rsquo;t find any grocery stores within <strong style={{ color: '#3a2a18' }}>{radiusMiles} miles</strong> of ZIP {zip}.<br />Try increasing your <strong style={{ color: '#3a2a18' }}>Shopping Radius</strong> above to see deals from stores further out.</>
+          ) : (
+            <>Hit "↻ Find Me Deals!" to scrape live flyers for ZIP {zip}.<br />Deals are pulled from Walmart &amp; Hy-Vee weekly ads.</>
+          )}
         </p>
       </div>
     );

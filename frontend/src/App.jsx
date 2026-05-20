@@ -42,6 +42,8 @@ export default function App() {
   const [budget, setBudget] = useState(70);
   const [servings, setServings] = useState(1);
   const [salesData, setSalesData] = useState(null);
+  const [showNoStoresModal, setShowNoStoresModal] = useState(false);
+  const [noStoresDismissedKey, setNoStoresDismissedKey] = useState(null);
   const [skippedMeals, setSkippedMeals] = useState({});
   const [replacements, setReplacements] = useState({});
   const [recipePool, setRecipePool] = useState(null);
@@ -75,17 +77,24 @@ export default function App() {
 
   // No useEffect for localStorage — save directly in handlers to avoid StrictMode double-write
   useEffect(() => {
+    // Clear stale city immediately so it never shows an old location while typing a new ZIP.
+    setCityState('');
     if (zip.length !== 5) return;
+    let cancelled = false;
     fetch(`https://api.zippopotam.us/us/${zip}`)
       .then(r => r.ok ? r.json() : null)
       .then(data => {
+        if (cancelled) return;
         if (data && data.places && data.places[0]) {
           const p = data.places[0];
           setCityState(`${p['place name']}, ${p['state abbreviation']}`);
           setStateAbbr(p['state abbreviation']);
+        } else {
+          setCityState('ZIP not found');
         }
       })
-      .catch(() => {});
+      .catch(() => { if (!cancelled) setCityState(''); });
+    return () => { cancelled = true; };
   }, [zip]);
 
   async function fetchPlan(refresh, excludeList, onHandList, favList, varNum) {
@@ -103,6 +112,8 @@ export default function App() {
     setError(null);
     setSkippedMeals({});
     setReplacements({});
+    // Clear stale sales — the MY STORE dropdown and no-stores banner derive from it.
+    setSalesData(null);
     try {
       const [planRes, grocRes, salesRes] = await Promise.all([
         fetch(`${API}/meal-plan?zip=${zip}&budget=${budget}&servings=${servings}&refresh=${refresh}&radius=${radius}&variation=${v}${excludeParam}${onHandParam}${favParam}${customParam}${storeParam}${diffParam}`),
@@ -139,7 +150,19 @@ export default function App() {
       .catch(() => {});
   }, []);
 
-  useEffect(() => { fetchPlan(false, excluded, onHand, favorites); }, [budget, servings, preferredStore, difficulty]);
+  useEffect(() => {
+    // Don't trigger fetches for partial ZIPs mid-typing — only when complete.
+    if (zip.length !== 5) return;
+    fetchPlan(false, excluded, onHand, favorites);
+  }, [budget, servings, preferredStore, difficulty, zip, radius]);
+
+  // Pop the no-stores notification when sales data confirms no grocery stores in radius.
+  // Only re-opens if zip+radius changes (avoids re-spamming on unrelated state updates).
+  useEffect(() => {
+    if (!salesData?.noStoresInRadius) return;
+    const key = `${zip}-${radius}`;
+    if (noStoresDismissedKey !== key) setShowNoStoresModal(true);
+  }, [salesData, zip, radius, noStoresDismissedKey]);
 
   // Changing skill level should clear stale replacements/skips so the new plan shows through.
   useEffect(() => {
@@ -217,8 +240,115 @@ export default function App() {
     return () => document.removeEventListener('click', close);
   }, []);
 
+  const dismissNoStoresModal = () => {
+    setShowNoStoresModal(false);
+    setNoStoresDismissedKey(`${zip}-${radius}`);
+  };
+
   return (
     <div style={{ minHeight: '100vh' }}>
+
+      {/* No-stores-in-radius modal — opens automatically when the lookup returns empty */}
+      {showNoStoresModal && (
+        <div
+          onClick={dismissNoStoresModal}
+          style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: 1000,
+            background: 'rgba(15,8,3,0.7)',
+            backdropFilter: 'blur(4px)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: 24,
+            animation: 'fadeUp 0.25s ease both',
+          }}
+        >
+          <div
+            onClick={e => e.stopPropagation()}
+            role="alertdialog"
+            aria-labelledby="no-stores-title"
+            style={{
+              maxWidth: 480,
+              width: '100%',
+              padding: '32px 36px',
+              background: 'linear-gradient(180deg, #f0e4c8 0%, #ddd0aa 35%, #c8b888 75%, #b0a070 100%)',
+              border: '2px solid #6b4e2e',
+              borderTop: '3px solid rgba(255,245,220,0.7)',
+              borderBottom: '5px solid rgba(80,60,30,0.7)',
+              borderRadius: 12,
+              boxShadow: 'inset 0 2px 0 rgba(255,255,255,0.4), 0 12px 30px rgba(0,0,0,0.55), 0 24px 60px rgba(0,0,0,0.4), 0 40px 90px rgba(0,0,0,0.25)',
+              textAlign: 'center',
+              position: 'relative',
+            }}
+          >
+            <button
+              onClick={dismissNoStoresModal}
+              aria-label="Close"
+              style={{
+                position: 'absolute',
+                top: 10,
+                right: 14,
+                background: 'transparent',
+                border: 'none',
+                fontSize: 24,
+                fontWeight: 700,
+                color: '#5a3a1a',
+                cursor: 'pointer',
+                lineHeight: 1,
+                padding: 4,
+              }}
+            >×</button>
+            <div style={{ fontSize: 56, marginBottom: 6, filter: 'drop-shadow(2px 3px 4px rgba(0,0,0,0.4))' }}>⚠️</div>
+            <h2 id="no-stores-title" style={{
+              fontFamily: 'Pinyon Script, cursive',
+              fontSize: 42,
+              fontWeight: 400,
+              color: '#3a2010',
+              marginBottom: 10,
+              textShadow: '1px 1px 0px rgba(255,245,220,0.5), 2px 3px 4px rgba(0,0,0,0.2)',
+            }}>
+              No stores nearby
+            </h2>
+            <p style={{
+              fontFamily: 'Cormorant Garamond, serif',
+              fontSize: 18,
+              fontWeight: 600,
+              color: '#3a2a18',
+              lineHeight: 1.55,
+              marginBottom: 24,
+              padding: '0 6px',
+            }}>
+              We couldn&rsquo;t find any grocery stores within <strong>{salesData?.radiusMiles ?? radius} miles</strong> of {cityState ? `${cityState} ` : ''}<strong>{zip}</strong>.
+              <br />
+              Try increasing your <strong>Shopping Radius</strong> to pull in stores from further out.
+            </p>
+            <button
+              onClick={dismissNoStoresModal}
+              style={{
+                background: 'linear-gradient(180deg, #f0e4c8 0%, #ddd0aa 20%, #c8b888 50%, #b0a070 80%, #9a8a5e 100%)',
+                color: '#2a1a0e',
+                fontFamily: 'Amatic SC, cursive',
+                fontWeight: 700,
+                padding: '12px 30px',
+                fontSize: 24,
+                letterSpacing: '0.06em',
+                textTransform: 'uppercase',
+                border: '1px solid rgba(140,120,70,0.6)',
+                borderTop: '2px solid rgba(255,245,220,0.7)',
+                borderBottom: '3px solid rgba(80,60,30,0.7)',
+                borderRadius: 8,
+                cursor: 'pointer',
+                boxShadow: 'inset 0 2px 0 rgba(255,255,255,0.4), 4px 6px 12px rgba(0,0,0,0.4), 1px 2px 4px rgba(0,0,0,0.3)',
+                textShadow: '0 1px 0 rgba(255,255,255,0.3)',
+              }}
+            >
+              Got it
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Gradient accent bar */}
       <div style={{
@@ -325,8 +455,29 @@ export default function App() {
               letterSpacing: '0.04em',
               textShadow: '0 0 12px rgba(254,243,160,0.3), 0 0 24px rgba(254,243,160,0.15)',
             }}>
-              <span style={{ fontFamily: 'Pinyon Script, cursive', fontSize: 30, color: '#ffffff', textShadow: '3px 3px 0px #1a0e06, 6px 6px 2px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.4)' }}>Searching in:</span> {cityState} · {zip}
+              <span style={{ fontFamily: 'Pinyon Script, cursive', fontSize: 30, color: '#ffffff', textShadow: '3px 3px 0px #1a0e06, 6px 6px 2px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.4)' }}>Searching in:</span> {cityState ? `${cityState} · ${zip}` : zip}
             </p>
+
+            {/* Rural-area warning when no grocery stores are within the selected radius */}
+            {salesData?.noStoresInRadius && (
+              <div style={{
+                marginTop: 6,
+                padding: '10px 18px',
+                background: 'linear-gradient(180deg, rgba(180,60,40,0.92) 0%, rgba(140,40,25,0.92) 100%)',
+                border: '1px solid rgba(255,200,140,0.4)',
+                borderRadius: 6,
+                color: '#fff4d8',
+                fontFamily: 'Cormorant Garamond, serif',
+                fontSize: 18,
+                fontWeight: 700,
+                letterSpacing: '0.03em',
+                textShadow: '1px 1px 2px rgba(0,0,0,0.6)',
+                boxShadow: '0 4px 10px rgba(0,0,0,0.45), 0 8px 20px rgba(0,0,0,0.3)',
+                display: 'inline-block',
+              }}>
+                ⚠ No grocery stores within {salesData.radiusMiles ?? radius} miles — increase your <strong>Shopping Radius</strong> to find deals
+              </div>
+            )}
 
             {/* Taglines — ALL CAPS, wide tracking, marigold with tomato bullets */}
             <div style={{ display: 'flex', marginTop: 10, alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
@@ -757,7 +908,9 @@ export default function App() {
               }}>
                 {salesData?.sales?.length > 0
                   ? <><span style={{ fontWeight: 900, color: 'rgba(240, 232, 218, 0.85)' }}>{salesData.sales.length}</span> deals nearby!</>
-                  : 'No deals yet'}
+                  : salesData?.noStoresInRadius
+                    ? <>No grocery stores within {salesData.radiusMiles}mi — try a wider radius</>
+                    : 'No deals yet'}
                 {' · '}Serves: <span style={{ fontWeight: 900, color: 'rgba(240, 232, 218, 0.85)' }}>{planData.servings}</span>
               </span>
             </div>
@@ -798,6 +951,8 @@ export default function App() {
               <LocalDeals
                 sales={salesData.sales}
                 zip={zip}
+                radiusMiles={salesData.radiusMiles ?? radius}
+                noStoresInRadius={salesData.noStoresInRadius}
                 scrapedAt={salesData.scrapedAt || salesData.cachedAt}
               />
             )}

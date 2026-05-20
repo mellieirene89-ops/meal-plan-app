@@ -291,6 +291,8 @@ async function getZipCoords(zip) {
 }
 
 // Find actual grocery stores within radius using OpenStreetMap Overpass API
+// Returns an array (possibly empty) on a successful API call, or `null` when the call failed —
+// callers use null to mean "uncertain, fall back" and [] to mean "verified zero stores in range".
 async function findNearbyStores(lat, lng, radiusMiles) {
   const radiusMeters = Math.round(radiusMiles * 1609.34);
   const query = `[out:json][timeout:15];(nwr["shop"="supermarket"](around:${radiusMeters},${lat},${lng});nwr["shop"="grocery"](around:${radiusMeters},${lat},${lng});nwr["shop"="convenience"]["brand"](around:${radiusMeters},${lat},${lng}););out center body;`;
@@ -307,7 +309,7 @@ async function findNearbyStores(lat, lng, radiusMiles) {
     });
     if (!res.ok) {
       console.warn(`[overpass] HTTP ${res.status} — store lookup failed`);
-      return [];
+      return null;
     }
     const text = await res.text();
     let data;
@@ -315,7 +317,7 @@ async function findNearbyStores(lat, lng, radiusMiles) {
       data = JSON.parse(text);
     } catch {
       console.warn('[overpass] Non-JSON response — likely rate limited');
-      return [];
+      return null;
     }
 
     const stores = (data.elements || []).map(el => {
@@ -336,7 +338,7 @@ async function findNearbyStores(lat, lng, radiusMiles) {
     return stores;
   } catch (err) {
     console.warn('[overpass] Store lookup failed:', err.message);
-    return [];
+    return null;
   }
 }
 
@@ -425,22 +427,30 @@ export async function getSales(zip = '64683', forceRefresh = false, radiusMiles 
 
   console.log(`[flipp] Fetching deals within ${radiusMiles}mi of ZIP ${zip}...`);
 
-  // Step 1: Find actual store locations within radius
+  // Step 1: Find actual store locations within radius.
+  // findNearbyStores() now returns `null` on API failure (uncertain) and `[]` for verified-empty.
   const coords = await getZipCoords(zip);
   let nearbyStores = null;
   if (coords) {
     nearbyStores = await findNearbyStores(coords.lat, coords.lng, radiusMiles);
-    // If Overpass succeeded with results, cache them
+    // Overpass succeeded with results — cache them.
     if (nearbyStores && nearbyStores.length > 0) {
       saveStoresCache(nearbyStores, zip, radiusMiles);
     }
-    // If Overpass failed (empty array), try the stores cache
-    if (nearbyStores && nearbyStores.length === 0) {
+    // Overpass failed (null). Try the stores cache so a transient outage doesn't blank deals.
+    if (nearbyStores === null) {
       const cachedStores = loadStoresCache(zip, radiusMiles);
       if (cachedStores && cachedStores.length > 0) {
-        console.log(`[overpass] Using cached store locations (${cachedStores.length} stores)`);
+        console.log(`[overpass] Lookup failed; using cached store locations (${cachedStores.length} stores)`);
         nearbyStores = cachedStores;
       }
+    }
+    // Overpass verified zero stores within radius — short-circuit, no deals are available here.
+    if (Array.isArray(nearbyStores) && nearbyStores.length === 0) {
+      console.log(`[overpass] Zero grocery stores within ${radiusMiles}mi of ${zip} — returning no deals.`);
+      const empty = { sales: [], scrapedAt: new Date().toISOString(), zip, radiusMiles, noStoresInRadius: true };
+      saveCache(empty, zip, radiusMiles);
+      return empty;
     }
   }
 
