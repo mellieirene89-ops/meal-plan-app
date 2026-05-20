@@ -242,6 +242,7 @@ export default function App() {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           filter: 'saturate(1.6) contrast(1.1)',
+          opacity: 0.8,
         }} />
         {/* Dark overlay for text legibility */}
         <div style={{
@@ -331,7 +332,7 @@ export default function App() {
             <div style={{ display: 'flex', marginTop: 10, alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
               {['RECIPE PLANNER', 'DEAL-FINDER', 'BUDGET CALCULATOR'].map((tag, i) => (
                 <span key={tag} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                  {i > 0 && (
+                  {(
                     <svg width="36" height="36" viewBox="0 0 32 36" style={{ flexShrink: 0, filter: 'drop-shadow(0 0 6px rgba(255,230,150,0.7)) drop-shadow(0 0 12px rgba(255,220,120,0.4)) drop-shadow(0 0 20px rgba(255,210,100,0.2))' }}>
                       {/* stem */}
                       <path d="M16 3 C16 3, 14 6, 16 7.5 C18 6, 16 3, 16 3Z" fill="#3a5a18" />
@@ -409,7 +410,7 @@ export default function App() {
           }}>
             <CornerPins />
             {[
-              { label: 'ZIP', value: zip, setter: e => setZip(e.target.value), type: 'text', maxLength: 5, width: 72 },
+              { label: 'ZIP\nCODE', value: zip, setter: e => setZip(e.target.value), type: 'text', maxLength: 5, width: 72 },
               { label: 'SHOPPING\nRADIUS', value: null, type: 'select', width: 90 },
               { label: 'BUDGET $', value: budget, setter: e => setBudget(parseFloat(e.target.value)), type: 'number', min: 20, max: 1000, step: 5, width: 78 },
               { label: 'SERVINGS', value: servings, setter: e => setServings(parseInt(e.target.value)), type: 'number', min: 1, max: 15, width: 58 },
