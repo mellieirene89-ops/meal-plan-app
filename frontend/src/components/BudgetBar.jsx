@@ -56,14 +56,7 @@ export default function BudgetBar({ weeklyTotal, budget, taxRate = 0 }) {
       borderRadius: 10,
       padding: '28px 32px',
       marginBottom: 32,
-      boxShadow: [
-        'inset 0 2px 0 rgba(255,245,215,0.22)',
-        'inset 0 -5px 12px rgba(0,0,0,0.3)',
-        'inset 0 0 22px rgba(40,28,16,0.2)',
-        '0 3px 5px rgba(0,0,0,0.38)',
-        '0 8px 16px rgba(0,0,0,0.35)',
-        '0 16px 30px rgba(0,0,0,0.22)',
-      ].join(', '),
+      boxShadow: 'inset 0 1px 0 rgba(255,245,215,0.18), inset 0 -3px 8px rgba(0,0,0,0.22), 0 6px 14px rgba(0,0,0,0.32)',
       display: 'grid',
       gridTemplateColumns: 'auto 1fr auto',
       gap: 0,
@@ -83,11 +76,11 @@ export default function BudgetBar({ weeklyTotal, budget, taxRate = 0 }) {
           textTransform: 'uppercase',
           fontSize: 22,
           fontWeight: 700,
-          color: '#ffd044',
+          color: '#eaa221',
           display: 'block',
           marginBottom: 6,
           letterSpacing: '0.25em',
-          textShadow: '0 0 6px rgba(255,220,100,0.85), 0 0 14px rgba(255,208,68,0.55), 0 0 28px rgba(255,200,40,0.3), 2px 2px 0px rgba(0,0,0,0.85), 3px 4px 5px rgba(0,0,0,0.55), 5px 7px 12px rgba(0,0,0,0.35)',
+          textShadow: '2px 2px 0 rgba(0,0,0,0.75), 3px 4px 5px rgba(0,0,0,0.4)',
         }}>
           Weekly Cost
         </span>
@@ -100,7 +93,7 @@ export default function BudgetBar({ weeklyTotal, budget, taxRate = 0 }) {
           letterSpacing: '0.08em',
           WebkitTextStroke: 'none',
           paintOrder: 'stroke fill',
-          textShadow: '0 0 18px rgba(245,163,10,0.25), 0 0 36px rgba(232,168,23,0.15), 0 0 60px rgba(200,140,10,0.08)',
+          textShadow: '2px 3px 4px rgba(0,0,0,0.35)',
           display: 'block',
         }}>
           ${weeklyTotal.toFixed(2).split('.')[0]}.<span style={{ fontSize: '0.55em', verticalAlign: 'super', letterSpacing: '0.04em' }}>{weeklyTotal.toFixed(2).split('.')[1]}</span>
@@ -153,15 +146,13 @@ export default function BudgetBar({ weeklyTotal, budget, taxRate = 0 }) {
               fontFamily: 'Bebas Neue, sans-serif',
               fontSize: 58,
               fontWeight: 900,
-              color: '#ffe066',
+              color: '#eaa221',
               WebkitTextStroke: '1.5px #2a1608',
               paintOrder: 'stroke fill',
               filter: 'drop-shadow(3px 5px 4px rgba(0,0,0,0.55)) drop-shadow(5px 8px 12px rgba(0,0,0,0.35))',
               textShadow: [
-                '0 0 4px rgba(255,255,200,0.85)',
-                '0 0 9px rgba(255,228,120,0.7)',
-                '0 0 18px rgba(255,208,68,0.45)',
-                '0 0 32px rgba(255,200,40,0.25)',
+                '0 0 2px rgba(255,255,200,0.6)',
+                '0 0 5px rgba(234,162,33,0.35)',
                 '2px 3px 0px rgba(0,0,0,0.85)',
                 '4px 5px 4px rgba(0,0,0,0.55)',
               ].join(', '),
@@ -170,8 +161,8 @@ export default function BudgetBar({ weeklyTotal, budget, taxRate = 0 }) {
           </div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 8 }}>
-          <span style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 24, fontWeight: 900, color: '#ffd044', letterSpacing: '0.06em', textShadow: '0 0 6px rgba(255,220,100,0.85), 0 0 14px rgba(255,208,68,0.55), 0 0 24px rgba(255,200,40,0.3), 2px 2px 0px rgba(0,0,0,0.85), 3px 4px 5px rgba(0,0,0,0.55)' }}>$0</span>
-          <span style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 24, fontWeight: 900, color: '#ffd044', letterSpacing: '0.06em', textShadow: '0 0 6px rgba(255,220,100,0.85), 0 0 14px rgba(255,208,68,0.55), 0 0 24px rgba(255,200,40,0.3), 2px 2px 0px rgba(0,0,0,0.85), 3px 4px 5px rgba(0,0,0,0.55)' }}>${cap} <span style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 13, fontWeight: 700, letterSpacing: '0.15em', color: 'rgba(255,255,255,0.5)' }}>BUDGET</span></span>
+          <span style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 24, fontWeight: 900, color: '#eaa221', letterSpacing: '0.06em', textShadow: '2px 2px 0 rgba(0,0,0,0.75), 3px 4px 5px rgba(0,0,0,0.4)' }}>$0</span>
+          <span style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 24, fontWeight: 900, color: '#eaa221', letterSpacing: '0.06em', textShadow: '2px 2px 0 rgba(0,0,0,0.75), 3px 4px 5px rgba(0,0,0,0.4)' }}>${cap} <span style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 13, fontWeight: 700, letterSpacing: '0.15em', color: 'rgba(255,255,255,0.5)' }}>BUDGET</span></span>
         </div>
       </div>
 
@@ -188,11 +179,11 @@ export default function BudgetBar({ weeklyTotal, budget, taxRate = 0 }) {
           textTransform: 'uppercase',
           fontSize: 22,
           fontWeight: 700,
-          color: over ? '#e05040' : '#ffd044',
+          color: over ? '#e05040' : '#eaa221',
           display: 'block',
           marginBottom: 6,
           letterSpacing: '0.25em',
-          textShadow: over ? '0 0 8px rgba(220,80,60,0.65), 2px 2px 0px rgba(0,0,0,0.85), 3px 4px 5px rgba(0,0,0,0.5)' : '0 0 6px rgba(255,220,100,0.85), 0 0 14px rgba(255,208,68,0.55), 0 0 28px rgba(255,200,40,0.3), 2px 2px 0px rgba(0,0,0,0.85), 3px 4px 5px rgba(0,0,0,0.55), 5px 7px 12px rgba(0,0,0,0.35)',
+          textShadow: over ? '0 0 8px rgba(220,80,60,0.65), 2px 2px 0px rgba(0,0,0,0.85), 3px 4px 5px rgba(0,0,0,0.5)' : '0 0 6px rgba(234,162,33,0.85), 0 0 14px rgba(234,162,33,0.55), 0 0 28px rgba(234,162,33,0.3), 2px 2px 0px rgba(0,0,0,0.85), 3px 4px 5px rgba(0,0,0,0.55), 5px 7px 12px rgba(0,0,0,0.35)',
         }}>
           {over ? 'Over Budget' : 'Under Budget'}
         </span>
@@ -206,7 +197,7 @@ export default function BudgetBar({ weeklyTotal, budget, taxRate = 0 }) {
           paintOrder: 'stroke fill',
           textShadow: over
             ? '0 0 24px rgba(220,80,60,0.8), 0 0 48px rgba(200,50,30,0.6), 0 0 80px rgba(180,30,20,0.35)'
-            : '0 0 18px rgba(245,163,10,0.25), 0 0 36px rgba(232,168,23,0.15), 0 0 60px rgba(200,140,10,0.08)',
+            : '0 0 18px rgba(245,163,10,0.25), 0 0 36px rgba(234,162,33,0.15), 0 0 60px rgba(200,140,10,0.08)',
         }}>
           {over ? '+' : '-'}${diff.toFixed(2).split('.')[0]}.<span style={{ fontSize: '0.55em', verticalAlign: 'super', letterSpacing: '0.04em' }}>{diff.toFixed(2).split('.')[1]}</span>
         </span>

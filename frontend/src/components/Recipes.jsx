@@ -135,7 +135,7 @@ export default function Recipes({ plan, focusTarget, onFocusHandled }) {
                       borderRadius: 6,
                       transition: 'background-color 0.6s ease, box-shadow 0.6s ease',
                       background: isHighlighted ? 'rgba(255, 208, 68, 0.32)' : 'transparent',
-                      boxShadow: isHighlighted ? '0 0 0 2px rgba(255,208,68,0.8), 0 0 24px rgba(255,208,68,0.5)' : 'none',
+                      boxShadow: isHighlighted ? '0 0 0 2px rgba(234,162,33,0.8), 0 0 24px rgba(234,162,33,0.5)' : 'none',
                       scrollMarginTop: 90,
                     }}>
                       {/* Meal type label */}

@@ -9,7 +9,7 @@ export default function GroceryList({ items, estimatedTotal, taxRate = 0, taxAmo
 
       {/* Item list */}
       <div style={{
-        background: '#faf6ee',
+        background: '#faf5e8',
         border: '1px solid #d4c9b0',
         borderRadius: 4,
         overflow: 'hidden',
@@ -185,7 +185,7 @@ export default function GroceryList({ items, estimatedTotal, taxRate = 0, taxAmo
           lineHeight: 1.7,
           textShadow: '1px 1px 2px rgba(0,0,0,0.4)',
         }}>
-          <strong style={{ color: '#fef3a0', fontWeight: 700 }}>Tip:</strong>{' '}
+          <strong style={{ color: '#eaa221', fontWeight: 700 }}>Tip:</strong>{' '}
           Hit "Change It Up!" button to spice up your recipe variety!
         </div>
       </div>
@@ -273,7 +273,7 @@ function SummaryLine({ label, value, large }) {
         fontFamily: large ? 'Pinyon Script, cursive' : 'JetBrains Mono, monospace',
         fontSize: large ? 30 : 16,
         fontWeight: large ? 400 : 700,
-        color: large ? '#fef3a0' : '#faf5e8',
+        color: large ? '#eaa221' : '#faf5e8',
         letterSpacing: large ? '0.01em' : '0',
         textShadow: large ? '2px 2px 0px rgba(60,35,10,0.8), 4px 4px 6px rgba(0,0,0,0.4)' : '1px 1px 2px rgba(0,0,0,0.4)',
       }}>

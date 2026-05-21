@@ -6066,5 +6066,1724 @@
       "Ladle into bowls, top with shredded cheddar, and serve."
     ],
     "difficulty": "expert"
+  },
+
+  {
+    "id": "comfort_shepherds_pie",
+    "name": "Cheesy Shepherd's Pie",
+    "mealType": "dinner",
+    "prepMinutes": 45,
+    "ingredients": [
+      { "id": "ground_beef", "qty": 1, "measure": "1 lb" },
+      { "id": "potato", "qty": 2, "measure": "4 medium, peeled" },
+      { "id": "frozen_mixed_veg", "qty": 1, "measure": "1 1/2 cups" },
+      { "id": "butter", "qty": 1, "measure": "3 tbsp" },
+      { "id": "milk", "qty": 1, "measure": "1/3 cup" },
+      { "id": "cheddar", "qty": 1, "measure": "1 cup shredded" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1 small onion + 2 cloves garlic" },
+      { "id": "broth", "qty": 1, "measure": "1/2 cup beef broth" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["comfort-food", "high-protein", "filling"],
+    "instructions": [
+      "Preheat oven to 400°F. Cube and boil potatoes 15 min until fork-tender.",
+      "In a skillet, brown ground beef with diced onion and garlic, 8 min.",
+      "Add frozen mixed veg and broth, simmer 5 min, season with salt and pepper. Transfer to a baking dish.",
+      "Drain potatoes and mash with butter, milk, salt, and pepper.",
+      "Spread mash over the beef. Top with shredded cheddar.",
+      "Bake 20 min until bubbly and golden on top."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "comfort_mac_broccoli",
+    "name": "Stovetop Mac & Cheese with Broccoli",
+    "mealType": "lunch",
+    "prepMinutes": 20,
+    "ingredients": [
+      { "id": "pasta", "qty": 1, "measure": "2 cups elbow pasta" },
+      { "id": "cheddar", "qty": 1, "measure": "1 1/2 cups shredded" },
+      { "id": "milk", "qty": 1, "measure": "1 cup" },
+      { "id": "butter", "qty": 1, "measure": "2 tbsp" },
+      { "id": "frozen_broccoli", "qty": 1, "measure": "1 1/2 cups" },
+      { "id": "flour", "qty": 1, "measure": "1 tbsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["comfort-food", "veggie-rich", "quick"],
+    "instructions": [
+      "Boil pasta in salted water 8 min. Add frozen broccoli during the last 3 min.",
+      "Drain and set aside.",
+      "Melt butter in the same pot, whisk in flour for 1 min.",
+      "Slowly whisk in milk, cook 2-3 min until thickened.",
+      "Off heat, stir in cheddar until smooth. Season.",
+      "Fold pasta and broccoli into the cheese sauce."
+    ],
+    "difficulty": "beginner"
+  },
+
+  {
+    "id": "asian_teriyaki_bowl",
+    "name": "Teriyaki Chicken Rice Bowl",
+    "mealType": "dinner",
+    "prepMinutes": 25,
+    "ingredients": [
+      { "id": "chicken_thighs", "qty": 1, "measure": "1 lb, cubed" },
+      { "id": "white_rice", "qty": 1, "measure": "1 cup uncooked" },
+      { "id": "soy_sauce", "qty": 1, "measure": "1/4 cup" },
+      { "id": "honey", "qty": 1, "measure": "2 tbsp" },
+      { "id": "ginger", "qty": 1, "measure": "1 tsp grated" },
+      { "id": "garlic_onion", "qty": 1, "measure": "2 cloves garlic" },
+      { "id": "frozen_broccoli", "qty": 1, "measure": "1 1/2 cups" },
+      { "id": "vegetable_oil", "qty": 1, "measure": "1 tbsp" },
+      { "id": "green_onion", "qty": 1, "measure": "2 stalks, sliced" },
+      { "id": "sesame_oil", "qty": 1, "measure": "1 tsp" }
+    ],
+    "tags": ["asian", "high-protein"],
+    "instructions": [
+      "Cook rice per package directions.",
+      "Whisk soy sauce, honey, ginger, and minced garlic.",
+      "Heat oil in a skillet over medium-high. Sear chicken 6-8 min until golden.",
+      "Pour in sauce, reduce 2-3 min until glossy.",
+      "Steam or microwave broccoli 3 min.",
+      "Serve chicken and broccoli over rice. Drizzle sesame oil and top with green onion."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "asian_ginger_shrimp_stirfry",
+    "name": "Ginger Garlic Shrimp Stir-Fry",
+    "mealType": "dinner",
+    "prepMinutes": 20,
+    "ingredients": [
+      { "id": "shrimp", "qty": 1, "measure": "1 lb, peeled" },
+      { "id": "bell_pepper", "qty": 1, "measure": "1, sliced" },
+      { "id": "carrots", "qty": 1, "measure": "1 cup julienned" },
+      { "id": "soy_sauce", "qty": 1, "measure": "3 tbsp" },
+      { "id": "ginger", "qty": 1, "measure": "2 tsp grated" },
+      { "id": "garlic_onion", "qty": 1, "measure": "3 cloves garlic" },
+      { "id": "sesame_oil", "qty": 1, "measure": "1 tbsp" },
+      { "id": "vegetable_oil", "qty": 1, "measure": "1 tbsp" },
+      { "id": "white_rice", "qty": 1, "measure": "1 cup uncooked" },
+      { "id": "green_onion", "qty": 1, "measure": "2 stalks" }
+    ],
+    "tags": ["asian", "high-protein", "quick"],
+    "instructions": [
+      "Cook rice per package.",
+      "Heat vegetable oil in a wok over high heat. Stir-fry bell pepper and carrots 2 min.",
+      "Add ginger and garlic, 30 sec.",
+      "Push veg aside, add shrimp, cook 2-3 min per side until pink.",
+      "Pour soy sauce in, toss 1 min.",
+      "Off heat, drizzle sesame oil and top with green onion. Serve over rice."
+    ],
+    "difficulty": "intermediate"
+  },
+
+  {
+    "id": "mexican_carnitas_tacos",
+    "name": "Slow Pork Carnitas Tacos",
+    "mealType": "dinner",
+    "prepMinutes": 30,
+    "ingredients": [
+      { "id": "pork_chops", "qty": 1, "measure": "1 1/2 lb pork shoulder or chops, cubed" },
+      { "id": "tortillas", "qty": 1, "measure": "8 small corn tortillas" },
+      { "id": "lime", "qty": 1, "measure": "1, juiced + wedges" },
+      { "id": "orange", "qty": 1, "measure": "1, juiced" },
+      { "id": "cumin", "qty": 1, "measure": "1 tbsp" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1 onion + 4 cloves garlic" },
+      { "id": "cilantro", "qty": 1, "measure": "1/4 cup chopped" },
+      { "id": "salsa", "qty": 1, "measure": "1/2 cup" },
+      { "id": "salt", "qty": 1, "measure": "1 tsp" }
+    ],
+    "tags": ["mexican", "high-protein"],
+    "instructions": [
+      "Toss pork with cumin, salt, garlic, lime juice, and orange juice.",
+      "Place in a heavy pot with diced onion and 1/2 cup water. Cover and simmer on LOW 2 hours, stirring occasionally.",
+      "Uncover and crank to medium-high. Cook 10 min to crisp the edges.",
+      "Shred with two forks.",
+      "Warm tortillas in a dry skillet 30 sec each side.",
+      "Pile carnitas on tortillas, top with cilantro, salsa, and lime wedges."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "mexican_bean_corn_quesadilla",
+    "name": "Black Bean & Corn Quesadilla",
+    "mealType": "lunch",
+    "prepMinutes": 15,
+    "ingredients": [
+      { "id": "tortillas", "qty": 1, "measure": "4 large flour tortillas" },
+      { "id": "black_beans", "qty": 1, "measure": "1 can, drained" },
+      { "id": "corn", "qty": 1, "measure": "3/4 cup" },
+      { "id": "cheddar", "qty": 1, "measure": "1 1/2 cups shredded" },
+      { "id": "salsa", "qty": 1, "measure": "1/2 cup + extra for serving" },
+      { "id": "cumin", "qty": 1, "measure": "1 tsp" },
+      { "id": "butter", "qty": 1, "measure": "1 tbsp" }
+    ],
+    "tags": ["mexican", "vegetarian", "quick"],
+    "instructions": [
+      "In a bowl, mash beans lightly with cumin and salsa.",
+      "Spread the bean mix on 2 tortillas. Top with corn and cheddar. Cover with the other tortillas.",
+      "Melt butter in a skillet over medium. Cook each quesadilla 3 min per side until golden and cheese melts.",
+      "Cut into wedges and serve with extra salsa."
+    ],
+    "difficulty": "beginner"
+  },
+
+  {
+    "id": "italian_aglio_olio_shrimp",
+    "name": "Shrimp Aglio e Olio",
+    "mealType": "dinner",
+    "prepMinutes": 20,
+    "ingredients": [
+      { "id": "pasta", "qty": 1, "measure": "12 oz spaghetti" },
+      { "id": "shrimp", "qty": 1, "measure": "1 lb, peeled" },
+      { "id": "olive_oil", "qty": 1, "measure": "1/3 cup" },
+      { "id": "garlic_onion", "qty": 1, "measure": "6 cloves garlic, sliced" },
+      { "id": "lemon", "qty": 1, "measure": "1, juiced" },
+      { "id": "parmesan", "qty": 1, "measure": "1/2 cup grated" },
+      { "id": "italian_seasoning", "qty": 1, "measure": "1 tsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["italian", "high-protein", "quick"],
+    "instructions": [
+      "Boil pasta in heavily salted water until al dente. Reserve 1 cup pasta water before draining.",
+      "Meanwhile, heat olive oil over medium-low. Add sliced garlic, cook 2-3 min until pale gold — do not brown.",
+      "Add shrimp, cook 2 min per side.",
+      "Add drained pasta, 1/2 cup pasta water, lemon juice, italian seasoning. Toss vigorously 1 min to emulsify.",
+      "Off heat, stir in parmesan. Season. Add more pasta water if dry."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "italian_caprese_pasta_salad",
+    "name": "Caprese Pasta Salad",
+    "mealType": "lunch",
+    "prepMinutes": 15,
+    "ingredients": [
+      { "id": "pasta", "qty": 1, "measure": "2 cups bowtie or rotini" },
+      { "id": "mozzarella", "qty": 1, "measure": "1 cup cubed" },
+      { "id": "fresh_tomato", "qty": 1, "measure": "2 medium, diced" },
+      { "id": "olive_oil", "qty": 1, "measure": "3 tbsp" },
+      { "id": "vinegar", "qty": 1, "measure": "1 tbsp balsamic or red wine" },
+      { "id": "italian_seasoning", "qty": 1, "measure": "1 tsp" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1 clove garlic, minced" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["italian", "vegetarian", "meal-prep"],
+    "instructions": [
+      "Boil pasta until al dente. Drain and rinse with cold water.",
+      "Whisk olive oil, vinegar, garlic, italian seasoning, salt, and pepper.",
+      "Toss pasta with tomatoes, mozzarella, and dressing.",
+      "Chill 15 min before serving for best flavor."
+    ],
+    "difficulty": "beginner"
+  },
+
+  {
+    "id": "bbq_chicken_thighs_corn",
+    "name": "BBQ Chicken Thighs with Corn",
+    "mealType": "dinner",
+    "prepMinutes": 35,
+    "ingredients": [
+      { "id": "chicken_thighs", "qty": 1, "measure": "6 bone-in" },
+      { "id": "bbq_sauce", "qty": 1, "measure": "3/4 cup" },
+      { "id": "corn", "qty": 1, "measure": "1 can or 2 ears" },
+      { "id": "potato", "qty": 1, "measure": "3 medium, wedged" },
+      { "id": "olive_oil", "qty": 1, "measure": "2 tbsp" },
+      { "id": "paprika", "qty": 1, "measure": "1 tsp" },
+      { "id": "salt", "qty": 1, "measure": "1 tsp" },
+      { "id": "pepper", "qty": 1, "measure": "1/2 tsp" }
+    ],
+    "tags": ["barbecue", "high-protein", "filling"],
+    "instructions": [
+      "Preheat oven to 425°F.",
+      "Toss potato wedges with olive oil, paprika, salt, and pepper. Spread on a sheet pan.",
+      "Pat chicken dry, season with salt and pepper. Place skin-side up on the same pan.",
+      "Roast 25 min, then brush chicken generously with BBQ sauce.",
+      "Return to oven for 5-7 more min until sauce caramelizes.",
+      "Warm corn on the stove with a pat of butter."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "bbq_pulled_pork_sandwiches",
+    "name": "Pulled Pork BBQ Sandwiches with Slaw",
+    "mealType": "lunch",
+    "prepMinutes": 30,
+    "ingredients": [
+      { "id": "pork_chops", "qty": 1, "measure": "1 1/2 lb pork shoulder or chops, cubed" },
+      { "id": "bbq_sauce", "qty": 1, "measure": "1 cup" },
+      { "id": "bread", "qty": 1, "measure": "4 buns or sandwich rolls" },
+      { "id": "cabbage", "qty": 1, "measure": "2 cups shredded" },
+      { "id": "carrots", "qty": 1, "measure": "1/2 cup shredded" },
+      { "id": "mayo", "qty": 1, "measure": "3 tbsp" },
+      { "id": "vinegar", "qty": 1, "measure": "1 tbsp" },
+      { "id": "sugar", "qty": 1, "measure": "1 tsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["barbecue", "high-protein", "filling"],
+    "instructions": [
+      "Place pork in a heavy pot with 1/2 cup water and a pinch of salt. Cover and simmer on LOW 2 hours until fork-tender.",
+      "Shred with forks. Discard most of the cooking liquid. Toss pork with BBQ sauce.",
+      "Whisk mayo, vinegar, sugar, and salt. Toss with cabbage and carrots.",
+      "Pile pork on toasted buns. Top with slaw."
+    ],
+    "difficulty": "intermediate"
+  },
+
+  {
+    "id": "med_greek_chicken_bowl",
+    "name": "Greek Chicken Bowl",
+    "mealType": "dinner",
+    "prepMinutes": 25,
+    "ingredients": [
+      { "id": "chicken_breast", "qty": 1, "measure": "1 lb, cubed" },
+      { "id": "quinoa", "qty": 1, "measure": "1 cup uncooked" },
+      { "id": "cucumber", "qty": 1, "measure": "1, diced" },
+      { "id": "fresh_tomato", "qty": 1, "measure": "1, diced" },
+      { "id": "feta_cheese", "qty": 1, "measure": "1/2 cup crumbled" },
+      { "id": "olive_oil", "qty": 1, "measure": "3 tbsp" },
+      { "id": "lemon", "qty": 1, "measure": "1, juiced" },
+      { "id": "garlic_onion", "qty": 1, "measure": "2 cloves garlic" },
+      { "id": "italian_seasoning", "qty": 1, "measure": "1 tsp oregano" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["mediterranean", "high-protein", "veggie-rich"],
+    "instructions": [
+      "Cook quinoa per package directions.",
+      "Whisk olive oil, lemon juice, minced garlic, oregano, salt, and pepper. Toss half with cubed chicken.",
+      "Sear chicken in a hot skillet 5-6 min until cooked through.",
+      "Divide quinoa into bowls. Top with chicken, cucumber, tomato, and feta.",
+      "Drizzle remaining dressing over the top."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "med_chickpea_feta_pita",
+    "name": "Chickpea & Feta Pita Pocket",
+    "mealType": "lunch",
+    "prepMinutes": 10,
+    "ingredients": [
+      { "id": "bread", "qty": 1, "measure": "2 pita pockets" },
+      { "id": "chickpeas", "qty": 1, "measure": "1 can, drained" },
+      { "id": "cucumber", "qty": 1, "measure": "1/2, diced" },
+      { "id": "fresh_tomato", "qty": 1, "measure": "1, diced" },
+      { "id": "feta_cheese", "qty": 1, "measure": "1/3 cup crumbled" },
+      { "id": "olive_oil", "qty": 1, "measure": "2 tbsp" },
+      { "id": "lemon", "qty": 1, "measure": "1/2, juiced" },
+      { "id": "lettuce", "qty": 1, "measure": "1 cup, shredded" },
+      { "id": "salt", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["mediterranean", "vegetarian", "no-cook", "quick"],
+    "instructions": [
+      "Lightly mash chickpeas in a bowl, leaving texture.",
+      "Add cucumber, tomato, feta, olive oil, lemon juice, and salt. Stir.",
+      "Warm pitas 30 sec, slice open.",
+      "Stuff with lettuce and chickpea mix."
+    ],
+    "difficulty": "beginner"
+  },
+
+  {
+    "id": "veggie_roasted_quinoa_bowl",
+    "name": "Roasted Veggie Quinoa Bowl",
+    "mealType": "dinner",
+    "prepMinutes": 35,
+    "ingredients": [
+      { "id": "quinoa", "qty": 1, "measure": "1 cup uncooked" },
+      { "id": "sweet_potato", "qty": 1, "measure": "1 large, cubed" },
+      { "id": "zucchini", "qty": 1, "measure": "1, sliced" },
+      { "id": "bell_pepper", "qty": 1, "measure": "1, chopped" },
+      { "id": "chickpeas", "qty": 1, "measure": "1 can, drained" },
+      { "id": "olive_oil", "qty": 1, "measure": "3 tbsp" },
+      { "id": "paprika", "qty": 1, "measure": "1 tsp" },
+      { "id": "cumin", "qty": 1, "measure": "1 tsp" },
+      { "id": "lemon", "qty": 1, "measure": "1, juiced" },
+      { "id": "garlic_onion", "qty": 1, "measure": "2 cloves garlic" },
+      { "id": "salt", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["veggie", "vegetarian", "veggie-rich", "meal-prep"],
+    "instructions": [
+      "Preheat oven to 425°F.",
+      "Toss sweet potato, zucchini, bell pepper, and chickpeas with 2 tbsp olive oil, paprika, cumin, garlic, and salt.",
+      "Roast on a sheet pan 25-30 min, tossing once.",
+      "Cook quinoa per package.",
+      "Divide quinoa into bowls, top with roasted veg.",
+      "Whisk lemon juice with remaining olive oil and drizzle over."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "veggie_loaded_scramble",
+    "name": "Garden Veggie Scramble",
+    "mealType": "breakfast",
+    "prepMinutes": 12,
+    "ingredients": [
+      { "id": "eggs", "qty": 3, "measure": "3 large" },
+      { "id": "mushrooms", "qty": 1, "measure": "1/2 cup sliced" },
+      { "id": "bell_pepper", "qty": 1, "measure": "1/2, diced" },
+      { "id": "frozen_spinach", "qty": 1, "measure": "1/2 cup" },
+      { "id": "fresh_tomato", "qty": 1, "measure": "1/2, diced" },
+      { "id": "cheddar", "qty": 1, "measure": "1/4 cup shredded" },
+      { "id": "olive_oil", "qty": 1, "measure": "1 tbsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["veggie", "veggie-rich", "high-protein", "quick"],
+    "instructions": [
+      "Heat olive oil in a skillet over medium. Sauté mushrooms and bell pepper 4 min.",
+      "Add spinach (thawed if frozen) and tomato, cook 1 min.",
+      "Whisk eggs with salt and pepper, pour in.",
+      "Stir gently with a spatula, drawing curds across the pan, 2-3 min until just set.",
+      "Off heat, fold in cheddar."
+    ],
+    "difficulty": "beginner"
+  },
+
+  {
+    "id": "keto_salmon_avocado_salad",
+    "name": "Salmon Avocado Power Salad",
+    "mealType": "lunch",
+    "prepMinutes": 15,
+    "ingredients": [
+      { "id": "salmon", "qty": 1, "measure": "2 fillets (~12 oz total)" },
+      { "id": "avocado", "qty": 1, "measure": "1, sliced" },
+      { "id": "lettuce", "qty": 1, "measure": "4 cups mixed greens" },
+      { "id": "cucumber", "qty": 1, "measure": "1/2, sliced" },
+      { "id": "olive_oil", "qty": 1, "measure": "3 tbsp" },
+      { "id": "lemon", "qty": 1, "measure": "1, juiced" },
+      { "id": "mustard", "qty": 1, "measure": "1 tsp dijon" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["keto", "low-carb", "high-protein"],
+    "instructions": [
+      "Pat salmon dry, season with salt and pepper.",
+      "Heat 1 tbsp olive oil in a skillet over medium-high. Sear salmon skin-side down 4 min, flip and cook 3 min more.",
+      "Whisk remaining olive oil, lemon juice, and mustard.",
+      "Plate greens, cucumber, and avocado. Flake salmon on top.",
+      "Drizzle dressing and finish with pepper."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "keto_bacon_egg_spinach_skillet",
+    "name": "Bacon, Egg & Spinach Keto Skillet",
+    "mealType": "breakfast",
+    "prepMinutes": 15,
+    "ingredients": [
+      { "id": "eggs", "qty": 3, "measure": "3 large" },
+      { "id": "bacon", "qty": 1, "measure": "4 strips" },
+      { "id": "frozen_spinach", "qty": 1, "measure": "1 cup" },
+      { "id": "cheddar", "qty": 1, "measure": "1/3 cup shredded" },
+      { "id": "avocado", "qty": 1, "measure": "1/2, sliced" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["keto", "low-carb", "high-protein"],
+    "instructions": [
+      "Cook bacon in a cold skillet over medium, 6-8 min until crisp. Drain on paper towel, leave 1 tbsp fat in pan.",
+      "Add spinach (thawed) to the fat, cook 1 min until warmed through.",
+      "Crack eggs into the spinach. Cook to your liking, 3-4 min.",
+      "Top with crumbled bacon and cheddar, season.",
+      "Serve with avocado slices."
+    ],
+    "difficulty": "beginner"
+  },
+
+  {
+    "id": "huevos_rancheros",
+    "name": "Huevos Rancheros",
+    "mealType": "breakfast",
+    "prepMinutes": 15,
+    "ingredients": [
+      { "id": "eggs", "qty": 2, "measure": "2 large" },
+      { "id": "tortillas", "qty": 1, "measure": "2 corn tortillas" },
+      { "id": "black_beans", "qty": 1, "measure": "1/2 can, drained" },
+      { "id": "salsa", "qty": 1, "measure": "1/3 cup" },
+      { "id": "cheddar", "qty": 1, "measure": "1/4 cup shredded" },
+      { "id": "cilantro", "qty": 1, "measure": "1 tbsp chopped" },
+      { "id": "cumin", "qty": 1, "measure": "1/2 tsp" },
+      { "id": "olive_oil", "qty": 1, "measure": "1 tbsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["mexican", "high-protein", "quick"],
+    "instructions": [
+      "Warm tortillas in a dry skillet 30 sec per side. Set aside.",
+      "Warm beans with cumin and a splash of water in the skillet, 2 min.",
+      "Heat olive oil, fry eggs sunny-side up 3-4 min.",
+      "Layer tortillas with beans, then eggs.",
+      "Top with salsa, cheese, and cilantro."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "breakfast_quesadilla",
+    "name": "Breakfast Quesadilla",
+    "mealType": "breakfast",
+    "prepMinutes": 12,
+    "ingredients": [
+      { "id": "eggs", "qty": 3, "measure": "3 large" },
+      { "id": "tortillas", "qty": 1, "measure": "2 large flour tortillas" },
+      { "id": "cheddar", "qty": 1, "measure": "3/4 cup shredded" },
+      { "id": "bell_pepper", "qty": 1, "measure": "1/4, diced" },
+      { "id": "salsa", "qty": 1, "measure": "for serving" },
+      { "id": "butter", "qty": 1, "measure": "1 tbsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["mexican", "high-protein", "quick"],
+    "instructions": [
+      "Sauté bell pepper in butter 2 min.",
+      "Whisk eggs with salt and pepper, pour in. Scramble soft, 2 min.",
+      "Place one tortilla in the pan, top with eggs and cheese, cover with the second tortilla.",
+      "Cook 2 min per side until golden and cheese melts.",
+      "Cut into wedges. Serve with salsa."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "tofu_scramble",
+    "name": "Veggie Tofu Scramble",
+    "mealType": "breakfast",
+    "prepMinutes": 15,
+    "ingredients": [
+      { "id": "tofu", "qty": 1, "measure": "1/2 block firm, crumbled" },
+      { "id": "bell_pepper", "qty": 1, "measure": "1/2, diced" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1/4 onion + 1 clove garlic" },
+      { "id": "frozen_spinach", "qty": 1, "measure": "1/2 cup" },
+      { "id": "olive_oil", "qty": 1, "measure": "1 tbsp" },
+      { "id": "paprika", "qty": 1, "measure": "1/2 tsp" },
+      { "id": "cumin", "qty": 1, "measure": "1/4 tsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["vegetarian", "veggie-rich", "quick", "high-protein"],
+    "instructions": [
+      "Heat olive oil over medium. Sauté onion and bell pepper 3 min.",
+      "Add garlic, paprika, and cumin, 30 sec.",
+      "Crumble in tofu, breaking up with a spatula. Cook 5 min until heated and slightly golden.",
+      "Stir in thawed spinach, cook 1 min.",
+      "Season with salt and pepper."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "baked_apple_oatmeal",
+    "name": "Cinnamon Apple Baked Oatmeal",
+    "mealType": "breakfast",
+    "prepMinutes": 35,
+    "ingredients": [
+      { "id": "oats", "qty": 1, "measure": "2 cups rolled oats" },
+      { "id": "milk", "qty": 1, "measure": "1 3/4 cups" },
+      { "id": "apple", "qty": 1, "measure": "2, diced" },
+      { "id": "eggs", "qty": 1, "measure": "1 large" },
+      { "id": "butter", "qty": 1, "measure": "2 tbsp melted" },
+      { "id": "honey", "qty": 1, "measure": "3 tbsp" },
+      { "id": "salt", "qty": 1, "measure": "1/4 tsp" }
+    ],
+    "tags": ["comfort-food", "meal-prep", "vegetarian"],
+    "instructions": [
+      "Preheat oven to 375°F. Grease an 8x8 baking dish.",
+      "Whisk milk, egg, melted butter, honey, salt, and 1 tsp cinnamon if you have it.",
+      "Stir in oats and half the diced apple.",
+      "Pour into dish. Scatter remaining apple on top.",
+      "Bake 28-32 min until set and lightly golden.",
+      "Cut into squares. Keeps 4 days refrigerated."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "green_power_smoothie",
+    "name": "Green Power Smoothie",
+    "mealType": "breakfast",
+    "prepMinutes": 5,
+    "ingredients": [
+      { "id": "banana", "qty": 1, "measure": "1, frozen if possible" },
+      { "id": "frozen_spinach", "qty": 1, "measure": "1/2 cup" },
+      { "id": "greek_yogurt", "qty": 1, "measure": "1/2 cup" },
+      { "id": "peanut_butter", "qty": 1, "measure": "1 tbsp" },
+      { "id": "milk", "qty": 1, "measure": "3/4 cup" },
+      { "id": "honey", "qty": 1, "measure": "1 tsp" },
+      { "id": "oats", "qty": 1, "measure": "2 tbsp (optional, for thickness)" }
+    ],
+    "tags": ["high-protein", "veggie-rich", "no-cook", "quick"],
+    "instructions": [
+      "Add all ingredients to a blender.",
+      "Blend 60 seconds until smooth.",
+      "Pour into a glass. Drink cold."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "med_breakfast_plate",
+    "name": "Mediterranean Breakfast Plate",
+    "mealType": "breakfast",
+    "prepMinutes": 12,
+    "ingredients": [
+      { "id": "eggs", "qty": 2, "measure": "2, hard-boiled" },
+      { "id": "feta_cheese", "qty": 1, "measure": "1/4 cup crumbled" },
+      { "id": "cucumber", "qty": 1, "measure": "1/2, sliced" },
+      { "id": "fresh_tomato", "qty": 1, "measure": "1, sliced" },
+      { "id": "bread", "qty": 1, "measure": "2 slices pita or sturdy bread" },
+      { "id": "olive_oil", "qty": 1, "measure": "1 tbsp" },
+      { "id": "lemon", "qty": 1, "measure": "wedge" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["mediterranean", "no-cook", "high-protein", "veggie-rich"],
+    "instructions": [
+      "Place eggs in a small pot, cover with cold water. Bring to a boil, cover, off heat, let sit 10 min. Cool in ice water, peel, halve.",
+      "Toast bread or warm pita.",
+      "On a plate, arrange eggs, feta, cucumber slices, and tomato slices.",
+      "Drizzle olive oil over everything. Squeeze lemon. Season."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "savory_rice_egg_bowl",
+    "name": "Savory Rice & Soft Egg Bowl",
+    "mealType": "breakfast",
+    "prepMinutes": 12,
+    "ingredients": [
+      { "id": "white_rice", "qty": 1, "measure": "3/4 cup cooked" },
+      { "id": "eggs", "qty": 2, "measure": "2 large" },
+      { "id": "soy_sauce", "qty": 1, "measure": "1 tbsp" },
+      { "id": "sesame_oil", "qty": 1, "measure": "1 tsp" },
+      { "id": "green_onion", "qty": 1, "measure": "1 stalk sliced" },
+      { "id": "butter", "qty": 1, "measure": "1 tsp" },
+      { "id": "salt", "qty": 1, "measure": "pinch" }
+    ],
+    "tags": ["asian", "high-protein", "quick"],
+    "instructions": [
+      "Warm rice in a bowl with butter and a pinch of salt.",
+      "Heat a nonstick skillet over medium. Fry eggs sunny-side up with crispy edges, 3 min.",
+      "Slide eggs onto the rice.",
+      "Drizzle soy sauce and sesame oil over the eggs.",
+      "Top with green onion. Break the yolks before eating."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "egg_in_a_hole",
+    "name": "Egg in a Hole",
+    "mealType": "breakfast",
+    "prepMinutes": 8,
+    "ingredients": [
+      { "id": "bread", "qty": 1, "measure": "2 thick slices" },
+      { "id": "eggs", "qty": 2, "measure": "2 large" },
+      { "id": "butter", "qty": 1, "measure": "2 tbsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["comfort-food", "quick"],
+    "instructions": [
+      "Use a glass or cookie cutter to punch a 2-inch hole in the center of each bread slice.",
+      "Melt butter in a skillet over medium.",
+      "Lay bread in pan. Crack an egg into each hole.",
+      "Cook 2-3 min until bottom is golden, flip carefully, cook 1 min more for runny yolks.",
+      "Season and serve, including the toasted bread rounds."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "italian_caprese_breakfast_toast",
+    "name": "Italian Caprese Breakfast Toast",
+    "mealType": "breakfast",
+    "prepMinutes": 10,
+    "ingredients": [
+      { "id": "bread", "qty": 1, "measure": "2 slices crusty bread" },
+      { "id": "mozzarella", "qty": 1, "measure": "1/3 cup shredded or sliced" },
+      { "id": "fresh_tomato", "qty": 1, "measure": "1, sliced" },
+      { "id": "olive_oil", "qty": 1, "measure": "1 tbsp" },
+      { "id": "italian_seasoning", "qty": 1, "measure": "1/2 tsp" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1 clove garlic" },
+      { "id": "eggs", "qty": 1, "measure": "1 large (optional)" },
+      { "id": "salt", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["italian", "vegetarian", "quick"],
+    "instructions": [
+      "Toast bread, then rub the cut side of the garlic clove across the warm slices.",
+      "Drizzle with olive oil.",
+      "Layer tomato slices, sprinkle with salt, then top with mozzarella.",
+      "Broil 2 min until cheese bubbles.",
+      "Sprinkle italian seasoning. Optional: top with a fried egg."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "cheesy_hash_brown_skillet",
+    "name": "Loaded Cheesy Hash Brown Skillet",
+    "mealType": "breakfast",
+    "prepMinutes": 25,
+    "ingredients": [
+      { "id": "potato", "qty": 1, "measure": "2 medium, shredded" },
+      { "id": "cheddar", "qty": 1, "measure": "3/4 cup shredded" },
+      { "id": "eggs", "qty": 2, "measure": "2 large" },
+      { "id": "bell_pepper", "qty": 1, "measure": "1/2, diced" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1/4 onion, diced" },
+      { "id": "butter", "qty": 1, "measure": "2 tbsp" },
+      { "id": "green_onion", "qty": 1, "measure": "1 stalk, for garnish" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["comfort-food", "filling", "high-protein"],
+    "instructions": [
+      "Shred potatoes, squeeze out moisture in a towel.",
+      "Melt butter in a skillet over medium-high. Add onion and bell pepper, 2 min.",
+      "Spread potatoes evenly in pan. Press down. Cook undisturbed 6-7 min until golden underneath.",
+      "Flip in sections, cook another 5 min.",
+      "Sprinkle cheese over the top. Make 2 wells, crack in eggs.",
+      "Cover, cook 3-4 min until eggs set and cheese melts.",
+      "Top with green onion."
+    ],
+    "difficulty": "intermediate"
+  },
+
+  {
+    "id": "sheet_pan_breakfast_bake",
+    "name": "Sheet Pan Breakfast Bake",
+    "mealType": "breakfast",
+    "prepMinutes": 40,
+    "ingredients": [
+      { "id": "eggs", "qty": 4, "measure": "4 large" },
+      { "id": "bacon", "qty": 1, "measure": "6 strips" },
+      { "id": "potato", "qty": 1, "measure": "2 medium, cubed" },
+      { "id": "bell_pepper", "qty": 1, "measure": "1, diced" },
+      { "id": "olive_oil", "qty": 1, "measure": "2 tbsp" },
+      { "id": "paprika", "qty": 1, "measure": "1 tsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["comfort-food", "high-protein", "meal-prep"],
+    "instructions": [
+      "Preheat oven to 425°F. Line a sheet pan.",
+      "Toss potatoes with olive oil, paprika, salt, and pepper. Roast 20 min.",
+      "Move potatoes to one side, add bacon and bell pepper. Roast 8 min.",
+      "Make 4 wells in the veggies. Crack eggs into each.",
+      "Return to oven 5-7 min until whites set and yolks are still soft."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "quinoa_breakfast_bowl",
+    "name": "Quinoa Breakfast Bowl with Banana & PB",
+    "mealType": "breakfast",
+    "prepMinutes": 20,
+    "ingredients": [
+      { "id": "quinoa", "qty": 1, "measure": "1/2 cup uncooked" },
+      { "id": "milk", "qty": 1, "measure": "1 cup" },
+      { "id": "banana", "qty": 1, "measure": "1, sliced" },
+      { "id": "peanut_butter", "qty": 1, "measure": "2 tbsp" },
+      { "id": "honey", "qty": 1, "measure": "1 tbsp" },
+      { "id": "salt", "qty": 1, "measure": "pinch" }
+    ],
+    "tags": ["vegetarian", "high-protein", "meal-prep"],
+    "instructions": [
+      "Rinse quinoa. Simmer with milk, salt, and 1/2 cup water 15 min until liquid absorbs.",
+      "Stir in peanut butter and honey.",
+      "Top with sliced banana. Serve warm."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "tortilla_migas",
+    "name": "Crispy Tortilla Migas",
+    "mealType": "breakfast",
+    "prepMinutes": 15,
+    "ingredients": [
+      { "id": "eggs", "qty": 3, "measure": "3 large" },
+      { "id": "tortillas", "qty": 1, "measure": "2 corn tortillas, cut into strips" },
+      { "id": "vegetable_oil", "qty": 1, "measure": "2 tbsp" },
+      { "id": "salsa", "qty": 1, "measure": "1/4 cup" },
+      { "id": "cheddar", "qty": 1, "measure": "1/3 cup shredded" },
+      { "id": "jalapeno", "qty": 1, "measure": "1/2, minced" },
+      { "id": "cilantro", "qty": 1, "measure": "1 tbsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["mexican", "high-protein", "quick"],
+    "instructions": [
+      "Heat oil in a skillet. Fry tortilla strips 2-3 min until crisp. Drain on paper towel, leaving 1 tbsp oil in pan.",
+      "Add jalapeño, sauté 30 sec.",
+      "Whisk eggs with salt, pour in. Scramble soft 2 min.",
+      "Return tortilla strips to pan, stir in salsa.",
+      "Top with cheddar and cilantro."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "french_toast_sticks",
+    "name": "Cinnamon French Toast Sticks",
+    "mealType": "breakfast",
+    "prepMinutes": 15,
+    "ingredients": [
+      { "id": "bread", "qty": 1, "measure": "4 thick slices, cut into strips" },
+      { "id": "eggs", "qty": 2, "measure": "2 large" },
+      { "id": "milk", "qty": 1, "measure": "1/3 cup" },
+      { "id": "butter", "qty": 1, "measure": "2 tbsp" },
+      { "id": "honey", "qty": 1, "measure": "for serving" },
+      { "id": "sugar", "qty": 1, "measure": "1 tbsp + 1 tsp cinnamon if you have it" }
+    ],
+    "tags": ["comfort-food", "vegetarian", "quick"],
+    "instructions": [
+      "Whisk eggs, milk, and sugar in a shallow dish.",
+      "Cut bread into thick sticks.",
+      "Melt butter in a skillet over medium.",
+      "Dip each stick in the egg mix, let drip, then pan-fry 2 min per side until golden.",
+      "Drizzle with honey."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "spinach_feta_egg_wrap",
+    "name": "Spinach & Feta Egg Wrap",
+    "mealType": "breakfast",
+    "prepMinutes": 10,
+    "ingredients": [
+      { "id": "eggs", "qty": 2, "measure": "2 large" },
+      { "id": "tortillas", "qty": 1, "measure": "1 large flour tortilla" },
+      { "id": "frozen_spinach", "qty": 1, "measure": "1/2 cup, thawed" },
+      { "id": "feta_cheese", "qty": 1, "measure": "1/4 cup crumbled" },
+      { "id": "olive_oil", "qty": 1, "measure": "1 tsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["mediterranean", "high-protein", "quick"],
+    "instructions": [
+      "Squeeze excess water from thawed spinach.",
+      "Heat olive oil in a skillet. Add spinach, cook 1 min.",
+      "Whisk eggs with salt and pepper, pour in. Scramble soft 2 min.",
+      "Stir in feta.",
+      "Warm tortilla. Pile in eggs, roll into a wrap."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "yogurt_granola_crunch_bowl",
+    "name": "Yogurt Granola Crunch Bowl",
+    "mealType": "breakfast",
+    "prepMinutes": 10,
+    "ingredients": [
+      { "id": "greek_yogurt", "qty": 1, "measure": "1 cup" },
+      { "id": "oats", "qty": 1, "measure": "1/3 cup" },
+      { "id": "honey", "qty": 1, "measure": "2 tbsp" },
+      { "id": "butter", "qty": 1, "measure": "1 tbsp" },
+      { "id": "apple", "qty": 1, "measure": "1/2, diced" },
+      { "id": "peanut_butter", "qty": 1, "measure": "1 tbsp" }
+    ],
+    "tags": ["high-protein", "vegetarian", "quick"],
+    "instructions": [
+      "Toast oats in butter in a small skillet 3-4 min until golden. Drizzle in 1 tbsp honey, stir, cook 30 sec to crisp. Cool 2 min.",
+      "Spoon yogurt into a bowl.",
+      "Top with the granola, diced apple, peanut butter, and a drizzle of honey."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "sheet_pan_pancake",
+    "name": "Sheet Pan Pancake Bake",
+    "mealType": "breakfast",
+    "prepMinutes": 25,
+    "ingredients": [
+      { "id": "flour", "qty": 1, "measure": "2 cups" },
+      { "id": "milk", "qty": 1, "measure": "1 1/2 cups" },
+      { "id": "eggs", "qty": 2, "measure": "2 large" },
+      { "id": "butter", "qty": 1, "measure": "3 tbsp melted" },
+      { "id": "sugar", "qty": 1, "measure": "3 tbsp" },
+      { "id": "honey", "qty": 1, "measure": "for serving" },
+      { "id": "banana", "qty": 1, "measure": "1, sliced (optional topping)" },
+      { "id": "salt", "qty": 1, "measure": "1/2 tsp" }
+    ],
+    "tags": ["comfort-food", "vegetarian", "meal-prep"],
+    "instructions": [
+      "Preheat oven to 425°F. Butter a sheet pan or 9x13 dish.",
+      "Whisk flour, sugar, salt, and 2 tsp baking powder if you have it.",
+      "In another bowl whisk milk, eggs, and melted butter.",
+      "Combine wet and dry — just until mixed. Pour into pan, smooth.",
+      "Scatter banana slices on top.",
+      "Bake 12-15 min until set and golden.",
+      "Cut into squares. Drizzle with honey."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "mushroom_spinach_strata",
+    "name": "Mushroom & Spinach Strata",
+    "mealType": "breakfast",
+    "prepMinutes": 50,
+    "ingredients": [
+      { "id": "bread", "qty": 1, "measure": "6 slices, cubed" },
+      { "id": "eggs", "qty": 6, "measure": "6 large" },
+      { "id": "milk", "qty": 1, "measure": "1 1/2 cups" },
+      { "id": "mushrooms", "qty": 1, "measure": "1 cup sliced" },
+      { "id": "frozen_spinach", "qty": 1, "measure": "1 cup thawed" },
+      { "id": "cheddar", "qty": 1, "measure": "1 cup shredded" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1/2 onion + 2 cloves garlic" },
+      { "id": "butter", "qty": 1, "measure": "1 tbsp" },
+      { "id": "salt", "qty": 1, "measure": "1/2 tsp" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["comfort-food", "meal-prep", "high-protein", "veggie-rich"],
+    "instructions": [
+      "Preheat oven to 350°F. Butter a 9x9 baking dish.",
+      "Sauté onion and mushrooms in butter 6 min until soft. Add garlic, 30 sec. Stir in squeezed spinach.",
+      "Whisk eggs, milk, salt, and pepper.",
+      "Layer bread cubes, veg, and half the cheese in the dish. Pour egg mix over evenly. Press down. Top with remaining cheese.",
+      "Bake 35-40 min until set and golden."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "apple_sausage_skillet",
+    "name": "Apple Sausage Breakfast Skillet",
+    "mealType": "breakfast",
+    "prepMinutes": 20,
+    "ingredients": [
+      { "id": "sausage", "qty": 1, "measure": "8 oz breakfast sausage" },
+      { "id": "apple", "qty": 1, "measure": "1, diced" },
+      { "id": "sweet_potato", "qty": 1, "measure": "1, diced small" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1/2 onion, diced" },
+      { "id": "butter", "qty": 1, "measure": "1 tbsp" },
+      { "id": "paprika", "qty": 1, "measure": "1/2 tsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["comfort-food", "high-protein", "filling"],
+    "instructions": [
+      "Brown sausage in a skillet over medium-high 6 min, crumbling. Remove.",
+      "Melt butter in the same pan. Add sweet potato, cover and cook 8 min, stirring.",
+      "Add onion and apple, cook 4 min more until tender.",
+      "Return sausage. Season with paprika, salt, pepper. Toss 1 min."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "tortilla_breakfast_pizza",
+    "name": "Veggie Breakfast Pizza on Tortilla",
+    "mealType": "breakfast",
+    "prepMinutes": 15,
+    "ingredients": [
+      { "id": "tortillas", "qty": 1, "measure": "2 large flour tortillas" },
+      { "id": "eggs", "qty": 2, "measure": "2 large, scrambled" },
+      { "id": "mozzarella", "qty": 1, "measure": "1/2 cup shredded" },
+      { "id": "fresh_tomato", "qty": 1, "measure": "1, sliced" },
+      { "id": "bell_pepper", "qty": 1, "measure": "1/2, sliced thin" },
+      { "id": "italian_seasoning", "qty": 1, "measure": "1/2 tsp" },
+      { "id": "olive_oil", "qty": 1, "measure": "1 tsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["italian", "vegetarian", "quick"],
+    "instructions": [
+      "Preheat oven to 425°F. Place tortillas on a sheet pan, brush with olive oil.",
+      "Bake 3 min to crisp slightly.",
+      "Soft-scramble eggs in a pan, 2 min.",
+      "Top tortillas with eggs, tomato, pepper, mozzarella, and italian seasoning.",
+      "Bake 6-8 min until cheese bubbles and edges crisp.",
+      "Slice into wedges."
+    ],
+    "difficulty": "beginner"
+  },
+
+  {
+    "id": "classic_cobb_salad",
+    "name": "Classic Cobb Salad",
+    "mealType": "lunch",
+    "prepMinutes": 20,
+    "ingredients": [
+      { "id": "lettuce", "qty": 1, "measure": "4 cups chopped romaine" },
+      { "id": "chicken_breast", "qty": 1, "measure": "1, cooked and diced" },
+      { "id": "bacon", "qty": 1, "measure": "3 strips, cooked and crumbled" },
+      { "id": "eggs", "qty": 2, "measure": "2, hard-boiled and quartered" },
+      { "id": "avocado", "qty": 1, "measure": "1, sliced" },
+      { "id": "fresh_tomato", "qty": 1, "measure": "1, diced" },
+      { "id": "cheddar", "qty": 1, "measure": "1/3 cup crumbled or shredded" },
+      { "id": "olive_oil", "qty": 1, "measure": "3 tbsp" },
+      { "id": "vinegar", "qty": 1, "measure": "1 tbsp red wine" },
+      { "id": "mustard", "qty": 1, "measure": "1 tsp dijon" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["comfort-food", "high-protein", "low-carb"],
+    "instructions": [
+      "Season chicken with salt and pepper. Sear in a hot skillet 4 min per side. Rest, then dice.",
+      "Hard-boil eggs: cover with cold water, bring to a boil, off heat, cover, 10 min. Peel.",
+      "Whisk olive oil, vinegar, mustard, salt, and pepper.",
+      "Arrange lettuce on a platter. Top with rows of chicken, bacon, eggs, avocado, tomato, and cheese.",
+      "Drizzle with dressing right before serving."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "buffalo_chicken_wrap",
+    "name": "Buffalo Chicken Wrap with Ranch",
+    "mealType": "lunch",
+    "prepMinutes": 15,
+    "ingredients": [
+      { "id": "chicken_breast", "qty": 1, "measure": "2, cooked and shredded" },
+      { "id": "hot_sauce", "qty": 1, "measure": "3 tbsp" },
+      { "id": "butter", "qty": 1, "measure": "1 tbsp" },
+      { "id": "tortillas", "qty": 1, "measure": "2 large flour tortillas" },
+      { "id": "lettuce", "qty": 1, "measure": "1 cup shredded" },
+      { "id": "ranch_mix", "qty": 1, "measure": "1 tsp + 3 tbsp sour cream" },
+      { "id": "sour_cream", "qty": 1, "measure": "3 tbsp" },
+      { "id": "cheddar", "qty": 1, "measure": "1/3 cup shredded" }
+    ],
+    "tags": ["comfort-food", "high-protein", "quick"],
+    "instructions": [
+      "Melt butter with hot sauce in a pan over low heat. Toss shredded chicken to coat.",
+      "Mix ranch seasoning with sour cream.",
+      "Spread ranch on each tortilla. Layer with lettuce, buffalo chicken, and cheddar.",
+      "Roll tightly. Slice in half."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "cold_sesame_peanut_noodles",
+    "name": "Cold Sesame Peanut Noodles",
+    "mealType": "lunch",
+    "prepMinutes": 15,
+    "ingredients": [
+      { "id": "ramen", "qty": 1, "measure": "2 packs, seasoning discarded" },
+      { "id": "peanut_butter", "qty": 1, "measure": "3 tbsp" },
+      { "id": "soy_sauce", "qty": 1, "measure": "2 tbsp" },
+      { "id": "sesame_oil", "qty": 1, "measure": "1 tbsp" },
+      { "id": "honey", "qty": 1, "measure": "1 tsp" },
+      { "id": "vinegar", "qty": 1, "measure": "1 tbsp rice vinegar or white" },
+      { "id": "ginger", "qty": 1, "measure": "1 tsp grated" },
+      { "id": "carrots", "qty": 1, "measure": "1/2 cup julienned" },
+      { "id": "cucumber", "qty": 1, "measure": "1/2, julienned" },
+      { "id": "green_onion", "qty": 1, "measure": "2 stalks sliced" }
+    ],
+    "tags": ["asian", "vegetarian", "meal-prep", "no-cook"],
+    "instructions": [
+      "Cook noodles, drain, and rinse with cold water.",
+      "Whisk peanut butter, soy sauce, sesame oil, honey, vinegar, ginger, and 2 tbsp warm water.",
+      "Toss noodles with sauce.",
+      "Top with carrots, cucumber, and green onion.",
+      "Serve cold or room temp."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "spicy_tuna_poke_bowl",
+    "name": "Spicy Tuna Poke-Style Bowl",
+    "mealType": "lunch",
+    "prepMinutes": 12,
+    "ingredients": [
+      { "id": "canned_tuna", "qty": 1, "measure": "2 cans, drained" },
+      { "id": "white_rice", "qty": 1, "measure": "1 cup cooked, cooled" },
+      { "id": "avocado", "qty": 1, "measure": "1, sliced" },
+      { "id": "cucumber", "qty": 1, "measure": "1/2, diced" },
+      { "id": "mayo", "qty": 1, "measure": "2 tbsp" },
+      { "id": "soy_sauce", "qty": 1, "measure": "1 tbsp" },
+      { "id": "hot_sauce", "qty": 1, "measure": "1-2 tsp sriracha or hot sauce" },
+      { "id": "sesame_oil", "qty": 1, "measure": "1 tsp" },
+      { "id": "green_onion", "qty": 1, "measure": "1 stalk sliced" }
+    ],
+    "tags": ["asian", "high-protein", "no-cook", "quick"],
+    "instructions": [
+      "Mix mayo, soy sauce, hot sauce, and sesame oil.",
+      "Toss drained tuna with half the sauce.",
+      "Divide rice between bowls. Top with tuna, avocado, and cucumber.",
+      "Drizzle remaining sauce. Top with green onion."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "italian_sub_sandwich",
+    "name": "Italian Sub Sandwich",
+    "mealType": "lunch",
+    "prepMinutes": 10,
+    "ingredients": [
+      { "id": "bread", "qty": 1, "measure": "2 sub rolls or hoagie buns" },
+      { "id": "deli_turkey", "qty": 1, "measure": "8 oz, sliced" },
+      { "id": "mozzarella", "qty": 1, "measure": "4 slices" },
+      { "id": "lettuce", "qty": 1, "measure": "1 cup shredded" },
+      { "id": "fresh_tomato", "qty": 1, "measure": "1, sliced" },
+      { "id": "olive_oil", "qty": 1, "measure": "2 tbsp" },
+      { "id": "vinegar", "qty": 1, "measure": "1 tbsp red wine" },
+      { "id": "italian_seasoning", "qty": 1, "measure": "1/2 tsp" },
+      { "id": "mayo", "qty": 1, "measure": "1 tbsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["italian", "high-protein", "no-cook", "quick"],
+    "instructions": [
+      "Slice rolls open. Spread mayo on one side.",
+      "Layer turkey, mozzarella, lettuce, and tomato.",
+      "Whisk olive oil, vinegar, italian seasoning, and salt.",
+      "Drizzle the dressing over the fillings. Close and press lightly."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "loaded_baked_sweet_potato",
+    "name": "Loaded Baked Sweet Potato Lunch",
+    "mealType": "lunch",
+    "prepMinutes": 45,
+    "ingredients": [
+      { "id": "sweet_potato", "qty": 1, "measure": "2 medium" },
+      { "id": "black_beans", "qty": 1, "measure": "1 can, drained" },
+      { "id": "cheddar", "qty": 1, "measure": "1/2 cup shredded" },
+      { "id": "salsa", "qty": 1, "measure": "1/3 cup" },
+      { "id": "sour_cream", "qty": 1, "measure": "2 tbsp" },
+      { "id": "cilantro", "qty": 1, "measure": "1 tbsp" },
+      { "id": "cumin", "qty": 1, "measure": "1/2 tsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["mexican", "vegetarian", "veggie-rich", "meal-prep"],
+    "instructions": [
+      "Preheat oven to 425°F. Prick sweet potatoes all over. Bake on a sheet pan 40-45 min until soft.",
+      "Warm beans with cumin and salt.",
+      "Split sweet potatoes open with a fork.",
+      "Stuff with beans, salsa, cheese.",
+      "Top with sour cream and cilantro."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "greek_chickpea_salad",
+    "name": "Greek Salad with Chickpeas",
+    "mealType": "lunch",
+    "prepMinutes": 12,
+    "ingredients": [
+      { "id": "chickpeas", "qty": 1, "measure": "1 can, drained" },
+      { "id": "cucumber", "qty": 1, "measure": "1, chopped" },
+      { "id": "fresh_tomato", "qty": 1, "measure": "2, chopped" },
+      { "id": "bell_pepper", "qty": 1, "measure": "1/2, chopped" },
+      { "id": "feta_cheese", "qty": 1, "measure": "1/2 cup crumbled" },
+      { "id": "lettuce", "qty": 1, "measure": "2 cups chopped romaine" },
+      { "id": "olive_oil", "qty": 1, "measure": "1/4 cup" },
+      { "id": "lemon", "qty": 1, "measure": "1, juiced" },
+      { "id": "italian_seasoning", "qty": 1, "measure": "1 tsp oregano" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1/4 red onion, sliced" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["mediterranean", "vegetarian", "veggie-rich", "no-cook"],
+    "instructions": [
+      "Toss chickpeas, cucumber, tomato, bell pepper, onion, and lettuce.",
+      "Whisk olive oil, lemon juice, oregano, salt, and pepper.",
+      "Toss salad with dressing.",
+      "Top with feta. Let sit 5 min before serving."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "broccoli_cheddar_soup",
+    "name": "Cheesy Broccoli Cheddar Soup",
+    "mealType": "lunch",
+    "prepMinutes": 25,
+    "ingredients": [
+      { "id": "frozen_broccoli", "qty": 1, "measure": "3 cups" },
+      { "id": "cheddar", "qty": 1, "measure": "1 1/2 cups shredded" },
+      { "id": "milk", "qty": 1, "measure": "2 cups" },
+      { "id": "broth", "qty": 1, "measure": "2 cups chicken or veggie" },
+      { "id": "butter", "qty": 1, "measure": "3 tbsp" },
+      { "id": "flour", "qty": 1, "measure": "3 tbsp" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1/2 onion + 1 clove garlic" },
+      { "id": "carrots", "qty": 1, "measure": "1/2 cup grated" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["comfort-food", "vegetarian", "filling"],
+    "instructions": [
+      "Melt butter in a pot. Sauté onion and garlic 4 min. Add carrots, 2 min.",
+      "Whisk in flour, cook 1 min.",
+      "Slowly whisk in broth and milk. Simmer 5 min until thickened.",
+      "Add broccoli, cook 8 min until tender.",
+      "Off heat, whisk in cheese until smooth. Season."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "banh_mi_pork_sandwich",
+    "name": "Bánh Mì-Style Pork Sandwich",
+    "mealType": "lunch",
+    "prepMinutes": 25,
+    "ingredients": [
+      { "id": "pork_chops", "qty": 1, "measure": "1 lb, thin-sliced" },
+      { "id": "bread", "qty": 1, "measure": "2 baguette pieces or sub rolls" },
+      { "id": "carrots", "qty": 1, "measure": "1, julienned" },
+      { "id": "cucumber", "qty": 1, "measure": "1/2, sliced thin" },
+      { "id": "soy_sauce", "qty": 1, "measure": "2 tbsp" },
+      { "id": "honey", "qty": 1, "measure": "1 tbsp" },
+      { "id": "vinegar", "qty": 1, "measure": "3 tbsp rice vinegar" },
+      { "id": "sugar", "qty": 1, "measure": "1 tsp" },
+      { "id": "garlic_onion", "qty": 1, "measure": "2 cloves garlic" },
+      { "id": "mayo", "qty": 1, "measure": "2 tbsp" },
+      { "id": "cilantro", "qty": 1, "measure": "small handful" },
+      { "id": "jalapeno", "qty": 1, "measure": "1/2, sliced" }
+    ],
+    "tags": ["asian", "high-protein"],
+    "instructions": [
+      "Quick-pickle carrots and cucumber in vinegar, sugar, and pinch of salt. Set aside 15 min.",
+      "Marinate pork in soy sauce, honey, and minced garlic 10 min.",
+      "Sear pork in a hot skillet 2-3 min per side.",
+      "Spread mayo on bread. Layer pork, pickles, cilantro, and jalapeño."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "chicken_caesar_wrap",
+    "name": "Chicken Caesar Wrap",
+    "mealType": "lunch",
+    "prepMinutes": 15,
+    "ingredients": [
+      { "id": "chicken_breast", "qty": 1, "measure": "1, cooked and sliced" },
+      { "id": "tortillas", "qty": 1, "measure": "2 large flour tortillas" },
+      { "id": "lettuce", "qty": 1, "measure": "2 cups chopped romaine" },
+      { "id": "parmesan", "qty": 1, "measure": "1/4 cup grated" },
+      { "id": "mayo", "qty": 1, "measure": "3 tbsp" },
+      { "id": "lemon", "qty": 1, "measure": "1/2, juiced" },
+      { "id": "mustard", "qty": 1, "measure": "1/2 tsp dijon" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1 clove garlic" },
+      { "id": "olive_oil", "qty": 1, "measure": "1 tsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["italian", "high-protein", "quick"],
+    "instructions": [
+      "Whisk mayo, lemon juice, mustard, minced garlic, olive oil, salt, and pepper for caesar dressing.",
+      "Toss romaine with dressing and half the parmesan.",
+      "Pile chicken and dressed lettuce in tortilla. Top with remaining parmesan.",
+      "Roll tight. Cut diagonally."
+    ],
+    "difficulty": "beginner"
+  },
+
+  {
+    "id": "beef_stroganoff",
+    "name": "Beef Stroganoff over Egg Noodles",
+    "mealType": "dinner",
+    "prepMinutes": 35,
+    "ingredients": [
+      { "id": "ground_beef", "qty": 1, "measure": "1 lb" },
+      { "id": "pasta", "qty": 1, "measure": "8 oz egg noodles or wide pasta" },
+      { "id": "mushrooms", "qty": 1, "measure": "8 oz sliced" },
+      { "id": "sour_cream", "qty": 1, "measure": "3/4 cup" },
+      { "id": "broth", "qty": 1, "measure": "1 1/2 cups beef" },
+      { "id": "flour", "qty": 1, "measure": "2 tbsp" },
+      { "id": "butter", "qty": 1, "measure": "2 tbsp" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1 onion + 2 cloves garlic" },
+      { "id": "mustard", "qty": 1, "measure": "1 tsp dijon" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["comfort-food", "high-protein", "filling"],
+    "instructions": [
+      "Boil pasta until al dente, drain.",
+      "Brown beef in a skillet 6 min, breaking up. Remove.",
+      "Melt butter in the same pan. Sauté onion 4 min, mushrooms 5 min, garlic 30 sec.",
+      "Sprinkle flour, cook 1 min. Whisk in broth, simmer 4 min until thickened.",
+      "Off heat, stir in sour cream and mustard. Return beef.",
+      "Toss with noodles. Season."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "chicken_parmesan",
+    "name": "Crispy Chicken Parmesan over Spaghetti",
+    "mealType": "dinner",
+    "prepMinutes": 40,
+    "ingredients": [
+      { "id": "chicken_breast", "qty": 1, "measure": "2 large, pounded thin" },
+      { "id": "pasta", "qty": 1, "measure": "8 oz spaghetti" },
+      { "id": "tomato_sauce", "qty": 1, "measure": "2 cups marinara" },
+      { "id": "mozzarella", "qty": 1, "measure": "1 cup shredded" },
+      { "id": "parmesan", "qty": 1, "measure": "1/2 cup grated" },
+      { "id": "flour", "qty": 1, "measure": "1/2 cup" },
+      { "id": "eggs", "qty": 1, "measure": "1, beaten" },
+      { "id": "bread", "qty": 1, "measure": "1 cup breadcrumbs (toast bread, crush)" },
+      { "id": "italian_seasoning", "qty": 1, "measure": "2 tsp" },
+      { "id": "olive_oil", "qty": 1, "measure": "1/4 cup" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["italian", "high-protein", "comfort-food"],
+    "instructions": [
+      "Preheat oven to 425°F. Boil pasta until al dente.",
+      "Pound chicken to 1/2 inch. Season with salt and pepper.",
+      "Set up dredge: flour, beaten egg, then breadcrumbs mixed with italian seasoning and half the parmesan.",
+      "Coat each chicken piece through all three.",
+      "Heat olive oil in an oven-safe skillet. Sear chicken 3 min per side until golden.",
+      "Spoon marinara over chicken. Top with mozzarella and remaining parmesan.",
+      "Bake 12 min until cheese melts and chicken is cooked through.",
+      "Serve over spaghetti tossed with remaining sauce."
+    ],
+    "difficulty": "expert"
+  },
+  {
+    "id": "black_bean_burgers",
+    "name": "Black Bean Burgers with Sweet Potato Fries",
+    "mealType": "dinner",
+    "prepMinutes": 45,
+    "ingredients": [
+      { "id": "black_beans", "qty": 1, "measure": "2 cans, drained" },
+      { "id": "sweet_potato", "qty": 1, "measure": "2, cut into fries" },
+      { "id": "bread", "qty": 1, "measure": "4 burger buns + 1/2 cup breadcrumbs" },
+      { "id": "eggs", "qty": 1, "measure": "1, beaten" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1/2 onion + 2 cloves garlic" },
+      { "id": "cumin", "qty": 1, "measure": "1 tsp" },
+      { "id": "chili_powder", "qty": 1, "measure": "1 tsp" },
+      { "id": "olive_oil", "qty": 1, "measure": "3 tbsp" },
+      { "id": "lettuce", "qty": 1, "measure": "4 leaves" },
+      { "id": "fresh_tomato", "qty": 1, "measure": "1, sliced" },
+      { "id": "avocado", "qty": 1, "measure": "1, sliced" },
+      { "id": "salt", "qty": 1, "measure": "1 tsp" }
+    ],
+    "tags": ["vegetarian", "veggie-rich", "high-protein"],
+    "instructions": [
+      "Preheat oven to 425°F. Toss sweet potato with 2 tbsp olive oil and salt. Bake 25-30 min, flipping.",
+      "Mash beans coarsely with a fork. Mix with breadcrumbs, beaten egg, diced onion, garlic, cumin, chili powder, and salt.",
+      "Form 4 patties.",
+      "Heat 1 tbsp oil in a skillet over medium. Cook patties 4 min per side until crisp.",
+      "Serve on buns with lettuce, tomato, and avocado. Fries on the side."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "korean_bulgogi_bowl",
+    "name": "Korean-Style Bulgogi Beef Bowl",
+    "mealType": "dinner",
+    "prepMinutes": 30,
+    "ingredients": [
+      { "id": "ground_beef", "qty": 1, "measure": "1 lb (or thin-sliced)" },
+      { "id": "white_rice", "qty": 1, "measure": "1 cup uncooked" },
+      { "id": "soy_sauce", "qty": 1, "measure": "1/4 cup" },
+      { "id": "honey", "qty": 1, "measure": "2 tbsp" },
+      { "id": "sesame_oil", "qty": 1, "measure": "1 tbsp" },
+      { "id": "ginger", "qty": 1, "measure": "1 tbsp grated" },
+      { "id": "garlic_onion", "qty": 1, "measure": "4 cloves garlic" },
+      { "id": "carrots", "qty": 1, "measure": "1, julienned" },
+      { "id": "cucumber", "qty": 1, "measure": "1/2, sliced" },
+      { "id": "vegetable_oil", "qty": 1, "measure": "1 tbsp" },
+      { "id": "green_onion", "qty": 1, "measure": "2 stalks sliced" },
+      { "id": "hot_sauce", "qty": 1, "measure": "for drizzling" }
+    ],
+    "tags": ["asian", "high-protein"],
+    "instructions": [
+      "Cook rice per package.",
+      "Whisk soy sauce, honey, sesame oil, ginger, and minced garlic.",
+      "Heat vegetable oil in a skillet over high. Brown beef 5 min.",
+      "Pour in sauce, simmer 3 min until glossy.",
+      "Plate rice. Top with beef, carrots, and cucumber.",
+      "Finish with green onion and a drizzle of hot sauce."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "italian_sausage_peppers_pasta",
+    "name": "Italian Sausage & Peppers over Pasta",
+    "mealType": "dinner",
+    "prepMinutes": 30,
+    "ingredients": [
+      { "id": "sausage", "qty": 1, "measure": "1 lb italian sausage" },
+      { "id": "pasta", "qty": 1, "measure": "12 oz penne or rigatoni" },
+      { "id": "bell_pepper", "qty": 1, "measure": "2, sliced" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1 onion + 3 cloves garlic" },
+      { "id": "canned_tomatoes", "qty": 1, "measure": "1 can crushed" },
+      { "id": "italian_seasoning", "qty": 1, "measure": "1 tbsp" },
+      { "id": "olive_oil", "qty": 1, "measure": "2 tbsp" },
+      { "id": "parmesan", "qty": 1, "measure": "1/3 cup grated" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["italian", "high-protein", "filling"],
+    "instructions": [
+      "Boil pasta until al dente.",
+      "Heat olive oil in a deep skillet. Brown sausage 6 min, breaking up. Remove.",
+      "Sauté onion and peppers in the drippings 8 min.",
+      "Add garlic, 30 sec. Pour in tomatoes, italian seasoning, and salt.",
+      "Return sausage, simmer 10 min.",
+      "Toss with drained pasta. Finish with parmesan."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "mongolian_beef_stirfry",
+    "name": "Mongolian Beef Stir-Fry",
+    "mealType": "dinner",
+    "prepMinutes": 25,
+    "ingredients": [
+      { "id": "ground_beef", "qty": 1, "measure": "1 lb (or flank steak sliced thin)" },
+      { "id": "white_rice", "qty": 1, "measure": "1 cup uncooked" },
+      { "id": "soy_sauce", "qty": 1, "measure": "1/3 cup" },
+      { "id": "sugar", "qty": 1, "measure": "1/3 cup brown sugar or white" },
+      { "id": "ginger", "qty": 1, "measure": "1 tbsp grated" },
+      { "id": "garlic_onion", "qty": 1, "measure": "4 cloves garlic" },
+      { "id": "frozen_broccoli", "qty": 1, "measure": "2 cups" },
+      { "id": "green_onion", "qty": 1, "measure": "4 stalks, sliced 2-inch" },
+      { "id": "vegetable_oil", "qty": 1, "measure": "2 tbsp" },
+      { "id": "flour", "qty": 1, "measure": "2 tbsp" }
+    ],
+    "tags": ["asian", "high-protein"],
+    "instructions": [
+      "Cook rice.",
+      "Whisk soy sauce, sugar, ginger, garlic, and 1/2 cup water.",
+      "Toss beef with flour.",
+      "Heat oil in a wok over high. Sear beef 4 min until edges crisp. Remove.",
+      "Stir-fry broccoli 3 min.",
+      "Return beef, pour in sauce. Simmer 2 min until glossy.",
+      "Toss in green onion at the end.",
+      "Serve over rice."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "veggie_lasagna",
+    "name": "Vegetable Lasagna",
+    "mealType": "dinner",
+    "prepMinutes": 75,
+    "ingredients": [
+      { "id": "pasta", "qty": 1, "measure": "12 lasagna noodles" },
+      { "id": "tomato_sauce", "qty": 1, "measure": "3 cups marinara" },
+      { "id": "mozzarella", "qty": 1, "measure": "2 cups shredded" },
+      { "id": "cottage_cheese", "qty": 1, "measure": "2 cups (ricotta substitute)" },
+      { "id": "parmesan", "qty": 1, "measure": "1/2 cup grated" },
+      { "id": "frozen_spinach", "qty": 1, "measure": "1 cup thawed and squeezed" },
+      { "id": "zucchini", "qty": 1, "measure": "2, sliced" },
+      { "id": "mushrooms", "qty": 1, "measure": "8 oz sliced" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1 onion + 3 cloves garlic" },
+      { "id": "eggs", "qty": 1, "measure": "1, beaten" },
+      { "id": "olive_oil", "qty": 1, "measure": "2 tbsp" },
+      { "id": "italian_seasoning", "qty": 1, "measure": "1 tbsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["italian", "vegetarian", "comfort-food", "veggie-rich"],
+    "instructions": [
+      "Preheat oven to 375°F. Boil lasagna noodles 2 min less than package time.",
+      "Sauté onion in olive oil 4 min. Add zucchini and mushrooms, cook 8 min. Add garlic, 30 sec. Stir in spinach.",
+      "Mix cottage cheese, egg, half the parmesan, italian seasoning, and salt.",
+      "In a 9x13 dish: thin layer sauce, then noodles, half the cottage cheese, half the veg, 1/3 mozzarella. Repeat. Top with noodles, remaining sauce, mozzarella, parmesan.",
+      "Cover with foil. Bake 30 min. Uncover, bake 15 min more until bubbly.",
+      "Rest 10 min before cutting."
+    ],
+    "difficulty": "expert"
+  },
+  {
+    "id": "greek_lemon_chicken_potatoes",
+    "name": "One-Pan Greek Lemon Chicken with Potatoes",
+    "mealType": "dinner",
+    "prepMinutes": 60,
+    "ingredients": [
+      { "id": "chicken_thighs", "qty": 1, "measure": "6 bone-in" },
+      { "id": "potato", "qty": 1, "measure": "4 medium, wedged" },
+      { "id": "lemon", "qty": 1, "measure": "2, juiced + 1 sliced" },
+      { "id": "garlic_onion", "qty": 1, "measure": "6 cloves garlic" },
+      { "id": "olive_oil", "qty": 1, "measure": "1/4 cup" },
+      { "id": "italian_seasoning", "qty": 1, "measure": "1 tbsp oregano" },
+      { "id": "broth", "qty": 1, "measure": "1/2 cup chicken broth" },
+      { "id": "feta_cheese", "qty": 1, "measure": "1/3 cup crumbled" },
+      { "id": "salt", "qty": 1, "measure": "1 tsp" },
+      { "id": "pepper", "qty": 1, "measure": "1/2 tsp" }
+    ],
+    "tags": ["mediterranean", "high-protein", "filling"],
+    "instructions": [
+      "Preheat oven to 425°F.",
+      "Whisk olive oil, lemon juice, minced garlic, oregano, salt, and pepper.",
+      "Toss potatoes and chicken with the marinade in a large baking dish.",
+      "Arrange chicken skin-side up. Tuck lemon slices around. Pour broth into the dish.",
+      "Roast 45-50 min until chicken is 165°F and potatoes are tender.",
+      "Scatter feta on top before serving."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "stuffed_cabbage_rolls",
+    "name": "Stuffed Cabbage Rolls",
+    "mealType": "dinner",
+    "prepMinutes": 90,
+    "ingredients": [
+      { "id": "cabbage", "qty": 1, "measure": "1 large head" },
+      { "id": "ground_beef", "qty": 1, "measure": "1 lb" },
+      { "id": "white_rice", "qty": 1, "measure": "1/2 cup uncooked" },
+      { "id": "canned_tomatoes", "qty": 1, "measure": "1 can crushed" },
+      { "id": "tomato_sauce", "qty": 1, "measure": "1 cup" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1 onion + 3 cloves garlic" },
+      { "id": "eggs", "qty": 1, "measure": "1, beaten" },
+      { "id": "paprika", "qty": 1, "measure": "1 tsp" },
+      { "id": "salt", "qty": 1, "measure": "1 tsp" },
+      { "id": "pepper", "qty": 1, "measure": "1/2 tsp" }
+    ],
+    "tags": ["comfort-food", "high-protein", "filling"],
+    "instructions": [
+      "Cook rice halfway, 8 min, drain.",
+      "Core cabbage. Boil whole head 5-7 min until outer leaves peel off easily. Remove 12-14 leaves. Trim thick rib.",
+      "Mix beef, partially-cooked rice, diced onion, egg, paprika, salt, and pepper.",
+      "Preheat oven to 350°F.",
+      "Place a heaping spoonful of filling on each leaf. Fold sides in, roll up.",
+      "Spread some crushed tomato in a baking dish. Arrange rolls seam-down.",
+      "Mix remaining tomatoes, tomato sauce, and garlic. Pour over rolls.",
+      "Cover with foil. Bake 75 min."
+    ],
+    "difficulty": "expert"
+  },
+  {
+    "id": "tuna_noodle_casserole",
+    "name": "Tuna Noodle Casserole",
+    "mealType": "dinner",
+    "prepMinutes": 40,
+    "ingredients": [
+      { "id": "pasta", "qty": 1, "measure": "10 oz egg noodles or rotini" },
+      { "id": "canned_tuna", "qty": 1, "measure": "3 cans, drained" },
+      { "id": "canned_soup", "qty": 1, "measure": "1 can cream of mushroom or chicken" },
+      { "id": "milk", "qty": 1, "measure": "3/4 cup" },
+      { "id": "frozen_peas", "qty": 1, "measure": "1 cup" },
+      { "id": "cheddar", "qty": 1, "measure": "1 cup shredded" },
+      { "id": "bread", "qty": 1, "measure": "1 cup breadcrumbs (toast and crush)" },
+      { "id": "butter", "qty": 1, "measure": "2 tbsp melted" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1/2 onion, diced" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["comfort-food", "high-protein", "filling", "meal-prep"],
+    "instructions": [
+      "Preheat oven to 375°F. Butter a 9x13 dish.",
+      "Boil pasta 2 min less than package time. Drain.",
+      "Mix soup with milk in a large bowl. Stir in onion, peas, tuna, half the cheese, pasta, salt, and pepper.",
+      "Pour into baking dish. Top with remaining cheese.",
+      "Toss breadcrumbs with melted butter, sprinkle over.",
+      "Bake 25-30 min until bubbly and golden."
+    ],
+    "difficulty": "beginner"
+  },
+
+  {
+    "id": "tropical_mango_berry_smoothie",
+    "name": "Tropical Mango Berry Smoothie",
+    "mealType": "breakfast",
+    "prepMinutes": 5,
+    "ingredients": [
+      { "id": "frozen_mango", "qty": 1, "measure": "3/4 cup" },
+      { "id": "frozen_berries", "qty": 1, "measure": "1/2 cup" },
+      { "id": "banana", "qty": 1, "measure": "1, peeled" },
+      { "id": "greek_yogurt", "qty": 1, "measure": "1/2 cup" },
+      { "id": "milk", "qty": 1, "measure": "3/4 cup" },
+      { "id": "honey", "qty": 1, "measure": "1 tsp" }
+    ],
+    "tags": ["high-protein", "veggie-rich", "no-cook", "quick", "vegetarian"],
+    "instructions": [
+      "Add all ingredients to a blender.",
+      "Blend 60 seconds until smooth and pourable.",
+      "Pour into a tall glass. Serve cold."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "apple_pie_smoothie",
+    "name": "Apple Pie Protein Smoothie",
+    "mealType": "breakfast",
+    "prepMinutes": 5,
+    "ingredients": [
+      { "id": "apple", "qty": 1, "measure": "1, cored and chunked" },
+      { "id": "oats", "qty": 1, "measure": "1/4 cup" },
+      { "id": "greek_yogurt", "qty": 1, "measure": "1/2 cup" },
+      { "id": "milk", "qty": 1, "measure": "3/4 cup" },
+      { "id": "honey", "qty": 1, "measure": "1 tsp" },
+      { "id": "banana", "qty": 1, "measure": "1/2, frozen if possible" }
+    ],
+    "tags": ["high-protein", "no-cook", "quick", "vegetarian"],
+    "instructions": [
+      "Add apple, oats, yogurt, milk, honey, and banana to a blender.",
+      "Add 1 tsp cinnamon if you have it.",
+      "Blend 60 sec until smooth.",
+      "Drink cold."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "orange_carrot_sunrise_smoothie",
+    "name": "Orange Carrot Sunrise Smoothie",
+    "mealType": "breakfast",
+    "prepMinutes": 5,
+    "ingredients": [
+      { "id": "orange", "qty": 1, "measure": "1, peeled and segmented" },
+      { "id": "carrots", "qty": 1, "measure": "1, chopped small" },
+      { "id": "banana", "qty": 1, "measure": "1" },
+      { "id": "greek_yogurt", "qty": 1, "measure": "1/2 cup" },
+      { "id": "ginger", "qty": 1, "measure": "1/2 tsp grated" },
+      { "id": "honey", "qty": 1, "measure": "1 tsp" }
+    ],
+    "tags": ["veggie-rich", "high-protein", "no-cook", "quick", "vegetarian"],
+    "instructions": [
+      "Add orange, carrot, banana, yogurt, ginger, honey, and 1/2 cup water or ice to a blender.",
+      "Blend on high 60-90 sec until completely smooth — carrots take longer than fruit.",
+      "Pour and serve."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "spinach_avocado_power_smoothie",
+    "name": "Spinach Avocado Power Smoothie",
+    "mealType": "breakfast",
+    "prepMinutes": 5,
+    "ingredients": [
+      { "id": "frozen_spinach", "qty": 1, "measure": "1/2 cup" },
+      { "id": "avocado", "qty": 1, "measure": "1/2" },
+      { "id": "banana", "qty": 1, "measure": "1, frozen if possible" },
+      { "id": "milk", "qty": 1, "measure": "1 cup" },
+      { "id": "peanut_butter", "qty": 1, "measure": "1 tbsp" },
+      { "id": "honey", "qty": 1, "measure": "1 tsp" }
+    ],
+    "tags": ["veggie-rich", "high-protein", "no-cook", "quick", "vegetarian", "keto"],
+    "instructions": [
+      "Add spinach (thawed), avocado, banana, milk, peanut butter, and honey to a blender.",
+      "Blend 60 sec until smooth and creamy.",
+      "Serve immediately."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "berry_yogurt_smoothie_bowl",
+    "name": "Berry Yogurt Smoothie Bowl",
+    "mealType": "breakfast",
+    "prepMinutes": 8,
+    "ingredients": [
+      { "id": "frozen_berries", "qty": 1, "measure": "1 cup" },
+      { "id": "greek_yogurt", "qty": 1, "measure": "3/4 cup" },
+      { "id": "banana", "qty": 1, "measure": "1/2 + 1/2 for topping" },
+      { "id": "milk", "qty": 1, "measure": "1/4 cup" },
+      { "id": "oats", "qty": 1, "measure": "2 tbsp for topping" },
+      { "id": "honey", "qty": 1, "measure": "1 tsp" },
+      { "id": "peanut_butter", "qty": 1, "measure": "1 tsp drizzle" }
+    ],
+    "tags": ["high-protein", "vegetarian", "quick"],
+    "instructions": [
+      "Blend frozen berries, yogurt, half the banana, milk, and honey until thick and scoopable — add milk a splash at a time only if needed.",
+      "Pour into a bowl.",
+      "Top with sliced banana, oats, and a drizzle of peanut butter."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "cottage_cheese_fruit_bowl",
+    "name": "Cottage Cheese & Fresh Fruit Bowl",
+    "mealType": "breakfast",
+    "prepMinutes": 5,
+    "ingredients": [
+      { "id": "cottage_cheese", "qty": 1, "measure": "1 cup" },
+      { "id": "apple", "qty": 1, "measure": "1/2, diced" },
+      { "id": "banana", "qty": 1, "measure": "1/2, sliced" },
+      { "id": "honey", "qty": 1, "measure": "1 tsp" },
+      { "id": "oats", "qty": 1, "measure": "2 tbsp, toasted if you have time" },
+      { "id": "peanut_butter", "qty": 1, "measure": "1 tsp" }
+    ],
+    "tags": ["high-protein", "no-cook", "quick", "vegetarian"],
+    "instructions": [
+      "Spoon cottage cheese into a bowl.",
+      "Top with diced apple and banana.",
+      "Sprinkle oats over the top.",
+      "Drizzle honey and peanut butter."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "berry_overnight_oats",
+    "name": "Berry Almond Overnight Oats",
+    "mealType": "breakfast",
+    "prepMinutes": 5,
+    "ingredients": [
+      { "id": "oats", "qty": 1, "measure": "1/2 cup rolled" },
+      { "id": "milk", "qty": 1, "measure": "2/3 cup" },
+      { "id": "greek_yogurt", "qty": 1, "measure": "1/4 cup" },
+      { "id": "frozen_berries", "qty": 1, "measure": "1/2 cup" },
+      { "id": "peanut_butter", "qty": 1, "measure": "1 tbsp" },
+      { "id": "honey", "qty": 1, "measure": "1 tbsp" },
+      { "id": "salt", "qty": 1, "measure": "pinch" }
+    ],
+    "tags": ["high-protein", "no-cook", "meal-prep", "vegetarian"],
+    "instructions": [
+      "In a jar, stir oats, milk, yogurt, honey, peanut butter, and a pinch of salt.",
+      "Add frozen berries on top (they thaw and color the oats overnight).",
+      "Cover and refrigerate at least 4 hours or overnight.",
+      "Stir before eating. Add a splash of milk if too thick."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "sweet_potato_black_bean_breakfast_bowl",
+    "name": "Sweet Potato & Black Bean Breakfast Bowl",
+    "mealType": "breakfast",
+    "prepMinutes": 25,
+    "ingredients": [
+      { "id": "sweet_potato", "qty": 1, "measure": "1 medium, cubed small" },
+      { "id": "black_beans", "qty": 1, "measure": "1/2 can, drained" },
+      { "id": "eggs", "qty": 2, "measure": "2 large" },
+      { "id": "avocado", "qty": 1, "measure": "1/2, sliced" },
+      { "id": "salsa", "qty": 1, "measure": "2 tbsp" },
+      { "id": "olive_oil", "qty": 1, "measure": "1 tbsp" },
+      { "id": "cumin", "qty": 1, "measure": "1/2 tsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["mexican", "veggie-rich", "high-protein", "filling"],
+    "instructions": [
+      "Heat olive oil in a skillet over medium. Add sweet potato, cover, cook 10-12 min until tender, stirring.",
+      "Add black beans and cumin, cook 2 min.",
+      "Push to the side. Fry eggs sunny-side up in the same pan, 3 min.",
+      "Plate sweet potato and beans, top with eggs, avocado, and salsa.",
+      "Season."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "zucchini_carrot_breakfast_muffins",
+    "name": "Zucchini Carrot Breakfast Muffins",
+    "mealType": "breakfast",
+    "prepMinutes": 35,
+    "ingredients": [
+      { "id": "flour", "qty": 1, "measure": "1 1/2 cups" },
+      { "id": "zucchini", "qty": 1, "measure": "1, shredded (about 1 cup)" },
+      { "id": "carrots", "qty": 1, "measure": "1, shredded (about 1/2 cup)" },
+      { "id": "eggs", "qty": 2, "measure": "2 large" },
+      { "id": "milk", "qty": 1, "measure": "1/2 cup" },
+      { "id": "honey", "qty": 1, "measure": "1/3 cup" },
+      { "id": "butter", "qty": 1, "measure": "1/3 cup melted" },
+      { "id": "salt", "qty": 1, "measure": "1/2 tsp" }
+    ],
+    "tags": ["veggie-rich", "vegetarian", "meal-prep", "comfort-food"],
+    "instructions": [
+      "Preheat oven to 375°F. Line a muffin tin with paper liners.",
+      "Whisk flour, salt, and 1 tsp baking powder (and 1 tsp cinnamon if you have it).",
+      "In another bowl, whisk eggs, milk, honey, and melted butter.",
+      "Squeeze excess moisture from shredded zucchini in a towel.",
+      "Fold wet into dry, then fold in zucchini and carrots — don't overmix.",
+      "Divide into 10-12 muffin cups, filling each 3/4 full.",
+      "Bake 22-25 min until a toothpick comes out clean."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "veggie_egg_breakfast_wrap",
+    "name": "Garden Veggie & Egg Breakfast Wrap",
+    "mealType": "breakfast",
+    "prepMinutes": 12,
+    "ingredients": [
+      { "id": "eggs", "qty": 2, "measure": "2 large" },
+      { "id": "tortillas", "qty": 1, "measure": "1 large flour tortilla" },
+      { "id": "bell_pepper", "qty": 1, "measure": "1/4, diced" },
+      { "id": "zucchini", "qty": 1, "measure": "1/4, diced" },
+      { "id": "frozen_spinach", "qty": 1, "measure": "1/4 cup, thawed" },
+      { "id": "fresh_tomato", "qty": 1, "measure": "1/4, diced" },
+      { "id": "cheddar", "qty": 1, "measure": "1/4 cup shredded" },
+      { "id": "olive_oil", "qty": 1, "measure": "1 tsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["veggie", "veggie-rich", "high-protein", "quick", "vegetarian"],
+    "instructions": [
+      "Heat olive oil in a skillet over medium. Sauté bell pepper and zucchini 3 min.",
+      "Add spinach (thawed and squeezed) and tomato, cook 1 min.",
+      "Whisk eggs with salt and pepper, pour in. Scramble soft 2 min.",
+      "Warm tortilla 30 sec.",
+      "Pile eggs in the tortilla, top with cheddar, roll up tight.",
+      "Slice in half diagonally."
+    ],
+    "difficulty": "beginner"
   }
 ]

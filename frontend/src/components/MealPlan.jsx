@@ -35,7 +35,7 @@ function TomatoBullet({ size = 16 }) {
 // Pin shared with other panels — imported from ./Pushpin.jsx above.
 
 const MEAL_CONFIG = {
-  breakfast: { label: 'Breakfast', accent: '#e8a817', bg: 'rgba(232, 168, 23, 0.14)' },
+  breakfast: { label: 'Breakfast', accent: '#eaa221', bg: 'rgba(234, 162, 33, 0.14)' },
   lunch:     { label: 'Lunch',     accent: '#d4920f', bg: 'rgba(212, 146, 15, 0.14)' },
   dinner:    { label: 'Dinner',    accent: '#c07e0a', bg: 'rgba(192, 126, 10, 0.14)' },
 };
@@ -48,7 +48,7 @@ function fitFontSize(name, base, min, maxChars) {
   return Math.max(min, Math.round((base * maxChars) / longest));
 }
 
-function MealCard({ meal, mealType, day, taxRate = 0, isSkipped = false, onToggleSkip, onMealClick }) {
+function MealCard({ meal, mealType, day, taxRate = 0, isSkipped = false, onToggleSkip, onMealClick, onNeverAgain }) {
   const wt = (v) => Math.round(v * (1 + taxRate) * 100) / 100;
   const { accent, bg } = MEAL_CONFIG[mealType];
 
@@ -128,7 +128,7 @@ function MealCard({ meal, mealType, day, taxRate = 0, isSkipped = false, onToggl
         textTransform: 'uppercase',
         letterSpacing: '0.08em',
         marginBottom: 2,
-        textShadow: '2px 3px 4px rgba(0,0,0,0.7), 3px 5px 10px rgba(0,0,0,0.4)',
+        textShadow: '1px 2px 3px rgba(0,0,0,0.6)',
       }}>
         {day}
       </div>
@@ -159,7 +159,7 @@ function MealCard({ meal, mealType, day, taxRate = 0, isSkipped = false, onToggl
         lineHeight: 1.3,
         color: '#faf5e8',
         flex: 1,
-        textShadow: '2px 2px 0px rgba(0,0,0,0.8), 4px 4px 6px rgba(0,0,0,0.5), 0 0 12px rgba(0,0,0,0.3)',
+        textShadow: '1px 2px 3px rgba(0,0,0,0.55)',
       }}>
         {meal.name}
       </p>
@@ -187,33 +187,59 @@ function MealCard({ meal, mealType, day, taxRate = 0, isSkipped = false, onToggl
         lineHeight: 1,
         WebkitTextStroke: '1.5px #1a3312',
         paintOrder: 'stroke fill',
-        textShadow: '2px 3px 4px rgba(0,0,0,0.9), 4px 6px 12px rgba(0,0,0,0.7), 0 0 20px rgba(0,0,0,0.5), 0 0 40px rgba(0,0,0,0.3)',
+        textShadow: '2px 3px 4px rgba(0,0,0,0.7)',
       }}>
         ${wt(meal.cost)?.toFixed(2)}
       </div>
 
-      {/* Skip button */}
-      <button
-        onClick={e => { e.stopPropagation(); onToggleSkip?.(); }}
-        style={{
-          fontFamily: 'Cormorant Garamond, serif',
-          fontSize: 13,
-          fontWeight: 700,
-          color: '#faf5e8',
-          background: 'rgba(180,60,40,0.8)',
-          border: '1px solid rgba(140,40,25,0.6)',
-          borderRadius: 4,
-          padding: '4px 12px',
-          cursor: 'pointer',
-          alignSelf: 'flex-end',
-          marginTop: 4,
-          letterSpacing: '0.08em',
-          textTransform: 'uppercase',
-          boxShadow: '2px 3px 6px rgba(0,0,0,0.5), 4px 5px 12px rgba(0,0,0,0.3)',
-        }}
-      >
-        ✕ Skip
-      </button>
+      {/* Action buttons */}
+      <div style={{ display: 'flex', gap: 6, alignSelf: 'flex-end', marginTop: 4, flexWrap: 'wrap', justifyContent: 'flex-end' }}>
+        <button
+          onClick={e => { e.stopPropagation(); onToggleSkip?.(); }}
+          style={{
+            fontFamily: 'Cormorant Garamond, serif',
+            fontSize: 13,
+            fontWeight: 700,
+            color: '#faf5e8',
+            background: 'rgba(180,60,40,0.8)',
+            border: '1px solid rgba(140,40,25,0.6)',
+            borderRadius: 4,
+            padding: '4px 12px',
+            cursor: 'pointer',
+            letterSpacing: '0.08em',
+            textTransform: 'uppercase',
+            boxShadow: '2px 3px 6px rgba(0,0,0,0.5), 4px 5px 12px rgba(0,0,0,0.3)',
+          }}
+          title="Replace just this meal with a different recipe."
+        >
+          ✕ Skip
+        </button>
+        {meal.id && onNeverAgain && (
+          <button
+            onClick={e => {
+              e.stopPropagation();
+              onNeverAgain?.({ id: meal.id, name: meal.name });
+            }}
+            style={{
+              fontFamily: 'Cormorant Garamond, serif',
+              fontSize: 13,
+              fontWeight: 700,
+              color: '#faf5e8',
+              background: 'rgba(60,40,30,0.85)',
+              border: '1px solid rgba(40,25,15,0.7)',
+              borderRadius: 4,
+              padding: '4px 10px',
+              cursor: 'pointer',
+              letterSpacing: '0.08em',
+              textTransform: 'uppercase',
+              boxShadow: '2px 3px 6px rgba(0,0,0,0.5), 4px 5px 12px rgba(0,0,0,0.3)',
+            }}
+            title="Permanently exclude this recipe from all future menus."
+          >
+            ⌀ Never Again
+          </button>
+        )}
+      </div>
     </div>
   );
 }
@@ -235,7 +261,7 @@ function Stat({ label, value }) {
         fontFamily: 'Amatic SC, cursive', textTransform: 'uppercase',
         fontSize: 15,
         fontWeight: 700,
-        color: '#e8a817',
+        color: '#eaa221',
         marginTop: 1,
         textShadow: '1px 2px 3px rgba(0,0,0,0.5)',
       }}>
@@ -256,10 +282,10 @@ const cardBase = {
   padding: '44px 15px 13px',
   minHeight: 168,
   background: `url("data:image/svg+xml,${encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='crumple'><feTurbulence type='fractalNoise' baseFrequency='0.04 0.06' numOctaves='6' seed='9' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/><feComponentTransfer><feFuncR type='linear' slope='0.25' intercept='0'/><feFuncG type='linear' slope='0.2' intercept='0'/><feFuncB type='linear' slope='0.12' intercept='0'/><feFuncA type='linear' slope='0.55' intercept='0'/></feComponentTransfer></filter><rect width='300' height='300' filter='url(#crumple)'/></svg>`)}"), url("data:image/svg+xml,${encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='fiber'><feTurbulence type='fractalNoise' baseFrequency='0.5 0.03' numOctaves='3' seed='14' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/><feComponentTransfer><feFuncR type='linear' slope='0.1' intercept='0'/><feFuncG type='linear' slope='0.08' intercept='0'/><feFuncB type='linear' slope='0.05' intercept='0'/><feFuncA type='linear' slope='0.2' intercept='0'/></feComponentTransfer></filter><rect width='200' height='200' filter='url(#fiber)'/></svg>`)}"), linear-gradient(155deg, rgba(0,0,0,0.1) 0%, transparent 15%, rgba(0,0,0,0.06) 30%, transparent 45%, rgba(0,0,0,0.08) 60%, transparent 75%, rgba(0,0,0,0.05) 100%), radial-gradient(ellipse at 20% 25%, rgba(200,170,120,0.3) 0%, transparent 40%), radial-gradient(ellipse at 75% 65%, rgba(160,130,80,0.25) 0%, transparent 45%), radial-gradient(ellipse at 50% 80%, rgba(140,110,65,0.18) 0%, transparent 35%), linear-gradient(180deg, rgba(255,255,255,0.06) 0%, transparent 15%, transparent 85%, rgba(0,0,0,0.12) 100%), #b8956a`,
-  boxShadow: 'inset 0 3px 0 rgba(255,255,255,0.15), inset 0 -4px 8px rgba(0,0,0,0.3), inset 3px 0 6px rgba(0,0,0,0.1), inset -3px 0 6px rgba(0,0,0,0.05), inset 0 0 25px rgba(80,55,30,0.25), 8px 10px 20px rgba(0,0,0,0.6), 14px 18px 40px rgba(0,0,0,0.35), 3px 4px 8px rgba(0,0,0,0.45), 0 20px 30px -10px rgba(0,0,0,0.4)',
+  boxShadow: 'inset 0 2px 0 rgba(255,255,255,0.12), inset 0 -3px 6px rgba(0,0,0,0.22), 4px 6px 14px rgba(0,0,0,0.4), 8px 10px 20px rgba(0,0,0,0.18)',
 };
 
-export default function MealPlan({ plan, taxRate = 0, skippedMeals = {}, onToggleSkip, onMealClick }) {
+export default function MealPlan({ plan, taxRate = 0, skippedMeals = {}, onToggleSkip, onMealClick, onNeverAgain }) {
   const wt = (v) => Math.round(v * (1 + taxRate) * 100) / 100;
   const days = Object.keys(plan);
 
@@ -286,7 +312,7 @@ export default function MealPlan({ plan, taxRate = 0, skippedMeals = {}, onToggl
             letterSpacing: '0.02em',
             padding: '12px 2px 18px',
             borderBottom: '1px solid var(--chalk-border)',
-            textShadow: '2px 3px 4px rgba(0,0,0,0.9), 4px 6px 12px rgba(0,0,0,0.7), 0 0 20px rgba(0,0,0,0.5), 0 0 40px rgba(0,0,0,0.3)',
+            textShadow: '2px 3px 4px rgba(0,0,0,0.7)',
           }}>
             {day}
           </div>
@@ -316,14 +342,14 @@ export default function MealPlan({ plan, taxRate = 0, skippedMeals = {}, onToggl
                 gap: 8,
                 WebkitTextStroke: '1px #faf5e8',
                 paintOrder: 'stroke fill',
-                textShadow: '4px 4px 0px #1a0e06, 8px 8px 0px rgba(10,4,0,0.9), 12px 12px 4px rgba(0,0,0,0.8), 16px 16px 10px rgba(0,0,0,0.5), 0 0 30px rgba(0,0,0,0.5), 0 0 60px rgba(20,10,0,0.3)',
+                textShadow: '3px 3px 0 #1a0e06, 5px 6px 8px rgba(0,0,0,0.5)',
               }}>
                 <TomatoBullet size={32} />
                 {MEAL_CONFIG[type].label}
               </span>
             </div>
             {days.map(day => (
-              <MealCard key={`${day}-${type}`} meal={plan[day][type]} mealType={type} day={day} taxRate={taxRate} isSkipped={!!skippedMeals[`${day}-${type}`]} onToggleSkip={() => onToggleSkip?.(`${day}-${type}`)} onMealClick={onMealClick} />
+              <MealCard key={`${day}-${type}`} meal={plan[day][type]} mealType={type} day={day} taxRate={taxRate} isSkipped={!!skippedMeals[`${day}-${type}`]} onToggleSkip={() => onToggleSkip?.(`${day}-${type}`)} onMealClick={onMealClick} onNeverAgain={onNeverAgain} />
             ))}
           </>
         ))}
@@ -341,11 +367,11 @@ export default function MealPlan({ plan, taxRate = 0, skippedMeals = {}, onToggl
             fontWeight: 700,
             color: '#ffffff',
             letterSpacing: '0.28em',
-            textShadow: '2px 3px 4px rgba(0,0,0,0.9), 4px 6px 12px rgba(0,0,0,0.7), 0 0 20px rgba(0,0,0,0.5), 0 0 40px rgba(0,0,0,0.3)',
+            textShadow: '2px 3px 4px rgba(0,0,0,0.7)',
             textDecoration: 'underline',
             textUnderlineOffset: '4px',
           }}>
-            Total
+            Daily Totals:
           </span>
         </div>
         {days.map(day => (

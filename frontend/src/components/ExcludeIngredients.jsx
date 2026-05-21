@@ -18,7 +18,7 @@ const sectionHeader = {
   fontWeight: 700,
   textTransform: 'uppercase',
   letterSpacing: '0.08em',
-  textShadow: '2px 3px 4px rgba(0,0,0,0.8), 4px 6px 12px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.4)',
+  textShadow: '2px 3px 4px rgba(0,0,0,0.6)',
   marginBottom: 8,
 };
 
@@ -52,7 +52,18 @@ function TomatoBullet({ size = 20 }) {
   );
 }
 
-export default function ExcludeIngredients({ ingredients, excluded, onToggle, onHand = [], onToggleOnHand, onFavoritesChange, customRecipes = [], onAddCustomRecipe, onRemoveCustomRecipe }) {
+const CUISINES = [
+  { id: 'comfort-food', label: 'Comfort Food' },
+  { id: 'asian', label: 'Asian' },
+  { id: 'mexican', label: 'Mexican' },
+  { id: 'italian', label: 'Italian' },
+  { id: 'barbecue', label: 'Barbecue' },
+  { id: 'mediterranean', label: 'Mediterranean' },
+  { id: 'veggie', label: 'Vegetarian' },
+  { id: 'keto', label: 'Keto' },
+];
+
+export default function ExcludeIngredients({ ingredients, excluded, onToggle, onHand = [], onToggleOnHand, onFavoritesChange, customRecipes = [], onAddCustomRecipe, onRemoveCustomRecipe, excludedRecipes = [], onRestoreRecipe, selectedCuisines = [], onToggleCuisine }) {
   const [searchExclude, setSearchExclude] = useState('');
   const [searchFav, setSearchFav] = useState('');
   const [searchOnHand, setSearchOnHand] = useState('');
@@ -156,10 +167,66 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
 
+      {/* === CUISINE PREFERENCES SECTION === */}
+      <div style={{ background: 'rgba(160,140,100,0.15)', borderRadius: 6, overflow: 'hidden', border: '1px solid rgba(240,232,218,0.2)', borderTop: '2px solid rgba(255,255,255,0.18)', borderBottom: '3px solid rgba(0,0,0,0.45)', boxShadow: 'inset 0 2px 0 rgba(255,255,255,0.12), inset 0 -2px 4px rgba(0,0,0,0.15), 6px 8px 18px rgba(0,0,0,0.45), 10px 14px 30px rgba(0,0,0,0.25), 2px 3px 6px rgba(0,0,0,0.3)', opacity: 0.85 }}>
+        <div onClick={() => toggleSection('cuisines')} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 20px', cursor: 'pointer', userSelect: 'none', background: 'linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 50%, transparent 100%)', borderBottom: '1px solid rgba(0,0,0,0.15)', transition: 'background 0.2s' }}>
+          <h3 style={{ ...sectionHeader, fontSize: 34, color: '#eaa221', marginBottom: 0 }}>
+            🌿 Cuisine Preferences
+          </h3>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            {selectedCuisines.length > 0 && (
+              <span style={{
+                fontFamily: 'JetBrains Mono, monospace',
+                fontSize: 12,
+                fontWeight: 700,
+                color: 'rgba(240, 232, 218, 0.85)',
+                textShadow: '1px 2px 3px rgba(0,0,0,0.6)',
+              }}>
+                {selectedCuisines.length} selected
+              </span>
+            )}
+            <span style={{ fontSize: 18, color: '#eaa221', fontWeight: 'bold', textShadow: '0 0 6px rgba(234,162,33,0.4), 1px 1px 2px rgba(0,0,0,0.4)', transition: 'transform 0.2s', transform: expandedSections.cuisines ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
+          </div>
+        </div>
+        {expandedSections.cuisines && <div style={{ padding: '0 18px 18px' }}>
+          <p style={{
+            fontFamily: 'JetBrains Mono, monospace',
+            fontSize: 12,
+            color: 'rgba(240, 232, 218, 0.85)',
+            marginBottom: 12,
+            lineHeight: 1.5,
+            textShadow: '1px 2px 3px rgba(0,0,0,0.6)',
+          }}>
+            Pick one or more cuisines to narrow the menu pool. Leave all unselected to see every recipe.
+          </p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+            {CUISINES.map(c => {
+              const selected = selectedCuisines.includes(c.id);
+              return (
+                <button
+                  key={c.id}
+                  onClick={() => onToggleCuisine?.(c.id)}
+                  style={{
+                    ...tagBase,
+                    background: selected ? 'rgba(234,162,33,0.85)' : 'rgba(60,40,30,0.7)',
+                    border: selected ? '1px solid rgba(234,162,33,0.95)' : '1px solid rgba(200,170,120,0.35)',
+                    color: selected ? '#1a0e06' : '#faf5e8',
+                    fontSize: 15,
+                  }}
+                  title={selected ? `Remove ${c.label} filter` : `Include ${c.label} recipes`}
+                >
+                  {selected ? '✓ ' : '+ '}{c.label}
+                </button>
+              );
+            })}
+          </div>
+        </div>}
+      </div>
+
       {/* === SKIP INGREDIENTS SECTION === */}
       <div style={{ background: 'rgba(160,140,100,0.15)', borderRadius: 6, overflow: 'hidden', border: '1px solid rgba(240,232,218,0.2)', borderTop: '2px solid rgba(255,255,255,0.18)', borderBottom: '3px solid rgba(0,0,0,0.45)', boxShadow: 'inset 0 2px 0 rgba(255,255,255,0.12), inset 0 -2px 4px rgba(0,0,0,0.15), 6px 8px 18px rgba(0,0,0,0.45), 10px 14px 30px rgba(0,0,0,0.25), 2px 3px 6px rgba(0,0,0,0.3)', opacity: 0.85 }}>
         <div onClick={() => toggleSection('skip')} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 20px', cursor: 'pointer', userSelect: 'none', background: 'linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 50%, transparent 100%)', borderBottom: '1px solid rgba(0,0,0,0.15)', transition: 'background 0.2s' }}>
-          <h3 style={{ ...sectionHeader, fontSize: 34, color: '#e8a817', marginBottom: 0 }}>
+          <h3 style={{ ...sectionHeader, fontSize: 34, color: '#eaa221', marginBottom: 0 }}>
             🌿 Skip these ingredients this week
           </h3>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
@@ -174,7 +241,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
                 {excluded.length} excluded
               </span>
             )}
-            <span style={{ fontSize: 18, color: '#ffd044', fontWeight: 'bold', textShadow: '0 0 6px rgba(255,208,68,0.4), 1px 1px 2px rgba(0,0,0,0.4)', transition: 'transform 0.2s', transform: expandedSections.skip ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
+            <span style={{ fontSize: 18, color: '#eaa221', fontWeight: 'bold', textShadow: '0 0 6px rgba(234,162,33,0.4), 1px 1px 2px rgba(0,0,0,0.4)', transition: 'transform 0.2s', transform: expandedSections.skip ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
           </div>
         </div>
         {expandedSections.skip && <div style={{ padding: '0 18px 16px' }}>
@@ -199,7 +266,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
             style={{
               width: '100%',
               boxSizing: 'border-box',
-              background: 'linear-gradient(180deg, #ffffff 0%, #faf6ee 50%, #f0eade 100%)',
+              background: 'linear-gradient(180deg, #ffffff 0%, #faf5e8 50%, #f0eade 100%)',
               border: '1px solid rgba(180,160,120,0.4)',
               borderTop: '1px solid rgba(255,255,255,0.6)',
               borderBottom: '2px solid rgba(140,120,80,0.4)',
@@ -291,7 +358,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
       {/* === ON HAND SECTION === */}
       <div style={{ background: 'rgba(160,140,100,0.15)', borderRadius: 6, overflow: 'hidden', border: '1px solid rgba(240,232,218,0.2)', borderTop: '2px solid rgba(255,255,255,0.18)', borderBottom: '3px solid rgba(0,0,0,0.45)', boxShadow: 'inset 0 2px 0 rgba(255,255,255,0.12), inset 0 -2px 4px rgba(0,0,0,0.15), 6px 8px 18px rgba(0,0,0,0.45), 10px 14px 30px rgba(0,0,0,0.25), 2px 3px 6px rgba(0,0,0,0.3)', opacity: 0.85 }}>
         <div onClick={() => toggleSection('onhand')} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 20px', cursor: 'pointer', userSelect: 'none', background: 'linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 50%, transparent 100%)', borderBottom: '1px solid rgba(0,0,0,0.15)', transition: 'background 0.2s' }}>
-          <h3 style={{ ...sectionHeader, fontSize: 34, color: '#e8a817', marginBottom: 0 }}>
+          <h3 style={{ ...sectionHeader, fontSize: 34, color: '#eaa221', marginBottom: 0 }}>
             🌿 Already in my kitchen
           </h3>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
@@ -306,7 +373,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
                 {onHand.length} on hand
               </span>
             )}
-            <span style={{ fontSize: 18, color: '#ffd044', fontWeight: 'bold', textShadow: '0 0 6px rgba(255,208,68,0.4), 1px 1px 2px rgba(0,0,0,0.4)', transition: 'transform 0.2s', transform: expandedSections.onhand ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
+            <span style={{ fontSize: 18, color: '#eaa221', fontWeight: 'bold', textShadow: '0 0 6px rgba(234,162,33,0.4), 1px 1px 2px rgba(0,0,0,0.4)', transition: 'transform 0.2s', transform: expandedSections.onhand ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
           </div>
         </div>
         {expandedSections.onhand && <div style={{ padding: '0 18px 16px' }}>
@@ -331,7 +398,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
             style={{
               width: '100%',
               boxSizing: 'border-box',
-              background: 'linear-gradient(180deg, #ffffff 0%, #faf6ee 50%, #f0eade 100%)',
+              background: 'linear-gradient(180deg, #ffffff 0%, #faf5e8 50%, #f0eade 100%)',
               border: '1px solid rgba(180,160,120,0.4)',
               borderTop: '1px solid rgba(255,255,255,0.6)',
               borderBottom: '2px solid rgba(140,120,80,0.4)',
@@ -423,7 +490,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
       {/* === FAVORITES SECTION === */}
       <div style={{ background: 'rgba(160,140,100,0.15)', borderRadius: 6, overflow: 'hidden', border: '1px solid rgba(240,232,218,0.2)', borderTop: '2px solid rgba(255,255,255,0.18)', borderBottom: '3px solid rgba(0,0,0,0.45)', boxShadow: 'inset 0 2px 0 rgba(255,255,255,0.12), inset 0 -2px 4px rgba(0,0,0,0.15), 6px 8px 18px rgba(0,0,0,0.45), 10px 14px 30px rgba(0,0,0,0.25), 2px 3px 6px rgba(0,0,0,0.3)', opacity: 0.85 }}>
         <div onClick={() => toggleSection('favs')} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 20px', cursor: 'pointer', userSelect: 'none', background: 'linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 50%, transparent 100%)', borderBottom: '1px solid rgba(0,0,0,0.15)', transition: 'background 0.2s' }}>
-          <h3 style={{ ...sectionHeader, fontSize: 34, color: '#e8a817', marginBottom: 0 }}>
+          <h3 style={{ ...sectionHeader, fontSize: 34, color: '#eaa221', marginBottom: 0 }}>
             🌿 Favorite Ingredients
           </h3>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
@@ -438,7 +505,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
                 {favorites.length} in rotation
               </span>
             )}
-            <span style={{ fontSize: 18, color: '#ffd044', fontWeight: 'bold', textShadow: '0 0 6px rgba(255,208,68,0.4), 1px 1px 2px rgba(0,0,0,0.4)', transition: 'transform 0.2s', transform: expandedSections.favs ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
+            <span style={{ fontSize: 18, color: '#eaa221', fontWeight: 'bold', textShadow: '0 0 6px rgba(234,162,33,0.4), 1px 1px 2px rgba(0,0,0,0.4)', transition: 'transform 0.2s', transform: expandedSections.favs ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
           </div>
         </div>
         {expandedSections.favs && <div style={{ padding: '0 18px 16px' }}>
@@ -463,7 +530,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
             style={{
               width: '100%',
               boxSizing: 'border-box',
-              background: 'linear-gradient(180deg, #ffffff 0%, #faf6ee 50%, #f0eade 100%)',
+              background: 'linear-gradient(180deg, #ffffff 0%, #faf5e8 50%, #f0eade 100%)',
               border: '1px solid rgba(180,160,120,0.4)',
               borderTop: '1px solid rgba(255,255,255,0.6)',
               borderBottom: '2px solid rgba(140,120,80,0.4)',
@@ -528,8 +595,8 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
                   onClick={() => saveFavorite(id)}
                   style={{
                     ...tagBase,
-                    background: 'rgba(232, 168, 23, 0.2)',
-                    border: '1px solid rgba(232, 168, 23, 0.5)',
+                    background: 'rgba(234, 162, 33, 0.2)',
+                    border: '1px solid rgba(234, 162, 33, 0.5)',
                     color: '#ffffff',
                   }}
                 >
@@ -555,7 +622,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
       {/* === MY RECIPES SECTION === */}
       <div style={{ background: 'rgba(160,140,100,0.15)', borderRadius: 6, overflow: 'hidden', border: '1px solid rgba(240,232,218,0.2)', borderTop: '2px solid rgba(255,255,255,0.18)', borderBottom: '3px solid rgba(0,0,0,0.45)', boxShadow: 'inset 0 2px 0 rgba(255,255,255,0.12), inset 0 -2px 4px rgba(0,0,0,0.15), 6px 8px 18px rgba(0,0,0,0.45), 10px 14px 30px rgba(0,0,0,0.25), 2px 3px 6px rgba(0,0,0,0.3)', opacity: 0.85 }}>
         <div onClick={() => toggleSection('recipes')} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 20px', cursor: 'pointer', userSelect: 'none', background: 'linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 50%, transparent 100%)', borderBottom: '1px solid rgba(0,0,0,0.15)', transition: 'background 0.2s' }}>
-          <h3 style={{ ...sectionHeader, fontSize: 34, color: '#e8a817', marginBottom: 0 }}>
+          <h3 style={{ ...sectionHeader, fontSize: 34, color: '#eaa221', marginBottom: 0 }}>
             🌿 My Recipes
           </h3>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
@@ -570,7 +637,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
                 {customRecipes.length} saved
               </span>
             )}
-            <span style={{ fontSize: 18, color: '#ffd044', fontWeight: 'bold', textShadow: '0 0 6px rgba(255,208,68,0.4), 1px 1px 2px rgba(0,0,0,0.4)', transition: 'transform 0.2s', transform: expandedSections.recipes ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
+            <span style={{ fontSize: 18, color: '#eaa221', fontWeight: 'bold', textShadow: '0 0 6px rgba(234,162,33,0.4), 1px 1px 2px rgba(0,0,0,0.4)', transition: 'transform 0.2s', transform: expandedSections.recipes ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
           </div>
         </div>
         {expandedSections.recipes && <div style={{ padding: '0 18px 16px' }}>
@@ -591,8 +658,8 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
             onClick={() => setShowRecipeForm(true)}
             style={{
               ...tagBase,
-              background: 'rgba(232, 168, 23, 0.2)',
-              border: '1px solid rgba(232, 168, 23, 0.5)',
+              background: 'rgba(234, 162, 33, 0.2)',
+              border: '1px solid rgba(234, 162, 33, 0.5)',
               color: '#ffffff',
               fontSize: 14,
               marginBottom: 12,
@@ -617,7 +684,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
               style={{
                 width: '100%',
                 boxSizing: 'border-box',
-                background: 'linear-gradient(180deg, #ffffff 0%, #faf6ee 50%, #f0eade 100%)',
+                background: 'linear-gradient(180deg, #ffffff 0%, #faf5e8 50%, #f0eade 100%)',
                 border: '1px solid rgba(180,160,120,0.4)',
                 borderTop: '1px solid rgba(255,255,255,0.6)',
                 borderBottom: '2px solid rgba(140,120,80,0.4)',
@@ -640,7 +707,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
                 onChange={e => setNewRecipe(prev => ({ ...prev, mealType: e.target.value }))}
                 style={{
                   flex: 1,
-                  background: 'linear-gradient(180deg, #ffffff 0%, #faf6ee 50%, #f0eade 100%)',
+                  background: 'linear-gradient(180deg, #ffffff 0%, #faf5e8 50%, #f0eade 100%)',
                   border: '1px solid rgba(180,160,120,0.4)',
                   borderTop: '1px solid rgba(255,255,255,0.6)',
                   borderBottom: '2px solid rgba(140,120,80,0.4)',
@@ -667,7 +734,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
                 placeholder="Prep min"
                 style={{
                   width: 80,
-                  background: 'linear-gradient(180deg, #ffffff 0%, #faf6ee 50%, #f0eade 100%)',
+                  background: 'linear-gradient(180deg, #ffffff 0%, #faf5e8 50%, #f0eade 100%)',
                   border: '1px solid rgba(180,160,120,0.4)',
                   borderTop: '1px solid rgba(255,255,255,0.6)',
                   borderBottom: '2px solid rgba(140,120,80,0.4)',
@@ -699,7 +766,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
                 style={{
                   width: '100%',
                   boxSizing: 'border-box',
-                  background: '#faf6ee',
+                  background: '#faf5e8',
                   border: '1px solid rgba(180,160,120,0.35)',
                   borderRadius: 6,
                   padding: '8px 12px',
@@ -773,8 +840,8 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
                     }))}
                     style={{
                       ...tagBase,
-                      background: 'rgba(232, 168, 23, 0.2)',
-                      border: '1px solid rgba(232, 168, 23, 0.5)',
+                      background: 'rgba(234, 162, 33, 0.2)',
+                      border: '1px solid rgba(234, 162, 33, 0.5)',
                       color: '#ffffff',
                     }}
                   >
@@ -793,7 +860,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
               style={{
                 width: '100%',
                 boxSizing: 'border-box',
-                background: 'linear-gradient(180deg, #ffffff 0%, #faf6ee 50%, #f0eade 100%)',
+                background: 'linear-gradient(180deg, #ffffff 0%, #faf5e8 50%, #f0eade 100%)',
                 border: '1px solid rgba(180,160,120,0.4)',
                 borderTop: '1px solid rgba(255,255,255,0.6)',
                 borderBottom: '2px solid rgba(140,120,80,0.4)',
@@ -916,6 +983,71 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
             </p>
           )
         )}
+        </div>}
+      </div>
+
+      {/* === NEVER AGAIN SECTION === */}
+      <div style={{ background: 'rgba(160,140,100,0.15)', borderRadius: 6, overflow: 'hidden', border: '1px solid rgba(240,232,218,0.2)', borderTop: '2px solid rgba(255,255,255,0.18)', borderBottom: '3px solid rgba(0,0,0,0.45)', boxShadow: 'inset 0 2px 0 rgba(255,255,255,0.12), inset 0 -2px 4px rgba(0,0,0,0.15), 6px 8px 18px rgba(0,0,0,0.45), 10px 14px 30px rgba(0,0,0,0.25), 2px 3px 6px rgba(0,0,0,0.3)', opacity: 0.85 }}>
+        <div onClick={() => toggleSection('neverAgain')} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 20px', cursor: 'pointer', userSelect: 'none', background: 'linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 50%, transparent 100%)', borderBottom: '1px solid rgba(0,0,0,0.15)', transition: 'background 0.2s' }}>
+          <h3 style={{ ...sectionHeader, fontSize: 34, color: '#eaa221', marginBottom: 0 }}>
+            🌿 Never Again
+          </h3>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            {excludedRecipes.length > 0 && (
+              <span style={{
+                fontFamily: 'JetBrains Mono, monospace',
+                fontSize: 12,
+                fontWeight: 700,
+                color: 'rgba(240, 232, 218, 0.85)',
+                textShadow: '1px 2px 3px rgba(0,0,0,0.6)',
+              }}>
+                {excludedRecipes.length} hidden
+              </span>
+            )}
+            <span style={{ fontSize: 18, color: '#eaa221', fontWeight: 'bold', textShadow: '0 0 6px rgba(234,162,33,0.4), 1px 1px 2px rgba(0,0,0,0.4)', transition: 'transform 0.2s', transform: expandedSections.neverAgain ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
+          </div>
+        </div>
+        {expandedSections.neverAgain && <div style={{ padding: '0 18px 18px' }}>
+          <p style={{
+            fontFamily: 'JetBrains Mono, monospace',
+            fontSize: 12,
+            color: 'rgba(240, 232, 218, 0.85)',
+            marginBottom: 12,
+            lineHeight: 1.5,
+            textShadow: '1px 2px 3px rgba(0,0,0,0.6)',
+          }}>
+            Recipes you've hidden using the <strong style={{ color: '#eaa221' }}>⌀ Never Again</strong> button. They won't appear in any future menu. Click a recipe to bring it back into the rotation.
+          </p>
+          {excludedRecipes.length === 0 ? (
+            <p style={{
+              fontFamily: 'Cormorant Garamond, serif',
+              fontSize: 14,
+              fontStyle: 'italic',
+              color: 'rgba(240, 232, 218, 0.55)',
+              textShadow: '1px 1px 2px rgba(0,0,0,0.4)',
+            }}>
+              You haven't hidden any recipes yet. Use the <strong>⌀ Never Again</strong> button on any meal card to add it here.
+            </p>
+          ) : (
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+              {excludedRecipes.map(r => (
+                <button
+                  key={r.id}
+                  onClick={() => onRestoreRecipe?.(r.id)}
+                  style={{
+                    ...tagBase,
+                    background: 'rgba(60,40,30,0.85)',
+                    border: '1px solid rgba(200,170,120,0.35)',
+                    color: '#faf5e8',
+                    fontSize: 15,
+                  }}
+                  title="Restore this recipe to your menu pool."
+                >
+                  <span style={{ color: '#eaa221', fontSize: 16, fontWeight: 900 }}>+</span> {r.name}
+                </button>
+              ))}
+            </div>
+          )}
         </div>}
       </div>
       </div>

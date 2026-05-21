@@ -28,7 +28,9 @@ app.get('/api/meal-plan', async (req, res) => {
     const filteredSales = storeFilter ? salesData.sales.filter(s => s.store === storeFilter) : salesData.sales;
     const onhand = req.query.onhand ? req.query.onhand.split(',') : [];
     const diff = req.query.difficulty || 'all';
-    const plan = generateMealPlan(filteredSales, budget, servings, exclude, favs, variation, customRecipes, onhand, diff);
+    const excludeRecipes = req.query.excludeRecipes ? req.query.excludeRecipes.split(',') : [];
+    const cuisines = req.query.cuisines ? req.query.cuisines.split(',') : [];
+    const plan = generateMealPlan(filteredSales, budget, servings, exclude, favs, variation, customRecipes, onhand, diff, excludeRecipes, cuisines);
 
     res.json({
       ...plan,
@@ -72,7 +74,9 @@ app.get('/api/grocery-list', async (req, res) => {
     const salesData = await getSales(zip, false, radius);
     const filteredSales = storeFilter ? salesData.sales.filter(s => s.store === storeFilter) : salesData.sales;
     const diff = req.query.difficulty || 'all';
-    const planData = generateMealPlan(filteredSales, null, servings, exclude, favs, variation, customRecipes, onhand, diff);
+    const excludeRecipes = req.query.excludeRecipes ? req.query.excludeRecipes.split(',') : [];
+    const cuisines = req.query.cuisines ? req.query.cuisines.split(',') : [];
+    const planData = generateMealPlan(filteredSales, null, servings, exclude, favs, variation, customRecipes, onhand, diff, excludeRecipes, cuisines);
 
     // Build a set of on-hand ingredient names from IDs
     const ingredientList = getIngredientList();
@@ -123,8 +127,10 @@ app.get('/api/recipes', async (req, res) => {
     const favs = req.query.favorites ? req.query.favorites.split(',') : [];
     let customRecipes = [];
     try { if (req.query.custom) customRecipes = JSON.parse(decodeURIComponent(req.query.custom)); } catch {}
+    const excludeRecipes = req.query.excludeRecipes ? req.query.excludeRecipes.split(',') : [];
+    const cuisines = req.query.cuisines ? req.query.cuisines.split(',') : [];
     const salesData = await getSales(zip, false, radius);
-    res.json(getAvailableRecipes(salesData.sales, servings, exclude, favs, customRecipes));
+    res.json(getAvailableRecipes(salesData.sales, servings, exclude, favs, customRecipes, excludeRecipes, cuisines));
   } catch (err) {
     res.status(500).json({ error: err.message });
   }

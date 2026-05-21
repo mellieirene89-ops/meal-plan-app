@@ -93,5 +93,13 @@
   { "id": "paprika", "name": "Paprika", "unit": "use", "basePrice": 0.10, "category": "pantry", "protein_g_per_unit": 0, "keywords": ["paprika"] },
   { "id": "italian_seasoning", "name": "Italian Seasoning", "unit": "use", "basePrice": 0.10, "category": "pantry", "protein_g_per_unit": 0, "keywords": ["italian seasoning", "oregano", "basil"] },
   { "id": "salt", "name": "Salt", "unit": "use", "basePrice": 0.02, "category": "pantry", "protein_g_per_unit": 0, "keywords": ["salt"] },
-  { "id": "pepper", "name": "Black Pepper", "unit": "use", "basePrice": 0.05, "category": "pantry", "protein_g_per_unit": 0, "keywords": ["pepper", "black pepper"] }
+  { "id": "pepper", "name": "Black Pepper", "unit": "use", "basePrice": 0.05, "category": "pantry", "protein_g_per_unit": 0, "keywords": ["pepper", "black pepper"] },
+
+  { "id": "bbq_sauce", "name": "BBQ Sauce", "unit": "use", "basePrice": 0.20, "category": "pantry", "protein_g_per_unit": 0, "keywords": ["bbq sauce", "barbecue sauce"] },
+  { "id": "feta_cheese", "name": "Feta Cheese", "unit": "serving", "basePrice": 0.95, "category": "protein", "protein_g_per_unit": 4, "keywords": ["feta", "feta cheese"] },
+  { "id": "sesame_oil", "name": "Sesame Oil", "unit": "use", "basePrice": 0.15, "category": "pantry", "protein_g_per_unit": 0, "keywords": ["sesame oil"] },
+  { "id": "parmesan", "name": "Parmesan", "unit": "serving", "basePrice": 0.85, "category": "protein", "protein_g_per_unit": 10, "keywords": ["parmesan", "parmesan cheese"] },
+
+  { "id": "frozen_berries", "name": "Frozen Mixed Berries", "unit": "serving", "basePrice": 0.45, "category": "produce", "protein_g_per_unit": 1, "keywords": ["mixed berries", "frozen berries", "berries", "blueberries", "strawberries"] },
+  { "id": "frozen_mango", "name": "Frozen Mango", "unit": "serving", "basePrice": 0.50, "category": "produce", "protein_g_per_unit": 1, "keywords": ["mango", "frozen mango"] }
 ]

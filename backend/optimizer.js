@@ -95,7 +95,7 @@ export function getIngredientList() {
   return ingredients.map(i => ({ id: i.id, name: i.name, category: i.category }));
 }
 
-export function getAvailableRecipes(sales = [], servings = 1, excludeIds = [], favoriteIds = [], customRecipes = []) {
+export function getAvailableRecipes(sales = [], servings = 1, excludeIds = [], favoriteIds = [], customRecipes = [], excludeRecipeIds = [], selectedCuisines = []) {
   const { recipes: builtInRecipes, ingredients } = loadData();
   const ingredientMap = buildIngredientMap(ingredients, sales);
 
@@ -116,6 +116,8 @@ export function getAvailableRecipes(sales = [], servings = 1, excludeIds = [], f
   for (const type of MEAL_TYPES) {
     result[type] = recipes
       .filter(r => r.mealType === type)
+      .filter(r => !excludeRecipeIds.includes(r.id))
+      .filter(r => !selectedCuisines.length || (r.tags || []).some(t => selectedCuisines.includes(t)))
       .filter(r => !excludeIds.length || !r.ingredients.some(item => excludeIds.includes(item.id)))
       .map(r => ({
         id: r.id,
@@ -150,7 +152,7 @@ function recipeDifficulty(recipe) {
   return 'expert';
 }
 
-export function generateMealPlan(sales = [], budgetCap = null, servings = 1, excludeIds = [], favoriteIds = [], variation = 0, customRecipes = [], onHandIds = [], difficulty = 'all') {
+export function generateMealPlan(sales = [], budgetCap = null, servings = 1, excludeIds = [], favoriteIds = [], variation = 0, customRecipes = [], onHandIds = [], difficulty = 'all', excludeRecipeIds = [], selectedCuisines = []) {
   const { recipes: builtInRecipes, ingredients } = loadData();
   const ingredientMap = buildIngredientMap(ingredients, sales);
 
@@ -182,6 +184,8 @@ export function generateMealPlan(sales = [], budgetCap = null, servings = 1, exc
   for (const type of MEAL_TYPES) {
     byType[type] = recipes
       .filter(r => r.mealType === type)
+      .filter(r => !excludeRecipeIds.includes(r.id))
+      .filter(r => !selectedCuisines.length || (r.tags || []).some(t => selectedCuisines.includes(t)))
       .filter(r => !excludeIds.length || !r.ingredients.some(item => excludeIds.includes(item.id)))
       .filter(r => {
         if (difficulty === 'all') return true;
@@ -228,6 +232,7 @@ export function generateMealPlan(sales = [], budgetCap = null, servings = 1, exc
       const meal = options[usedByType[type] % options.length];
       usedByType[type]++;
       plan[day][type] = {
+        id: meal.id,
         name: meal.name,
         prepMinutes: meal.prepMinutes,
         cost: meal.cost,

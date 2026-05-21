@@ -6,7 +6,7 @@ export default function LocalDeals({ sales, zip, scrapedAt, radiusMiles, noStore
   if (!sales || sales.length === 0) {
     return (
       <div style={{
-        background: '#faf6ee',
+        background: '#faf5e8',
         border: '1px solid #d4c9b0',
         borderRadius: 4,
         padding: '40px 28px',
@@ -31,9 +31,9 @@ export default function LocalDeals({ sales, zip, scrapedAt, radiusMiles, noStore
           lineHeight: 1.6,
         }}>
           {noStoresInRadius ? (
-            <>We couldn&rsquo;t find any grocery stores within <strong style={{ color: '#3a2a18' }}>{radiusMiles} miles</strong> of ZIP {zip}.<br />Try increasing your <strong style={{ color: '#3a2a18' }}>Shopping Radius</strong> above to see deals from stores further out.</>
+            <>We couldn&rsquo;t find any grocery stores within <strong style={{ color: '#3a2a18' }}>{radiusMiles} miles</strong> of ZIP {zip}.<br />Try changing your <strong style={{ color: '#3a2a18' }}>Shopping Radius</strong> above to see deals from stores further out.</>
           ) : (
-            <>Hit "↻ Find Me Deals!" to scrape live flyers for ZIP {zip}.<br />Deals are pulled from Walmart &amp; Hy-Vee weekly ads.</>
+            <>No deals matched stores within <strong style={{ color: '#3a2a18' }}>{radiusMiles} miles</strong> of ZIP {zip}.<br />Try changing your <strong style={{ color: '#3a2a18' }}>Shopping Radius</strong> above to pick up flyers from stores further out.</>
           )}
         </p>
       </div>
@@ -84,7 +84,7 @@ export default function LocalDeals({ sales, zip, scrapedAt, radiusMiles, noStore
           const isOpen = expandedStores[store] || false;
           return (
             <div key={store} style={{
-              background: '#faf6ee',
+              background: '#faf5e8',
               border: '1px solid #c4b8a0',
               borderTop: '1px solid rgba(255,255,255,0.4)',
               borderBottom: '2px solid rgba(160,140,100,0.5)',
@@ -158,7 +158,7 @@ export default function LocalDeals({ sales, zip, scrapedAt, radiusMiles, noStore
                 </div>
               </div>
               {isOpen && (
-                <div style={{ padding: '4px 18px 12px', background: '#faf6ee' }}>
+                <div style={{ padding: '4px 18px 12px', background: '#faf5e8' }}>
                   {items.map((item, i) => (
                     <div key={i} style={{
                       display: 'flex',
