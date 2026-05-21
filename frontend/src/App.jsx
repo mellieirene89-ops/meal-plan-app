@@ -171,6 +171,7 @@ export default function App() {
   const [cookingVerb, setCookingVerb] = useState(COOKING_VERBS[0]);
   // Debounce timer for auto-advancing focus after typing in number inputs.
   const advanceTimerRef = useRef(null);
+  const ctaButtonRef = useRef(null);
   const scheduleAdvance = (el, delay = 700) => {
     if (advanceTimerRef.current) clearTimeout(advanceTimerRef.current);
     advanceTimerRef.current = setTimeout(() => {
@@ -995,8 +996,19 @@ export default function App() {
               </span>
               <select
                 value={difficulty}
-                onChange={e => { setDifficulty(e.target.value); scheduleAdvance(e.target, 120); }}
-                onKeyDown={handleControlKey}
+                onChange={e => {
+                  setDifficulty(e.target.value);
+                  if (advanceTimerRef.current) clearTimeout(advanceTimerRef.current);
+                  advanceTimerRef.current = setTimeout(() => ctaButtonRef.current?.click(), 120);
+                }}
+                onKeyDown={e => {
+                  if (e.key === 'Enter') {
+                    e.preventDefault();
+                    ctaButtonRef.current?.click();
+                    return;
+                  }
+                  handleControlKey(e);
+                }}
                 style={{
                   width: 140,
                   background: '#6b5438',
@@ -1021,6 +1033,7 @@ export default function App() {
 
             <div style={{ flexBasis: '100%', display: 'flex', justifyContent: 'center', alignItems: 'flex-end', marginTop: 6 }}>
               <button
+                ref={ctaButtonRef}
                 onClick={async () => {
                   if (mode === 'deals') {
                     setTab('deals');
