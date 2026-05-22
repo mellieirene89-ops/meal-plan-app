@@ -141,6 +141,7 @@ export default function App() {
   });
   const [radius, setRadius] = useState(30);
   const [preferredStore, setPreferredStore] = useState('');
+  const [salesLoading, setSalesLoading] = useState(false);
   const [cityState, setCityState] = useState('');
   const [stateAbbr, setStateAbbr] = useState('MO');
   const groceryTaxRate = getGroceryTaxRate(stateAbbr);
@@ -316,9 +317,14 @@ export default function App() {
   const salesFromUserActionRef = useRef(false);
 
   // Keep sales (and therefore the My Store dropdown) in sync with ZIP + radius even before a plan exists.
+  // Clear stale data and reset store selection immediately so the dropdown doesn't show stores
+  // from the previous ZIP while the new fetch is in flight.
   useEffect(() => {
     if (zip.length !== 5) return;
     let cancelled = false;
+    setSalesData(null);
+    setPreferredStore('');
+    setSalesLoading(true);
     fetch(`${API}/sales?zip=${zip}&refresh=false&radius=${radius}`)
       .then(r => r.json())
       .then(data => {
@@ -326,7 +332,8 @@ export default function App() {
         salesFromUserActionRef.current = false;
         setSalesData(data);
       })
-      .catch(() => {});
+      .catch(() => {})
+      .finally(() => { if (!cancelled) setSalesLoading(false); });
     return () => { cancelled = true; };
   }, [zip, radius]);
 
@@ -952,6 +959,7 @@ export default function App() {
                 value={preferredStore}
                 onChange={e => { setPreferredStore(e.target.value); scheduleAdvance(e.target, 120); }}
                 onKeyDown={handleControlKey}
+                disabled={salesLoading}
                 style={{
                   width: 160,
                   background: '#6b5438',
@@ -963,15 +971,22 @@ export default function App() {
                   fontSize: 20,
                   fontWeight: 700,
                   outline: 'none',
-                  cursor: 'pointer',
+                  cursor: salesLoading ? 'wait' : 'pointer',
                   textShadow: '1px 1px 2px rgba(0,0,0,0.4)',
+                  opacity: salesLoading ? 0.7 : 1,
                 }}
               >
-                <option value="">All Stores</option>
-                {salesData?.sales && [...new Set(salesData.sales.map(s => s.store))].sort().map(store => {
-                  const dealCount = salesData.sales.filter(s => s.store === store).length;
-                  return <option key={store} value={store}>{store} ({dealCount} deals)</option>;
-                })}
+                {salesLoading ? (
+                  <option value="">Finding stores…</option>
+                ) : (
+                  <>
+                    <option value="">All Stores</option>
+                    {salesData?.sales && [...new Set(salesData.sales.map(s => s.store))].sort().map(store => {
+                      const dealCount = salesData.sales.filter(s => s.store === store).length;
+                      return <option key={store} value={store}>{store} ({dealCount} deals)</option>;
+                    })}
+                  </>
+                )}
               </select>
             </label>
 
