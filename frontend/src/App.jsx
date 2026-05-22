@@ -1071,6 +1071,14 @@ export default function App() {
                   textShadow: '0 1px 0 rgba(255,255,255,0.3)',
                   opacity: 1,
                   transition: 'background 0.3s ease',
+                  // Lock the dimensions so the button doesn't reflow when the loading
+                  // verbs (32px italic Cormorant) replace the 26px Amatic CTA text.
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  minWidth: 360,
+                  height: 66,
+                  boxSizing: 'border-box',
                 }}
               >
                 {loading ? (
