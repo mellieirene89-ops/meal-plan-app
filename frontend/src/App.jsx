@@ -346,6 +346,14 @@ export default function App() {
     setSkippedMeals({});
   }, [difficulty]);
 
+  // When mode changes, snap tab to one that's actually valid for that mode. Without this,
+  // a saved mealmaker_mode = 'deals' would load the app with tab still set to the default 'plan',
+  // and the plan tab tried to render with planData = null and crashed.
+  useEffect(() => {
+    const validTabs = mode === 'deals' ? ['preferences', 'deals'] : ['preferences', 'plan', 'recipes', 'grocery', 'deals'];
+    if (!validTabs.includes(tab)) setTab(mode === 'deals' ? 'deals' : 'plan');
+  }, [mode]);
+
   // Recompute grocery list when meals are skipped, using plan data
   function getFilteredGroceryData() {
     if (!effectivePlan || !groceryData) return groceryData;
@@ -1255,11 +1263,11 @@ export default function App() {
                   : salesData?.noStoresInRadius
                     ? <>No grocery stores within {salesData.radiusMiles}mi — try a wider radius</>
                     : 'No deals yet'}
-                {' · '}Serves: <span style={{ fontWeight: 900, color: 'rgba(240, 232, 218, 0.85)' }}>{planData.servings}</span>
+                {planData && <>{' · '}Serves: <span style={{ fontWeight: 900, color: 'rgba(240, 232, 218, 0.85)' }}>{planData.servings}</span></>}
               </span>
             </div>
 
-            {tab === 'plan' && <>
+            {tab === 'plan' && planData && <>
               <div style={{
                 marginBottom: 18,
                 padding: '16px 22px',
@@ -1482,7 +1490,7 @@ export default function App() {
             }} />
               </div>
             </>}
-            {tab === 'recipes' && <Recipes plan={effectivePlan} focusTarget={recipeFocus} onFocusHandled={() => setRecipeFocus(null)} />}
+            {tab === 'recipes' && planData && <Recipes plan={effectivePlan} focusTarget={recipeFocus} onFocusHandled={() => setRecipeFocus(null)} />}
             {tab === 'grocery' && filteredGroceryData && (
               <GroceryList
                 items={filteredGroceryData.items}
