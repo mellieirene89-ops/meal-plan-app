@@ -385,7 +385,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
           lineHeight: 1.5,
           textShadow: '1px 2px 3px rgba(0,0,0,0.6)',
         }}>
-          These stay in recipes but won't count toward your shopping list total.
+          Recipes using these get pinned to the top of your menu so they get used up before they spoil — and they won't count toward your shopping list total.
         </p>
 
         {/* Search bar for on-hand */}

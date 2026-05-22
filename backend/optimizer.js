@@ -207,6 +207,17 @@ export function generateMealPlan(sales = [], budgetCap = null, servings = 1, exc
       .sort((a, b) => b.score - a.score);
   }
 
+  // On-hand priority pass: pin recipes that use any "Already in my kitchen" ingredient
+  // to the top of each meal type. User intent: make sure on-hand items get used up before
+  // they spoil — so they should bias the menu, not get filtered out or merely nudged.
+  if (onHandIds.length > 0) {
+    for (const type of MEAL_TYPES) {
+      const usesOnHand = byType[type].filter(r => r.ingredients.some(i => onHandIds.includes(i.id)));
+      const noOnHand = byType[type].filter(r => !r.ingredients.some(i => onHandIds.includes(i.id)));
+      byType[type] = [...usesOnHand, ...noOnHand];
+    }
+  }
+
   // Assign meals across 7 days, using unique recipes per meal type
   // Variation shifts the starting offset so each variation produces a different menu
   const plan = {};
@@ -214,7 +225,13 @@ export function generateMealPlan(sales = [], budgetCap = null, servings = 1, exc
   const usedByType = {};
   for (const type of MEAL_TYPES) {
     const count = byType[type].length;
-    usedByType[type] = count > 0 ? variation % count : 0;
+    // When on-hand recipes exist, clip the variation offset to land inside that block —
+    // otherwise variation could skip past all of them and pick only non-on-hand.
+    const onHandSubsetLen = onHandIds.length > 0
+      ? byType[type].filter(r => r.ingredients.some(i => onHandIds.includes(i.id))).length
+      : 0;
+    const cap = onHandSubsetLen > 0 ? onHandSubsetLen : count;
+    usedByType[type] = cap > 0 ? variation % cap : 0;
   }
 
   for (let i = 0; i < DAYS.length; i++) {
