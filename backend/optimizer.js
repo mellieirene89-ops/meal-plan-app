@@ -65,12 +65,19 @@ function buildIngredientMap(ingredients, sales = []) {
   return map;
 }
 
+// per_serving on an ingredient calibrates the recipe-level qty against realistic
+// per-serving portions (e.g. lemon qty=1 in a "wedge" recipe = ~1/7 of a lemon,
+// not 1 whole lemon). Defaults to 1 when the ingredient doesn't specify.
+function perServing(ing) {
+  return ing?.per_serving ?? 1;
+}
+
 function calcRecipeCost(recipe, ingredientMap) {
   let cost = 0;
   for (const item of recipe.ingredients) {
     const ing = ingredientMap[item.id];
     if (!ing) continue;
-    cost += ing.currentPrice * item.qty;
+    cost += ing.currentPrice * item.qty * perServing(ing);
   }
   return Math.round(cost * 100) / 100;
 }
@@ -80,7 +87,7 @@ function calcRecipeProtein(recipe, ingredientMap) {
   for (const item of recipe.ingredients) {
     const ing = ingredientMap[item.id];
     if (!ing) continue;
-    protein += ing.protein_g_per_unit * item.qty;
+    protein += ing.protein_g_per_unit * item.qty * perServing(ing);
   }
   return Math.round(protein);
 }
@@ -151,7 +158,7 @@ export function populateMealPlanFromIds(idsByDay = {}, sales = [], servings = 1,
           measure: scaleMeasure(item.measure, servings / BASE_SERVINGS),
           onSale: ingredientMap[item.id]?.onSale || false,
           saleStore: ingredientMap[item.id]?.saleStore || null,
-          qty: item.qty * servings, cost: Math.round(ingredientMap[item.id]?.currentPrice * item.qty * servings * 100) / 100,
+          qty: item.qty * perServing(ingredientMap[item.id]) * servings, cost: Math.round((ingredientMap[item.id]?.currentPrice || 0) * item.qty * perServing(ingredientMap[item.id]) * servings * 100) / 100,
         })),
       };
       dayTotal += cost;
@@ -207,7 +214,7 @@ export function getAvailableRecipes(sales = [], servings = 1, excludeIds = [], f
           measure: scaleMeasure(item.measure, servings / BASE_SERVINGS),
           onSale: ingredientMap[item.id]?.onSale || false,
           saleStore: ingredientMap[item.id]?.saleStore || null,
-          qty: item.qty * servings, cost: Math.round(ingredientMap[item.id]?.currentPrice * item.qty * servings * 100) / 100
+          qty: item.qty * perServing(ingredientMap[item.id]) * servings, cost: Math.round((ingredientMap[item.id]?.currentPrice || 0) * item.qty * perServing(ingredientMap[item.id]) * servings * 100) / 100
         }))
       }))
       .sort((a, b) => b.score - a.score);
@@ -439,7 +446,7 @@ export function generateMealPlan(sales = [], budgetCap = null, servings = 1, exc
           measure: scaleMeasure(item.measure, servings / BASE_SERVINGS),
           onSale: ingredientMap[item.id]?.onSale || false,
           saleStore: ingredientMap[item.id]?.saleStore || null,
-          qty: item.qty * servings, cost: Math.round(ingredientMap[item.id]?.currentPrice * item.qty * servings * 100) / 100
+          qty: item.qty * perServing(ingredientMap[item.id]) * servings, cost: Math.round((ingredientMap[item.id]?.currentPrice || 0) * item.qty * perServing(ingredientMap[item.id]) * servings * 100) / 100
         }))
       };
       dayTotal += meal.cost;
@@ -508,7 +515,7 @@ export function generateMealPlan(sales = [], budgetCap = null, servings = 1, exc
             measure: scaleMeasure(item.measure, servings / BASE_SERVINGS),
             onSale: ingredientMap[item.id]?.onSale || false,
             saleStore: ingredientMap[item.id]?.saleStore || null,
-            qty: item.qty * servings, cost: Math.round(ingredientMap[item.id]?.currentPrice * item.qty * servings * 100) / 100
+            qty: item.qty * perServing(ingredientMap[item.id]) * servings, cost: Math.round((ingredientMap[item.id]?.currentPrice || 0) * item.qty * perServing(ingredientMap[item.id]) * servings * 100) / 100
           }))
         };
         let dt = 0;

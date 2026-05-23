@@ -11,7 +11,10 @@ const PORT = 3001;
 function formatGroceryQty(totalQty, unit) {
   if (!unit || totalQty <= 0) return null;
   if (unit === 'use') return null; // "8 uses of olive oil" doesn't help anyone
-  const n = totalQty;
+  // Countable units (you can't buy half a lemon or a third of a can) round UP
+  // to the next whole; fractional display is reserved for measure units like cup/tbsp.
+  const COUNTABLE = new Set(['each', 'can', 'head', 'slice', 'bunch', 'block', 'jar', 'packet', 'pack', 'box', 'piece', 'stalk']);
+  const n = COUNTABLE.has(unit) ? Math.ceil(totalQty) : totalQty;
   const display = (() => {
     if (n < 0.01) return '0';
     const whole = Math.floor(n);
