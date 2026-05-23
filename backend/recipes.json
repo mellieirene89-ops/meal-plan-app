@@ -16226,5 +16226,238 @@
       "Press lightly so the cheese starts to melt, then slice and serve."
     ],
     "difficulty": "intermediate"
+  },
+  {
+    "id": "classic_cheeseburger",
+    "name": "Classic Cheeseburger with Buttered Buns",
+    "mealType": "dinner",
+    "prepMinutes": 20,
+    "ingredients": [
+      { "id": "ground_beef", "qty": 1, "measure": "1/3 lb patty" },
+      { "id": "bread", "qty": 2, "measure": "2 slices (or 1 bun)" },
+      { "id": "cheddar", "qty": 1, "measure": "1 slice" },
+      { "id": "lettuce", "qty": 1, "measure": "2 leaves" },
+      { "id": "fresh_tomato", "qty": 1, "measure": "2 slices" },
+      { "id": "garlic_onion", "qty": 1, "measure": "thin slices" },
+      { "id": "mayo", "qty": 1, "measure": "1 tbsp" },
+      { "id": "ketchup", "qty": 1, "measure": "1 tbsp" },
+      { "id": "butter", "qty": 1, "measure": "1 tsp, for the bun" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["american-classic", "comfort-food", "high-protein"],
+    "instructions": [
+      "Form ground beef into a loose 1/3 lb patty, slightly wider than the bun. Season both sides with salt and pepper.",
+      "Heat a heavy skillet over high until smoking. Add the patty and press once; cook 2 minutes per side for medium.",
+      "Lay the cheese on the patty in the last 30 seconds; cover briefly to melt.",
+      "Butter the cut sides of the buns and toast face-down in a separate pan until golden.",
+      "Build: bottom bun, mayo, lettuce, tomato, patty with cheese, onion, ketchup, top bun. Serve right away."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "bacon_cheeseburger_onion_rings",
+    "name": "Bacon Cheeseburger with Crispy Onion Rings",
+    "mealType": "dinner",
+    "prepMinutes": 35,
+    "ingredients": [
+      { "id": "ground_beef", "qty": 1, "measure": "1/3 lb patty" },
+      { "id": "bread", "qty": 2, "measure": "2 slices (or 1 bun)" },
+      { "id": "cheddar", "qty": 1, "measure": "1 slice" },
+      { "id": "bacon", "qty": 1, "measure": "2 strips" },
+      { "id": "lettuce", "qty": 1, "measure": "2 leaves" },
+      { "id": "garlic_onion", "qty": 2, "measure": "1 large onion, sliced into rings" },
+      { "id": "flour", "qty": 0.5, "measure": "1/2 cup" },
+      { "id": "milk", "qty": 0.5, "measure": "1/2 cup" },
+      { "id": "vegetable_oil", "qty": 1, "measure": "for frying" },
+      { "id": "paprika", "qty": 1, "measure": "1/2 tsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["american-classic", "comfort-food", "high-protein", "filling"],
+    "instructions": [
+      "Slice onion into thick rings, separate the layers. Soak in milk 5 minutes.",
+      "Heat 1 inch of oil in a heavy pot to 360°F. Mix flour, paprika, and salt on a plate.",
+      "Dredge each ring in the flour, fry 2-3 minutes until deep golden, drain on paper towels and salt immediately.",
+      "Cook bacon in a skillet until crisp; drain. In the bacon fat, form a 1/3 lb patty and cook 2 min per side, melting cheese in the last 30 seconds.",
+      "Toast the bun face-down in the same pan. Build: bun, lettuce, patty with cheese, bacon, top bun. Pile onion rings on the side."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "crispy_chicken_tenders_mash_green_beans",
+    "name": "Crispy Chicken Tenders with Mashed Potatoes & Green Beans",
+    "mealType": "dinner",
+    "prepMinutes": 40,
+    "ingredients": [
+      { "id": "chicken_breast", "qty": 1, "measure": "8 oz, cut into 4 tenders" },
+      { "id": "flour", "qty": 0.5, "measure": "1/2 cup" },
+      { "id": "eggs", "qty": 1, "measure": "1 large, beaten" },
+      { "id": "bread", "qty": 2, "measure": "2 slices, blitzed to crumbs" },
+      { "id": "potato", "qty": 2, "measure": "2 medium, peeled and cubed" },
+      { "id": "butter", "qty": 3, "measure": "3 tbsp" },
+      { "id": "milk", "qty": 0.5, "measure": "1/2 cup, warmed" },
+      { "id": "green_beans", "qty": 1, "measure": "1/2 can, rinsed" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1 clove garlic, minced" },
+      { "id": "paprika", "qty": 1, "measure": "1 tsp" },
+      { "id": "vegetable_oil", "qty": 2, "measure": "for shallow frying" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["american-classic", "comfort-food", "high-protein", "filling", "kid-friendly"],
+    "instructions": [
+      "Boil cubed potato in salted water 15 minutes until fork-tender; drain.",
+      "Mash with warm milk and 2 tbsp butter until smooth. Season with salt and pepper. Cover to keep warm.",
+      "Set up dredging: flour seasoned with paprika and salt; beaten egg; breadcrumbs.",
+      "Dredge each tender in flour, then egg, then crumbs. Press to adhere.",
+      "Shallow-fry tenders in 1/4 inch oil over medium-high, 3 minutes per side, until golden and 165°F inside. Drain on paper towels.",
+      "Meanwhile, sauté green beans with garlic and the remaining tbsp butter for 4 minutes until just tender.",
+      "Plate mashed potatoes, tenders, and green beans together."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "honey_mustard_tenders_sweet_potato_fries",
+    "name": "Honey-Mustard Chicken Tenders with Sweet Potato Fries",
+    "mealType": "dinner",
+    "prepMinutes": 35,
+    "ingredients": [
+      { "id": "chicken_breast", "qty": 1, "measure": "8 oz, cut into 4 tenders" },
+      { "id": "flour", "qty": 0.33, "measure": "1/3 cup" },
+      { "id": "eggs", "qty": 1, "measure": "1 large, beaten" },
+      { "id": "bread", "qty": 2, "measure": "2 slices, blitzed to crumbs" },
+      { "id": "sweet_potato", "qty": 2, "measure": "2 medium, cut into fries" },
+      { "id": "olive_oil", "qty": 2, "measure": "2 tbsp" },
+      { "id": "honey", "qty": 2, "measure": "2 tbsp" },
+      { "id": "mustard", "qty": 2, "measure": "2 tbsp" },
+      { "id": "mayo", "qty": 1, "measure": "1 tbsp" },
+      { "id": "paprika", "qty": 1, "measure": "1 tsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["american-classic", "comfort-food", "high-protein", "kid-friendly"],
+    "instructions": [
+      "Heat oven to 425°F. Toss sweet-potato fries with 1 tbsp olive oil, paprika, and salt. Spread on a sheet pan in a single layer.",
+      "Roast 20 minutes, flipping once halfway through.",
+      "Dredge tenders: flour with salt, then egg, then breadcrumbs.",
+      "Heat remaining oil in a skillet over medium-high. Pan-fry tenders 3 minutes per side until golden and cooked through.",
+      "Whisk honey, mustard, and mayo for a quick dipping sauce.",
+      "Serve tenders alongside the fries with the honey-mustard."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "country_meatloaf_mashed_potatoes",
+    "name": "Country Meatloaf with Mashed Potatoes",
+    "mealType": "dinner",
+    "prepMinutes": 75,
+    "ingredients": [
+      { "id": "ground_beef", "qty": 1.5, "measure": "1 lb" },
+      { "id": "eggs", "qty": 1, "measure": "1 large" },
+      { "id": "bread", "qty": 2, "measure": "2 slices, blitzed to crumbs" },
+      { "id": "milk", "qty": 0.25, "measure": "1/4 cup" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1/2 onion, finely diced + 1 clove garlic" },
+      { "id": "ketchup", "qty": 3, "measure": "3 tbsp + 2 tbsp for the glaze" },
+      { "id": "italian_seasoning", "qty": 1, "measure": "1 tsp" },
+      { "id": "potato", "qty": 2, "measure": "2 medium, peeled and cubed" },
+      { "id": "butter", "qty": 3, "measure": "3 tbsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["american-classic", "comfort-food", "high-protein", "filling"],
+    "instructions": [
+      "Heat oven to 375°F. Soak breadcrumbs in milk for 5 minutes.",
+      "Mix beef, egg, soaked crumbs, onion-garlic, 3 tbsp ketchup, Italian seasoning, salt, and pepper just until combined — don't overwork.",
+      "Shape into a 9x5 loaf on a parchment-lined sheet pan. Brush the top with the remaining ketchup.",
+      "Bake 45-55 minutes until internal temperature hits 160°F. Rest 10 minutes before slicing.",
+      "While it bakes, boil potatoes 15 minutes until tender; mash with butter, a splash of milk, salt, and pepper.",
+      "Slice meatloaf and serve over the mash."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "buffalo_tenders_ranch_slaw",
+    "name": "Buffalo Chicken Tenders with Ranch Slaw",
+    "mealType": "dinner",
+    "prepMinutes": 30,
+    "ingredients": [
+      { "id": "chicken_breast", "qty": 1, "measure": "8 oz, cut into tenders" },
+      { "id": "flour", "qty": 0.5, "measure": "1/2 cup" },
+      { "id": "eggs", "qty": 1, "measure": "1 large, beaten" },
+      { "id": "hot_sauce", "qty": 3, "measure": "3 tbsp Frank's-style" },
+      { "id": "butter", "qty": 2, "measure": "2 tbsp, melted" },
+      { "id": "cabbage", "qty": 1, "measure": "2 cups, shredded" },
+      { "id": "carrots", "qty": 1, "measure": "1, shredded" },
+      { "id": "mayo", "qty": 3, "measure": "3 tbsp" },
+      { "id": "ranch_mix", "qty": 0.5, "measure": "1/2 packet" },
+      { "id": "vegetable_oil", "qty": 1, "measure": "for shallow frying" },
+      { "id": "salt", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["american-classic", "comfort-food", "high-protein"],
+    "instructions": [
+      "Toss cabbage and carrots with mayo, ranch mix, and a pinch of salt. Refrigerate while you cook.",
+      "Whisk hot sauce and melted butter for the buffalo coating; set aside.",
+      "Dredge tenders in seasoned flour, then egg, then flour again for an extra-crispy coat.",
+      "Shallow-fry in 1/4 inch oil over medium-high, 3 minutes per side until golden and 165°F inside.",
+      "Toss hot tenders in the buffalo sauce.",
+      "Serve over the ranch slaw."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "smash_burger_onion_rings",
+    "name": "Smash Burger with Onion Rings",
+    "mealType": "dinner",
+    "prepMinutes": 30,
+    "ingredients": [
+      { "id": "ground_beef", "qty": 1, "measure": "1/3 lb, divided into 2 balls" },
+      { "id": "bread", "qty": 2, "measure": "2 slices (or 1 bun)" },
+      { "id": "cheddar", "qty": 1, "measure": "2 slices" },
+      { "id": "garlic_onion", "qty": 2, "measure": "1 large onion for rings + thin slices for burger" },
+      { "id": "flour", "qty": 0.5, "measure": "1/2 cup" },
+      { "id": "milk", "qty": 0.5, "measure": "1/2 cup" },
+      { "id": "vegetable_oil", "qty": 1, "measure": "for frying" },
+      { "id": "mayo", "qty": 1, "measure": "1 tbsp" },
+      { "id": "butter", "qty": 1, "measure": "1 tsp for the bun" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["american-classic", "comfort-food", "high-protein"],
+    "instructions": [
+      "Cut onion into rings; soak in milk while you heat 1 inch of oil to 360°F.",
+      "Dredge rings in seasoned flour and fry 2-3 minutes until deep golden; drain and salt immediately.",
+      "Get a cast-iron skillet ripping hot. Place beef balls on the dry pan and smash flat with a spatula — paper-thin is the goal.",
+      "Season the tops, cook 90 seconds until the edges are lacy and crispy. Flip, top each with cheese, cook 30 seconds more.",
+      "Butter the cut sides of the bun and toast in the same skillet.",
+      "Build: bun, mayo, two stacked patties, raw onion, top bun. Serve with the onion rings."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "turkey_burger_sweet_potato_fries",
+    "name": "Turkey Burger with Sweet Potato Fries",
+    "mealType": "lunch",
+    "prepMinutes": 30,
+    "ingredients": [
+      { "id": "ground_turkey", "qty": 1, "measure": "1/3 lb patty" },
+      { "id": "bread", "qty": 2, "measure": "2 slices (or 1 bun)" },
+      { "id": "cheddar", "qty": 1, "measure": "1 slice" },
+      { "id": "lettuce", "qty": 1, "measure": "2 leaves" },
+      { "id": "fresh_tomato", "qty": 1, "measure": "2 slices" },
+      { "id": "garlic_onion", "qty": 1, "measure": "thin slices + 1 clove garlic for the patty" },
+      { "id": "sweet_potato", "qty": 2, "measure": "2 medium, cut into fries" },
+      { "id": "olive_oil", "qty": 2, "measure": "2 tbsp" },
+      { "id": "paprika", "qty": 1, "measure": "1 tsp" },
+      { "id": "mayo", "qty": 1, "measure": "1 tbsp" },
+      { "id": "italian_seasoning", "qty": 1, "measure": "1/2 tsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["american-classic", "comfort-food", "high-protein"],
+    "instructions": [
+      "Heat oven to 425°F. Toss sweet-potato fries with 1 tbsp olive oil, paprika, and salt. Roast 20 minutes, flipping halfway.",
+      "Mix ground turkey with minced garlic, Italian seasoning, and a pinch of salt. Form a 1/3 lb patty.",
+      "Heat 1 tbsp olive oil in a skillet over medium-high. Cook the patty 4 minutes per side until 165°F inside, melting cheese in the last 30 seconds.",
+      "Toast the bun face-down in the skillet.",
+      "Build: bun, mayo, lettuce, patty with cheese, tomato, onion, top bun. Serve with the fries."
+    ],
+    "difficulty": "beginner"
   }
 ]
