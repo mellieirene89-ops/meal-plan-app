@@ -403,69 +403,78 @@ export function generateMealPlan(sales = [], budgetCap = null, servings = 1, exc
 
   // Budget reconciliation: when the user generated the plan from the CTA we want
   // the first menu they see to land under (or near) the cap. Iteratively swap the
-  // most expensive pick for a cheaper unused alternative that does not violate
-  // the no-same-style-in-a-row rule with its neighbors. Change It Up sets
-  // respectBudget=false to opt out — the user explicitly asked for fresh recipes,
-  // even if they push the total over.
+  // most expensive pick for a cheaper unused alternative.
+  //
+  // Two passes: first try to stay under the cap WITH the no-same-style-in-a-row
+  // rule respected (preferred — variety + budget). If the week is still over
+  // because every cheaper option would put two scrambles/toasts/etc in a row,
+  // run a second pass that relaxes adjacency so the budget always wins when
+  // forced to choose. Change It Up sets respectBudget=false to opt out entirely.
   if (respectBudget && budgetCap && weeklyTotal > budgetCap) {
     const SAFETY_LIMIT = DAYS.length * MEAL_TYPES.length * 2;
-    let iter = 0;
-    while (weeklyTotal > budgetCap && iter < SAFETY_LIMIT) {
-      iter++;
-      const usedIds = new Set();
-      for (const d of DAYS) for (const t of MEAL_TYPES) {
-        const m = plan[d][t]; if (m) usedIds.add(m.id);
-      }
-      let bestSwap = null; // { dayIdx, type, savings, candidate }
-      for (let di = 0; di < DAYS.length; di++) {
-        for (const t of MEAL_TYPES) {
-          const current = plan[DAYS[di]][t];
-          if (!current) continue;
-          const prevC = di > 0 && plan[DAYS[di - 1]][t] ? recipeCategory(plan[DAYS[di - 1]][t]) : null;
-          const nextC = di < DAYS.length - 1 && plan[DAYS[di + 1]][t] ? recipeCategory(plan[DAYS[di + 1]][t]) : null;
-          for (const candidate of byType[t]) {
-            if (usedIds.has(candidate.id)) continue;
-            if (candidate.cost >= current.cost) continue;
-            const cC = recipeCategory(candidate);
-            if (cC === prevC || cC === nextC) continue;
-            const savings = current.cost - candidate.cost;
-            if (!bestSwap || savings > bestSwap.savings) {
-              bestSwap = { dayIdx: di, type: t, savings, candidate };
+    const runSwapDown = (respectAdjacency) => {
+      let iter = 0;
+      while (weeklyTotal > budgetCap && iter < SAFETY_LIMIT) {
+        iter++;
+        const usedIds = new Set();
+        for (const d of DAYS) for (const t of MEAL_TYPES) {
+          const m = plan[d][t]; if (m) usedIds.add(m.id);
+        }
+        let bestSwap = null; // { dayIdx, type, savings, candidate }
+        for (let di = 0; di < DAYS.length; di++) {
+          for (const t of MEAL_TYPES) {
+            const current = plan[DAYS[di]][t];
+            if (!current) continue;
+            const prevC = respectAdjacency && di > 0 && plan[DAYS[di - 1]][t] ? recipeCategory(plan[DAYS[di - 1]][t]) : null;
+            const nextC = respectAdjacency && di < DAYS.length - 1 && plan[DAYS[di + 1]][t] ? recipeCategory(plan[DAYS[di + 1]][t]) : null;
+            for (const candidate of byType[t]) {
+              if (usedIds.has(candidate.id)) continue;
+              if (candidate.cost >= current.cost) continue;
+              if (respectAdjacency) {
+                const cC = recipeCategory(candidate);
+                if (cC === prevC || cC === nextC) continue;
+              }
+              const savings = current.cost - candidate.cost;
+              if (!bestSwap || savings > bestSwap.savings) {
+                bestSwap = { dayIdx: di, type: t, savings, candidate };
+              }
             }
           }
         }
+        if (!bestSwap) return; // No further beneficial swap at this constraint level
+        const day = DAYS[bestSwap.dayIdx];
+        const c = bestSwap.candidate;
+        plan[day][bestSwap.type] = {
+          id: c.id,
+          name: c.name,
+          prepMinutes: c.prepMinutes,
+          cost: c.cost,
+          protein_g: c.protein_g,
+          veggie_count: c.veggie_count,
+          onSaleIngredients: c.onSaleIngredients,
+          tags: c.tags,
+          instructions: c.instructions || [],
+          ingredients: c.ingredients.map(item => ({
+            id: item.id,
+            name: ingredientMap[item.id]?.name || item.id,
+            measure: item.measure || null,
+            onSale: ingredientMap[item.id]?.onSale || false,
+            saleStore: ingredientMap[item.id]?.saleStore || null,
+            cost: Math.round(ingredientMap[item.id]?.currentPrice * item.qty * servings * 100) / 100
+          }))
+        };
+        let dt = 0;
+        for (const tt of MEAL_TYPES) { const m = plan[day][tt]; if (m) dt += m.cost; }
+        plan[day].dayTotal = Math.round(dt * 100) / 100;
+        weeklyTotal = 0;
+        for (const d of DAYS) {
+          for (const tt of MEAL_TYPES) { const m = plan[d][tt]; if (m) weeklyTotal += m.cost; }
+        }
       }
-      if (!bestSwap) break; // No further beneficial swap available
-      const day = DAYS[bestSwap.dayIdx];
-      const c = bestSwap.candidate;
-      plan[day][bestSwap.type] = {
-        id: c.id,
-        name: c.name,
-        prepMinutes: c.prepMinutes,
-        cost: c.cost,
-        protein_g: c.protein_g,
-        veggie_count: c.veggie_count,
-        onSaleIngredients: c.onSaleIngredients,
-        tags: c.tags,
-        instructions: c.instructions || [],
-        ingredients: c.ingredients.map(item => ({
-          id: item.id,
-          name: ingredientMap[item.id]?.name || item.id,
-          measure: item.measure || null,
-          onSale: ingredientMap[item.id]?.onSale || false,
-          saleStore: ingredientMap[item.id]?.saleStore || null,
-          cost: Math.round(ingredientMap[item.id]?.currentPrice * item.qty * servings * 100) / 100
-        }))
-      };
-      // Recompute day total + week total from scratch for safety
-      let dt = 0;
-      for (const tt of MEAL_TYPES) { const m = plan[day][tt]; if (m) dt += m.cost; }
-      plan[day].dayTotal = Math.round(dt * 100) / 100;
-      weeklyTotal = 0;
-      for (const d of DAYS) {
-        for (const tt of MEAL_TYPES) { const m = plan[d][tt]; if (m) weeklyTotal += m.cost; }
-      }
-    }
+    };
+
+    runSwapDown(true);
+    if (weeklyTotal > budgetCap) runSwapDown(false);
   }
 
   return {
