@@ -1,6 +1,6 @@
 const POSITION_STYLES = {
-  'top-left':     { top: -10, left: -18, rotate: -32 },
-  'top-right':    { top: -10, right: -18, rotate: 32 },
+  'top-left':     { top: -11, left: -46, rotate: -45 },
+  'top-right':    { top: -11, right: -46, rotate: 45 },
   'bottom-left':  { bottom: -11, left: -46, rotate: 45 },
   'bottom-right': { bottom: -11, right: -46, rotate: -45 },
 };
