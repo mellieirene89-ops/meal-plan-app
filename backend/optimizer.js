@@ -112,7 +112,7 @@ function scoreRecipe(recipe, ingredientMap, favoriteIds = [], onHandIds = []) {
 
 export function getIngredientList() {
   const { ingredients } = loadData();
-  return ingredients.map(i => ({ id: i.id, name: i.name, category: i.category }));
+  return ingredients.map(i => ({ id: i.id, name: i.name, category: i.category, unit: i.unit }));
 }
 
 // Build a meal-plan response from an explicit recipe-id-per-day-per-meal-type map.
@@ -151,7 +151,7 @@ export function populateMealPlanFromIds(idsByDay = {}, sales = [], servings = 1,
           measure: scaleMeasure(item.measure, servings / BASE_SERVINGS),
           onSale: ingredientMap[item.id]?.onSale || false,
           saleStore: ingredientMap[item.id]?.saleStore || null,
-          cost: Math.round(ingredientMap[item.id]?.currentPrice * item.qty * servings * 100) / 100,
+          qty: item.qty * servings, cost: Math.round(ingredientMap[item.id]?.currentPrice * item.qty * servings * 100) / 100,
         })),
       };
       dayTotal += cost;
@@ -207,7 +207,7 @@ export function getAvailableRecipes(sales = [], servings = 1, excludeIds = [], f
           measure: scaleMeasure(item.measure, servings / BASE_SERVINGS),
           onSale: ingredientMap[item.id]?.onSale || false,
           saleStore: ingredientMap[item.id]?.saleStore || null,
-          cost: Math.round(ingredientMap[item.id]?.currentPrice * item.qty * servings * 100) / 100
+          qty: item.qty * servings, cost: Math.round(ingredientMap[item.id]?.currentPrice * item.qty * servings * 100) / 100
         }))
       }))
       .sort((a, b) => b.score - a.score);
@@ -439,7 +439,7 @@ export function generateMealPlan(sales = [], budgetCap = null, servings = 1, exc
           measure: scaleMeasure(item.measure, servings / BASE_SERVINGS),
           onSale: ingredientMap[item.id]?.onSale || false,
           saleStore: ingredientMap[item.id]?.saleStore || null,
-          cost: Math.round(ingredientMap[item.id]?.currentPrice * item.qty * servings * 100) / 100
+          qty: item.qty * servings, cost: Math.round(ingredientMap[item.id]?.currentPrice * item.qty * servings * 100) / 100
         }))
       };
       dayTotal += meal.cost;
@@ -508,7 +508,7 @@ export function generateMealPlan(sales = [], budgetCap = null, servings = 1, exc
             measure: scaleMeasure(item.measure, servings / BASE_SERVINGS),
             onSale: ingredientMap[item.id]?.onSale || false,
             saleStore: ingredientMap[item.id]?.saleStore || null,
-            cost: Math.round(ingredientMap[item.id]?.currentPrice * item.qty * servings * 100) / 100
+            qty: item.qty * servings, cost: Math.round(ingredientMap[item.id]?.currentPrice * item.qty * servings * 100) / 100
           }))
         };
         let dt = 0;

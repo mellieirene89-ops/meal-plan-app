@@ -204,7 +204,7 @@ function ItemRow({ item }) {
       gap: 12,
       opacity: item.onHand ? 0.5 : 1,
     }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 9 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 9, minWidth: 0 }}>
         <span style={{
           fontFamily: 'Cormorant Garamond, serif',
           fontSize: 15,
@@ -214,6 +214,21 @@ function ItemRow({ item }) {
         }}>
           {item.name}
         </span>
+        {item.quantityLabel && !item.onHand && (
+          <span style={{
+            fontFamily: 'JetBrains Mono, monospace',
+            fontSize: 11,
+            fontWeight: 700,
+            color: '#5a4a30',
+            background: 'rgba(58, 42, 24, 0.12)',
+            padding: '2px 7px',
+            borderRadius: 4,
+            letterSpacing: '0.02em',
+            whiteSpace: 'nowrap',
+          }}>
+            {item.quantityLabel}
+          </span>
+        )}
         {item.onHand && (
           <span style={{
             background: '#1a6b3a',

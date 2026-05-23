@@ -6,6 +6,30 @@ import { getSales } from './scraper.js';
 const app = express();
 const PORT = 3001;
 
+// Format the aggregated grocery quantity for display.
+// Returns null when the unit is too abstract to be useful in a shopping list.
+function formatGroceryQty(totalQty, unit) {
+  if (!unit || totalQty <= 0) return null;
+  if (unit === 'use') return null; // "8 uses of olive oil" doesn't help anyone
+  const n = totalQty;
+  const display = (() => {
+    if (n < 0.01) return '0';
+    const whole = Math.floor(n);
+    const frac = n - whole;
+    const FRACS = [[0.25, '1/4'], [0.333, '1/3'], [0.5, '1/2'], [0.666, '2/3'], [0.75, '3/4']];
+    for (const [v, lbl] of FRACS) {
+      if (Math.abs(frac - v) < 0.05) return whole === 0 ? lbl : `${whole} ${lbl}`;
+    }
+    if (frac < 0.05) return String(whole);
+    if (frac > 0.95) return String(whole + 1);
+    return n.toFixed(1).replace(/\.0$/, '');
+  })();
+  if (unit === 'each') return display; // "12" reads better than "12 each"
+  const PLURAL = { cup: 'cups', slice: 'slices', can: 'cans', pack: 'packs', box: 'boxes', block: 'blocks', head: 'heads', bunch: 'bunches', stalk: 'stalks', packet: 'packets', jar: 'jars', serving: 'servings', piece: 'pieces' };
+  const u = n === 1 ? unit : (PLURAL[unit] || unit + 's');
+  return `${display} ${u}`;
+}
+
 app.use(cors());
 app.use(express.json({ limit: '1mb' }));
 
@@ -85,33 +109,57 @@ app.get('/api/grocery-list', async (req, res) => {
     const cuisines = req.query.cuisines ? req.query.cuisines.split(',') : [];
     let savedIds = null;
     try { if (req.query.ids) savedIds = JSON.parse(decodeURIComponent(req.query.ids)); } catch {}
+    // Match the meal-plan endpoint's budget logic so the grocery list aggregates
+    // the same lineup the user sees in the BudgetBar — previously, the lack of
+    // a budget cap here generated a different (more expensive) plan and the
+    // grocery total could be 50%+ higher than the BudgetBar weekly total.
+    const budget = req.query.budget ? parseFloat(req.query.budget) : null;
+    const respectBudget = req.query.respectBudget !== 'false';
     const planData = savedIds
       ? populateMealPlanFromIds(savedIds, filteredSales, servings, onhand)
-      : generateMealPlan(filteredSales, null, servings, exclude, favs, variation, customRecipes, onhand, diff, excludeRecipes, cuisines);
+      : generateMealPlan(filteredSales, budget, servings, exclude, favs, variation, customRecipes, onhand, diff, excludeRecipes, cuisines, respectBudget);
 
-    // Build a set of on-hand ingredient names from IDs
+    // Build a set of on-hand ingredient names from IDs, plus a lookup for unit
     const ingredientList = getIngredientList();
     const onHandNames = new Set(
       onhand.map(id => ingredientList.find(i => i.id === id)?.name).filter(Boolean)
     );
+    const unitById = Object.fromEntries(ingredientList.map(i => [i.id, i.unit]));
 
-    // Aggregate all ingredients across the week
+    // Aggregate all ingredients across the week — sum qty and cost per ingredient.
     const aggregated = {};
     for (const day of Object.values(planData.plan)) {
       for (const mealType of ['breakfast', 'lunch', 'dinner']) {
         const meal = day[mealType];
         if (!meal) continue;
         for (const ing of meal.ingredients) {
-          if (!aggregated[ing.name]) {
-            aggregated[ing.name] = { name: ing.name, totalCost: 0, onSale: ing.onSale, saleStore: ing.saleStore || null, onHand: onHandNames.has(ing.name) };
+          const key = ing.id || ing.name;
+          if (!aggregated[key]) {
+            aggregated[key] = {
+              name: ing.name,
+              totalCost: 0,
+              totalQty: 0,
+              unit: unitById[ing.id] || null,
+              onSale: ing.onSale,
+              saleStore: ing.saleStore || null,
+              onHand: onHandNames.has(ing.name),
+            };
           }
-          aggregated[ing.name].totalCost += ing.cost;
+          aggregated[key].totalCost += ing.cost;
+          aggregated[key].totalQty += ing.qty || 0;
         }
       }
     }
 
     const list = Object.values(aggregated)
-      .map(i => ({ ...i, totalCost: Math.round(i.totalCost * 100) / 100 }))
+      .map(i => ({
+        ...i,
+        totalCost: Math.round(i.totalCost * 100) / 100,
+        // Human-readable "buy this much" string. Hides the count for abstract
+        // units ("use", "serving") since "8 uses of olive oil" is unhelpful;
+        // shows raw count for "each" (12 eggs reads better than "12 each eggs").
+        quantityLabel: formatGroceryQty(i.totalQty, i.unit),
+      }))
       .sort((a, b) => b.totalCost - a.totalCost);
 
     const toBuyItems = list.filter(i => !i.onHand);

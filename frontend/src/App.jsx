@@ -293,7 +293,7 @@ export default function App() {
     try {
       const [planRes, grocRes, salesRes] = await Promise.all([
         fetch(`${API}/meal-plan?zip=${zip}&budget=${budget}&servings=${servings}&refresh=${refresh}&radius=${radius}&variation=${v}${excludeParam}${onHandParam}${favParam}${customParam}${storeParam}${diffParam}${excludeRecipesParam}${cuisinesParam}${budgetParam}`),
-        fetch(`${API}/grocery-list?zip=${zip}&servings=${servings}&radius=${radius}&variation=${v}${excludeParam}${onHandParam}${favParam}${customParam}${storeParam}${diffParam}${excludeRecipesParam}${cuisinesParam}`),
+        fetch(`${API}/grocery-list?zip=${zip}&budget=${budget}&servings=${servings}&radius=${radius}&variation=${v}${excludeParam}${onHandParam}${favParam}${customParam}${storeParam}${diffParam}${excludeRecipesParam}${cuisinesParam}${budgetParam}`),
         fetch(`${API}/sales?zip=${zip}&refresh=${refresh}&radius=${radius}`)
       ]);
       if (!planRes.ok) throw new Error('Failed to load meal plan');
