@@ -15989,5 +15989,242 @@
       "Build sliders on toasted buns. Serve with au jus on the side."
     ],
     "difficulty": "expert"
+  },
+  {
+    "id": "apple_cinnamon_oat_muffins",
+    "name": "Apple Cinnamon Oat Muffins",
+    "mealType": "breakfast",
+    "prepMinutes": 25,
+    "ingredients": [
+      { "id": "flour", "qty": 1.25, "measure": "1 1/4 cups" },
+      { "id": "oats", "qty": 1, "measure": "1 cup" },
+      { "id": "apple", "qty": 1.5, "measure": "1 1/2 apples, diced" },
+      { "id": "eggs", "qty": 2, "measure": "2 large" },
+      { "id": "milk", "qty": 0.75, "measure": "3/4 cup" },
+      { "id": "sugar", "qty": 0.5, "measure": "1/2 cup" },
+      { "id": "butter", "qty": 4, "measure": "4 tbsp, melted" },
+      { "id": "salt", "qty": 1, "measure": "1/2 tsp" }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "garden-fresh",
+      "make-ahead"
+    ],
+    "instructions": [
+      "Heat oven to 400°F. Line a 12-cup muffin tin or grease wells.",
+      "Whisk flour, oats, sugar, salt, and a pinch of cinnamon (if you have it) in a large bowl.",
+      "In a second bowl whisk eggs, milk, and melted butter until smooth.",
+      "Fold wet into dry just until combined — a few floury streaks are fine. Stir in diced apple.",
+      "Divide batter between muffin cups. Bake 18-22 minutes until tops spring back."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "savory_cheddar_cornbread_muffins",
+    "name": "Savory Cheddar Cornbread Muffins",
+    "mealType": "breakfast",
+    "prepMinutes": 25,
+    "ingredients": [
+      { "id": "cornbread_mix", "qty": 1, "measure": "1 box (8.5 oz)" },
+      { "id": "eggs", "qty": 2, "measure": "2 large" },
+      { "id": "milk", "qty": 0.66, "measure": "2/3 cup" },
+      { "id": "cheddar", "qty": 2, "measure": "1 cup shredded" },
+      { "id": "green_onion", "qty": 0.5, "measure": "3 stalks, sliced" },
+      { "id": "jalapeno", "qty": 1, "measure": "1, finely diced (optional)" }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "make-ahead"
+    ],
+    "instructions": [
+      "Heat oven to 400°F. Line a 12-cup muffin tin.",
+      "Whisk cornbread mix, eggs, and milk per box directions. Fold in cheddar, green onion, and jalapeño.",
+      "Divide between muffin cups, filling about 3/4 full.",
+      "Bake 15-18 minutes until tops are golden and a pick comes out clean.",
+      "Cool 5 minutes before unmolding."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "banana_bread_breakfast_muffins",
+    "name": "Banana Bread Breakfast Muffins",
+    "mealType": "breakfast",
+    "prepMinutes": 30,
+    "ingredients": [
+      { "id": "banana", "qty": 3, "measure": "3 ripe, mashed" },
+      { "id": "flour", "qty": 1.5, "measure": "1 1/2 cups" },
+      { "id": "eggs", "qty": 2, "measure": "2 large" },
+      { "id": "peanut_butter", "qty": 3, "measure": "3 tbsp" },
+      { "id": "sugar", "qty": 0.5, "measure": "1/2 cup" },
+      { "id": "milk", "qty": 0.25, "measure": "1/4 cup" },
+      { "id": "butter", "qty": 3, "measure": "3 tbsp, melted" },
+      { "id": "salt", "qty": 1, "measure": "1/2 tsp" }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "make-ahead",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Heat oven to 350°F. Line a 12-cup muffin tin.",
+      "Mash bananas in a large bowl. Whisk in eggs, peanut butter, sugar, milk, and melted butter.",
+      "Stir in flour and salt just until combined — overmixing makes them tough.",
+      "Divide batter between muffin cups.",
+      "Bake 22-26 minutes until tops are domed and a pick comes out with a few moist crumbs."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "buttermilk_blueberry_waffles",
+    "name": "Buttermilk Blueberry Waffles",
+    "mealType": "breakfast",
+    "prepMinutes": 25,
+    "ingredients": [
+      { "id": "flour", "qty": 1.75, "measure": "1 3/4 cups" },
+      { "id": "eggs", "qty": 2, "measure": "2 large, separated" },
+      { "id": "milk", "qty": 1.75, "measure": "1 3/4 cups" },
+      { "id": "butter", "qty": 5, "measure": "5 tbsp, melted" },
+      { "id": "frozen_berries", "qty": 1, "measure": "1 cup" },
+      { "id": "sugar", "qty": 2, "measure": "2 tbsp" },
+      { "id": "salt", "qty": 1, "measure": "1/2 tsp" }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Heat waffle iron. Whisk flour, sugar, and salt in a large bowl.",
+      "In a second bowl whisk egg yolks, milk, and melted butter. Pour into dry and stir just until combined.",
+      "Beat egg whites to soft peaks and fold gently into the batter — keeps the waffles light.",
+      "Ladle batter into the iron, scatter frozen berries on top, and cook until deeply golden.",
+      "Serve hot with butter and a drizzle of honey if you have it."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "cinnamon_banana_waffles",
+    "name": "Cinnamon Banana Waffles",
+    "mealType": "breakfast",
+    "prepMinutes": 20,
+    "ingredients": [
+      { "id": "flour", "qty": 1.5, "measure": "1 1/2 cups" },
+      { "id": "banana", "qty": 2, "measure": "2 ripe, mashed" },
+      { "id": "eggs", "qty": 2, "measure": "2 large" },
+      { "id": "milk", "qty": 1.25, "measure": "1 1/4 cups" },
+      { "id": "butter", "qty": 3, "measure": "3 tbsp, melted" },
+      { "id": "sugar", "qty": 2, "measure": "2 tbsp" },
+      { "id": "salt", "qty": 1, "measure": "1/2 tsp" }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "kid-friendly",
+      "quick"
+    ],
+    "instructions": [
+      "Heat waffle iron. Mash bananas in a large bowl.",
+      "Whisk eggs, milk, melted butter, and sugar into the bananas.",
+      "Stir in flour and salt just until combined — a few small lumps are fine.",
+      "Ladle into the waffle iron and cook until crisp and golden.",
+      "Serve hot with extra banana slices and a drizzle of honey or peanut butter."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "breakfast_tacos_egg_salsa",
+    "name": "Breakfast Tacos with Egg & Salsa",
+    "mealType": "breakfast",
+    "prepMinutes": 15,
+    "ingredients": [
+      { "id": "tortillas", "qty": 6, "measure": "6 small" },
+      { "id": "eggs", "qty": 6, "measure": "6 large" },
+      { "id": "cheddar", "qty": 1, "measure": "1/2 cup shredded" },
+      { "id": "salsa", "qty": 0.5, "measure": "1/2 cup" },
+      { "id": "avocado", "qty": 1, "measure": "1, sliced" },
+      { "id": "cilantro", "qty": 0.25, "measure": "small handful, chopped" },
+      { "id": "butter", "qty": 1, "measure": "1 tbsp" },
+      { "id": "salt", "qty": 1, "measure": "pinch" }
+    ],
+    "tags": [
+      "mexican",
+      "comfort-food",
+      "quick",
+      "high-protein"
+    ],
+    "instructions": [
+      "Warm tortillas in a dry skillet, 20 seconds per side, then stack under a towel.",
+      "Beat eggs with a pinch of salt. Melt butter in a skillet over medium-low.",
+      "Add eggs and stir gently until just set — pull off the heat while still glossy.",
+      "Build tacos: a scoop of egg, shredded cheddar, salsa, avocado, and a pinch of cilantro.",
+      "Serve right away while the tortillas are warm."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "tomato_mozzarella_breakfast_salad",
+    "name": "Tomato & Mozzarella Breakfast Salad with Soft Egg",
+    "mealType": "breakfast",
+    "prepMinutes": 15,
+    "ingredients": [
+      { "id": "fresh_tomato", "qty": 2, "measure": "2, sliced" },
+      { "id": "mozzarella", "qty": 1, "measure": "4 oz, torn" },
+      { "id": "eggs", "qty": 4, "measure": "4 large" },
+      { "id": "lettuce", "qty": 0.5, "measure": "2 handfuls" },
+      { "id": "olive_oil", "qty": 2, "measure": "2 tbsp" },
+      { "id": "vinegar", "qty": 1, "measure": "1 tsp balsamic" },
+      { "id": "italian_seasoning", "qty": 1, "measure": "1/2 tsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": [
+      "italian",
+      "mediterranean",
+      "garden-fresh",
+      "veggie-rich",
+      "quick"
+    ],
+    "instructions": [
+      "Bring a small pot of water to a simmer. Lower eggs in gently and soft-boil for 6 1/2 minutes.",
+      "Cool eggs briefly under cold water, then peel and halve.",
+      "Arrange lettuce, tomato, and mozzarella on plates. Top with halved eggs.",
+      "Whisk olive oil, balsamic, Italian seasoning, salt, and pepper into a quick vinaigrette.",
+      "Drizzle dressing over the salad and serve right away."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "sweet_potato_sausage_breakfast_sandwich",
+    "name": "Sweet Potato & Sausage Breakfast Sandwich",
+    "mealType": "breakfast",
+    "prepMinutes": 20,
+    "ingredients": [
+      { "id": "bread", "qty": 4, "measure": "4 slices, toasted" },
+      { "id": "sausage", "qty": 2, "measure": "2 patties" },
+      { "id": "sweet_potato", "qty": 1, "measure": "1 small, thinly sliced" },
+      { "id": "eggs", "qty": 2, "measure": "2 large" },
+      { "id": "cheddar", "qty": 1, "measure": "2 slices" },
+      { "id": "olive_oil", "qty": 1, "measure": "1 tbsp" },
+      { "id": "paprika", "qty": 1, "measure": "1/2 tsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Toss sweet potato slices with olive oil, paprika, and salt. Roast at 425°F for 12-15 minutes until tender and edges crisp.",
+      "Meanwhile cook sausage patties in a skillet over medium until browned on both sides and cooked through.",
+      "Crack eggs into the same skillet, season with salt, and cook to your liking (over-medium pairs nicely).",
+      "Toast bread. Stack each sandwich: bread → cheese → sausage → sweet potato → egg → bread.",
+      "Press lightly so the cheese starts to melt, then slice and serve."
+    ],
+    "difficulty": "intermediate"
   }
 ]
