@@ -1195,7 +1195,7 @@ export default function App() {
                   display: 'inline-flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  minWidth: 360,
+                  minWidth: 300,
                   height: 66,
                   boxSizing: 'border-box',
                 }}
@@ -1217,7 +1217,7 @@ export default function App() {
                       key={mode === 'deals' ? 'searching' : cookingVerb}
                       style={{
                         display: 'inline-block',
-                        minWidth: 130,
+                        minWidth: 110,
                         textAlign: 'center',
                         animation: 'fadeUp 0.35s ease both',
                       }}
