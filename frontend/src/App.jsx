@@ -867,9 +867,9 @@ export default function App() {
             borderRight: '1px solid rgba(20,12,4,0.45)',
             borderBottom: '3px solid rgba(15,8,3,0.75)',
             borderRadius: 10,
-            padding: '18px 22px',
+            padding: '22px 28px',
             display: 'flex',
-            gap: 16,
+            gap: 14,
             flexWrap: 'wrap',
             alignItems: 'flex-end',
             justifyContent: 'center',
@@ -904,19 +904,19 @@ export default function App() {
                 if (v !== '' && parseInt(v) > 0) scheduleAdvance(e.target);
               }, type: 'number', min: 1, max: 15, width: 58, placeholder: '2' },
             ].map(({ label, value, setter, width, type, ...rest }) => (
-              <label key={label} style={{ display: 'flex', flexDirection: 'column', gap: 5, alignItems: 'center', justifyContent: 'flex-start', borderRight: '1px solid rgba(180,160,120,0.25)', paddingRight: 16 }}>
+              <label key={label} style={{ display: 'flex', flexDirection: 'column', gap: 9, alignItems: 'center', justifyContent: 'flex-start', borderRight: '1px solid rgba(220,200,160,0.32)', paddingRight: 18 }}>
                 <span style={{
                   fontFamily: 'Amatic SC, cursive',
                   fontSize: 26,
                   fontWeight: 700,
                   color: '#d4c4a0',
-                  letterSpacing: '0.08em',
+                  letterSpacing: '0.1em',
                   textTransform: 'uppercase',
                   textShadow: '2px 3px 4px rgba(0,0,0,0.65)',
                   whiteSpace: 'pre-line',
-                  lineHeight: 1,
+                  lineHeight: 1.08,
                   textAlign: 'center',
-                  minHeight: 52,
+                  minHeight: 56,
                   display: 'flex',
                   alignItems: 'flex-start',
                 }}>
@@ -971,7 +971,7 @@ export default function App() {
               </label>
             ))}
             {/* Preferred store selector */}
-            <label style={{ display: 'flex', flexDirection: 'column', gap: 5, alignItems: 'center', justifyContent: 'flex-start', borderRight: '1px solid rgba(180,160,120,0.25)', paddingRight: 16 }}>
+            <label style={{ display: 'flex', flexDirection: 'column', gap: 9, alignItems: 'center', justifyContent: 'flex-start', borderRight: '1px solid rgba(220,200,160,0.32)', paddingRight: 18 }}>
               <span style={{
                 fontFamily: 'Amatic SC, cursive',
                 fontSize: 26,
@@ -1024,8 +1024,8 @@ export default function App() {
               </select>
             </label>
 
-            {/* Skill level selector */}
-            <label style={{ display: 'flex', flexDirection: 'column', gap: 5, alignItems: 'center', justifyContent: 'flex-start', borderRight: '1px solid rgba(180,160,120,0.25)', paddingRight: 16 }}>
+            {/* Skill level selector — last in row, no trailing divider */}
+            <label style={{ display: 'flex', flexDirection: 'column', gap: 9, alignItems: 'center', justifyContent: 'flex-start' }}>
               <span style={{
                 fontFamily: 'Amatic SC, cursive',
                 fontSize: 26,
@@ -1108,9 +1108,9 @@ export default function App() {
                   color: '#2a1a0e',
                   fontFamily: 'Amatic SC, cursive',
                   fontWeight: 700,
-                  padding: '14px 34px',
+                  padding: '15px 38px',
                   fontSize: 26,
-                  letterSpacing: '0.06em',
+                  letterSpacing: '0.08em',
                   textTransform: 'uppercase',
                   border: '1px solid rgba(140,120,70,0.6)',
                   borderTop: '2px solid rgba(255,245,220,0.7)',
