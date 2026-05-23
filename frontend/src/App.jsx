@@ -75,12 +75,21 @@ function focusNextControl(currentEl) {
 }
 
 // Mirror of focusNextControl, walking backward to the previous focusable.
+// If we're already at the first input, bridge back into the welcome panel's
+// mode cards (the rightmost one) so left-arrow navigation flows smoothly
+// across both groups instead of dead-ending at ZIP.
 function focusPrevControl(currentEl) {
   const panel = currentEl?.closest('.controls-panel');
   if (!panel) return;
   const fields = Array.from(panel.querySelectorAll('input:not([disabled]), select:not([disabled])'));
   const idx = fields.indexOf(currentEl);
-  if (idx <= 0) return;
+  if (idx === 0) {
+    const cards = document.querySelectorAll('.mode-card');
+    const lastCard = cards[cards.length - 1];
+    if (lastCard) lastCard.focus();
+    return;
+  }
+  if (idx < 0) return;
   const prev = fields[idx - 1];
   prev.focus();
   if (prev.tagName === 'INPUT' && typeof prev.select === 'function') prev.select();
@@ -854,13 +863,26 @@ export default function App() {
                     className="mode-card"
                     ref={el => { if (el) modeCardRefs.current[m.id] = el; }}
                     onKeyDown={e => {
-                      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
-                        e.preventDefault();
-                        const idx = MODES.findIndex(x => x.id === m.id);
-                        const next = e.key === 'ArrowRight'
-                          ? (idx + 1) % MODES.length
-                          : (idx - 1 + MODES.length) % MODES.length;
-                        modeCardRefs.current[MODES[next].id]?.focus();
+                      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+                      e.preventDefault();
+                      const idx = MODES.findIndex(x => x.id === m.id);
+                      if (e.key === 'ArrowRight') {
+                        if (idx === MODES.length - 1) {
+                          // Last card → bridge into the controls panel.
+                          document.querySelector('.controls-panel input, .controls-panel select')?.focus();
+                          return;
+                        }
+                        const next = MODES[idx + 1];
+                        // Move focus AND select — standard radio-group / tablist pattern.
+                        setMode(next.id);
+                        try { localStorage.setItem('mealmaker_mode', next.id); } catch {}
+                        modeCardRefs.current[next.id]?.focus();
+                      } else {
+                        if (idx === 0) return; // first card — nothing to the left
+                        const prev = MODES[idx - 1];
+                        setMode(prev.id);
+                        try { localStorage.setItem('mealmaker_mode', prev.id); } catch {}
+                        modeCardRefs.current[prev.id]?.focus();
                       }
                     }}
                     onClick={() => {
