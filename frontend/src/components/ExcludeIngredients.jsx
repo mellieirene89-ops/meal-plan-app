@@ -54,12 +54,17 @@ function TomatoBullet({ size = 20 }) {
 
 const CUISINES = [
   { id: 'comfort-food', label: 'Comfort Food' },
+  { id: 'american-classic', label: 'American Classic' },
   { id: 'asian', label: 'Asian' },
+  { id: 'thai', label: 'Thai-inspired' },
+  { id: 'indian', label: 'Indian-inspired' },
   { id: 'mexican', label: 'Mexican' },
   { id: 'italian', label: 'Italian' },
-  { id: 'barbecue', label: 'Barbecue' },
   { id: 'mediterranean', label: 'Mediterranean' },
+  { id: 'greek', label: 'Greek' },
+  { id: 'barbecue', label: 'Barbecue' },
   { id: 'veggie', label: 'Vegetarian' },
+  { id: 'garden-fresh', label: 'Garden Fresh' },
   { id: 'keto', label: 'Keto' },
 ];
 

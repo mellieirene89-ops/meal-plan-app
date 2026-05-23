@@ -28,7 +28,8 @@ const recipeCard = {
   boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.4), inset 0 0 20px rgba(180,160,120,0.1), 0 3px 5px rgba(0,0,0,0.3), 0 8px 16px rgba(0,0,0,0.3), 0 16px 30px rgba(0,0,0,0.2)',
 };
 
-export default function Recipes({ plan, focusTarget, onFocusHandled }) {
+export default function Recipes({ plan, focusTarget, onFocusHandled, onBackToPlan, onHand = [] }) {
+  const onHandSet = new Set(onHand);
   const today = DAYS[new Date().getDay()];
   const [expandedDays, setExpandedDays] = useState({ [today]: true });
   const [highlightKey, setHighlightKey] = useState(null);
@@ -176,35 +177,60 @@ export default function Recipes({ plan, focusTarget, onFocusHandled }) {
                           Ingredients
                         </p>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
-                          {meal.ingredients.map((ing, i) => (
-                            <div key={i} style={{
-                              padding: '5px 0',
-                              borderBottom: '1px solid #3a5a8a',
-                              display: 'flex',
-                              justifyContent: 'space-between',
-                              alignItems: 'baseline',
-                            }}>
-                              <span style={{
-                                fontFamily: 'Cormorant Garamond, serif',
-                                fontSize: 18,
-                                fontWeight: 700,
-                                color: ing.onSale ? '#6b8e3a' : '#3a2a18',
+                          {meal.ingredients.map((ing, i) => {
+                            const haveIt = ing.id && onHandSet.has(ing.id);
+                            const bullet = haveIt ? '✓' : ing.onSale ? '★' : '○';
+                            const nameColor = haveIt ? '#4a6a2a' : ing.onSale ? '#6b8e3a' : '#3a2a18';
+                            return (
+                              <div key={i} style={{
+                                padding: '5px 0',
+                                borderBottom: '1px solid #3a5a8a',
+                                display: 'flex',
+                                justifyContent: 'space-between',
+                                alignItems: 'baseline',
+                                gap: 8,
                               }}>
-                                {ing.onSale ? '★ ' : '○ '}{ing.name}
-                              </span>
-                              {ing.measure && (
                                 <span style={{
                                   fontFamily: 'Cormorant Garamond, serif',
-                                  fontSize: 17,
+                                  fontSize: 18,
                                   fontWeight: 700,
-                                  fontStyle: 'italic',
-                                  color: '#6b5a48',
+                                  color: nameColor,
+                                  display: 'inline-flex',
+                                  alignItems: 'baseline',
+                                  gap: 6,
+                                  flex: 1,
+                                  minWidth: 0,
                                 }}>
-                                  {ing.measure}
+                                  <span aria-hidden style={{ flex: 'none' }}>{bullet}</span>
+                                  <span>{ing.name}</span>
+                                  {haveIt && (
+                                    <span style={{
+                                      fontFamily: 'Caveat, cursive',
+                                      fontWeight: 500,
+                                      fontSize: 18,
+                                      color: '#4a6a2a',
+                                      fontStyle: 'normal',
+                                      marginLeft: 4,
+                                    }}>
+                                      in your kitchen
+                                    </span>
+                                  )}
                                 </span>
-                              )}
-                            </div>
-                          ))}
+                                {ing.measure && (
+                                  <span style={{
+                                    fontFamily: 'Cormorant Garamond, serif',
+                                    fontSize: 17,
+                                    fontWeight: 700,
+                                    fontStyle: 'italic',
+                                    color: '#6b5a48',
+                                    flex: 'none',
+                                  }}>
+                                    {ing.measure}
+                                  </span>
+                                )}
+                              </div>
+                            );
+                          })}
                         </div>
                       </div>
 
@@ -242,6 +268,33 @@ export default function Recipes({ plan, focusTarget, onFocusHandled }) {
                               </li>
                             ))}
                           </ol>
+                        </div>
+                      )}
+
+                      {/* Back to Meal Plan */}
+                      {onBackToPlan && (
+                        <div style={{ marginTop: 18, display: 'flex', justifyContent: 'flex-end' }}>
+                          <button
+                            onClick={onBackToPlan}
+                            style={{
+                              fontFamily: 'Caveat, cursive',
+                              fontSize: 22,
+                              fontWeight: 500,
+                              color: '#5a3a1c',
+                              background: 'linear-gradient(180deg, rgba(255,250,235,0.65) 0%, rgba(232,220,200,0.65) 100%)',
+                              border: '1px solid rgba(138,106,64,0.45)',
+                              borderRadius: 6,
+                              padding: '6px 16px',
+                              cursor: 'pointer',
+                              boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 2px rgba(0,0,0,0.15)',
+                              transition: 'background 0.2s, transform 0.1s',
+                              lineHeight: 1.1,
+                            }}
+                            onMouseEnter={e => { e.currentTarget.style.background = 'linear-gradient(180deg, rgba(255,250,235,0.85) 0%, rgba(232,220,200,0.85) 100%)'; }}
+                            onMouseLeave={e => { e.currentTarget.style.background = 'linear-gradient(180deg, rgba(255,250,235,0.65) 0%, rgba(232,220,200,0.65) 100%)'; }}
+                          >
+                            ← back to meal plan
+                          </button>
                         </div>
                       )}
                     </div>

@@ -5,7 +5,8 @@ import BudgetBar from './components/BudgetBar.jsx';
 import LocalDeals from './components/LocalDeals.jsx';
 import ExcludeIngredients from './components/ExcludeIngredients.jsx';
 import Recipes from './components/Recipes.jsx';
-import { CornerPins } from './components/Pushpin.jsx';
+import Pushpin, { CornerPins } from './components/Pushpin.jsx';
+import WashiTape from './components/WashiTape.jsx';
 
 const API = '/api';
 
@@ -173,6 +174,7 @@ export default function App() {
   // Debounce timer for auto-advancing focus after typing in number inputs.
   const advanceTimerRef = useRef(null);
   const ctaButtonRef = useRef(null);
+  const modeCardRefs = useRef({});
   const scheduleAdvance = (el, delay = 700) => {
     if (advanceTimerRef.current) clearTimeout(advanceTimerRef.current);
     advanceTimerRef.current = setTimeout(() => {
@@ -183,6 +185,14 @@ export default function App() {
     try { return localStorage.getItem('mealmaker_mode') || 'planner'; } catch { return 'planner'; }
   });
   const activeMode = MODES.find(m => m.id === mode) || MODES[0];
+
+  // On initial mount, focus the Recipe Planner mode card (always the first one)
+  // so Tab navigation starts from there regardless of which mode is saved.
+  useEffect(() => {
+    const el = modeCardRefs.current['planner'] || modeCardRefs.current[MODES[0].id];
+    if (el) el.focus({ preventScroll: true });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // Auto-dismiss the undo toast after 6 seconds.
   useEffect(() => {
@@ -762,27 +772,40 @@ export default function App() {
             }}>
               Add your info below, then pick what you’d like to focus on for this session.
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 10 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 10 }}>
               {MODES.map(m => {
                 const isActive = mode === m.id;
                 return (
                   <button
                     key={m.id}
+                    className="mode-card"
+                    ref={el => { if (el) modeCardRefs.current[m.id] = el; }}
+                    onKeyDown={e => {
+                      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+                        e.preventDefault();
+                        const idx = MODES.findIndex(x => x.id === m.id);
+                        const next = e.key === 'ArrowRight'
+                          ? (idx + 1) % MODES.length
+                          : (idx - 1 + MODES.length) % MODES.length;
+                        modeCardRefs.current[MODES[next].id]?.focus();
+                      }
+                    }}
                     onClick={() => {
                       setMode(m.id);
                       try { localStorage.setItem('mealmaker_mode', m.id); } catch {}
+                      requestAnimationFrame(() => {
+                        document.querySelector('.controls-panel input')?.focus();
+                      });
                     }}
                     style={{
                       textAlign: 'left',
                       padding: '12px 14px',
                       borderRadius: 8,
-                      background: isActive
-                        ? 'linear-gradient(180deg, rgba(234,162,33,0.22) 0%, rgba(234,162,33,0.12) 100%)'
-                        : 'rgba(60,40,30,0.45)',
-                      border: isActive ? '1px solid rgba(234,162,33,0.85)' : '1px solid rgba(200,170,120,0.3)',
+                      background: 'rgba(60,40,30,0.45)',
+                      border: '1px solid rgba(200,170,120,0.3)',
                       cursor: 'pointer',
                       transition: 'background 0.2s, border-color 0.2s',
-                      boxShadow: isActive ? 'inset 0 1px 0 rgba(255,255,255,0.1), 0 0 0 2px rgba(234,162,33,0.25)' : 'inset 0 1px 0 rgba(255,255,255,0.04)',
+                      boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.04)',
                     }}
                   >
                     <div style={{
@@ -816,11 +839,11 @@ export default function App() {
                       )}
                     </div>
                     <div style={{
-                      fontFamily: 'Cormorant Garamond, serif',
-                      fontSize: 13,
-                      fontStyle: 'italic',
-                      color: 'rgba(250,245,232,0.72)',
-                      lineHeight: 1.4,
+                      fontFamily: 'Caveat, cursive',
+                      fontWeight: 500,
+                      fontSize: 19,
+                      color: 'rgba(250,245,232,0.82)',
+                      lineHeight: 1.15,
                     }}>
                       {m.blurb}
                     </div>
@@ -859,7 +882,10 @@ export default function App() {
               '0 16px 30px rgba(0,0,0,0.25)',
             ].join(', '),
           }}>
-            <CornerPins />
+            <Pushpin size={22} position="top-left" />
+            <WashiTape position="top-right" />
+            <WashiTape position="bottom-left" />
+            <Pushpin size={22} position="bottom-right" />
             {[
               { label: 'ZIP\nCODE', value: zip, setter: e => {
                 const val = e.target.value.replace(/\D/g, '').slice(0, 5);
@@ -1095,7 +1121,7 @@ export default function App() {
                   opacity: 1,
                   transition: 'background 0.3s ease',
                   // Lock the dimensions so the button doesn't reflow when the loading
-                  // verbs (32px italic Cormorant) replace the 26px Amatic CTA text.
+                  // verbs (38px Caveat) replace the 26px Amatic CTA text.
                   display: 'inline-flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -1109,11 +1135,10 @@ export default function App() {
                     display: 'inline-flex',
                     alignItems: 'baseline',
                     gap: 4,
-                    fontFamily: 'Cormorant Garamond, serif',
-                    fontStyle: 'italic',
-                    fontWeight: 600,
-                    fontSize: 32,
-                    letterSpacing: '0.03em',
+                    fontFamily: 'Caveat, cursive',
+                    fontWeight: 700,
+                    fontSize: 38,
+                    letterSpacing: '0.01em',
                     color: '#f0ead6',
                     textShadow: '1px 2px 3px rgba(0,0,0,0.55)',
                     opacity: 1,
@@ -1296,10 +1321,13 @@ export default function App() {
                   marginTop: 10,
                   paddingTop: 10,
                   borderTop: '1px solid rgba(234,162,33,0.18)',
-                  fontStyle: 'italic',
-                  color: 'rgba(250,245,232,0.78)',
+                  fontFamily: 'Caveat, cursive',
+                  fontWeight: 500,
+                  fontSize: 22,
+                  lineHeight: 1.15,
+                  color: 'rgba(250,245,232,0.88)',
                 }}>
-                  <strong style={{ color: '#eaa221', fontStyle: 'normal', fontWeight: 700, letterSpacing: '0.04em' }}>Tip:</strong>{' '}
+                  <strong style={{ color: '#eaa221', fontFamily: 'JetBrains Mono, monospace', fontWeight: 700, fontSize: 13, letterSpacing: '0.08em' }}>TIP</strong>{' '}
                   Click any meal card to jump straight to its full recipe.
                 </div>
                 <div style={{ marginTop: 14 }}>
@@ -1490,7 +1518,7 @@ export default function App() {
             }} />
               </div>
             </>}
-            {tab === 'recipes' && planData && <Recipes plan={effectivePlan} focusTarget={recipeFocus} onFocusHandled={() => setRecipeFocus(null)} />}
+            {tab === 'recipes' && planData && <Recipes plan={effectivePlan} focusTarget={recipeFocus} onFocusHandled={() => setRecipeFocus(null)} onBackToPlan={() => setTab('plan')} onHand={onHand} />}
             {tab === 'grocery' && filteredGroceryData && (
               <GroceryList
                 items={filteredGroceryData.items}

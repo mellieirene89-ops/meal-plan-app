@@ -129,6 +129,7 @@ export function getAvailableRecipes(sales = [], servings = 1, excludeIds = [], f
         tags: r.tags,
         instructions: r.instructions || [],
         ingredients: r.ingredients.map(item => ({
+          id: item.id,
           name: ingredientMap[item.id]?.name || item.id,
           measure: item.measure || null,
           onSale: ingredientMap[item.id]?.onSale || false,
@@ -259,6 +260,7 @@ export function generateMealPlan(sales = [], budgetCap = null, servings = 1, exc
         tags: meal.tags,
         instructions: meal.instructions || [],
         ingredients: meal.ingredients.map(item => ({
+          id: item.id,
           name: ingredientMap[item.id]?.name || item.id,
           measure: item.measure || null,
           onSale: ingredientMap[item.id]?.onSale || false,

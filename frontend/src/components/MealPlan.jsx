@@ -271,18 +271,38 @@ function Stat({ label, value }) {
   );
 }
 
+// Three noise layers stacked = real cork texture:
+//   - fine grain ('cork-dust'): tight speckle that fills every pixel
+//   - mid flecks ('cork-fleck'): the visible irregular cork particles
+//   - large chunks ('cork-chunk'): sparse darker spots, the bigger cork pieces
+// Each uses feColorMatrix to land on warm dark-brown with controlled alpha,
+// so they layer naturally over the tan base instead of producing muddy noise.
+const corkDust  = `<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='d'><feTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='2' seed='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.30  0 0 0 0 0.20  0 0 0 0 0.09  0 0 0 0.40 -0.05'/></filter><rect width='240' height='240' filter='url(#d)'/></svg>`;
+const corkFleck = `<svg xmlns='http://www.w3.org/2000/svg' width='320' height='320'><filter id='f'><feTurbulence type='fractalNoise' baseFrequency='0.35' numOctaves='3' seed='11' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.22  0 0 0 0 0.13  0 0 0 0 0.05  0 0 0 0.65 -0.20'/></filter><rect width='320' height='320' filter='url(#f)'/></svg>`;
+const corkChunk = `<svg xmlns='http://www.w3.org/2000/svg' width='420' height='420'><filter id='c'><feTurbulence type='fractalNoise' baseFrequency='0.09' numOctaves='2' seed='17' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.18  0 0 0 0 0.10  0 0 0 0 0.03  0 0 0 0.55 -0.30'/></filter><rect width='420' height='420' filter='url(#c)'/></svg>`;
+
 const cardBase = {
   position: 'relative',
-  borderRadius: 8,
-  border: '1px solid #8a6d4a',
-  borderTop: '3px solid rgba(220,190,140,0.6)',
-  borderBottom: '5px solid rgba(30,18,5,0.85)',
-  borderLeft: '2px solid rgba(180,150,100,0.3)',
-  borderRight: '3px solid rgba(60,40,15,0.5)',
+  borderRadius: 10,
+  border: '1px solid #6a523a',
+  borderTop: '2px solid rgba(220,190,140,0.5)',
+  borderBottom: '4px solid rgba(38,22,8,0.8)',
+  borderLeft: '2px solid rgba(180,150,100,0.28)',
+  borderRight: '3px solid rgba(60,40,15,0.45)',
   padding: '44px 15px 13px',
   minHeight: 168,
-  background: `url("data:image/svg+xml,${encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='crumple'><feTurbulence type='fractalNoise' baseFrequency='0.04 0.06' numOctaves='6' seed='9' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/><feComponentTransfer><feFuncR type='linear' slope='0.25' intercept='0'/><feFuncG type='linear' slope='0.2' intercept='0'/><feFuncB type='linear' slope='0.12' intercept='0'/><feFuncA type='linear' slope='0.55' intercept='0'/></feComponentTransfer></filter><rect width='300' height='300' filter='url(#crumple)'/></svg>`)}"), url("data:image/svg+xml,${encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='fiber'><feTurbulence type='fractalNoise' baseFrequency='0.5 0.03' numOctaves='3' seed='14' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/><feComponentTransfer><feFuncR type='linear' slope='0.1' intercept='0'/><feFuncG type='linear' slope='0.08' intercept='0'/><feFuncB type='linear' slope='0.05' intercept='0'/><feFuncA type='linear' slope='0.2' intercept='0'/></feComponentTransfer></filter><rect width='200' height='200' filter='url(#fiber)'/></svg>`)}"), linear-gradient(155deg, rgba(0,0,0,0.1) 0%, transparent 15%, rgba(0,0,0,0.06) 30%, transparent 45%, rgba(0,0,0,0.08) 60%, transparent 75%, rgba(0,0,0,0.05) 100%), radial-gradient(ellipse at 20% 25%, rgba(200,170,120,0.3) 0%, transparent 40%), radial-gradient(ellipse at 75% 65%, rgba(160,130,80,0.25) 0%, transparent 45%), radial-gradient(ellipse at 50% 80%, rgba(140,110,65,0.18) 0%, transparent 35%), linear-gradient(180deg, rgba(255,255,255,0.06) 0%, transparent 15%, transparent 85%, rgba(0,0,0,0.12) 100%), #b8956a`,
-  boxShadow: 'inset 0 2px 0 rgba(255,255,255,0.12), inset 0 -3px 6px rgba(0,0,0,0.22), 4px 6px 14px rgba(0,0,0,0.4), 8px 10px 20px rgba(0,0,0,0.18)',
+  background: `
+    url("data:image/svg+xml;utf8,${encodeURIComponent(corkDust)}"),
+    url("data:image/svg+xml;utf8,${encodeURIComponent(corkFleck)}"),
+    url("data:image/svg+xml;utf8,${encodeURIComponent(corkChunk)}"),
+    radial-gradient(ellipse at 30% 25%, rgba(245,210,160,0.22) 0%, transparent 55%),
+    radial-gradient(ellipse at 75% 75%, rgba(80,52,22,0.20) 0%, transparent 55%),
+    linear-gradient(180deg, rgba(255,235,200,0.10) 0%, transparent 12%, transparent 88%, rgba(35,20,8,0.18) 100%),
+    #c19a71
+  `,
+  backgroundSize: '240px 240px, 320px 320px, 420px 420px, auto, auto, auto, auto',
+  backgroundRepeat: 'repeat, repeat, repeat, no-repeat, no-repeat, no-repeat, no-repeat',
+  boxShadow: 'inset 0 2px 0 rgba(255,235,200,0.12), inset 0 -3px 8px rgba(0,0,0,0.25), 4px 6px 14px rgba(0,0,0,0.4), 8px 10px 20px rgba(0,0,0,0.18)',
 };
 
 export default function MealPlan({ plan, taxRate = 0, skippedMeals = {}, onToggleSkip, onMealClick, onNeverAgain }) {

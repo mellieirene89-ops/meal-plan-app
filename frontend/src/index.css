@@ -31,8 +31,11 @@ body {
   color: var(--chalk);
   min-height: 100vh;
   background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='320'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.12  0 0 0 0 0.08  0 0 0 0 0.04  0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.55'/></svg>"),
     radial-gradient(ellipse at 10% 0%,   rgba(90, 70, 45, 0.4) 0%, transparent 55%),
     radial-gradient(ellipse at 90% 100%, rgba(75, 58, 38, 0.3) 0%, transparent 50%);
+  background-size: 320px 320px, auto, auto;
+  background-repeat: repeat, no-repeat, no-repeat;
 }
 
 h1, h2, h3 {
@@ -55,6 +58,12 @@ button {
 button[role="tab"]:focus-visible {
   outline: none;
   box-shadow: none;
+}
+
+.mode-card:focus-visible {
+  outline: 2px solid #eaa221;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(234, 162, 33, 0.25), inset 0 1px 0 rgba(255,255,255,0.1);
 }
 
 button:disabled { opacity: 0.35; cursor: not-allowed; }
