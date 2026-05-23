@@ -817,7 +817,7 @@ export default function App() {
           <div style={{
             marginTop: 'clamp(14px, 2vw, 22px)',
             marginBottom: 14,
-            padding: '18px 22px',
+            padding: '24px 28px 22px',
             background: 'rgba(0,0,0,0.28)',
             border: '1px solid rgba(234,162,33,0.3)',
             borderRadius: 10,
@@ -825,20 +825,23 @@ export default function App() {
           }}>
             <div style={{
               fontFamily: 'Pinyon Script, cursive',
-              fontSize: 'clamp(28px, 3vw, 38px)',
+              // Pinyon's narrow x-height reads small at its point size — give it
+              // real presence as a greeting rather than fine print.
+              fontSize: 'clamp(40px, 4.5vw, 58px)',
               color: '#faf5e8',
               textShadow: '2px 3px 0 #1a0e06, 3px 4px 6px rgba(0,0,0,0.5)',
-              marginBottom: 4,
-              lineHeight: 1.1,
+              marginBottom: 8,
+              lineHeight: 1.0,
             }}>
               Welcome!
             </div>
             <div style={{
               fontFamily: 'Cormorant Garamond, serif',
-              fontSize: 15,
+              fontSize: 17,
               fontStyle: 'italic',
-              color: 'rgba(250,245,232,0.78)',
-              marginBottom: 14,
+              color: 'rgba(250,245,232,0.82)',
+              lineHeight: 1.45,
+              marginBottom: 20,
             }}>
               Add your info below, then pick what you’d like to focus on for this session.
             </div>
@@ -890,6 +893,13 @@ export default function App() {
                         fontWeight: 700,
                         color: isActive ? '#eaa221' : '#faf5e8',
                         letterSpacing: '0.04em',
+                        // 1px marigold underline marks the active card without adding a heavy
+                        // border. Transparent on inactive cards so all three sit at the same height.
+                        paddingBottom: 3,
+                        borderBottom: isActive
+                          ? '1px solid rgba(234,162,33,0.85)'
+                          : '1px solid transparent',
+                        transition: 'border-color 0.2s',
                       }}>
                         {m.label}
                       </span>
