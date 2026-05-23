@@ -636,11 +636,13 @@ export default function App() {
           filter: 'saturate(1.6) contrast(1.1)',
           opacity: 0.8,
         }} />
-        {/* Dark overlay for text legibility */}
+        {/* Dark overlay for text legibility. Middle band sits behind the controls panel
+            (which has its own 0.5-alpha textured background) — keep it dim enough that
+            the foreground panel reads without the photo's saturation bleeding through. */}
         <div style={{
           position: 'absolute',
           inset: 0,
-          background: 'linear-gradient(90deg, rgba(30,16,6,0.78) 0%, rgba(30,16,6,0.45) 40%, rgba(30,16,6,0.45) 60%, rgba(30,16,6,0.78) 100%)',
+          background: 'linear-gradient(90deg, rgba(30,16,6,0.82) 0%, rgba(30,16,6,0.62) 40%, rgba(30,16,6,0.62) 60%, rgba(30,16,6,0.82) 100%)',
         }} />
         <div className="header-inner" style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 24, position: 'relative', zIndex: 1 }}>
 
