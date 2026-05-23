@@ -321,7 +321,12 @@ export default function App() {
     // so the user can fill in all fields without the loading state kicking in mid-entry.
     if (!planData) return;
     fetchPlan(false, excluded, onHand, favorites);
-  }, [budget, servings, preferredStore, difficulty, zip, radius]);
+    // Budget is intentionally NOT in this dep array — it only changes the comparison
+    // reference on the BudgetBar, not the menu's underlying cost. Auto-refetching on
+    // budget nudges caused the bar to flicker "Over Budget" because in-flight fetches
+    // briefly displayed the old menu against the new budget. User can regenerate via
+    // Plan My Week or Change It Up if they want a budget-optimized refresh.
+  }, [servings, preferredStore, difficulty, zip, radius]);
 
   // Tracks whether the latest salesData came from an explicit user action (Plan My Week / Show Me Deals)
   // vs. the silent background sync. The no-stores modal only pops in response to user-initiated fetches.
