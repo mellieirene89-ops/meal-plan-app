@@ -148,7 +148,7 @@ export function populateMealPlanFromIds(idsByDay = {}, sales = [], servings = 1,
         ingredients: r.ingredients.map(item => ({
           id: item.id,
           name: ingredientMap[item.id]?.name || item.id,
-          measure: item.measure || null,
+          measure: scaleMeasure(item.measure, servings / BASE_SERVINGS),
           onSale: ingredientMap[item.id]?.onSale || false,
           saleStore: ingredientMap[item.id]?.saleStore || null,
           cost: Math.round(ingredientMap[item.id]?.currentPrice * item.qty * servings * 100) / 100,
@@ -204,7 +204,7 @@ export function getAvailableRecipes(sales = [], servings = 1, excludeIds = [], f
         ingredients: r.ingredients.map(item => ({
           id: item.id,
           name: ingredientMap[item.id]?.name || item.id,
-          measure: item.measure || null,
+          measure: scaleMeasure(item.measure, servings / BASE_SERVINGS),
           onSale: ingredientMap[item.id]?.onSale || false,
           saleStore: ingredientMap[item.id]?.saleStore || null,
           cost: Math.round(ingredientMap[item.id]?.currentPrice * item.qty * servings * 100) / 100
@@ -213,6 +213,54 @@ export function getAvailableRecipes(sales = [], servings = 1, excludeIds = [], f
       .sort((a, b) => b.score - a.score);
   }
   return result;
+}
+
+// Recipes are written with `measure` reflecting a single serving (e.g. "1/2 cup oats").
+// Scale that display string up/down when the user picks more or fewer servings so
+// they see realistic total amounts. The default servings count is 2, so use that as
+// the baseline — at servings=2 the measure renders unchanged.
+const BASE_SERVINGS = 2;
+
+function formatQty(n) {
+  if (n < 0.01) return '0';
+  const whole = Math.floor(n);
+  const frac = n - whole;
+  const FRACS = [
+    [0.125, '1/8'], [0.25, '1/4'], [0.333, '1/3'], [0.375, '3/8'],
+    [0.5, '1/2'], [0.625, '5/8'], [0.666, '2/3'], [0.75, '3/4'], [0.875, '7/8'],
+  ];
+  for (const [val, label] of FRACS) {
+    if (Math.abs(frac - val) < 0.04) return whole === 0 ? label : `${whole} ${label}`;
+  }
+  if (frac < 0.04) return String(whole);
+  if (frac > 0.96) return String(whole + 1);
+  return n.toFixed(2).replace(/\.?0+$/, '');
+}
+
+function scaleMeasure(str, factor) {
+  if (!str || factor === 1) return str;
+  // Pull a leading number: mixed fraction ("1 1/2"), simple fraction ("3/4"),
+  // decimal ("1.5"), or integer ("2"). Everything else ("pinch", "to taste",
+  // "small handful") returns unchanged.
+  const m = String(str).match(/^(\d+\s+\d+\/\d+|\d+\/\d+|\d+(?:\.\d+)?)\s*(.*)$/);
+  if (!m) return str;
+  const [, numStr, rest] = m;
+  let n;
+  if (/\s/.test(numStr)) {
+    const [w, f] = numStr.split(/\s+/);
+    const [a, b] = f.split('/').map(Number);
+    n = Number(w) + a / b;
+  } else if (/\//.test(numStr)) {
+    const [a, b] = numStr.split('/').map(Number);
+    n = a / b;
+  } else {
+    n = Number(numStr);
+  }
+  const num = formatQty(n * factor);
+  if (!rest) return num;
+  // Don't insert a space before punctuation (",", ".", etc.) — keeps
+  // "1, sliced" reading cleanly when scaled to "2, sliced".
+  return /^[,;:.!?]/.test(rest) ? `${num}${rest}` : `${num} ${rest}`;
 }
 
 // Coarse category derived from the recipe name. Used to avoid two same-style
@@ -388,7 +436,7 @@ export function generateMealPlan(sales = [], budgetCap = null, servings = 1, exc
         ingredients: meal.ingredients.map(item => ({
           id: item.id,
           name: ingredientMap[item.id]?.name || item.id,
-          measure: item.measure || null,
+          measure: scaleMeasure(item.measure, servings / BASE_SERVINGS),
           onSale: ingredientMap[item.id]?.onSale || false,
           saleStore: ingredientMap[item.id]?.saleStore || null,
           cost: Math.round(ingredientMap[item.id]?.currentPrice * item.qty * servings * 100) / 100
@@ -457,7 +505,7 @@ export function generateMealPlan(sales = [], budgetCap = null, servings = 1, exc
           ingredients: c.ingredients.map(item => ({
             id: item.id,
             name: ingredientMap[item.id]?.name || item.id,
-            measure: item.measure || null,
+            measure: scaleMeasure(item.measure, servings / BASE_SERVINGS),
             onSale: ingredientMap[item.id]?.onSale || false,
             saleStore: ingredientMap[item.id]?.saleStore || null,
             cost: Math.round(ingredientMap[item.id]?.currentPrice * item.qty * servings * 100) / 100
