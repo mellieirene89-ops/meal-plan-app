@@ -68,7 +68,7 @@ const CUISINES = [
   { id: 'keto', label: 'Keto' },
 ];
 
-export default function ExcludeIngredients({ ingredients, excluded, onToggle, onHand = [], onToggleOnHand, onFavoritesChange, customRecipes = [], onAddCustomRecipe, onRemoveCustomRecipe, excludedRecipes = [], onRestoreRecipe, selectedCuisines = [], onToggleCuisine }) {
+export default function ExcludeIngredients({ ingredients, excluded, onToggle, onHand = [], onToggleOnHand, onFavoritesChange, customRecipes = [], onAddCustomRecipe, onRemoveCustomRecipe, excludedRecipes = [], onRestoreRecipe, selectedCuisines = [], onToggleCuisine, savedMenus = [], onLoadSavedMenu, onDeleteSavedMenu }) {
   const [searchExclude, setSearchExclude] = useState('');
   const [searchFav, setSearchFav] = useState('');
   const [searchOnHand, setSearchOnHand] = useState('');
@@ -1051,6 +1051,144 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
                   <span style={{ color: '#eaa221', fontSize: 16, fontWeight: 900 }}>+</span> {r.name}
                 </button>
               ))}
+            </div>
+          )}
+        </div>}
+      </div>
+
+      {/* === SAVED MENUS SECTION === */}
+      <div style={{ background: 'rgba(160,140,100,0.18)', borderRadius: 6, overflow: 'hidden', border: '1px solid rgba(240,232,218,0.2)', borderTop: '2px solid rgba(255,255,255,0.18)', borderBottom: '3px solid rgba(0,0,0,0.45)', boxShadow: 'inset 0 2px 0 rgba(255,255,255,0.12), inset 0 -2px 4px rgba(0,0,0,0.15), 6px 8px 18px rgba(0,0,0,0.45), 10px 14px 30px rgba(0,0,0,0.25), 2px 3px 6px rgba(0,0,0,0.3)' }}>
+        <div onClick={() => toggleSection('savedMenus')} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 20px', cursor: 'pointer', userSelect: 'none', background: 'linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 50%, transparent 100%)', borderBottom: '1px solid rgba(0,0,0,0.15)', transition: 'background 0.2s' }}>
+          <h3 style={{ ...sectionHeader, fontSize: 34, color: '#eaa221', marginBottom: 0 }}>
+            ♥ Saved Menus
+          </h3>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            {savedMenus.length > 0 && (
+              <span style={{
+                fontFamily: 'JetBrains Mono, monospace',
+                fontSize: 12,
+                fontWeight: 700,
+                color: 'rgba(240, 232, 218, 0.85)',
+                textShadow: '1px 2px 3px rgba(0,0,0,0.6)',
+              }}>
+                {savedMenus.length} saved
+              </span>
+            )}
+            <span style={{ fontSize: 18, color: '#eaa221', fontWeight: 'bold', textShadow: '0 0 6px rgba(234,162,33,0.4), 1px 1px 2px rgba(0,0,0,0.4)', transition: 'transform 0.2s', transform: expandedSections.savedMenus ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
+          </div>
+        </div>
+        {expandedSections.savedMenus && <div style={{ padding: '0 18px 18px' }}>
+          <p style={{
+            fontFamily: 'JetBrains Mono, monospace',
+            fontSize: 12,
+            color: 'rgba(240, 232, 218, 0.85)',
+            marginBottom: 12,
+            lineHeight: 1.5,
+            textShadow: '1px 2px 3px rgba(0,0,0,0.6)',
+          }}>
+            Menus you saved from the Plan tab. <strong style={{ color: '#eaa221' }}>Load</strong> rebuilds the week with today's sale prices applied.
+          </p>
+          {savedMenus.length === 0 ? (
+            <p style={{
+              fontFamily: 'Cormorant Garamond, serif',
+              fontSize: 14,
+              fontStyle: 'italic',
+              color: 'rgba(240, 232, 218, 0.55)',
+              textShadow: '1px 1px 2px rgba(0,0,0,0.4)',
+            }}>
+              Nothing saved yet. Generate a plan you like, then hit <strong>♥ Save This Menu</strong> on the Plan tab.
+            </p>
+          ) : (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+              {savedMenus.map(menu => {
+                const savedDate = new Date(menu.savedAt).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+                return (
+                  <div key={menu.id} style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    gap: 12,
+                    padding: '12px 14px',
+                    background: 'rgba(40,28,16,0.6)',
+                    border: '1px solid rgba(200,170,120,0.28)',
+                    borderRadius: 6,
+                    boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.05), 1px 2px 4px rgba(0,0,0,0.3)',
+                  }}>
+                    <div style={{ minWidth: 0, flex: 1 }}>
+                      <div style={{
+                        fontFamily: 'Caveat, cursive',
+                        fontSize: 24,
+                        fontWeight: 700,
+                        color: '#faf5e8',
+                        textShadow: '1px 2px 3px rgba(0,0,0,0.5)',
+                        lineHeight: 1.1,
+                        overflow: 'hidden',
+                        textOverflow: 'ellipsis',
+                        whiteSpace: 'nowrap',
+                      }}
+                      title={menu.name}
+                      >
+                        {menu.name}
+                      </div>
+                      <div style={{
+                        fontFamily: 'JetBrains Mono, monospace',
+                        fontSize: 11,
+                        color: 'rgba(240,232,218,0.6)',
+                        marginTop: 2,
+                        textShadow: '1px 1px 2px rgba(0,0,0,0.4)',
+                      }}>
+                        Saved {savedDate}{typeof menu.weeklyTotal === 'number' ? ` · was $${menu.weeklyTotal.toFixed(2)}` : ''}
+                      </div>
+                    </div>
+                    <div style={{ display: 'flex', gap: 8 }}>
+                      <button
+                        onClick={() => onLoadSavedMenu?.(menu)}
+                        style={{
+                          background: 'linear-gradient(180deg, #f0e4c8 0%, #ddd0aa 30%, #c8b888 70%, #b0a070 100%)',
+                          color: '#2a1a0e',
+                          fontFamily: 'Amatic SC, cursive',
+                          fontWeight: 700,
+                          fontSize: 20,
+                          padding: '6px 16px',
+                          letterSpacing: '0.06em',
+                          textTransform: 'uppercase',
+                          border: '1px solid rgba(140,120,70,0.6)',
+                          borderTop: '1px solid rgba(255,245,220,0.7)',
+                          borderBottom: '2px solid rgba(80,60,30,0.6)',
+                          borderRadius: 6,
+                          cursor: 'pointer',
+                          boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.3), 1px 2px 4px rgba(0,0,0,0.3)',
+                          textShadow: '0 1px 0 rgba(255,255,255,0.3)',
+                        }}
+                      >
+                        Load
+                      </button>
+                      <button
+                        onClick={() => {
+                          if (window.confirm(`Delete "${menu.name}"? This can't be undone.`)) {
+                            onDeleteSavedMenu?.(menu.id);
+                          }
+                        }}
+                        title="Delete this saved menu"
+                        style={{
+                          background: 'rgba(60,40,30,0.7)',
+                          color: '#c8a8a0',
+                          border: '1px solid rgba(180,120,100,0.3)',
+                          fontFamily: 'JetBrains Mono, monospace',
+                          fontSize: 14,
+                          fontWeight: 700,
+                          padding: '6px 12px',
+                          borderRadius: 6,
+                          cursor: 'pointer',
+                          textShadow: '1px 1px 2px rgba(0,0,0,0.4)',
+                        }}
+                      >
+                        ✕
+                      </button>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           )}
         </div>}

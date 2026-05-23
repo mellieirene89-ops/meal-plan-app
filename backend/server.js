@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import { generateMealPlan, getIngredientList, getAvailableRecipes } from './optimizer.js';
+import { generateMealPlan, getIngredientList, getAvailableRecipes, populateMealPlanFromIds } from './optimizer.js';
 import { getSales } from './scraper.js';
 
 const app = express();
@@ -32,7 +32,12 @@ app.get('/api/meal-plan', async (req, res) => {
     const cuisines = req.query.cuisines ? req.query.cuisines.split(',') : [];
     // Default true — Change It Up explicitly opts out via respectBudget=false
     const respectBudget = req.query.respectBudget !== 'false';
-    const plan = generateMealPlan(filteredSales, budget, servings, exclude, favs, variation, customRecipes, onhand, diff, excludeRecipes, cuisines, respectBudget);
+    // ids={"Monday":{"breakfast":"...","lunch":"...","dinner":"..."},...} — Saved Menus path.
+    let savedIds = null;
+    try { if (req.query.ids) savedIds = JSON.parse(decodeURIComponent(req.query.ids)); } catch {}
+    const plan = savedIds
+      ? populateMealPlanFromIds(savedIds, filteredSales, servings, onhand)
+      : generateMealPlan(filteredSales, budget, servings, exclude, favs, variation, customRecipes, onhand, diff, excludeRecipes, cuisines, respectBudget);
 
     res.json({
       ...plan,
@@ -78,7 +83,11 @@ app.get('/api/grocery-list', async (req, res) => {
     const diff = req.query.difficulty || 'all';
     const excludeRecipes = req.query.excludeRecipes ? req.query.excludeRecipes.split(',') : [];
     const cuisines = req.query.cuisines ? req.query.cuisines.split(',') : [];
-    const planData = generateMealPlan(filteredSales, null, servings, exclude, favs, variation, customRecipes, onhand, diff, excludeRecipes, cuisines);
+    let savedIds = null;
+    try { if (req.query.ids) savedIds = JSON.parse(decodeURIComponent(req.query.ids)); } catch {}
+    const planData = savedIds
+      ? populateMealPlanFromIds(savedIds, filteredSales, servings, onhand)
+      : generateMealPlan(filteredSales, null, servings, exclude, favs, variation, customRecipes, onhand, diff, excludeRecipes, cuisines);
 
     // Build a set of on-hand ingredient names from IDs
     const ingredientList = getIngredientList();

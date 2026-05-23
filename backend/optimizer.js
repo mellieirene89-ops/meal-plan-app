@@ -115,6 +115,59 @@ export function getIngredientList() {
   return ingredients.map(i => ({ id: i.id, name: i.name, category: i.category }));
 }
 
+// Build a meal-plan response from an explicit recipe-id-per-day-per-meal-type map.
+// Used by the Saved Menus feature so a saved lineup re-prices itself against
+// today's sales (cheaper when an ingredient is on sale, etc.) without picking
+// new recipes. Returns the same shape as generateMealPlan.
+export function populateMealPlanFromIds(idsByDay = {}, sales = [], servings = 1, onHandIds = []) {
+  const { recipes, ingredients } = loadData();
+  const ingredientMap = buildIngredientMap(ingredients, sales);
+  const byId = Object.fromEntries(recipes.map(r => [r.id, r]));
+
+  const plan = {};
+  let weeklyTotal = 0;
+  for (const day of DAYS) {
+    plan[day] = {};
+    let dayTotal = 0;
+    const dayIds = idsByDay[day] || {};
+    for (const type of MEAL_TYPES) {
+      const recipeId = dayIds[type];
+      const r = recipeId ? byId[recipeId] : null;
+      if (!r) { plan[day][type] = null; continue; }
+      const cost = calcRecipeCost(r, ingredientMap) * servings;
+      plan[day][type] = {
+        id: r.id,
+        name: r.name,
+        prepMinutes: r.prepMinutes,
+        cost,
+        protein_g: calcRecipeProtein(r, ingredientMap) * servings,
+        veggie_count: calcVeggieCount(r, ingredientMap),
+        onSaleIngredients: r.ingredients.filter(it => ingredientMap[it.id]?.onSale).map(it => ingredientMap[it.id].name),
+        tags: r.tags,
+        instructions: r.instructions || [],
+        ingredients: r.ingredients.map(item => ({
+          id: item.id,
+          name: ingredientMap[item.id]?.name || item.id,
+          measure: item.measure || null,
+          onSale: ingredientMap[item.id]?.onSale || false,
+          saleStore: ingredientMap[item.id]?.saleStore || null,
+          cost: Math.round(ingredientMap[item.id]?.currentPrice * item.qty * servings * 100) / 100,
+        })),
+      };
+      dayTotal += cost;
+    }
+    plan[day].dayTotal = Math.round(dayTotal * 100) / 100;
+    weeklyTotal += dayTotal;
+  }
+  return {
+    plan,
+    weeklyTotal: Math.round(weeklyTotal * 100) / 100,
+    servings,
+    generatedAt: new Date().toISOString(),
+    salesApplied: sales.length,
+  };
+}
+
 export function getAvailableRecipes(sales = [], servings = 1, excludeIds = [], favoriteIds = [], customRecipes = [], excludeRecipeIds = [], selectedCuisines = []) {
   const { recipes: builtInRecipes, ingredients } = loadData();
   const ingredientMap = buildIngredientMap(ingredients, sales);

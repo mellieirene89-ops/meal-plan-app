@@ -166,6 +166,12 @@ export default function App() {
       return raw.map(r => typeof r === 'string' ? { id: r, name: r } : r);
     } catch { return []; }
   });
+  const [savedMenus, setSavedMenus] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('mealmaker_saved_menus')) || []; } catch { return []; }
+  });
+  useEffect(() => {
+    try { localStorage.setItem('mealmaker_saved_menus', JSON.stringify(savedMenus)); } catch {}
+  }, [savedMenus]);
   const [selectedCuisines, setSelectedCuisines] = useState(() => {
     try { return JSON.parse(localStorage.getItem('mealmaker_cuisines')) || []; } catch { return []; }
   });
@@ -293,6 +299,62 @@ export default function App() {
       // Fetch recipe pool for skip/replace (filtered by current difficulty)
       fetch(`${API}/recipes?zip=${zip}&servings=${servings}&radius=${radius}${excludeParam}${favParam}${customParam}${diffParam}${excludeRecipesParam}${cuisinesParam}`)
         .then(r => r.json()).then(setRecipePool).catch(() => {});
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  // Save the current plan as a named menu. Stores only the recipe IDs so loading
+  // later re-prices against current sales rather than freezing stale costs.
+  function saveCurrentMenu() {
+    if (!planData?.plan) return;
+    const defaultName = `Menu — ${new Date().toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}`;
+    const name = window.prompt('Name this menu', defaultName);
+    if (!name || !name.trim()) return;
+    const recipeIds = {};
+    for (const [day, dayData] of Object.entries(planData.plan)) {
+      if (!dayData || typeof dayData !== 'object') continue;
+      recipeIds[day] = {
+        breakfast: dayData.breakfast?.id || null,
+        lunch: dayData.lunch?.id || null,
+        dinner: dayData.dinner?.id || null,
+      };
+    }
+    setSavedMenus(prev => [{
+      id: String(Date.now()),
+      name: name.trim(),
+      savedAt: new Date().toISOString(),
+      recipeIds,
+      weeklyTotal: planData.weeklyTotal,
+    }, ...prev]);
+  }
+
+  // Restore a saved menu by sending its recipe IDs to /api/meal-plan?ids=...
+  // The backend reprices each recipe against today's sales.
+  async function loadSavedMenu(menu) {
+    if (!menu?.recipeIds || zip.length !== 5) {
+      setError('Enter a ZIP code first so we can pull current prices.');
+      return;
+    }
+    setLoading(true);
+    setError(null);
+    setSkippedMeals({});
+    setReplacements({});
+    const idsParam = `&ids=${encodeURIComponent(JSON.stringify(menu.recipeIds))}`;
+    const onHandParam = onHand.length ? `&onhand=${onHand.join(',')}` : '';
+    const storeParam = preferredStore ? `&store=${encodeURIComponent(preferredStore)}` : '';
+    try {
+      const [planRes, grocRes] = await Promise.all([
+        fetch(`${API}/meal-plan?zip=${zip}&servings=${servings}&radius=${radius}${idsParam}${onHandParam}${storeParam}`),
+        fetch(`${API}/grocery-list?zip=${zip}&servings=${servings}&radius=${radius}${idsParam}${onHandParam}${storeParam}`),
+      ]);
+      if (!planRes.ok) throw new Error('Failed to load saved menu');
+      setPlanData(await planRes.json());
+      setGroceryData(await grocRes.json());
+      if (mode === 'deals') setMode('planner');
+      setTab('plan');
     } catch (err) {
       setError(err.message);
     } finally {
@@ -1336,7 +1398,7 @@ export default function App() {
                   <strong style={{ color: '#eaa221', fontFamily: 'JetBrains Mono, monospace', fontWeight: 700, fontSize: 13, letterSpacing: '0.08em' }}>TIP</strong>{' '}
                   Click any meal card to jump straight to its full recipe.
                 </div>
-                <div style={{ marginTop: 14 }}>
+                <div style={{ marginTop: 14, display: 'flex', flexWrap: 'wrap', gap: 12, alignItems: 'center' }}>
                   <button
                     onClick={() => {
                       const next = variation + 1;
@@ -1369,6 +1431,33 @@ export default function App() {
                     }}
                   >
                     Change It Up!
+                  </button>
+                  <button
+                    onClick={saveCurrentMenu}
+                    disabled={loading || !planData}
+                    title="Save this week's lineup to revisit later"
+                    style={{
+                      background: 'linear-gradient(180deg, rgba(70,55,38,0.92) 0%, rgba(50,38,25,0.95) 100%)',
+                      color: '#eaa221',
+                      border: '1px solid rgba(234,162,33,0.45)',
+                      borderTop: '1px solid rgba(255,200,100,0.4)',
+                      borderBottom: '2px solid rgba(20,12,4,0.55)',
+                      fontFamily: 'Amatic SC, cursive',
+                      fontWeight: 700,
+                      padding: '10px 20px',
+                      fontSize: 22,
+                      letterSpacing: '0.06em',
+                      textTransform: 'uppercase',
+                      borderRadius: 6,
+                      cursor: loading || !planData ? 'default' : 'pointer',
+                      boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.08), 3px 5px 10px rgba(0,0,0,0.4), 1px 2px 4px rgba(0,0,0,0.3)',
+                      textShadow: '1px 2px 3px rgba(0,0,0,0.5)',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 8,
+                    }}
+                  >
+                    <span style={{ fontSize: 18 }}>♥</span> Save This Menu
                   </button>
                 </div>
               </div>
@@ -1595,6 +1684,9 @@ export default function App() {
                   localStorage.setItem('mealmaker_cuisines', JSON.stringify(next));
                   fetchPlan(false, excluded, onHand, favorites);
                 }}
+                savedMenus={savedMenus}
+                onLoadSavedMenu={loadSavedMenu}
+                onDeleteSavedMenu={(menuId) => setSavedMenus(prev => prev.filter(m => m.id !== menuId))}
               />
             )}
           </div>
