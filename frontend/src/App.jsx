@@ -255,7 +255,7 @@ export default function App() {
     }
   }
 
-  async function fetchPlan(refresh, excludeList, onHandList, favList, varNum) {
+  async function fetchPlan(refresh, excludeList, onHandList, favList, varNum, respectBudget = true) {
     const ex = excludeList || excluded;
     const oh = onHandList || onHand;
     const fav = favList || favorites;
@@ -268,6 +268,7 @@ export default function App() {
     const diffParam = difficulty !== 'all' ? `&difficulty=${difficulty}` : '';
     const excludeRecipesParam = excludedRecipes.length ? `&excludeRecipes=${excludedRecipes.map(r => r.id).join(',')}` : '';
     const cuisinesParam = selectedCuisines.length ? `&cuisines=${selectedCuisines.join(',')}` : '';
+    const budgetParam = respectBudget ? '' : '&respectBudget=false';
     setLoading(true);
     setError(null);
     setSkippedMeals({});
@@ -276,7 +277,7 @@ export default function App() {
     setSalesData(null);
     try {
       const [planRes, grocRes, salesRes] = await Promise.all([
-        fetch(`${API}/meal-plan?zip=${zip}&budget=${budget}&servings=${servings}&refresh=${refresh}&radius=${radius}&variation=${v}${excludeParam}${onHandParam}${favParam}${customParam}${storeParam}${diffParam}${excludeRecipesParam}${cuisinesParam}`),
+        fetch(`${API}/meal-plan?zip=${zip}&budget=${budget}&servings=${servings}&refresh=${refresh}&radius=${radius}&variation=${v}${excludeParam}${onHandParam}${favParam}${customParam}${storeParam}${diffParam}${excludeRecipesParam}${cuisinesParam}${budgetParam}`),
         fetch(`${API}/grocery-list?zip=${zip}&servings=${servings}&radius=${radius}&variation=${v}${excludeParam}${onHandParam}${favParam}${customParam}${storeParam}${diffParam}${excludeRecipesParam}${cuisinesParam}`),
         fetch(`${API}/sales?zip=${zip}&refresh=${refresh}&radius=${radius}`)
       ]);
@@ -1336,7 +1337,9 @@ export default function App() {
                       const next = variation + 1;
                       setVariation(next);
                       localStorage.setItem('mealmaker_variation', String(next));
-                      fetchPlan(false, excluded, onHand, favorites, next);
+                      // respectBudget=false: Change It Up prioritizes fresh recipes; the
+                      // total may end up over budget — user explicitly opted into this.
+                      fetchPlan(false, excluded, onHand, favorites, next, false);
                     }}
                     disabled={loading || !planData}
                     style={{

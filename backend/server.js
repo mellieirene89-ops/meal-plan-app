@@ -30,7 +30,9 @@ app.get('/api/meal-plan', async (req, res) => {
     const diff = req.query.difficulty || 'all';
     const excludeRecipes = req.query.excludeRecipes ? req.query.excludeRecipes.split(',') : [];
     const cuisines = req.query.cuisines ? req.query.cuisines.split(',') : [];
-    const plan = generateMealPlan(filteredSales, budget, servings, exclude, favs, variation, customRecipes, onhand, diff, excludeRecipes, cuisines);
+    // Default true — Change It Up explicitly opts out via respectBudget=false
+    const respectBudget = req.query.respectBudget !== 'false';
+    const plan = generateMealPlan(filteredSales, budget, servings, exclude, favs, variation, customRecipes, onhand, diff, excludeRecipes, cuisines, respectBudget);
 
     res.json({
       ...plan,
