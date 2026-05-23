@@ -1320,7 +1320,14 @@ export default function App() {
 
         {(planData || (mode === 'deals' && salesData)) && (
           <div style={{ animation: 'fadeUp 0.4s ease both' }}>
-            {planData && mode !== 'deals' && <BudgetBar weeklyTotal={withTax(effectivePlan ? Object.values(effectivePlan).reduce((sum, d) => sum + (d.dayTotal || 0), 0) : 0)} budget={budget} taxRate={groceryTaxRate} />}
+            {planData && mode !== 'deals' && <BudgetBar
+              // Use the grocery list's estimatedTotal (out-of-pocket: excludes on-hand
+              // and skipped meals) so BudgetBar and shopping list always show the same
+              // number. Fall back to the raw plan total if grocery hasn't loaded yet.
+              weeklyTotal={withTax(filteredGroceryData?.estimatedTotal ?? (effectivePlan ? Object.values(effectivePlan).reduce((sum, d) => sum + (d.dayTotal || 0), 0) : 0))}
+              budget={budget}
+              taxRate={groceryTaxRate}
+            />}
 
             {/* Tabs */}
             <div className="tabs-row" role="tablist" onKeyDown={e => {
@@ -1497,7 +1504,9 @@ export default function App() {
               </div>
               {mode === 'budget' && effectivePlan && (() => {
                 const days = Object.values(effectivePlan);
-                const weeklyTotal = days.reduce((s, d) => s + (d.dayTotal || 0), 0);
+                // Match the BudgetBar — use grocery estimatedTotal (out-of-pocket) so
+                // the breakdown's headline number is the same as what's on the bar.
+                const weeklyTotal = filteredGroceryData?.estimatedTotal ?? days.reduce((s, d) => s + (d.dayTotal || 0), 0);
                 const weeklyWithTax = withTax(weeklyTotal);
                 const budgetNum = parseFloat(budget) || 0;
                 const remaining = budgetNum - weeklyWithTax;
