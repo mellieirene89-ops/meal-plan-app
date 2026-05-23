@@ -883,9 +883,9 @@ export default function App() {
             ].join(', '),
           }}>
             <Pushpin size={22} position="top-left" />
-            <WashiTape position="top-right" />
+            <Pushpin size={22} position="top-right" />
             <WashiTape position="bottom-left" />
-            <Pushpin size={22} position="bottom-right" />
+            <WashiTape position="bottom-right" />
             {[
               { label: 'ZIP\nCODE', value: zip, setter: e => {
                 const val = e.target.value.replace(/\D/g, '').slice(0, 5);
