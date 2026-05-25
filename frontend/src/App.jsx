@@ -254,6 +254,14 @@ export default function App() {
     return () => { cancelled = true; };
   }, [zip]);
 
+  // Reflect the resolved city in the browser tab title so multiple tabs are
+  // distinguishable. Falls back to plain "Meal Maker" when the ZIP doesn't
+  // resolve to a real city (empty, partial, invalid, or lookup failed).
+  useEffect(() => {
+    const isReal = cityState && cityState !== 'Not a valid US ZIP' && cityState !== 'Lookup failed';
+    document.title = isReal ? `Meal Maker — ${cityState}` : 'Meal Maker';
+  }, [cityState]);
+
   async function fetchDealsOnly(refresh) {
     setLoading(true);
     setError(null);
