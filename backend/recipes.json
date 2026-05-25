@@ -20103,5 +20103,695 @@
     ],
     "difficulty": "expert",
     "suggestedSide": "A cucumber-dill salad or quick coleslaw."
+  },
+  {
+    "id": "fluffy_buttermilk_pancakes_berry_compote",
+    "name": "Fluffy Buttermilk Pancakes with Berry Compote",
+    "mealType": "breakfast",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "flour",
+        "qty": 1.5,
+        "measure": "1 1/2 cups"
+      },
+      {
+        "id": "milk",
+        "qty": 1.25,
+        "measure": "1 1/4 cups"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2 large"
+      },
+      {
+        "id": "butter",
+        "qty": 4,
+        "measure": "4 tbsp, melted (plus more for pan)"
+      },
+      {
+        "id": "sugar",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "frozen_berries",
+        "qty": 1.5,
+        "measure": "1 1/2 cups"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "pinch"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Warm berries with 1 tbsp sugar and lemon juice in a small pot, 8 minutes, until syrupy. Off heat.",
+      "Whisk flour, the rest of the sugar, and salt. In a separate bowl whisk milk, eggs, and melted butter.",
+      "Pour wet into dry, stir just until barely combined — lumps are fine.",
+      "Heat a nonstick skillet over medium-low with a smear of butter. Drop 1/4 cup pancakes; cook 90 seconds until bubbles dot the surface, flip, cook 60 seconds more.",
+      "Stack with warm berry compote spooned over."
+    ],
+    "difficulty": "beginner",
+    "suggestedSide": "A few strips of bacon or breakfast sausage for a sweet-savory balance."
+  },
+  {
+    "id": "apple_cinnamon_pancakes",
+    "name": "Apple Cinnamon Pancakes",
+    "mealType": "breakfast",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "flour",
+        "qty": 1.5,
+        "measure": "1 1/2 cups"
+      },
+      {
+        "id": "milk",
+        "qty": 1.25,
+        "measure": "1 1/4 cups"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2 large"
+      },
+      {
+        "id": "apple",
+        "qty": 2,
+        "measure": "2, peeled and grated"
+      },
+      {
+        "id": "butter",
+        "qty": 4,
+        "measure": "4 tbsp, melted (plus more for pan)"
+      },
+      {
+        "id": "sugar",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "honey",
+        "qty": 1,
+        "measure": "to serve"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "pinch"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "kid-friendly",
+      "garden-fresh"
+    ],
+    "instructions": [
+      "Whisk flour, sugar, a generous pinch of cinnamon (if you have it), and salt.",
+      "In another bowl whisk milk, eggs, and melted butter. Stir in the grated apple.",
+      "Pour wet into dry, fold just until combined — a few floury streaks are fine.",
+      "Heat a nonstick skillet over medium-low with a smear of butter. Drop 1/4 cup pancakes; cook 2 minutes per side until deeply golden.",
+      "Stack and drizzle with honey."
+    ],
+    "difficulty": "beginner",
+    "suggestedSide": "Sausage links or a side of greek yogurt with extra apple slices."
+  },
+  {
+    "id": "western_omelet",
+    "name": "Western Omelet",
+    "mealType": "breakfast",
+    "prepMinutes": 15,
+    "ingredients": [
+      {
+        "id": "eggs",
+        "qty": 3,
+        "measure": "3 large"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1/4, finely diced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "2 tbsp diced onion"
+      },
+      {
+        "id": "deli_turkey",
+        "qty": 1,
+        "measure": "2 oz (or diced ham), chopped"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1/4 cup shredded"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "milk",
+        "qty": 0.25,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein"
+    ],
+    "instructions": [
+      "Sauté pepper and onion in 1 tsp butter over medium for 3 minutes until softened; add ham and warm 30 seconds. Set aside.",
+      "Whisk eggs with milk, salt, and pepper.",
+      "Melt the rest of the butter in a nonstick skillet over medium-low. Pour eggs in and let them set 30 seconds; gently push edges in with a spatula, tilting the pan to fill the gaps.",
+      "When mostly set but still glossy on top, scatter filling and cheese over half.",
+      "Fold the empty side over the filling. Slide onto a plate."
+    ],
+    "difficulty": "intermediate",
+    "suggestedSide": "A slice of buttered toast and a few orange wedges."
+  },
+  {
+    "id": "spinach_feta_omelet",
+    "name": "Spinach & Feta Omelet",
+    "mealType": "breakfast",
+    "prepMinutes": 12,
+    "ingredients": [
+      {
+        "id": "eggs",
+        "qty": 3,
+        "measure": "3 large"
+      },
+      {
+        "id": "frozen_spinach",
+        "qty": 1,
+        "measure": "1/2 cup, thawed and squeezed dry"
+      },
+      {
+        "id": "feta_cheese",
+        "qty": 1,
+        "measure": "1/4 cup crumbled"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 clove garlic, minced"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "milk",
+        "qty": 0.25,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mediterranean",
+      "greek",
+      "high-protein",
+      "veggie-rich"
+    ],
+    "instructions": [
+      "Warm garlic and spinach in olive oil over medium 2 minutes; season with salt and pepper. Set aside.",
+      "Whisk eggs with milk, salt, and pepper.",
+      "Melt butter in a nonstick skillet over medium-low. Pour eggs in and let set 30 seconds; gently push edges in, tilting to fill gaps.",
+      "When mostly set, scatter spinach and feta over half.",
+      "Fold the empty side over. Slide onto a plate."
+    ],
+    "difficulty": "intermediate",
+    "suggestedSide": "Toasted pita and a slice of tomato."
+  },
+  {
+    "id": "greek_scramble_feta_tomato",
+    "name": "Greek Scramble with Feta & Tomato",
+    "mealType": "breakfast",
+    "prepMinutes": 12,
+    "ingredients": [
+      {
+        "id": "eggs",
+        "qty": 3,
+        "measure": "3 large"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 1,
+        "measure": "1, diced"
+      },
+      {
+        "id": "feta_cheese",
+        "qty": 1,
+        "measure": "1/4 cup crumbled"
+      },
+      {
+        "id": "frozen_spinach",
+        "qty": 1,
+        "measure": "1/2 cup, thawed"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "2 cloves garlic"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1/2 tsp (oregano-leaning)"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "greek",
+      "mediterranean",
+      "high-protein",
+      "veggie-rich"
+    ],
+    "instructions": [
+      "Warm olive oil over medium-low; add garlic and Italian seasoning, cook 30 seconds.",
+      "Stir in spinach and tomato; cook 2 minutes until tomato juices reduce.",
+      "Beat eggs with salt and pepper; pour into the pan.",
+      "Stir gently with a soft spatula, pushing the curds around, 90 seconds — pull off heat while still glossy.",
+      "Off heat, fold in feta. Serve right away."
+    ],
+    "difficulty": "beginner",
+    "suggestedSide": "Warm pita and a wedge of cucumber."
+  },
+  {
+    "id": "classic_bacon_egg_cheese_sandwich",
+    "name": "Classic Bacon, Egg & Cheese Breakfast Sandwich",
+    "mealType": "breakfast",
+    "prepMinutes": 15,
+    "ingredients": [
+      {
+        "id": "bread",
+        "qty": 2,
+        "measure": "2 slices (or English muffin)"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2 large"
+      },
+      {
+        "id": "bacon",
+        "qty": 1,
+        "measure": "3 strips"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1 slice American or cheddar"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Cook bacon in a skillet until crisp; drain on paper towels.",
+      "Toast bread (or English muffin halves) until golden. Butter one side.",
+      "Wipe out most of the bacon fat. Crack eggs into the pan, season with salt and pepper. Fry 90 seconds, then break the yolks (so it stacks neatly), cook 30 seconds more.",
+      "Lay cheese over the eggs the last 30 seconds to melt.",
+      "Build: bottom bread, eggs with cheese, bacon, top bread. Press lightly and slice in half."
+    ],
+    "difficulty": "beginner",
+    "suggestedSide": "A handful of orange slices or a side of hash browns."
+  },
+  {
+    "id": "sausage_egg_cheese_biscuit",
+    "name": "Sausage, Egg & Cheese Biscuit Sandwich",
+    "mealType": "breakfast",
+    "prepMinutes": 30,
+    "ingredients": [
+      {
+        "id": "flour",
+        "qty": 2,
+        "measure": "2 cups"
+      },
+      {
+        "id": "butter",
+        "qty": 6,
+        "measure": "6 tbsp cold, cubed"
+      },
+      {
+        "id": "milk",
+        "qty": 0.75,
+        "measure": "3/4 cup"
+      },
+      {
+        "id": "sausage",
+        "qty": 2,
+        "measure": "4 patties"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2 large"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "2 slices"
+      },
+      {
+        "id": "sugar",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "1/2 tsp + more to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "barbecue",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Heat oven to 425°F. Whisk flour, sugar, salt, and 1 tsp baking powder (if you have it).",
+      "Cut cold butter into the flour with two forks (or rub with fingers) until pea-sized chunks remain. Pour in milk; stir just until clumpy.",
+      "Turn out, pat into a 1-inch thick rectangle, cut 4 biscuits. Bake on parchment 14-16 minutes until tall and golden.",
+      "Meanwhile cook sausage patties in a skillet until browned and cooked through, 3 minutes per side.",
+      "In the same pan crack eggs, season, and fry to your liking — top each with cheese the last 30 seconds.",
+      "Split biscuits and stack: bottom, sausage, egg with cheese, top. Serve warm."
+    ],
+    "difficulty": "intermediate",
+    "suggestedSide": "Sliced fresh fruit to cut the richness."
+  },
+  {
+    "id": "italian_sausage_pepper_frittata",
+    "name": "Italian Sausage & Pepper Frittata",
+    "mealType": "breakfast",
+    "prepMinutes": 30,
+    "ingredients": [
+      {
+        "id": "eggs",
+        "qty": 4,
+        "measure": "8 large"
+      },
+      {
+        "id": "sausage",
+        "qty": 2,
+        "measure": "8 oz Italian, casings removed"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 2,
+        "measure": "2, sliced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion sliced + 2 cloves garlic"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1,
+        "measure": "1/2 cup shredded"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "1/4 cup grated"
+      },
+      {
+        "id": "milk",
+        "qty": 0.25,
+        "measure": "1/4 cup"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "comfort-food",
+      "high-protein",
+      "make-ahead"
+    ],
+    "instructions": [
+      "Heat oven to 375°F. Brown sausage in an oven-safe skillet, breaking it up, 5 minutes. Lift out.",
+      "Sauté pepper, onion, and garlic in the rendered fat (add olive oil if needed) 6 minutes until soft. Return sausage.",
+      "Whisk eggs, milk, Italian seasoning, salt, and pepper. Pour over the sausage mixture, swirl to distribute.",
+      "Scatter mozzarella and parmesan on top.",
+      "Bake 15-18 minutes until set in the middle and just turning golden.",
+      "Rest 5 minutes; slice into wedges."
+    ],
+    "difficulty": "intermediate",
+    "suggestedSide": "A simple green salad with a sharp vinaigrette."
+  },
+  {
+    "id": "mushroom_spinach_frittata",
+    "name": "Mushroom & Spinach Frittata",
+    "mealType": "breakfast",
+    "prepMinutes": 30,
+    "ingredients": [
+      {
+        "id": "eggs",
+        "qty": 4,
+        "measure": "8 large"
+      },
+      {
+        "id": "mushrooms",
+        "qty": 2,
+        "measure": "8 oz, sliced"
+      },
+      {
+        "id": "frozen_spinach",
+        "qty": 1,
+        "measure": "1 cup, thawed and squeezed dry"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion diced + 2 cloves garlic"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "1/3 cup grated"
+      },
+      {
+        "id": "feta_cheese",
+        "qty": 1,
+        "measure": "1/4 cup crumbled (optional)"
+      },
+      {
+        "id": "milk",
+        "qty": 0.25,
+        "measure": "1/4 cup"
+      },
+      {
+        "id": "butter",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "mediterranean",
+      "veggie-rich",
+      "high-protein",
+      "make-ahead"
+    ],
+    "instructions": [
+      "Heat oven to 375°F. Melt butter in an oven-safe skillet over medium-high. Add mushrooms and cook 8 minutes until deeply browned.",
+      "Stir in onion and garlic; cook 3 minutes. Add spinach and Italian seasoning, warm through.",
+      "Whisk eggs, milk, salt, and pepper. Pour over the vegetables, swirl to distribute.",
+      "Scatter parmesan (and feta if using) over the top.",
+      "Bake 15-18 minutes until set in the middle.",
+      "Rest 5 minutes; slice into wedges."
+    ],
+    "difficulty": "intermediate",
+    "suggestedSide": "Crusty toast with butter and a few cherry tomatoes."
+  },
+  {
+    "id": "quiche_lorraine_bacon_cheddar",
+    "name": "Quiche Lorraine with Bacon & Cheddar",
+    "mealType": "breakfast",
+    "prepMinutes": 75,
+    "ingredients": [
+      {
+        "id": "flour",
+        "qty": 1.25,
+        "measure": "1 1/4 cups (for crust)"
+      },
+      {
+        "id": "butter",
+        "qty": 8,
+        "measure": "8 tbsp cold, cubed"
+      },
+      {
+        "id": "eggs",
+        "qty": 4,
+        "measure": "4 large"
+      },
+      {
+        "id": "milk",
+        "qty": 1.5,
+        "measure": "1 1/2 cups"
+      },
+      {
+        "id": "bacon",
+        "qty": 3,
+        "measure": "8 strips, chopped"
+      },
+      {
+        "id": "cheddar",
+        "qty": 2,
+        "measure": "1 cup shredded"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion finely diced"
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 1,
+        "measure": "3 tbsp (substitute for cream)"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "1/2 tsp + pinch for crust"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "comfort-food",
+      "mediterranean",
+      "high-protein",
+      "make-ahead"
+    ],
+    "instructions": [
+      "Pulse flour, cold butter, and a pinch of salt until pea-sized crumbs. Drizzle 4-5 tbsp ice water in until the dough just clumps. Chill 30 minutes.",
+      "Roll dough out and fit into a 9-inch pie or tart pan. Prick the base with a fork. Chill another 15 minutes.",
+      "Heat oven to 400°F. Line crust with parchment + dried beans; blind bake 15 minutes, then remove beans and bake 5 more minutes until lightly golden.",
+      "Meanwhile cook bacon in a skillet until crisp; drain, reserve 1 tsp fat. Sauté onion in that fat until soft, 4 minutes.",
+      "Whisk eggs, milk, cream cheese (broken up), salt, and pepper until smooth. Stir in cheddar, bacon, and onion.",
+      "Lower oven to 350°F. Pour filling into the crust and bake 35-40 minutes until just set with a slight wobble in the center.",
+      "Rest 15 minutes before slicing — it sets as it cools."
+    ],
+    "difficulty": "expert",
+    "suggestedSide": "A simple bitter greens salad to cut the richness."
   }
 ]
