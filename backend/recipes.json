@@ -16459,5 +16459,296 @@
       "Build: bun, mayo, lettuce, patty with cheese, tomato, onion, top bun. Serve with the fries."
     ],
     "difficulty": "beginner"
+  },
+  {
+    "id": "slow_cooker_classic_beef_stew",
+    "name": "Slow Cooker Classic Beef Stew",
+    "mealType": "dinner",
+    "prepMinutes": 20,
+    "ingredients": [
+      { "id": "ground_beef", "qty": 1.5, "measure": "1 lb stew beef or chuck, cubed" },
+      { "id": "potato", "qty": 2, "measure": "2 medium, cubed" },
+      { "id": "carrots", "qty": 2, "measure": "2 large, sliced" },
+      { "id": "celery", "qty": 2, "measure": "2 stalks, sliced" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1 onion, diced + 2 cloves garlic" },
+      { "id": "broth", "qty": 3, "measure": "3 cups" },
+      { "id": "tomato_sauce", "qty": 0.5, "measure": "1/2 can" },
+      { "id": "flour", "qty": 0.25, "measure": "1/4 cup, for dredging" },
+      { "id": "italian_seasoning", "qty": 1, "measure": "1 tsp" },
+      { "id": "paprika", "qty": 1, "measure": "1 tsp" },
+      { "id": "olive_oil", "qty": 2, "measure": "2 tbsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["american-classic", "comfort-food", "high-protein", "filling", "make-ahead"],
+    "instructions": [
+      "Dredge cubed beef in seasoned flour. Sear in olive oil over high heat in batches until browned on all sides; transfer to slow cooker.",
+      "Add onion, garlic, carrots, celery, and potato to the slow cooker.",
+      "Pour broth and tomato sauce over; stir in Italian seasoning, paprika, salt, and pepper.",
+      "Cook on LOW 7-8 hours or HIGH 4 hours until beef is fork-tender.",
+      "Taste and adjust salt. Serve in deep bowls with crusty bread if you have it."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "slow_cooker_pot_roast",
+    "name": "Slow Cooker Pot Roast with Vegetables",
+    "mealType": "dinner",
+    "prepMinutes": 15,
+    "ingredients": [
+      { "id": "ground_beef", "qty": 2, "measure": "1 1/2 lb chuck roast" },
+      { "id": "potato", "qty": 3, "measure": "3 medium, quartered" },
+      { "id": "carrots", "qty": 3, "measure": "3 large, cut into chunks" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1 onion, quartered + 3 cloves garlic" },
+      { "id": "broth", "qty": 2, "measure": "2 cups" },
+      { "id": "ranch_mix", "qty": 1, "measure": "1 packet (optional, for flavor)" },
+      { "id": "italian_seasoning", "qty": 1, "measure": "1 tsp" },
+      { "id": "olive_oil", "qty": 2, "measure": "2 tbsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["american-classic", "comfort-food", "high-protein", "filling", "make-ahead"],
+    "instructions": [
+      "Pat roast dry, season generously with salt and pepper. Sear in olive oil on all sides until deeply browned (~3 min/side).",
+      "Place roast in slow cooker. Scatter onion, garlic, carrots, and potato around it.",
+      "Pour broth around the roast; sprinkle ranch mix and Italian seasoning over top.",
+      "Cook on LOW 8 hours until the roast pulls apart with a fork.",
+      "Lift roast out, slice or shred, and serve with the vegetables and pan juices."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "slow_cooker_bbq_pulled_pork",
+    "name": "Slow Cooker BBQ Pulled Pork Sandwiches with Slaw",
+    "mealType": "dinner",
+    "prepMinutes": 15,
+    "ingredients": [
+      { "id": "pork_chops", "qty": 2, "measure": "2 lb pork shoulder (or thick-cut pork chops)" },
+      { "id": "bbq_sauce", "qty": 4, "measure": "1 cup" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1 onion, sliced + 2 cloves garlic" },
+      { "id": "paprika", "qty": 1, "measure": "1 tbsp" },
+      { "id": "chili_powder", "qty": 1, "measure": "1 tsp" },
+      { "id": "bread", "qty": 4, "measure": "4 buns (or 8 slices)" },
+      { "id": "cabbage", "qty": 2, "measure": "3 cups shredded" },
+      { "id": "carrots", "qty": 1, "measure": "1, shredded" },
+      { "id": "mayo", "qty": 3, "measure": "3 tbsp" },
+      { "id": "vinegar", "qty": 1, "measure": "1 tbsp" },
+      { "id": "sugar", "qty": 1, "measure": "1 tsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["american-classic", "barbecue", "comfort-food", "high-protein", "filling", "make-ahead"],
+    "instructions": [
+      "Rub pork with paprika, chili powder, and salt. Layer onion and garlic in the slow cooker; place pork on top.",
+      "Pour half the BBQ sauce over the pork. Cook on LOW 8 hours or HIGH 5 hours until shreddable.",
+      "Shred with two forks in the cooker, stir in the remaining BBQ sauce, and let it sit on LOW another 15 minutes to soak up flavor.",
+      "Whisk mayo, vinegar, sugar, and salt for slaw dressing. Toss with cabbage and shredded carrot.",
+      "Pile pork on toasted buns; top with slaw."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "slow_cooker_chicken_tortilla_soup",
+    "name": "Slow Cooker Chicken Tortilla Soup",
+    "mealType": "dinner",
+    "prepMinutes": 15,
+    "ingredients": [
+      { "id": "chicken_breast", "qty": 2, "measure": "1 lb (will shred)" },
+      { "id": "black_beans", "qty": 1, "measure": "1 can, drained" },
+      { "id": "corn", "qty": 1, "measure": "1 can, drained" },
+      { "id": "canned_tomatoes", "qty": 1, "measure": "1 can diced" },
+      { "id": "salsa", "qty": 1, "measure": "1 cup" },
+      { "id": "broth", "qty": 4, "measure": "4 cups chicken" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1 onion diced + 2 cloves garlic" },
+      { "id": "cumin", "qty": 1, "measure": "1 tsp" },
+      { "id": "chili_powder", "qty": 1, "measure": "1 tsp" },
+      { "id": "tortillas", "qty": 4, "measure": "4, cut into strips and toasted" },
+      { "id": "cheddar", "qty": 1, "measure": "1/2 cup shredded, to serve" },
+      { "id": "cilantro", "qty": 0.5, "measure": "small handful, chopped" },
+      { "id": "lime", "qty": 1, "measure": "1, cut in wedges" },
+      { "id": "salt", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["mexican", "comfort-food", "high-protein", "filling", "make-ahead"],
+    "instructions": [
+      "Combine chicken, beans, corn, tomatoes, salsa, broth, onion, garlic, cumin, chili powder, and salt in the slow cooker.",
+      "Cook on LOW 6 hours or HIGH 3-4 hours until chicken is cooked through.",
+      "Lift chicken out, shred with two forks, and return to the pot.",
+      "Meanwhile, toast tortilla strips in a dry skillet or 400°F oven until crispy, ~6 minutes.",
+      "Ladle soup into bowls; top with tortilla strips, cheddar, cilantro, and a squeeze of lime."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "slow_cooker_indian_chicken_curry",
+    "name": "Slow Cooker Indian-Style Chicken Curry over Rice",
+    "mealType": "dinner",
+    "prepMinutes": 20,
+    "ingredients": [
+      { "id": "chicken_thighs", "qty": 2, "measure": "1 1/2 lb boneless thighs" },
+      { "id": "canned_tomatoes", "qty": 1, "measure": "1 can crushed" },
+      { "id": "greek_yogurt", "qty": 2, "measure": "3/4 cup (stirred in at the end)" },
+      { "id": "garlic_onion", "qty": 1.5, "measure": "1 large onion + 4 cloves garlic" },
+      { "id": "ginger", "qty": 1, "measure": "1 tbsp grated" },
+      { "id": "cumin", "qty": 1, "measure": "1 tbsp" },
+      { "id": "paprika", "qty": 1, "measure": "1 tbsp" },
+      { "id": "chili_powder", "qty": 1, "measure": "1 tsp" },
+      { "id": "broth", "qty": 1, "measure": "1 cup" },
+      { "id": "white_rice", "qty": 2, "measure": "1 cup, cooked per package" },
+      { "id": "cilantro", "qty": 0.5, "measure": "small handful, chopped" },
+      { "id": "olive_oil", "qty": 2, "measure": "2 tbsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["indian", "comfort-food", "high-protein", "filling", "make-ahead"],
+    "instructions": [
+      "Sauté onion, garlic, and ginger in olive oil until soft (~5 min). Stir in cumin, paprika, and chili powder; cook 30 seconds until fragrant.",
+      "Transfer to slow cooker with chicken thighs, crushed tomatoes, broth, and salt.",
+      "Cook on LOW 6 hours or HIGH 3 hours until chicken pulls apart easily.",
+      "Shred chicken in the pot with two forks. Turn off heat and stir in the yogurt (off-heat keeps it from breaking).",
+      "Serve over rice; garnish with cilantro."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "slow_cooker_korean_beef_bowl",
+    "name": "Slow Cooker Korean-Style Beef Rice Bowl",
+    "mealType": "dinner",
+    "prepMinutes": 15,
+    "ingredients": [
+      { "id": "ground_beef", "qty": 1.5, "measure": "1 lb flank steak or chuck, sliced thin" },
+      { "id": "soy_sauce", "qty": 4, "measure": "1/2 cup" },
+      { "id": "brown_rice", "qty": 2, "measure": "1 cup, cooked per package" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1 onion sliced + 4 cloves garlic" },
+      { "id": "ginger", "qty": 1, "measure": "1 tbsp grated" },
+      { "id": "sugar", "qty": 4, "measure": "1/4 cup brown sugar" },
+      { "id": "sesame_oil", "qty": 1, "measure": "1 tbsp" },
+      { "id": "broth", "qty": 0.5, "measure": "1/2 cup beef" },
+      { "id": "green_onion", "qty": 1, "measure": "3 stalks, sliced for garnish" },
+      { "id": "carrots", "qty": 1, "measure": "1, julienned" },
+      { "id": "cabbage", "qty": 1, "measure": "2 cups shredded (raw, for crunch)" },
+      { "id": "hot_sauce", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["asian", "comfort-food", "high-protein", "filling", "make-ahead"],
+    "instructions": [
+      "Combine beef, onion, garlic, ginger, soy sauce, brown sugar, sesame oil, and broth in the slow cooker.",
+      "Cook on LOW 6 hours or HIGH 3 hours until beef is tender.",
+      "Skim excess fat from the top if needed. Stir to coat in the sauce.",
+      "Serve over brown rice with raw cabbage, julienned carrot, and green onions on top.",
+      "Drizzle with hot sauce to taste."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "sheet_pan_shrimp_boil",
+    "name": "Sheet Pan Shrimp Boil",
+    "mealType": "dinner",
+    "prepMinutes": 35,
+    "ingredients": [
+      { "id": "shrimp", "qty": 1.5, "measure": "1 lb, peeled" },
+      { "id": "sausage", "qty": 2, "measure": "8 oz smoked sausage, sliced" },
+      { "id": "corn", "qty": 1, "measure": "2 ears (or 1 can drained)" },
+      { "id": "potato", "qty": 2, "measure": "2 lb baby potatoes, halved" },
+      { "id": "butter", "qty": 4, "measure": "4 tbsp, melted" },
+      { "id": "garlic_onion", "qty": 1, "measure": "4 cloves garlic, minced" },
+      { "id": "paprika", "qty": 1, "measure": "1 tbsp smoked paprika" },
+      { "id": "lemon", "qty": 1, "measure": "1, cut in wedges" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["american-classic", "comfort-food", "high-protein", "filling"],
+    "instructions": [
+      "Heat oven to 425°F. Boil potatoes 8 minutes until just tender; drain.",
+      "Spread potatoes, sausage, and corn on a sheet pan. Toss with half the melted butter, half the garlic, paprika, salt, and pepper.",
+      "Roast 15 minutes until potatoes are crisp at the edges.",
+      "Toss shrimp with the remaining butter and garlic. Add to the pan, give everything a stir, and roast another 5-7 minutes until shrimp is pink and curled.",
+      "Serve straight from the pan with lemon wedges to squeeze over."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "sheet_pan_italian_meatballs_veggies",
+    "name": "Sheet Pan Italian Meatballs with Roasted Vegetables",
+    "mealType": "dinner",
+    "prepMinutes": 35,
+    "ingredients": [
+      { "id": "ground_beef", "qty": 1.5, "measure": "1 lb" },
+      { "id": "eggs", "qty": 1, "measure": "1 large" },
+      { "id": "bread", "qty": 2, "measure": "2 slices, blitzed to crumbs" },
+      { "id": "parmesan", "qty": 2, "measure": "1/2 cup grated, divided" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1/2 onion finely diced + 3 cloves garlic" },
+      { "id": "italian_seasoning", "qty": 1, "measure": "1 tbsp" },
+      { "id": "zucchini", "qty": 2, "measure": "2, sliced into half-moons" },
+      { "id": "bell_pepper", "qty": 2, "measure": "2, cut in chunks" },
+      { "id": "tomato_sauce", "qty": 1, "measure": "1 cup marinara, warmed" },
+      { "id": "olive_oil", "qty": 3, "measure": "3 tbsp" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["italian", "comfort-food", "high-protein", "filling", "kid-friendly"],
+    "instructions": [
+      "Heat oven to 425°F. Mix beef, egg, breadcrumbs, half the parmesan, onion-garlic, Italian seasoning, salt, and pepper until just combined.",
+      "Roll into 16 meatballs (about 1.5 inch each). Place on a parchment-lined sheet pan.",
+      "Toss zucchini and bell pepper with olive oil, salt, and pepper. Spread around the meatballs.",
+      "Roast 20-25 minutes until meatballs reach 160°F and vegetables are golden at the edges.",
+      "Plate meatballs and vegetables; spoon warm marinara over and shower with the remaining parmesan."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "sheet_pan_greek_chicken_feta",
+    "name": "Sheet Pan Greek Chicken with Lemon & Feta",
+    "mealType": "dinner",
+    "prepMinutes": 35,
+    "ingredients": [
+      { "id": "chicken_thighs", "qty": 2, "measure": "1 1/2 lb bone-in thighs" },
+      { "id": "potato", "qty": 2, "measure": "2 medium, quartered" },
+      { "id": "bell_pepper", "qty": 1, "measure": "1, cut in chunks" },
+      { "id": "zucchini", "qty": 1, "measure": "1, sliced thick" },
+      { "id": "fresh_tomato", "qty": 2, "measure": "2, cut in wedges" },
+      { "id": "feta_cheese", "qty": 2, "measure": "1/2 cup crumbled" },
+      { "id": "lemon", "qty": 2, "measure": "1 lemon, juiced + 1 cut in wedges" },
+      { "id": "garlic_onion", "qty": 1, "measure": "4 cloves garlic + 1 small onion in wedges" },
+      { "id": "italian_seasoning", "qty": 1, "measure": "1 tbsp (oregano-leaning)" },
+      { "id": "olive_oil", "qty": 4, "measure": "1/4 cup" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["greek", "mediterranean", "high-protein", "garden-fresh"],
+    "instructions": [
+      "Heat oven to 425°F. Whisk olive oil, lemon juice, garlic, Italian seasoning, salt, and pepper.",
+      "Toss chicken thighs, potatoes, peppers, zucchini, onion, and tomato wedges with the dressing on a large sheet pan.",
+      "Roast 30-35 minutes, stirring vegetables once halfway, until chicken reaches 175°F and the edges are caramelized.",
+      "Scatter crumbled feta over the hot pan; let it soften 1 minute.",
+      "Serve straight from the pan with extra lemon wedges to squeeze over."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "one_pot_creamy_tomato_chicken_pasta",
+    "name": "One-Pot Creamy Tomato Chicken Pasta",
+    "mealType": "dinner",
+    "prepMinutes": 30,
+    "ingredients": [
+      { "id": "chicken_breast", "qty": 1.5, "measure": "12 oz, cubed" },
+      { "id": "pasta", "qty": 2, "measure": "8 oz penne or rotini" },
+      { "id": "canned_tomatoes", "qty": 1, "measure": "1 can crushed" },
+      { "id": "cream_cheese", "qty": 2, "measure": "4 oz, cubed" },
+      { "id": "broth", "qty": 2, "measure": "2 cups chicken" },
+      { "id": "garlic_onion", "qty": 1, "measure": "1/2 onion diced + 4 cloves garlic" },
+      { "id": "italian_seasoning", "qty": 1, "measure": "1 tbsp" },
+      { "id": "parmesan", "qty": 1, "measure": "1/4 cup grated, plus extra to serve" },
+      { "id": "olive_oil", "qty": 2, "measure": "2 tbsp" },
+      { "id": "frozen_spinach", "qty": 1, "measure": "1 cup (optional, stirred in at the end)" },
+      { "id": "salt", "qty": 1, "measure": "to taste" },
+      { "id": "pepper", "qty": 1, "measure": "to taste" }
+    ],
+    "tags": ["italian", "comfort-food", "high-protein", "filling", "kid-friendly"],
+    "instructions": [
+      "Heat olive oil in a Dutch oven over medium-high. Season chicken with salt, pepper, and half the Italian seasoning; sear 4 minutes until browned. Lift out.",
+      "Add onion and garlic to the pot; cook 3 minutes until soft.",
+      "Stir in crushed tomatoes, broth, the rest of the Italian seasoning, and dry pasta. Bring to a simmer.",
+      "Cover and cook 10-12 minutes, stirring once, until pasta is al dente and liquid is mostly absorbed.",
+      "Return chicken to the pot. Stir in cream cheese and parmesan until creamy. Fold in spinach if using; cook 2 more minutes.",
+      "Serve in bowls with extra parmesan on top."
+    ],
+    "difficulty": "beginner"
   }
 ]
