@@ -24961,5 +24961,725 @@
       "Pile beef and peppers on top; close with the top roll. Serve a small bowl of the hot jus on the side for dipping."
     ],
     "suggestedSide": "A small green salad and the warm jus for dunking."
+  },
+  {
+    "id": "thai_peanut_crunch_salad",
+    "name": "Thai Peanut Crunch Salad",
+    "mealType": "lunch",
+    "prepMinutes": 15,
+    "ingredients": [
+      {
+        "id": "cabbage",
+        "qty": 1,
+        "measure": "3 cups shredded"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "1 large, grated"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, thinly sliced"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "3, sliced"
+      },
+      {
+        "id": "cilantro",
+        "qty": 1,
+        "measure": "1/4 cup, chopped"
+      },
+      {
+        "id": "peanut_butter",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "honey",
+        "qty": 1,
+        "measure": "1 tsp"
+      }
+    ],
+    "tags": [
+      "thai",
+      "vegetarian",
+      "no-cook",
+      "veggie-rich",
+      "quick"
+    ],
+    "instructions": [
+      "Whisk peanut butter, soy sauce, lime juice, sesame oil, and honey with 1 tbsp warm water until smooth.",
+      "Toss cabbage, carrots, bell pepper, and green onion in a large bowl.",
+      "Pour dressing over the slaw and toss until everything is well coated.",
+      "Top with cilantro and serve immediately for maximum crunch."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "harvest_apple_walnut_salad",
+    "name": "Harvest Apple & Walnut Salad",
+    "mealType": "lunch",
+    "prepMinutes": 12,
+    "ingredients": [
+      {
+        "id": "lettuce",
+        "qty": 1,
+        "measure": "4 cups mixed greens"
+      },
+      {
+        "id": "apple",
+        "qty": 1,
+        "measure": "1, thinly sliced"
+      },
+      {
+        "id": "feta_cheese",
+        "qty": 1,
+        "measure": "1/4 cup crumbled"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tbsp apple cider"
+      },
+      {
+        "id": "honey",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "mustard",
+        "qty": 1,
+        "measure": "1/2 tsp dijon"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "garden-fresh",
+      "vegetarian",
+      "no-cook",
+      "quick"
+    ],
+    "instructions": [
+      "Whisk olive oil, apple cider vinegar, honey, mustard, salt, and pepper.",
+      "Arrange mixed greens on a plate. Fan apple slices over the top.",
+      "Scatter crumbled feta across the salad.",
+      "Drizzle with vinaigrette and serve."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "southwest_chicken_salad",
+    "name": "Southwest Chicken Salad with Chipotle Lime",
+    "mealType": "lunch",
+    "prepMinutes": 20,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "measure": "1, seasoned and grilled"
+      },
+      {
+        "id": "lettuce",
+        "qty": 1,
+        "measure": "3 cups chopped romaine"
+      },
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "measure": "1/2 cup, drained and rinsed"
+      },
+      {
+        "id": "corn",
+        "qty": 1,
+        "measure": "1/2 cup kernels"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 1,
+        "measure": "1, diced"
+      },
+      {
+        "id": "avocado",
+        "qty": 1,
+        "measure": "1/2, sliced"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      },
+      {
+        "id": "chili_powder",
+        "qty": 1,
+        "measure": "1/4 tsp chipotle"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "high-protein",
+      "garden-fresh",
+      "veggie-rich"
+    ],
+    "instructions": [
+      "Season chicken with cumin, chili powder, and salt. Grill or pan-sear 5 minutes per side until cooked through. Slice.",
+      "Whisk lime juice, olive oil, and a pinch of chipotle chili powder for the dressing.",
+      "Arrange romaine in a bowl. Top with black beans, corn, tomato, and avocado.",
+      "Lay sliced chicken over the top and drizzle with chipotle lime dressing."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "mediterranean_quinoa_salad",
+    "name": "Mediterranean Quinoa Salad",
+    "mealType": "lunch",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "quinoa",
+        "qty": 1,
+        "measure": "1/2 cup dry"
+      },
+      {
+        "id": "cucumber",
+        "qty": 1,
+        "measure": "1/2, diced"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 1,
+        "measure": "1, diced"
+      },
+      {
+        "id": "feta_cheese",
+        "qty": 1,
+        "measure": "1/4 cup crumbled"
+      },
+      {
+        "id": "chickpeas",
+        "qty": 1,
+        "measure": "1/2 cup, drained"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 clove garlic, minced"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mediterranean",
+      "vegetarian",
+      "high-protein",
+      "make-ahead",
+      "veggie-rich"
+    ],
+    "instructions": [
+      "Cook quinoa according to package directions. Fluff and let cool 5 minutes.",
+      "Toss cooled quinoa with cucumber, tomato, chickpeas, and feta.",
+      "Whisk olive oil, lemon juice, garlic, salt, and pepper.",
+      "Pour dressing over the salad and toss gently. Serve at room temperature or chilled."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "shrimp_mango_salad",
+    "name": "Shrimp & Mango Tropical Salad",
+    "mealType": "lunch",
+    "prepMinutes": 18,
+    "ingredients": [
+      {
+        "id": "shrimp",
+        "qty": 1,
+        "measure": "6 oz, peeled and deveined"
+      },
+      {
+        "id": "frozen_mango",
+        "qty": 1,
+        "measure": "1/2 cup, thawed and diced"
+      },
+      {
+        "id": "lettuce",
+        "qty": 1,
+        "measure": "3 cups mixed greens"
+      },
+      {
+        "id": "avocado",
+        "qty": 1,
+        "measure": "1/2, sliced"
+      },
+      {
+        "id": "cucumber",
+        "qty": 1,
+        "measure": "1/2, sliced"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "honey",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "garden-fresh",
+      "high-protein",
+      "low-carb",
+      "quick"
+    ],
+    "instructions": [
+      "Season shrimp with salt and pepper. Sear in a hot skillet with a drizzle of oil 2 minutes per side until pink. Set aside.",
+      "Whisk lime juice, olive oil, and honey for the dressing.",
+      "Arrange greens on a plate. Top with mango, avocado, and cucumber.",
+      "Place seared shrimp on top and drizzle with lime-honey dressing."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "steak_arugula_salad",
+    "name": "Seared Steak & Arugula Salad with Blue Cheese",
+    "mealType": "dinner",
+    "prepMinutes": 22,
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1,
+        "measure": "6 oz sirloin steak"
+      },
+      {
+        "id": "lettuce",
+        "qty": 1,
+        "measure": "4 cups arugula"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 1,
+        "measure": "1, sliced"
+      },
+      {
+        "id": "mushrooms",
+        "qty": 1,
+        "measure": "4 oz, sliced"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tbsp balsamic"
+      },
+      {
+        "id": "mustard",
+        "qty": 1,
+        "measure": "1/2 tsp dijon"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "high-protein",
+      "low-carb",
+      "garden-fresh",
+      "filling"
+    ],
+    "instructions": [
+      "Season steak generously with salt and pepper. Sear in a ripping-hot skillet 4 minutes per side for medium-rare. Rest 5 minutes, then slice thinly against the grain.",
+      "In the same pan, sauté mushrooms in remaining fat for 3 minutes until golden.",
+      "Whisk olive oil, balsamic, and mustard for the dressing.",
+      "Pile arugula on plates. Top with tomato, warm mushrooms, and sliced steak.",
+      "Drizzle with balsamic dressing and serve."
+    ],
+    "suggestedSide": "Crusty bread for sopping up the balsamic.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "grilled_shrimp_caesar_salad",
+    "name": "Grilled Shrimp Caesar Salad",
+    "mealType": "dinner",
+    "prepMinutes": 20,
+    "ingredients": [
+      {
+        "id": "shrimp",
+        "qty": 1,
+        "measure": "8 oz, peeled and deveined"
+      },
+      {
+        "id": "lettuce",
+        "qty": 1,
+        "measure": "1 large romaine heart, chopped"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "1/4 cup shaved"
+      },
+      {
+        "id": "bread",
+        "qty": 1,
+        "measure": "1 slice, cubed for croutons"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 clove garlic, minced"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "mustard",
+        "qty": 1,
+        "measure": "1 tsp dijon"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "high-protein",
+      "italian",
+      "garden-fresh",
+      "filling"
+    ],
+    "instructions": [
+      "Toss bread cubes with 1 tbsp olive oil, salt, and pepper. Toast in a skillet until golden and crunchy, about 3 minutes. Set aside.",
+      "Season shrimp with salt and pepper. Sear in the same skillet 2 minutes per side until pink and charred. Remove.",
+      "Whisk remaining olive oil, lemon juice, minced garlic, mustard, salt, and pepper into a dressing.",
+      "Toss chopped romaine with the dressing. Top with shrimp, homemade croutons, and shaved parmesan."
+    ],
+    "suggestedSide": "A warm baguette to make it a full dinner.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "asian_sesame_chicken_salad",
+    "name": "Asian Sesame Chicken Salad",
+    "mealType": "dinner",
+    "prepMinutes": 22,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "measure": "1 large, sliced thin"
+      },
+      {
+        "id": "cabbage",
+        "qty": 1,
+        "measure": "2 cups shredded napa cabbage"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "1, julienned"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "3, sliced"
+      },
+      {
+        "id": "cilantro",
+        "qty": 1,
+        "measure": "2 tbsp, chopped"
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tbsp rice vinegar"
+      },
+      {
+        "id": "honey",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1 tsp fresh, grated"
+      }
+    ],
+    "tags": [
+      "asian",
+      "high-protein",
+      "veggie-rich",
+      "quick"
+    ],
+    "instructions": [
+      "Season chicken with salt and pepper. Pan-sear in a hot skillet 4 minutes per side. Rest, then slice into strips.",
+      "Whisk sesame oil, soy sauce, rice vinegar, honey, and ginger into a dressing.",
+      "Toss cabbage, carrots, and green onion with half the dressing.",
+      "Plate the dressed slaw, top with chicken strips, drizzle remaining dressing, and finish with cilantro."
+    ],
+    "suggestedSide": "Steamed edamame or a cup of miso soup.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "warm_salmon_lentil_salad",
+    "name": "Warm Salmon & Lentil Salad with Mustard Vinaigrette",
+    "mealType": "dinner",
+    "prepMinutes": 30,
+    "ingredients": [
+      {
+        "id": "salmon",
+        "qty": 1,
+        "measure": "6 oz fillet"
+      },
+      {
+        "id": "lentils",
+        "qty": 1,
+        "measure": "1/2 cup dry green or brown"
+      },
+      {
+        "id": "lettuce",
+        "qty": 1,
+        "measure": "2 cups baby spinach or arugula"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "1 small, diced"
+      },
+      {
+        "id": "celery",
+        "qty": 1,
+        "measure": "1 stalk, diced"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "mustard",
+        "qty": 1,
+        "measure": "1 tbsp whole-grain"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tbsp red wine"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1/2, juiced"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mediterranean",
+      "high-protein",
+      "filling",
+      "garden-fresh"
+    ],
+    "instructions": [
+      "Simmer lentils with diced carrot and celery in salted water for 20 minutes until tender. Drain.",
+      "While lentils cook, season salmon with salt and pepper. Sear skin-side down 4 minutes, flip, cook 3 more minutes. Rest, then flake into large pieces.",
+      "Whisk olive oil, mustard, red wine vinegar, lemon juice, salt, and pepper.",
+      "Toss warm lentils with spinach — the heat will gently wilt the greens.",
+      "Top with flaked salmon and drizzle with mustard vinaigrette."
+    ],
+    "suggestedSide": "A hunk of crusty sourdough.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "italian_panzanella_salad",
+    "name": "Italian Panzanella Bread Salad",
+    "mealType": "dinner",
+    "prepMinutes": 20,
+    "ingredients": [
+      {
+        "id": "bread",
+        "qty": 1,
+        "measure": "3 cups day-old bread, torn into chunks"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 1,
+        "measure": "2 large, cut into wedges"
+      },
+      {
+        "id": "cucumber",
+        "qty": 1,
+        "measure": "1, chunked"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, chopped"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/4 red onion, thinly sliced"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1,
+        "measure": "4 oz fresh, torn"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "2 tbsp red wine"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "vegetarian",
+      "garden-fresh",
+      "veggie-rich"
+    ],
+    "instructions": [
+      "Toast torn bread in a dry skillet or under the broiler until golden and crispy on the edges, about 4 minutes.",
+      "Toss tomato wedges with a pinch of salt and let sit 5 minutes to release juices.",
+      "Combine bread, tomatoes and their juices, cucumber, bell pepper, and onion in a large bowl.",
+      "Drizzle with olive oil and vinegar. Toss well so the bread soaks up the dressing.",
+      "Tear fresh mozzarella over the top. Let sit 5 minutes before serving so the flavors meld."
+    ],
+    "suggestedSide": "Grilled chicken or sausage on the side to make it heartier.",
+    "difficulty": "beginner"
   }
 ]
