@@ -20793,5 +20793,859 @@
     ],
     "difficulty": "expert",
     "suggestedSide": "A simple bitter greens salad to cut the richness."
+  },
+  {
+    "id": "cheesy_chicken_rice_broccoli_casserole",
+    "name": "Cheesy Chicken, Rice & Broccoli Casserole",
+    "mealType": "dinner",
+    "prepMinutes": 55,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1.5,
+        "measure": "12 oz, cubed"
+      },
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 cup, dry"
+      },
+      {
+        "id": "frozen_broccoli",
+        "qty": 2,
+        "measure": "3 cups florets"
+      },
+      {
+        "id": "cheddar",
+        "qty": 2,
+        "measure": "1 1/2 cups shredded"
+      },
+      {
+        "id": "canned_soup",
+        "qty": 1,
+        "measure": "1 can cream of mushroom"
+      },
+      {
+        "id": "broth",
+        "qty": 3,
+        "measure": "2 cups chicken"
+      },
+      {
+        "id": "milk",
+        "qty": 0.5,
+        "measure": "1/2 cup"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion diced + 2 cloves garlic"
+      },
+      {
+        "id": "butter",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Heat oven to 375°F. Butter a 9x13 baking dish.",
+      "Melt butter in a skillet over medium-high. Season chicken with paprika, salt, pepper; brown 4 minutes (it will finish in the oven).",
+      "Stir onion and garlic into the dish with the chicken and any pan drippings.",
+      "In a bowl whisk soup, broth, milk, and half the cheese. Add rice and broccoli; pour into the baking dish over the chicken.",
+      "Cover tightly with foil. Bake 35 minutes until rice is tender.",
+      "Uncover, scatter remaining cheese on top, bake 10 more minutes until bubbly and golden. Rest 5 minutes before serving."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "king_ranch_chicken_casserole",
+    "name": "King Ranch Chicken Casserole",
+    "mealType": "dinner",
+    "prepMinutes": 65,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 2,
+        "measure": "1 lb, cooked and shredded"
+      },
+      {
+        "id": "tortillas",
+        "qty": 8,
+        "measure": "8, cut in strips"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can diced (with juice)"
+      },
+      {
+        "id": "canned_soup",
+        "qty": 1,
+        "measure": "1 can cream of chicken"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, diced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion diced + 3 cloves garlic"
+      },
+      {
+        "id": "cheddar",
+        "qty": 2,
+        "measure": "2 cups shredded"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "chili_powder",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "jalapeno",
+        "qty": 1,
+        "measure": "1, minced (optional)"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Heat oven to 350°F. Grease a 9x13 baking dish.",
+      "Sauté onion, pepper, garlic, and jalapeño in olive oil 6 minutes until soft. Stir in cumin and chili powder; cook 30 seconds.",
+      "Stir in tomatoes, soup, and shredded chicken; bring to a simmer 3 minutes. Season with salt.",
+      "Layer: 1/3 tortilla strips, 1/3 chicken mixture, 1/3 cheese. Repeat twice more.",
+      "Cover with foil; bake 30 minutes. Uncover, bake 10 more minutes until bubbly and golden.",
+      "Rest 10 minutes before serving so it sets up."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "beef_potato_hotdish",
+    "name": "Beef & Potato Hotdish",
+    "mealType": "dinner",
+    "prepMinutes": 70,
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1.5,
+        "measure": "1 lb"
+      },
+      {
+        "id": "potato",
+        "qty": 3,
+        "measure": "3 medium, thinly sliced"
+      },
+      {
+        "id": "frozen_mixed_veg",
+        "qty": 2,
+        "measure": "2 cups (peas, carrots, corn)"
+      },
+      {
+        "id": "canned_soup",
+        "qty": 1,
+        "measure": "1 can cream of mushroom"
+      },
+      {
+        "id": "cheddar",
+        "qty": 2,
+        "measure": "1 1/2 cups shredded"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion diced + 2 cloves garlic"
+      },
+      {
+        "id": "milk",
+        "qty": 0.5,
+        "measure": "1/2 cup"
+      },
+      {
+        "id": "butter",
+        "qty": 2,
+        "measure": "2 tbsp, melted"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Heat oven to 375°F. Brown beef with onion and garlic in a skillet, breaking it up; drain fat. Season with paprika, salt, pepper.",
+      "Stir soup, milk, and frozen vegetables into the beef.",
+      "Spread the beef mixture into a 9x13 baking dish. Shingle potato slices on top, overlapping like fish scales.",
+      "Brush potatoes with melted butter; season with salt and pepper.",
+      "Cover with foil; bake 45 minutes. Uncover, scatter cheese on top, bake 15 more minutes until cheese is bubbly and potatoes are tender.",
+      "Rest 10 minutes before serving."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "shepherds_pie",
+    "name": "Shepherd's Pie with Beef, Veg & Mashed Potato Top",
+    "mealType": "dinner",
+    "prepMinutes": 70,
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1.5,
+        "measure": "1 lb"
+      },
+      {
+        "id": "potato",
+        "qty": 4,
+        "measure": "4 medium, peeled and cubed"
+      },
+      {
+        "id": "frozen_peas",
+        "qty": 2,
+        "measure": "1 cup"
+      },
+      {
+        "id": "carrots",
+        "qty": 2,
+        "measure": "2, diced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion diced + 3 cloves garlic"
+      },
+      {
+        "id": "broth",
+        "qty": 2,
+        "measure": "1 1/2 cups beef"
+      },
+      {
+        "id": "flour",
+        "qty": 0.25,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1,
+        "measure": "2 tbsp tomato paste (or sauce)"
+      },
+      {
+        "id": "butter",
+        "qty": 4,
+        "measure": "4 tbsp"
+      },
+      {
+        "id": "milk",
+        "qty": 0.5,
+        "measure": "1/2 cup, warmed"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp (thyme-leaning)"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1/2 cup shredded (optional, on top)"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Boil potatoes in salted water 15 minutes until fork-tender. Drain, mash with 2 tbsp butter, warm milk, salt, and pepper.",
+      "Heat oven to 400°F. Brown beef with onion and garlic in a wide skillet, breaking it up; drain fat. Stir in carrots and Italian seasoning, cook 4 minutes.",
+      "Sprinkle flour over the beef and stir 1 minute. Add tomato sauce and broth; simmer 5 minutes until thickened. Stir in peas, salt, pepper.",
+      "Scrape filling into a 9x13 baking dish. Spread mashed potatoes evenly over the top; rough up the surface with a fork.",
+      "Dot with the remaining 2 tbsp butter; scatter cheese if using. Bake 25-30 minutes until potato peaks are golden and filling bubbles at the edges.",
+      "Rest 10 minutes before serving."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "chicken_enchilada_casserole",
+    "name": "Chicken Enchilada Casserole",
+    "mealType": "dinner",
+    "prepMinutes": 50,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 2,
+        "measure": "1 lb, cooked and shredded"
+      },
+      {
+        "id": "tortillas",
+        "qty": 8,
+        "measure": "8 small corn or flour"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can diced"
+      },
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "measure": "1 can, drained"
+      },
+      {
+        "id": "cheddar",
+        "qty": 2,
+        "measure": "2 cups shredded"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion diced + 3 cloves garlic"
+      },
+      {
+        "id": "chili_powder",
+        "qty": 1,
+        "measure": "2 tsp"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1,
+        "measure": "1 can (15 oz) for the enchilada sauce"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "measure": "small handful, to serve"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Heat oven to 375°F. Sauté onion and garlic in olive oil 5 minutes until soft. Stir in chili powder and cumin; cook 30 seconds.",
+      "Add tomato sauce, diced tomatoes, and salt; simmer 8 minutes until thickened — your enchilada sauce is ready.",
+      "In a separate bowl combine shredded chicken, black beans, and 1/2 cup of the sauce.",
+      "Spread 1/2 cup sauce in the bottom of a 9x13 dish. Layer 4 tortillas, half the chicken mixture, 1 cup sauce, 1/2 cup cheese. Repeat with the remaining tortillas, chicken, sauce, and end with cheese on top.",
+      "Cover with foil; bake 25 minutes. Uncover, bake 10 more minutes until cheese is bubbly and edges are crisp.",
+      "Garnish with cilantro and rest 10 minutes before slicing."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "mexican_cornbread_casserole",
+    "name": "Mexican Cornbread Casserole",
+    "mealType": "dinner",
+    "prepMinutes": 55,
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1.5,
+        "measure": "1 lb"
+      },
+      {
+        "id": "corn",
+        "qty": 1,
+        "measure": "1 can, drained"
+      },
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "measure": "1 can, drained"
+      },
+      {
+        "id": "salsa",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "taco_seasoning",
+        "qty": 1,
+        "measure": "1 packet"
+      },
+      {
+        "id": "cornbread_mix",
+        "qty": 2,
+        "measure": "2 boxes (8.5 oz each)"
+      },
+      {
+        "id": "cheddar",
+        "qty": 2,
+        "measure": "1 1/2 cups shredded"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2 large (for cornbread)"
+      },
+      {
+        "id": "milk",
+        "qty": 0.75,
+        "measure": "2/3 cup (for cornbread)"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion diced + 2 cloves garlic"
+      },
+      {
+        "id": "jalapeno",
+        "qty": 1,
+        "measure": "1, minced (optional)"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Heat oven to 375°F. Sauté onion and garlic in olive oil 4 minutes; add beef and brown, breaking it up. Drain fat. Stir in taco seasoning to coat.",
+      "Mix in corn, black beans, salsa, and half the jalapeño. Spread evenly in a 9x13 dish.",
+      "Top with 1 cup of cheese.",
+      "Whisk cornbread mix, eggs, and milk per box directions; pour over the top to cover.",
+      "Bake 25 minutes until cornbread is golden. Scatter remaining cheese on top; bake 5 more minutes until melty.",
+      "Rest 10 minutes; serve with extra salsa."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "buffalo_chicken_rice_casserole",
+    "name": "Buffalo Chicken Rice Casserole",
+    "mealType": "dinner",
+    "prepMinutes": 55,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 2,
+        "measure": "1 lb, cubed"
+      },
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 cup, dry"
+      },
+      {
+        "id": "broth",
+        "qty": 4,
+        "measure": "2 1/4 cups chicken"
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 3,
+        "measure": "1/3 cup Frank's-style"
+      },
+      {
+        "id": "butter",
+        "qty": 3,
+        "measure": "3 tbsp, melted"
+      },
+      {
+        "id": "ranch_mix",
+        "qty": 1,
+        "measure": "1 packet"
+      },
+      {
+        "id": "cheddar",
+        "qty": 2,
+        "measure": "1 1/2 cups shredded"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "measure": "2 stalks, diced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion diced + 2 cloves garlic"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "2 stalks, sliced for garnish"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Heat oven to 375°F. Toss chicken with hot sauce, melted butter, half the ranch mix, and salt.",
+      "Sauté onion, garlic, and celery in olive oil 4 minutes until soft.",
+      "In a 9x13 dish combine rice, broth, the rest of the ranch mix, sautéed aromatics, and 1 cup cheese.",
+      "Nestle chicken on top with all its sauce.",
+      "Cover tightly with foil; bake 40 minutes until rice is tender.",
+      "Uncover, scatter remaining cheese, bake 10 more minutes until bubbly. Garnish with green onion."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "italian_sausage_pepper_rice_bake",
+    "name": "Italian Sausage & Pepper Rice Bake",
+    "mealType": "dinner",
+    "prepMinutes": 60,
+    "ingredients": [
+      {
+        "id": "sausage",
+        "qty": 3,
+        "measure": "1 lb Italian, sliced or crumbled"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 3,
+        "measure": "3, cut in strips"
+      },
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 cup, dry"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 2,
+        "measure": "2 cans (15 oz each), marinara"
+      },
+      {
+        "id": "broth",
+        "qty": 2,
+        "measure": "1 cup chicken"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 2,
+        "measure": "1 1/2 cups shredded"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "1/3 cup grated"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion sliced + 4 cloves garlic"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Heat oven to 375°F. Brown sausage in olive oil in a wide skillet, 6 minutes, breaking it up. Lift out.",
+      "In the same fat sauté pepper, onion, and garlic 6 minutes. Season with Italian seasoning, salt, and pepper.",
+      "In a 9x13 dish combine rice, marinara, broth, sausage, and the vegetables.",
+      "Cover tightly with foil; bake 40 minutes until rice is tender.",
+      "Uncover, scatter mozzarella and parmesan, bake 10 more minutes until bubbly and golden.",
+      "Rest 5 minutes; serve straight from the dish."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "beef_cabbage_roll_casserole",
+    "name": "Beef & Cabbage Roll Casserole",
+    "mealType": "dinner",
+    "prepMinutes": 65,
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1.5,
+        "measure": "1 lb"
+      },
+      {
+        "id": "cabbage",
+        "qty": 2,
+        "measure": "1/2 head, chopped (about 6 cups)"
+      },
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 cup, dry"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can diced"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1,
+        "measure": "1 can (15 oz)"
+      },
+      {
+        "id": "broth",
+        "qty": 2,
+        "measure": "1 1/2 cups beef"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion diced + 3 cloves garlic"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1/2 cup shredded (optional)"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling",
+      "garden-fresh"
+    ],
+    "instructions": [
+      "Heat oven to 375°F. Brown beef with onion and garlic in olive oil, breaking it up; drain fat. Stir in paprika, Italian seasoning, salt, and pepper.",
+      "Stir in diced tomatoes, tomato sauce, and broth.",
+      "Spread half the chopped cabbage in a 9x13 dish. Sprinkle dry rice evenly over.",
+      "Pour all the beef mixture over the rice. Top with the remaining cabbage; press down gently.",
+      "Cover tightly with foil; bake 50 minutes until rice and cabbage are tender.",
+      "Uncover, scatter cheese if using, bake 10 more minutes. Rest 10 minutes before serving."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "chicken_pot_pie_casserole_biscuit_top",
+    "name": "Chicken Pot Pie Casserole with Biscuit Top",
+    "mealType": "dinner",
+    "prepMinutes": 70,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 2,
+        "measure": "1 lb, cooked and shredded"
+      },
+      {
+        "id": "frozen_mixed_veg",
+        "qty": 2,
+        "measure": "2 1/2 cups (peas, carrots, corn)"
+      },
+      {
+        "id": "broth",
+        "qty": 3,
+        "measure": "2 cups chicken"
+      },
+      {
+        "id": "milk",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "butter",
+        "qty": 5,
+        "measure": "5 tbsp, divided"
+      },
+      {
+        "id": "flour",
+        "qty": 2.25,
+        "measure": "1/4 cup for sauce + 2 cups for biscuit"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion diced + 2 cloves garlic"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "measure": "2 stalks, diced"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp (thyme-leaning)"
+      },
+      {
+        "id": "sugar",
+        "qty": 1,
+        "measure": "1 tsp (for biscuit)"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "1/2 tsp + more to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Heat oven to 400°F. Melt 3 tbsp butter in a saucepan; sauté onion, garlic, and celery 5 minutes.",
+      "Sprinkle 1/4 cup flour over; whisk 1 minute. Pour in broth and milk; whisk to a smooth gravy. Simmer 4 minutes until thick.",
+      "Stir in chicken, frozen vegetables, Italian seasoning, salt, and pepper. Pour into a 9x13 baking dish.",
+      "For the biscuit top: rub the remaining 2 tbsp cold butter into 2 cups flour, sugar, 1/2 tsp salt, and 1 tsp baking powder (if you have it) until pea-sized. Stir in just enough milk (about 3/4 cup) to make a shaggy dough.",
+      "Dollop tablespoons of biscuit dough across the filling, leaving small gaps for steam to escape.",
+      "Bake 25-30 minutes until biscuits are golden and filling bubbles at the edges. Rest 10 minutes before serving."
+    ],
+    "difficulty": "expert"
   }
 ]
