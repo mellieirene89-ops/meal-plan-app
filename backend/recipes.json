@@ -22872,5 +22872,964 @@
       "Toss drained pasta in the sauce; return seafood with any juices. Off heat, fold in parmesan, lemon juice, and chopped herbs. Splash in pasta water if needed."
     ],
     "suggestedSide": "A bracing fennel-arugula salad or crusty bread."
+  },
+  {
+    "id": "chicken_fried_rice",
+    "name": "Classic Chicken Fried Rice",
+    "mealType": "dinner",
+    "prepMinutes": 25,
+    "difficulty": "beginner",
+    "ingredients": [
+      {
+        "id": "white_rice",
+        "qty": 3,
+        "measure": "3 cups cooked (day-old works best)"
+      },
+      {
+        "id": "chicken_breast",
+        "qty": 1.5,
+        "measure": "12 oz, cubed"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2 large, beaten"
+      },
+      {
+        "id": "frozen_mixed_veg",
+        "qty": 2,
+        "measure": "2 cups (peas, carrots, corn)"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion diced + 3 cloves garlic"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "3 stalks, sliced"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1 tsp grated (optional)"
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "asian",
+      "comfort-food",
+      "high-protein",
+      "kid-friendly",
+      "quick"
+    ],
+    "instructions": [
+      "Heat 1 tbsp vegetable oil in a wok or wide skillet over high. Season chicken with salt and stir-fry 4 minutes until cooked through; lift out.",
+      "Add the remaining oil. Sauté onion, garlic, and ginger 90 seconds. Push to one side; pour eggs into the empty space and scramble until just set, then mix in.",
+      "Stir in frozen vegetables; cook 2 minutes.",
+      "Add the cooked rice, breaking up clumps. Drizzle with soy sauce and sesame oil; stir-fry 3 minutes until rice toasts at the edges.",
+      "Return chicken; toss to coat. Finish with green onion and hot sauce."
+    ]
+  },
+  {
+    "id": "loaded_beef_burrito_bowl",
+    "name": "Loaded Beef Burrito Bowl",
+    "mealType": "dinner",
+    "prepMinutes": 25,
+    "difficulty": "beginner",
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1.5,
+        "measure": "1 lb"
+      },
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 cup, cooked"
+      },
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "measure": "1 can, drained"
+      },
+      {
+        "id": "salsa",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "cheddar",
+        "qty": 2,
+        "measure": "1 cup shredded"
+      },
+      {
+        "id": "avocado",
+        "qty": 1,
+        "measure": "1, sliced"
+      },
+      {
+        "id": "lettuce",
+        "qty": 1,
+        "measure": "2 cups shredded"
+      },
+      {
+        "id": "taco_seasoning",
+        "qty": 1,
+        "measure": "1 packet"
+      },
+      {
+        "id": "sour_cream",
+        "qty": 2,
+        "measure": "4 tbsp"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "measure": "small handful, chopped"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "measure": "1, cut in wedges"
+      },
+      {
+        "id": "corn",
+        "qty": 1,
+        "measure": "1 cup (optional)"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "comfort-food",
+      "high-protein",
+      "filling",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Brown ground beef in a skillet, breaking it up. Drain fat.",
+      "Stir taco seasoning into the beef with a splash of water; simmer 2 minutes until glossy.",
+      "Warm beans in a small pot with a pinch of salt.",
+      "Build bowls: rice base, beef, beans, salsa, cheese, lettuce, avocado.",
+      "Top with sour cream, cilantro, and lime wedges to squeeze over."
+    ],
+    "suggestedSide": "Tortilla chips for scooping if you like."
+  },
+  {
+    "id": "sweet_sour_pork_rice_bowl",
+    "name": "Sweet & Sour Pork Rice Bowl",
+    "mealType": "dinner",
+    "prepMinutes": 30,
+    "difficulty": "beginner",
+    "ingredients": [
+      {
+        "id": "pork_chops",
+        "qty": 1.5,
+        "measure": "1 lb, cubed"
+      },
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 cup, cooked"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 2,
+        "measure": "2, cut in chunks"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "1, julienned"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can crushed (or 1/2 cup ketchup)"
+      },
+      {
+        "id": "vinegar",
+        "qty": 3,
+        "measure": "3 tbsp rice vinegar"
+      },
+      {
+        "id": "sugar",
+        "qty": 3,
+        "measure": "3 tbsp brown sugar"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion chunks + 3 cloves garlic"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1 tsp grated"
+      },
+      {
+        "id": "flour",
+        "qty": 0.25,
+        "measure": "1/4 cup for dredging"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "2 stalks, sliced"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "asian",
+      "comfort-food",
+      "high-protein",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Toss pork in seasoned flour. Heat oil in a wide skillet over medium-high. Sear pork in batches 3 minutes per side until crispy. Lift out.",
+      "In the same pan sauté onion, peppers, garlic, and ginger 4 minutes.",
+      "Whisk tomatoes (or ketchup), vinegar, sugar, and soy sauce. Pour into the pan; bring to a simmer.",
+      "Return pork and add carrots; toss to coat. Simmer 4 minutes until the sauce clings.",
+      "Spoon over rice; garnish with green onion."
+    ]
+  },
+  {
+    "id": "cajun_jambalaya",
+    "name": "Cajun Jambalaya with Chicken, Sausage & Shrimp",
+    "mealType": "dinner",
+    "prepMinutes": 50,
+    "difficulty": "intermediate",
+    "ingredients": [
+      {
+        "id": "chicken_thighs",
+        "qty": 1.5,
+        "measure": "12 oz boneless, cubed"
+      },
+      {
+        "id": "sausage",
+        "qty": 2,
+        "measure": "8 oz andouille-style, sliced"
+      },
+      {
+        "id": "shrimp",
+        "qty": 1,
+        "measure": "8 oz, peeled"
+      },
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 1/2 cups dry"
+      },
+      {
+        "id": "broth",
+        "qty": 4,
+        "measure": "3 cups chicken"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can diced"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 2,
+        "measure": "2, diced"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "measure": "2 stalks, diced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion diced + 4 cloves garlic"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tbsp smoked"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "chili_powder",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp (thyme-leaning)"
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "3 stalks, sliced"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Brown sausage in olive oil in a Dutch oven, 4 minutes. Add chicken and brown 4 more minutes. Lift out.",
+      "Sauté onion, pepper, celery, and garlic in the rendered fat 6 minutes (the \"holy trinity\" base).",
+      "Stir in paprika, cumin, chili powder, Italian seasoning, salt, and pepper; toast 30 seconds.",
+      "Add rice and toast 1 minute. Pour in broth and tomatoes; return chicken and sausage. Bring to a boil.",
+      "Cover, reduce heat, simmer 18 minutes until rice is mostly tender.",
+      "Nestle shrimp on top; cover, cook 5 more minutes until shrimp curl and turn pink. Stir gently, garnish with green onion and hot sauce to taste."
+    ],
+    "suggestedSide": "Crusty bread to mop up the juices."
+  },
+  {
+    "id": "spanish_arroz_con_pollo",
+    "name": "Spanish Arroz con Pollo (Chicken & Rice)",
+    "mealType": "dinner",
+    "prepMinutes": 55,
+    "difficulty": "intermediate",
+    "ingredients": [
+      {
+        "id": "chicken_thighs",
+        "qty": 2,
+        "measure": "6 bone-in thighs"
+      },
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 1/2 cups dry"
+      },
+      {
+        "id": "broth",
+        "qty": 4,
+        "measure": "3 cups chicken"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can diced"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, sliced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion diced + 4 cloves garlic"
+      },
+      {
+        "id": "frozen_peas",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tbsp smoked"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp (oregano-leaning)"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, cut in wedges"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "measure": "small handful, chopped"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Heat oven to 375°F. Season thighs with salt, pepper, and half the paprika.",
+      "Sear thighs skin-side down in olive oil in a Dutch oven, 5 minutes until crisp. Flip 2 minutes, then lift out.",
+      "Sauté onion, pepper, and garlic in the rendered fat 5 minutes. Add the rest of the paprika, cumin, and Italian seasoning; toast 30 seconds.",
+      "Stir in rice and tomatoes; toast 1 minute. Pour in broth, bring to a boil. Nestle chicken back in skin-side up.",
+      "Cover and transfer to the oven; bake 30 minutes until rice is tender and chicken reaches 175°F.",
+      "Scatter peas over the surface; cover off-heat 5 minutes. Garnish with cilantro and serve with lemon wedges."
+    ],
+    "suggestedSide": "A simple green salad with sherry vinegar."
+  },
+  {
+    "id": "thai_mango_fried_rice_shrimp",
+    "name": "Thai Mango Fried Rice with Shrimp",
+    "mealType": "dinner",
+    "prepMinutes": 25,
+    "difficulty": "intermediate",
+    "ingredients": [
+      {
+        "id": "white_rice",
+        "qty": 3,
+        "measure": "3 cups cooked (day-old)"
+      },
+      {
+        "id": "shrimp",
+        "qty": 1.5,
+        "measure": "12 oz, peeled"
+      },
+      {
+        "id": "frozen_mango",
+        "qty": 1.5,
+        "measure": "1 1/2 cups, thawed"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2 large, beaten"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, diced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "4 cloves garlic + 1/2 onion diced"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "measure": "1, juiced + wedges to serve"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "measure": "small handful, chopped"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "3 stalks, sliced"
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 1,
+        "measure": "1 tsp (sriracha-style)"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1 tbsp grated"
+      },
+      {
+        "id": "sugar",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "thai",
+      "asian",
+      "high-protein",
+      "garden-fresh"
+    ],
+    "instructions": [
+      "Heat 1 tbsp vegetable oil in a wok over high. Stir-fry shrimp 90 seconds per side until pink; lift out.",
+      "Add the remaining oil; sauté garlic, ginger, onion, and pepper 90 seconds.",
+      "Push aside; pour eggs in the empty space and scramble until just set.",
+      "Add rice, breaking up clumps. Drizzle with soy sauce, sesame oil, sugar, and hot sauce. Stir-fry 3 minutes until grains separate.",
+      "Return shrimp; fold in mango chunks, lime juice, and half the cilantro. Toss 30 seconds (do not overcook the mango).",
+      "Plate with the rest of the cilantro, green onion, and lime wedges."
+    ],
+    "suggestedSide": "A small cucumber-vinegar salad."
+  },
+  {
+    "id": "mediterranean_sausage_rice_pilaf",
+    "name": "Mediterranean Sausage & Rice Pilaf",
+    "mealType": "dinner",
+    "prepMinutes": 45,
+    "difficulty": "intermediate",
+    "ingredients": [
+      {
+        "id": "sausage",
+        "qty": 3,
+        "measure": "12 oz Italian or Greek, sliced"
+      },
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 1/2 cups dry"
+      },
+      {
+        "id": "broth",
+        "qty": 4,
+        "measure": "3 cups chicken"
+      },
+      {
+        "id": "frozen_spinach",
+        "qty": 1,
+        "measure": "2 cups, thawed and squeezed dry"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion diced + 4 cloves garlic"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 2,
+        "measure": "2, diced"
+      },
+      {
+        "id": "feta_cheese",
+        "qty": 2,
+        "measure": "1/2 cup crumbled, to finish"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, zested and juiced"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tbsp (oregano-leaning)"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mediterranean",
+      "greek",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Brown sausage in olive oil in a Dutch oven, 5 minutes. Lift out.",
+      "Sauté onion and garlic in the rendered fat 5 minutes. Stir in Italian seasoning and cook 30 seconds.",
+      "Add rice; toast 1 minute. Pour in broth and add diced tomato. Return sausage; bring to a boil.",
+      "Cover, reduce heat, simmer 18 minutes until rice is tender.",
+      "Off heat, fold in spinach and lemon juice; cover 5 minutes to warm through.",
+      "Finish with crumbled feta, lemon zest, and a crack of pepper."
+    ],
+    "suggestedSide": "A simple cucumber-tomato salad with red onion."
+  },
+  {
+    "id": "greek_stuffed_pepper_rice_feta",
+    "name": "Greek Stuffed Peppers with Rice & Feta",
+    "mealType": "dinner",
+    "prepMinutes": 65,
+    "difficulty": "intermediate",
+    "ingredients": [
+      {
+        "id": "bell_pepper",
+        "qty": 4,
+        "measure": "4 large, tops cut, seeds removed"
+      },
+      {
+        "id": "ground_turkey",
+        "qty": 1.5,
+        "measure": "1 lb"
+      },
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 cup, cooked"
+      },
+      {
+        "id": "frozen_spinach",
+        "qty": 1,
+        "measure": "1 cup, thawed and squeezed dry"
+      },
+      {
+        "id": "feta_cheese",
+        "qty": 2,
+        "measure": "3/4 cup crumbled"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 2,
+        "measure": "2, diced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion diced + 3 cloves garlic"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tbsp (oregano-leaning)"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "1/2 cup chicken"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "greek",
+      "mediterranean",
+      "high-protein",
+      "garden-fresh",
+      "filling"
+    ],
+    "instructions": [
+      "Heat oven to 375°F. Stand pepper bottoms cut-side up in a baking dish.",
+      "Sauté onion and garlic in olive oil 4 minutes. Add turkey; brown, breaking it up. Season with Italian seasoning, salt, pepper.",
+      "Stir in cooked rice, diced tomato, spinach, lemon juice, and half the feta.",
+      "Spoon filling into the peppers, mounding the tops. Pour broth around the base.",
+      "Cover with foil; bake 30 minutes. Uncover, scatter remaining feta, bake 10 more minutes until peppers are tender and feta is just turning golden.",
+      "Rest 5 minutes; spoon pan juices over before serving."
+    ],
+    "suggestedSide": "Warm pita and tzatziki-style yogurt sauce."
+  },
+  {
+    "id": "chicken_biryani",
+    "name": "Indian Chicken Biryani",
+    "mealType": "dinner",
+    "prepMinutes": 90,
+    "difficulty": "expert",
+    "ingredients": [
+      {
+        "id": "chicken_thighs",
+        "qty": 2,
+        "measure": "1 1/2 lb boneless, cubed"
+      },
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 1/2 cups basmati (or long-grain white)"
+      },
+      {
+        "id": "greek_yogurt",
+        "qty": 2,
+        "measure": "1 cup (for marinade)"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 2,
+        "measure": "2 onions, thinly sliced + 6 cloves garlic"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "2 tbsp grated"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "chili_powder",
+        "qty": 1,
+        "measure": "2 tsp"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp (for garam masala approximation)"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "broth",
+        "qty": 3,
+        "measure": "2 1/2 cups chicken"
+      },
+      {
+        "id": "cilantro",
+        "qty": 1,
+        "measure": "small handful, chopped"
+      },
+      {
+        "id": "butter",
+        "qty": 2,
+        "measure": "2 tbsp ghee or butter"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "indian",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Marinate chicken in yogurt, half the garlic, half the ginger, half the cumin, paprika, chili powder, lemon juice, and salt for 30 minutes (or overnight).",
+      "Meanwhile, fry sliced onions in olive oil over medium-high until deep brown and crispy, 12 minutes. Drain on paper towels — these are your crispy fried onions.",
+      "Rinse rice until water runs clear. Boil in 6 cups of well-salted water with the rest of the cumin for 5-6 minutes until 70% cooked. Drain.",
+      "In a heavy pot, melt ghee. Sear marinated chicken with its marinade and the rest of the garlic and ginger 5 minutes.",
+      "Pour broth around the chicken; layer parboiled rice on top, smoothing the surface. Sprinkle Italian seasoning, half the fried onions, half the cilantro between layers.",
+      "Cover tightly (parchment + lid). Cook on lowest heat 25 minutes — do not lift the lid.",
+      "Rest 10 minutes off heat. Gently fluff with a fork from top to bottom. Garnish with the remaining onions and cilantro."
+    ],
+    "suggestedSide": "Cucumber raita or a simple cucumber-yogurt salad."
+  },
+  {
+    "id": "greek_avgolemono_chicken_rice",
+    "name": "Greek Avgolemono Chicken & Rice",
+    "mealType": "dinner",
+    "prepMinutes": 60,
+    "difficulty": "expert",
+    "ingredients": [
+      {
+        "id": "chicken_thighs",
+        "qty": 2,
+        "measure": "1 1/2 lb boneless, cut in chunks"
+      },
+      {
+        "id": "white_rice",
+        "qty": 1,
+        "measure": "3/4 cup, dry"
+      },
+      {
+        "id": "broth",
+        "qty": 5,
+        "measure": "5 cups chicken"
+      },
+      {
+        "id": "eggs",
+        "qty": 3,
+        "measure": "3 large"
+      },
+      {
+        "id": "lemon",
+        "qty": 2,
+        "measure": "2 large, juiced (about 1/3 cup)"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion diced + 3 cloves garlic"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "measure": "2 stalks, diced"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "1, diced"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp (oregano-leaning)"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "measure": "small handful (or dill if you have it)"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "greek",
+      "mediterranean",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein"
+    ],
+    "instructions": [
+      "Heat olive oil and butter in a Dutch oven. Brown chicken in batches, 4 minutes; lift out.",
+      "Sauté onion, garlic, celery, and carrot in the pot 6 minutes until soft. Stir in Italian seasoning, salt, pepper.",
+      "Return chicken; add broth and rice. Bring to a simmer; cook covered 20 minutes until rice and chicken are tender.",
+      "Off heat. AVGOLEMONO: whisk eggs with lemon juice in a bowl until pale and frothy.",
+      "Slowly ladle 2 cups of the hot broth into the egg mixture, whisking constantly — this tempers the eggs so they do not scramble.",
+      "Pour the tempered mixture back into the pot, stirring gently to thicken the soup-stew. Do not boil again.",
+      "Adjust salt; finish with chopped herbs and a crack of pepper. Serve in deep bowls."
+    ],
+    "suggestedSide": "Crusty bread for dunking."
   }
 ]
