@@ -21647,5 +21647,1230 @@
       "Bake 25-30 minutes until biscuits are golden and filling bubbles at the edges. Rest 10 minutes before serving."
     ],
     "difficulty": "expert"
+  },
+  {
+    "id": "cacio_e_pepe",
+    "name": "Cacio e Pepe",
+    "mealType": "dinner",
+    "prepMinutes": 20,
+    "difficulty": "beginner",
+    "ingredients": [
+      {
+        "id": "pasta",
+        "qty": 2,
+        "measure": "8 oz spaghetti"
+      },
+      {
+        "id": "parmesan",
+        "qty": 2,
+        "measure": "1 cup grated, plus more to serve"
+      },
+      {
+        "id": "butter",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "2 tsp freshly cracked, divided"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "for pasta water"
+      }
+    ],
+    "tags": [
+      "italian",
+      "comfort-food"
+    ],
+    "instructions": [
+      "Boil pasta in well-salted water until just al dente. Reserve 1 1/2 cups pasta water before draining.",
+      "Toast cracked pepper in a wide skillet over medium for 30 seconds until fragrant.",
+      "Add 1 cup of the hot pasta water and the butter; swirl to emulsify.",
+      "Drop in the drained pasta and toss to coat.",
+      "Off heat, sprinkle parmesan in handfuls while tossing constantly. Splash in more pasta water as needed until the sauce turns silky and clings.",
+      "Plate with more parmesan and pepper on top."
+    ],
+    "suggestedSide": "A simple arugula salad with lemon vinaigrette."
+  },
+  {
+    "id": "quick_pasta_pomodoro",
+    "name": "Quick Pasta Pomodoro",
+    "mealType": "dinner",
+    "prepMinutes": 25,
+    "difficulty": "beginner",
+    "ingredients": [
+      {
+        "id": "pasta",
+        "qty": 2,
+        "measure": "8 oz spaghetti or penne"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 3,
+        "measure": "4 large, chopped (or 1 can crushed)"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "4 cloves garlic, sliced thin"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 4,
+        "measure": "1/4 cup"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "to serve"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "1 tbsp (finishing)"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "garden-fresh",
+      "quick"
+    ],
+    "instructions": [
+      "Boil pasta in well-salted water until just al dente. Reserve 1 cup pasta water before draining.",
+      "In a wide skillet, warm olive oil over medium-low. Add sliced garlic; cook gently 3 minutes until pale gold (do not brown).",
+      "Add tomatoes, Italian seasoning, salt, and pepper. Simmer 10 minutes until saucy.",
+      "Add drained pasta and finishing butter; toss for 1 minute, splashing in pasta water as needed.",
+      "Plate with parmesan and a crack of pepper."
+    ],
+    "suggestedSide": "Garlic bread and a small green salad."
+  },
+  {
+    "id": "garlic_spinach_olive_oil_pasta",
+    "name": "Garlic Spinach Olive Oil Pasta",
+    "mealType": "dinner",
+    "prepMinutes": 20,
+    "difficulty": "beginner",
+    "ingredients": [
+      {
+        "id": "pasta",
+        "qty": 2,
+        "measure": "8 oz spaghetti or linguine"
+      },
+      {
+        "id": "frozen_spinach",
+        "qty": 2,
+        "measure": "2 cups, thawed and squeezed dry"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 2,
+        "measure": "6 cloves garlic, sliced thin"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 4,
+        "measure": "1/4 cup good olive oil"
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 1,
+        "measure": "1/2 tsp red pepper flakes-style (optional)"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "1/3 cup grated"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "veggie-rich",
+      "garden-fresh",
+      "quick"
+    ],
+    "instructions": [
+      "Boil pasta in well-salted water until just al dente. Reserve 1 cup pasta water before draining.",
+      "Warm olive oil in a wide skillet over medium-low. Add garlic; cook 3 minutes until pale gold.",
+      "Add spinach and hot sauce; sauté 2 minutes to coat in the oil.",
+      "Drop in the drained pasta with a splash of pasta water; toss to coat. Add lemon juice, salt, and pepper.",
+      "Off heat, fold in parmesan and adjust seasoning. Serve right away."
+    ],
+    "suggestedSide": "A wedge of focaccia or a small side salad."
+  },
+  {
+    "id": "tuna_lemon_pasta",
+    "name": "Tuna Lemon Pasta",
+    "mealType": "dinner",
+    "prepMinutes": 20,
+    "difficulty": "beginner",
+    "ingredients": [
+      {
+        "id": "pasta",
+        "qty": 2,
+        "measure": "8 oz spaghetti"
+      },
+      {
+        "id": "canned_tuna",
+        "qty": 2,
+        "measure": "2 cans (in oil if possible), drained"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "3 cloves garlic, minced"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, zested and juiced"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "1/3 cup grated"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "measure": "small handful, chopped (or parsley)"
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 1,
+        "measure": "pinch red pepper flakes"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "high-protein",
+      "quick"
+    ],
+    "instructions": [
+      "Boil pasta in well-salted water until just al dente. Reserve 1 cup pasta water before draining.",
+      "In a wide skillet, warm olive oil over medium-low; add garlic and red pepper flakes, cook 2 minutes.",
+      "Stir in tuna, breaking it up, and warm 1 minute. Add lemon zest and juice.",
+      "Drop in drained pasta; toss with a splash of pasta water until glossy.",
+      "Off heat, fold in parmesan and chopped herbs. Season and serve."
+    ],
+    "suggestedSide": "A crisp salad of bitter greens."
+  },
+  {
+    "id": "stovetop_mac_and_cheese",
+    "name": "Classic Stovetop Mac & Cheese",
+    "mealType": "dinner",
+    "prepMinutes": 20,
+    "difficulty": "beginner",
+    "ingredients": [
+      {
+        "id": "pasta",
+        "qty": 2,
+        "measure": "8 oz elbow macaroni"
+      },
+      {
+        "id": "milk",
+        "qty": 2,
+        "measure": "2 cups"
+      },
+      {
+        "id": "butter",
+        "qty": 4,
+        "measure": "4 tbsp"
+      },
+      {
+        "id": "flour",
+        "qty": 0.25,
+        "measure": "1/4 cup"
+      },
+      {
+        "id": "cheddar",
+        "qty": 3,
+        "measure": "2 cups shredded, sharp"
+      },
+      {
+        "id": "mustard",
+        "qty": 1,
+        "measure": "1 tsp Dijon"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "kid-friendly",
+      "high-protein"
+    ],
+    "instructions": [
+      "Boil pasta in salted water until just al dente; drain.",
+      "In the same pot melt butter over medium. Whisk in flour and cook 90 seconds to make a blond roux.",
+      "Pour in milk gradually, whisking until smooth. Simmer 4 minutes until thick enough to coat a spoon.",
+      "Off heat, stir in cheese a handful at a time until melted. Add mustard, salt, pepper.",
+      "Fold drained pasta into the sauce. Serve immediately."
+    ],
+    "suggestedSide": "Steamed broccoli or a simple tossed salad."
+  },
+  {
+    "id": "pasta_e_fagioli",
+    "name": "Pasta e Fagioli with Italian Sausage",
+    "mealType": "dinner",
+    "prepMinutes": 40,
+    "difficulty": "intermediate",
+    "ingredients": [
+      {
+        "id": "pasta",
+        "qty": 1.5,
+        "measure": "6 oz ditalini or small shells"
+      },
+      {
+        "id": "sausage",
+        "qty": 2,
+        "measure": "8 oz Italian, casings removed"
+      },
+      {
+        "id": "kidney_beans",
+        "qty": 1,
+        "measure": "1 can, drained"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can diced"
+      },
+      {
+        "id": "broth",
+        "qty": 4,
+        "measure": "4 cups chicken"
+      },
+      {
+        "id": "carrots",
+        "qty": 2,
+        "measure": "2, diced"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "measure": "2 stalks, diced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion diced + 3 cloves garlic"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "to serve"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Brown sausage in olive oil in a Dutch oven, breaking it up, 5 minutes. Lift out.",
+      "Sauté onion, garlic, carrots, and celery in the rendered fat 6 minutes until soft. Season with Italian seasoning, salt, pepper.",
+      "Return sausage, add tomatoes, beans, and broth. Simmer 15 minutes.",
+      "Add pasta; cook 8-10 minutes until tender (it absorbs broth — add water if too thick).",
+      "Ladle into bowls; finish with grated parmesan and a crack of pepper."
+    ],
+    "suggestedSide": "Crusty bread to mop up the broth."
+  },
+  {
+    "id": "chicken_broccoli_penne_parmesan_cream",
+    "name": "Chicken & Broccoli Penne with Parmesan Cream",
+    "mealType": "dinner",
+    "prepMinutes": 35,
+    "difficulty": "intermediate",
+    "ingredients": [
+      {
+        "id": "pasta",
+        "qty": 2,
+        "measure": "8 oz penne"
+      },
+      {
+        "id": "chicken_breast",
+        "qty": 1.5,
+        "measure": "12 oz, cubed"
+      },
+      {
+        "id": "frozen_broccoli",
+        "qty": 2,
+        "measure": "3 cups florets"
+      },
+      {
+        "id": "milk",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 2,
+        "measure": "4 oz"
+      },
+      {
+        "id": "parmesan",
+        "qty": 2,
+        "measure": "3/4 cup grated"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "4 cloves garlic, minced"
+      },
+      {
+        "id": "butter",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "comfort-food",
+      "high-protein",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Boil pasta in salted water; in the last 3 minutes drop in the broccoli to cook together. Drain.",
+      "Season chicken with salt, pepper, and Italian seasoning. Sear in olive oil over medium-high 5 minutes until golden and cooked through. Lift out.",
+      "Melt butter in the same pan; add garlic, cook 30 seconds. Pour in milk, add cream cheese in chunks, whisking until smooth.",
+      "Stir in parmesan until silky. Add lemon juice, salt, pepper.",
+      "Return chicken, drained pasta, and broccoli; toss to coat. Splash in a little reserved pasta water if it tightens.",
+      "Plate with extra parmesan on top."
+    ],
+    "suggestedSide": "A crisp lemon-dressed romaine salad."
+  },
+  {
+    "id": "bacon_pea_parmesan_pasta",
+    "name": "Bacon, Pea & Parmesan Pasta",
+    "mealType": "dinner",
+    "prepMinutes": 25,
+    "difficulty": "intermediate",
+    "ingredients": [
+      {
+        "id": "pasta",
+        "qty": 2,
+        "measure": "8 oz fettuccine or linguine"
+      },
+      {
+        "id": "bacon",
+        "qty": 2,
+        "measure": "6 strips, chopped"
+      },
+      {
+        "id": "frozen_peas",
+        "qty": 2,
+        "measure": "1 1/2 cups"
+      },
+      {
+        "id": "parmesan",
+        "qty": 2,
+        "measure": "3/4 cup grated, plus more to serve"
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 1,
+        "measure": "2 tbsp (for silkiness)"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "3 cloves garlic, minced"
+      },
+      {
+        "id": "butter",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, zested"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "for pasta water"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "lots, cracked"
+      }
+    ],
+    "tags": [
+      "italian",
+      "comfort-food",
+      "high-protein"
+    ],
+    "instructions": [
+      "Boil pasta in salted water until just al dente. Reserve 1 1/2 cups pasta water before draining.",
+      "Render bacon in a wide cold skillet over medium until crisp, 6 minutes. Lift out, leave the fat.",
+      "Add butter, garlic, and peas to the pan; sauté 2 minutes until peas are bright.",
+      "Pour in 1 cup pasta water and the cream cheese; whisk until smooth.",
+      "Drop drained pasta into the pan; toss with the sauce. Off heat, sprinkle parmesan in handfuls while tossing until silky.",
+      "Fold bacon back in; finish with lemon zest and lots of cracked pepper."
+    ],
+    "suggestedSide": "A simple arugula salad with lemon."
+  },
+  {
+    "id": "cajun_chicken_pasta",
+    "name": "Cajun Chicken Pasta",
+    "mealType": "dinner",
+    "prepMinutes": 35,
+    "difficulty": "intermediate",
+    "ingredients": [
+      {
+        "id": "pasta",
+        "qty": 2,
+        "measure": "8 oz penne or fettuccine"
+      },
+      {
+        "id": "chicken_breast",
+        "qty": 1.5,
+        "measure": "12 oz, cubed"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, sliced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion sliced + 4 cloves garlic"
+      },
+      {
+        "id": "milk",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 2,
+        "measure": "4 oz"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "1/2 cup grated"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tbsp smoked"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "chili_powder",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp (thyme-leaning)"
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "2 stalks, sliced for garnish"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein"
+    ],
+    "instructions": [
+      "Mix paprika, cumin, chili powder, Italian seasoning, and salt. Toss chicken with half the spice mix.",
+      "Sear chicken in 1 tbsp olive oil over high heat 4 minutes until charred at the edges. Lift out.",
+      "Add the rest of the oil; sauté onion, pepper, and garlic 5 minutes. Stir in the remaining spice mix.",
+      "Pour in milk and add cream cheese in chunks; whisk until smooth. Stir in hot sauce.",
+      "Add drained pasta and chicken; toss to coat. Off heat, stir in parmesan.",
+      "Garnish with green onion."
+    ],
+    "suggestedSide": "Crusty bread and a small wedge of iceberg salad."
+  },
+  {
+    "id": "pasta_primavera_mixed_veg",
+    "name": "Pasta Primavera with Mixed Vegetables",
+    "mealType": "dinner",
+    "prepMinutes": 30,
+    "difficulty": "intermediate",
+    "ingredients": [
+      {
+        "id": "pasta",
+        "qty": 2,
+        "measure": "8 oz fettuccine or penne"
+      },
+      {
+        "id": "zucchini",
+        "qty": 1,
+        "measure": "1, half-moons"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, sliced"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "1, julienned"
+      },
+      {
+        "id": "frozen_peas",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 1,
+        "measure": "1, diced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "4 cloves garlic + 1/2 onion sliced"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "butter",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "1/2 cup grated"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "garden-fresh",
+      "veggie-rich"
+    ],
+    "instructions": [
+      "Boil pasta in salted water until just al dente. Reserve 1 cup pasta water before draining.",
+      "Heat olive oil over medium-high in a wide skillet. Sauté carrots and onion 4 minutes.",
+      "Add zucchini, pepper, and garlic; cook 4 minutes more. Stir in peas and tomato, warm 2 minutes.",
+      "Add butter, drained pasta, Italian seasoning, salt, and pepper. Toss with a splash of pasta water until glossy.",
+      "Finish with lemon juice and parmesan. Serve right away."
+    ],
+    "suggestedSide": "A simple lemon-dressed mixed greens salad."
+  },
+  {
+    "id": "lasagna_bolognese_bechamel",
+    "name": "Classic Lasagna Bolognese with Bechamel",
+    "mealType": "dinner",
+    "prepMinutes": 120,
+    "difficulty": "expert",
+    "ingredients": [
+      {
+        "id": "pasta",
+        "qty": 3,
+        "measure": "12 lasagna sheets"
+      },
+      {
+        "id": "ground_beef",
+        "qty": 1.5,
+        "measure": "1 lb"
+      },
+      {
+        "id": "sausage",
+        "qty": 1,
+        "measure": "4 oz Italian (optional, for ragu)"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 2,
+        "measure": "2 cans crushed"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1,
+        "measure": "1/2 can tomato paste-style"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 2,
+        "measure": "1 onion diced + 5 cloves garlic"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "1, finely diced"
+      },
+      {
+        "id": "celery",
+        "qty": 1,
+        "measure": "1 stalk, finely diced"
+      },
+      {
+        "id": "milk",
+        "qty": 3,
+        "measure": "3 cups (for bechamel)"
+      },
+      {
+        "id": "butter",
+        "qty": 5,
+        "measure": "5 tbsp (for bechamel)"
+      },
+      {
+        "id": "flour",
+        "qty": 0.5,
+        "measure": "5 tbsp (for bechamel)"
+      },
+      {
+        "id": "parmesan",
+        "qty": 2,
+        "measure": "1 cup grated, divided"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 2,
+        "measure": "1 1/2 cups shredded"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "RAGU: Sauté onion, garlic, carrot, and celery in olive oil 8 minutes until soft. Add beef (and sausage); brown, breaking it up. Stir in tomato paste, crushed tomatoes, Italian seasoning, salt, and pepper. Simmer 30 minutes — should be thick.",
+      "BECHAMEL: Melt butter; whisk in flour to a blond roux, 90 seconds. Pour in milk gradually, whisking, until smooth. Simmer 5 minutes until thick. Season with salt, pepper, and a pinch of nutmeg (if you have it).",
+      "NOODLES: Boil lasagna sheets just under al dente, 2 minutes less than the box. Lay on a sheet of parchment to cool.",
+      "Heat oven to 375°F. Spread a thin layer of ragu in a 9x13 dish. Layer: noodles, ragu, bechamel, parmesan. Repeat three more times, ending with bechamel and topped with mozzarella + parmesan.",
+      "Bake 35-40 minutes until deeply golden and bubbly at the edges.",
+      "Rest at least 20 minutes before slicing — patience matters for clean layers."
+    ],
+    "suggestedSide": "A bracing arugula salad with red wine vinaigrette."
+  },
+  {
+    "id": "spinach_ricotta_stuffed_shells",
+    "name": "Spinach & Ricotta-Style Stuffed Shells",
+    "mealType": "dinner",
+    "prepMinutes": 70,
+    "difficulty": "expert",
+    "ingredients": [
+      {
+        "id": "pasta",
+        "qty": 3,
+        "measure": "20 jumbo shells"
+      },
+      {
+        "id": "cottage_cheese",
+        "qty": 3,
+        "measure": "15 oz (stand-in for ricotta)"
+      },
+      {
+        "id": "frozen_spinach",
+        "qty": 2,
+        "measure": "2 cups, thawed and squeezed dry"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 2,
+        "measure": "2 cups shredded, divided"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "1/2 cup grated"
+      },
+      {
+        "id": "eggs",
+        "qty": 1,
+        "measure": "1 large (binds filling)"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "4 cloves garlic, minced"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 2,
+        "measure": "3 cups marinara"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "veggie-rich",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Boil shells in salted water just under al dente, 2 minutes less than the box. Drain and lay on parchment so they do not stick.",
+      "Heat oven to 375°F. Sauté garlic in olive oil 30 seconds; combine with cottage cheese, well-drained spinach, egg, 1 cup mozzarella, parmesan, Italian seasoning, salt, and pepper.",
+      "Spread 1 1/2 cups marinara in a 9x13 dish.",
+      "Stuff each shell with a heaping tablespoon of filling; nestle into the sauce, opening up.",
+      "Top with the remaining marinara and the rest of the mozzarella.",
+      "Cover with foil; bake 25 minutes. Uncover, bake 10 more minutes until bubbly and lightly browned. Rest 10 minutes."
+    ],
+    "suggestedSide": "Garlic bread and a simple Italian salad."
+  },
+  {
+    "id": "beef_manicotti_tomato_cream",
+    "name": "Beef Manicotti with Tomato Cream Sauce",
+    "mealType": "dinner",
+    "prepMinutes": 80,
+    "difficulty": "expert",
+    "ingredients": [
+      {
+        "id": "pasta",
+        "qty": 3,
+        "measure": "14 manicotti tubes (or large shells)"
+      },
+      {
+        "id": "ground_beef",
+        "qty": 1.5,
+        "measure": "1 lb"
+      },
+      {
+        "id": "cottage_cheese",
+        "qty": 2,
+        "measure": "1 cup"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 2,
+        "measure": "2 cups shredded, divided"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "1/2 cup grated"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 2,
+        "measure": "3 cups marinara"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can crushed"
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 1,
+        "measure": "4 oz (for tomato cream)"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 2,
+        "measure": "1 onion diced + 4 cloves garlic"
+      },
+      {
+        "id": "eggs",
+        "qty": 1,
+        "measure": "1 large"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Boil manicotti tubes just under al dente — drain carefully so they do not tear, lay on parchment.",
+      "Brown beef with onion and garlic in olive oil; drain fat. Season with Italian seasoning, salt, pepper. Cool slightly.",
+      "Mix beef with cottage cheese, 1 cup mozzarella, parmesan, and egg.",
+      "For the sauce: combine marinara and crushed tomatoes in a pot; melt in the cream cheese over low heat, whisking until smooth.",
+      "Heat oven to 375°F. Pour 1 cup sauce in a 9x13 dish. Pipe (or spoon) beef filling into each tube; lay in the dish. Pour remaining sauce over to cover; top with the rest of the mozzarella.",
+      "Cover with foil; bake 30 minutes. Uncover, bake 15 more minutes until bubbly and golden. Rest 10 minutes."
+    ],
+    "suggestedSide": "Crusty bread and a peppery arugula salad."
+  },
+  {
+    "id": "homemade_potato_gnocchi_brown_butter",
+    "name": "Homemade Potato Gnocchi with Brown Butter Sauce",
+    "mealType": "dinner",
+    "prepMinutes": 100,
+    "difficulty": "expert",
+    "ingredients": [
+      {
+        "id": "potato",
+        "qty": 4,
+        "measure": "2 lb russet (about 4 large)"
+      },
+      {
+        "id": "flour",
+        "qty": 2,
+        "measure": "1 1/2 - 2 cups, plus more for dusting"
+      },
+      {
+        "id": "eggs",
+        "qty": 1,
+        "measure": "1 large, beaten"
+      },
+      {
+        "id": "butter",
+        "qty": 6,
+        "measure": "6 tbsp"
+      },
+      {
+        "id": "parmesan",
+        "qty": 2,
+        "measure": "3/4 cup grated, plus more to serve"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "3 cloves garlic, smashed"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp (sage-leaning)"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, zested"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "1 tsp + more for pasta water"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "comfort-food"
+    ],
+    "instructions": [
+      "Bake potatoes at 400°F for 60 minutes until very tender. Cool until you can handle them, then peel.",
+      "Press potato through a ricer (or grate) into a wide bowl. Spread out to release steam, 5 minutes.",
+      "Make a well; pour in beaten egg, sprinkle 1 cup flour and salt over. Knead gently, adding more flour as needed, until a soft pillowy dough forms (do not overwork — gnocchi gets gummy).",
+      "Divide into 6 pieces; roll each into a 3/4-inch-thick rope on a floured surface. Cut into 3/4-inch pillows. Optional: roll over a fork for ridges.",
+      "Drop gnocchi into well-salted boiling water in batches; they float in about 90 seconds. Lift out with a slotted spoon.",
+      "Brown butter in a wide skillet with garlic and Italian seasoning until nutty, 3 minutes — discard garlic.",
+      "Tumble gnocchi in the brown butter; finish with parmesan, lemon zest, and pepper."
+    ],
+    "suggestedSide": "A bitter greens salad with red wine vinaigrette."
+  },
+  {
+    "id": "seafood_pasta_shrimp_salmon",
+    "name": "Seafood Pasta with Shrimp & Salmon",
+    "mealType": "dinner",
+    "prepMinutes": 45,
+    "difficulty": "expert",
+    "ingredients": [
+      {
+        "id": "pasta",
+        "qty": 2,
+        "measure": "8 oz linguine"
+      },
+      {
+        "id": "shrimp",
+        "qty": 1,
+        "measure": "8 oz, peeled"
+      },
+      {
+        "id": "salmon",
+        "qty": 1,
+        "measure": "6 oz, cubed"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can crushed"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1,
+        "measure": "1/4 cup tomato paste-style"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 2,
+        "measure": "1/2 onion diced + 5 cloves garlic"
+      },
+      {
+        "id": "butter",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "1/2 cup seafood or chicken"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, zested and juiced"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 1,
+        "measure": "pinch red pepper flakes"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "1/3 cup grated"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "measure": "small handful, chopped (or parsley)"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "mediterranean",
+      "high-protein"
+    ],
+    "instructions": [
+      "Boil pasta in salted water until just al dente. Reserve 1 cup pasta water before draining.",
+      "Heat olive oil and 1 tbsp butter in a wide skillet. Sear cubed salmon 90 seconds per side until just opaque; lift out.",
+      "Sauté shrimp 60 seconds per side until pink; lift out with salmon.",
+      "Add onion and garlic to the pan with the remaining butter; cook 4 minutes. Stir in red pepper flakes and tomato paste; cook 1 minute.",
+      "Pour in crushed tomatoes, broth, Italian seasoning, lemon zest. Simmer 8 minutes until reduced.",
+      "Toss drained pasta in the sauce; return seafood with any juices. Off heat, fold in parmesan, lemon juice, and chopped herbs. Splash in pasta water if needed."
+    ],
+    "suggestedSide": "A bracing fennel-arugula salad or crusty bread."
   }
 ]
