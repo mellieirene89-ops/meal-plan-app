@@ -16524,9 +16524,9 @@
   },
   {
     "id": "classic_cheeseburger",
-    "name": "Classic Cheeseburger with Buttered Buns",
+    "name": "Classic Cheeseburger with Cucumber-Tomato Side Salad",
     "mealType": "dinner",
-    "prepMinutes": 20,
+    "prepMinutes": 25,
     "ingredients": [
       {
         "id": "ground_beef",
@@ -16545,18 +16545,23 @@
       },
       {
         "id": "lettuce",
-        "qty": 1,
-        "measure": "2 leaves"
+        "qty": 1.5,
+        "measure": "4 leaves (2 for burger, 2 chopped for salad)"
       },
       {
         "id": "fresh_tomato",
+        "qty": 1.5,
+        "measure": "1 1/2 (sliced for burger, wedged for salad)"
+      },
+      {
+        "id": "cucumber",
         "qty": 1,
-        "measure": "2 slices"
+        "measure": "1, sliced into half-moons"
       },
       {
         "id": "garlic_onion",
         "qty": 1,
-        "measure": "thin slices"
+        "measure": "thin slices for burger + a few rings for salad"
       },
       {
         "id": "mayo",
@@ -16574,6 +16579,21 @@
         "measure": "1 tsp, for the bun"
       },
       {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp (for salad dressing)"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tsp red wine vinegar"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      },
+      {
         "id": "salt",
         "qty": 1,
         "measure": "to taste"
@@ -16587,14 +16607,16 @@
     "tags": [
       "american-classic",
       "comfort-food",
-      "high-protein"
+      "high-protein",
+      "garden-fresh"
     ],
     "instructions": [
+      "Toss cucumber, tomato wedges, a few onion rings, and chopped lettuce in a bowl. Whisk olive oil, vinegar, Italian seasoning, salt, and pepper; dress the salad and let it sit while you cook the burger.",
       "Form ground beef into a loose 1/3 lb patty, slightly wider than the bun. Season both sides with salt and pepper.",
       "Heat a heavy skillet over high until smoking. Add the patty and press once; cook 2 minutes per side for medium.",
       "Lay the cheese on the patty in the last 30 seconds; cover briefly to melt.",
       "Butter the cut sides of the buns and toast face-down in a separate pan until golden.",
-      "Build: bottom bun, mayo, lettuce, tomato, patty with cheese, onion, ketchup, top bun. Serve right away."
+      "Build: bottom bun, mayo, lettuce, tomato, patty with cheese, onion, ketchup, top bun. Plate with the cucumber-tomato salad on the side."
     ],
     "difficulty": "beginner"
   },
