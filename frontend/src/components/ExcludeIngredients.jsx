@@ -69,7 +69,7 @@ const CUISINES = [
   { id: 'keto', label: 'Keto' },
 ];
 
-export default function ExcludeIngredients({ ingredients, excluded, onToggle, onHand = [], onToggleOnHand, onFavoritesChange, customRecipes = [], onAddCustomRecipe, onRemoveCustomRecipe, excludedRecipes = [], onRestoreRecipe, selectedCuisines = [], onToggleCuisine, savedMenus = [], onLoadSavedMenu, onDeleteSavedMenu }) {
+export default function ExcludeIngredients({ ingredients, excluded, onToggle, onHand = [], onToggleOnHand, onFavoritesChange, customRecipes = [], onAddCustomRecipe, onRemoveCustomRecipe, excludedRecipes = [], onRestoreRecipe, selectedCuisines = [], onToggleCuisine, savedMenus = [], onLoadSavedMenu, onDeleteSavedMenu, recipePool = null }) {
   const [searchExclude, setSearchExclude] = useState('');
   const [searchFav, setSearchFav] = useState('');
   const [searchOnHand, setSearchOnHand] = useState('');
@@ -77,6 +77,8 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
   const [newRecipe, setNewRecipe] = useState({ name: '', mealType: 'dinner', prepMinutes: 15, ingredientSearch: '', selectedIngredients: [], instructionText: '', instructions: [] });
   const [expandedSections, setExpandedSections] = useState({});
   const toggleSection = (key) => setExpandedSections(prev => ({ ...prev, [key]: !prev[key] }));
+  // Cuisine preview modal — null = closed; otherwise the cuisine object being shown.
+  const [previewCuisine, setPreviewCuisine] = useState(null);
   const [favorites, setFavorites] = useState(() => {
     try { return JSON.parse(localStorage.getItem('mealmaker_favorites')) || []; } catch { return []; }
   });
@@ -124,6 +126,20 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
         ing.name.toLowerCase().includes(searchOnHand.toLowerCase())
       )
     : [];
+
+  // Build the recipe list for the cuisine preview modal — pulls from the pool
+  // (already filtered by the user's other settings) and groups by meal type.
+  const previewRecipes = (() => {
+    if (!previewCuisine || !recipePool) return null;
+    const out = { breakfast: [], lunch: [], dinner: [] };
+    for (const mt of ['breakfast', 'lunch', 'dinner']) {
+      const list = recipePool[mt] || [];
+      out[mt] = list.filter(r => (r.tags || []).includes(previewCuisine.id));
+    }
+    out.total = out.breakfast.length + out.lunch.length + out.dinner.length;
+    return out;
+  })();
+  const previewSelected = previewCuisine ? selectedCuisines.includes(previewCuisine.id) : false;
 
   return (
     <div style={{
@@ -211,7 +227,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
               return (
                 <button
                   key={c.id}
-                  onClick={() => onToggleCuisine?.(c.id)}
+                  onClick={() => setPreviewCuisine(c)}
                   style={{
                     ...tagBase,
                     background: selected ? 'rgba(234,162,33,0.85)' : 'rgba(60,40,30,0.7)',
@@ -219,7 +235,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
                     color: selected ? '#1a0e06' : '#faf5e8',
                     fontSize: 15,
                   }}
-                  title={selected ? `Remove ${c.label} filter` : `Include ${c.label} recipes`}
+                  title={`Preview ${c.label} recipes`}
                 >
                   {selected ? '✓ ' : '+ '}{c.label}
                 </button>
@@ -1195,6 +1211,181 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
         </div>}
       </div>
       </div>
+
+      {/* === CUISINE PREVIEW MODAL === */}
+      {previewCuisine && (
+        <div
+          onClick={() => setPreviewCuisine(null)}
+          style={{
+            position: 'fixed',
+            inset: 0,
+            background: 'rgba(20, 12, 4, 0.65)',
+            backdropFilter: 'blur(2px)',
+            zIndex: 100,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: 20,
+          }}
+        >
+          <div
+            onClick={e => e.stopPropagation()}
+            style={{
+              maxWidth: 640,
+              width: '100%',
+              maxHeight: '80vh',
+              overflow: 'auto',
+              background: 'linear-gradient(180deg, #f0e4c8 0%, #e0d2a8 100%)',
+              border: '1px solid rgba(140,110,70,0.45)',
+              borderTop: '2px solid rgba(255,245,220,0.6)',
+              borderBottom: '3px solid rgba(60,40,20,0.5)',
+              borderRadius: 10,
+              boxShadow: '0 20px 50px rgba(0,0,0,0.55), 0 8px 16px rgba(0,0,0,0.35)',
+              padding: '22px 26px 18px',
+              position: 'relative',
+            }}
+          >
+            <button
+              onClick={() => setPreviewCuisine(null)}
+              aria-label="Close"
+              style={{
+                position: 'absolute',
+                top: 10,
+                right: 12,
+                background: 'transparent',
+                border: 'none',
+                fontSize: 24,
+                fontWeight: 700,
+                color: '#5a3a1c',
+                cursor: 'pointer',
+                lineHeight: 1,
+                padding: 4,
+              }}
+            >
+              ✕
+            </button>
+            <h3 style={{
+              fontFamily: 'Pinyon Script, cursive',
+              fontSize: 44,
+              color: '#3a2a18',
+              lineHeight: 1.0,
+              marginBottom: 4,
+              textShadow: '1px 1px 0 rgba(180,150,100,0.4)',
+            }}>
+              {previewCuisine.label}
+            </h3>
+            <p style={{
+              fontFamily: 'JetBrains Mono, monospace',
+              fontSize: 12,
+              fontWeight: 700,
+              color: '#8a6a40',
+              letterSpacing: '0.15em',
+              textTransform: 'uppercase',
+              marginBottom: 14,
+            }}>
+              {!recipePool
+                ? 'Generate a plan first to see the recipe pool'
+                : previewRecipes && previewRecipes.total > 0
+                  ? `${previewRecipes.total} recipes in your current pool`
+                  : 'No recipes match — try clearing other filters'}
+            </p>
+
+            {previewRecipes && ['breakfast', 'lunch', 'dinner'].map(mt => {
+              const list = previewRecipes[mt] || [];
+              if (list.length === 0) return null;
+              return (
+                <div key={mt} style={{ marginBottom: 14 }}>
+                  <p style={{
+                    fontFamily: 'Cormorant Garamond, serif',
+                    fontSize: 13,
+                    fontWeight: 700,
+                    color: '#8a6a40',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.3em',
+                    marginBottom: 4,
+                  }}>
+                    {mt} · {list.length}
+                  </p>
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                    {list.map(r => (
+                      <li key={r.id} style={{
+                        fontFamily: 'Cormorant Garamond, serif',
+                        fontSize: 16,
+                        fontWeight: 600,
+                        color: '#3a2a18',
+                        padding: '3px 0',
+                        borderBottom: '1px solid rgba(138,106,64,0.25)',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'baseline',
+                        gap: 8,
+                      }}>
+                        <span>{r.name}</span>
+                        {typeof r.cost === 'number' && (
+                          <span style={{
+                            fontFamily: 'JetBrains Mono, monospace',
+                            fontSize: 12,
+                            color: '#8a6a40',
+                            flex: 'none',
+                          }}>
+                            ${r.cost.toFixed(2)}
+                          </span>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })}
+
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, marginTop: 16, paddingTop: 14, borderTop: '1px dashed rgba(138,106,64,0.45)' }}>
+              <button
+                onClick={() => {
+                  onToggleCuisine?.(previewCuisine.id);
+                  setPreviewCuisine(null);
+                }}
+                style={{
+                  background: previewSelected
+                    ? 'rgba(80, 30, 30, 0.85)'
+                    : 'linear-gradient(180deg, #f0e4c8 0%, #c8b888 100%)',
+                  color: previewSelected ? '#faf5e8' : '#2a1a0e',
+                  fontFamily: 'Amatic SC, cursive',
+                  fontWeight: 700,
+                  fontSize: 22,
+                  letterSpacing: '0.06em',
+                  textTransform: 'uppercase',
+                  padding: '8px 20px',
+                  border: '1px solid rgba(140,110,70,0.5)',
+                  borderTop: '1px solid rgba(255,245,220,0.5)',
+                  borderBottom: '2px solid rgba(60,40,20,0.5)',
+                  borderRadius: 6,
+                  cursor: 'pointer',
+                  boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.25), 1px 2px 4px rgba(0,0,0,0.3)',
+                  textShadow: previewSelected ? '1px 1px 2px rgba(0,0,0,0.6)' : '0 1px 0 rgba(255,255,255,0.3)',
+                }}
+              >
+                {previewSelected ? 'Remove from Filter' : 'Filter by This Cuisine'}
+              </button>
+              <button
+                onClick={() => setPreviewCuisine(null)}
+                style={{
+                  background: 'transparent',
+                  border: '1px solid rgba(138,106,64,0.45)',
+                  color: '#5a3a1c',
+                  fontFamily: 'Caveat, cursive',
+                  fontSize: 20,
+                  fontWeight: 500,
+                  padding: '6px 14px',
+                  borderRadius: 6,
+                  cursor: 'pointer',
+                }}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

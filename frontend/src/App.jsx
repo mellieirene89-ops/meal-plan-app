@@ -1751,6 +1751,7 @@ export default function App() {
                 savedMenus={savedMenus}
                 onLoadSavedMenu={loadSavedMenu}
                 onDeleteSavedMenu={(menuId) => setSavedMenus(prev => prev.filter(m => m.id !== menuId))}
+                recipePool={recipePool}
               />
             )}
           </div>
