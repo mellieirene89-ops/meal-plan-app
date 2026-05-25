@@ -101,7 +101,7 @@ function calcVeggieCount(recipe, ingredientMap) {
   return count;
 }
 
-function scoreRecipe(recipe, ingredientMap, favoriteIds = [], onHandIds = []) {
+function scoreRecipe(recipe, ingredientMap, favoriteIds = [], onHandIds = [], favoriteRecipeIds = []) {
   const cost = calcRecipeCost(recipe, ingredientMap);
   const protein = calcRecipeProtein(recipe, ingredientMap);
   const veggies = calcVeggieCount(recipe, ingredientMap);
@@ -114,7 +114,9 @@ function scoreRecipe(recipe, ingredientMap, favoriteIds = [], onHandIds = []) {
   // Boost score for recipes using ingredients already in kitchen
   const onHandCount = recipe.ingredients.filter(item => onHandIds.includes(item.id)).length;
   const onHandBonus = onHandCount > 0 ? 1 + (onHandCount * 0.6) : 1;
-  return ((protein * (veggies + 1)) / cost) * onSaleBonus * favBonus * onHandBonus;
+  // Strong boost when the user has explicitly starred the recipe itself.
+  const starBonus = favoriteRecipeIds.includes(recipe.id) ? 2.5 : 1;
+  return ((protein * (veggies + 1)) / cost) * onSaleBonus * favBonus * onHandBonus * starBonus;
 }
 
 export function getIngredientList() {
@@ -321,7 +323,7 @@ function recipeDifficulty(recipe) {
   return 'expert';
 }
 
-export function generateMealPlan(sales = [], budgetCap = null, servings = 1, excludeIds = [], favoriteIds = [], variation = 0, customRecipes = [], onHandIds = [], difficulty = 'all', excludeRecipeIds = [], selectedCuisines = [], respectBudget = true) {
+export function generateMealPlan(sales = [], budgetCap = null, servings = 1, excludeIds = [], favoriteIds = [], variation = 0, customRecipes = [], onHandIds = [], difficulty = 'all', excludeRecipeIds = [], selectedCuisines = [], respectBudget = true, favoriteRecipeIds = []) {
   const { recipes: builtInRecipes, ingredients } = loadData();
   const ingredientMap = buildIngredientMap(ingredients, sales);
 
@@ -368,7 +370,7 @@ export function generateMealPlan(sales = [], budgetCap = null, servings = 1, exc
         cost: calcRecipeCost(r, ingredientMap) * servings,
         protein_g: calcRecipeProtein(r, ingredientMap) * servings,
         veggie_count: calcVeggieCount(r, ingredientMap),
-        score: scoreRecipe(r, ingredientMap, favoriteIds, onHandIds),
+        score: scoreRecipe(r, ingredientMap, favoriteIds, onHandIds, favoriteRecipeIds),
         onSaleIngredients: r.ingredients
           .filter(item => ingredientMap[item.id]?.onSale)
           .map(item => ingredientMap[item.id].name)
@@ -377,19 +379,20 @@ export function generateMealPlan(sales = [], budgetCap = null, servings = 1, exc
   }
 
   // Reshuffle the pool with the variation as a seed so each Change It Up click produces
-  // a different week. Shuffle on-hand and non-on-hand groups separately so on-hand recipes
-  // still pin to the top of the rotation (user intent: use up the kitchen before it spoils).
+  // a different week. Priority tiers shuffled separately so they stay at the top:
+  // starred favorites → on-hand → everything else. Day-assign walks index 0 first so
+  // any starred recipe shows up in the week (subject to non-adjacency).
   for (const type of MEAL_TYPES) {
-    if (onHandIds.length > 0) {
-      const usesOnHand = byType[type].filter(r => r.ingredients.some(i => onHandIds.includes(i.id)));
-      const noOnHand = byType[type].filter(r => !r.ingredients.some(i => onHandIds.includes(i.id)));
-      byType[type] = [
-        ...seededShuffle(usesOnHand, variation + type.length),
-        ...seededShuffle(noOnHand, variation + type.length + 1000),
-      ];
-    } else {
-      byType[type] = seededShuffle(byType[type], variation + type.length);
-    }
+    const isFav = (r) => favoriteRecipeIds.includes(r.id);
+    const usesOnHand = (r) => onHandIds.length > 0 && r.ingredients.some(i => onHandIds.includes(i.id));
+    const favorites = byType[type].filter(isFav);
+    const onHandTier = byType[type].filter(r => !isFav(r) && usesOnHand(r));
+    const others = byType[type].filter(r => !isFav(r) && !usesOnHand(r));
+    byType[type] = [
+      ...seededShuffle(favorites, variation + type.length + 2000),
+      ...seededShuffle(onHandTier, variation + type.length),
+      ...seededShuffle(others, variation + type.length + 1000),
+    ];
   }
 
   // Assign meals across 7 days, walking through the shuffled pool in order.
@@ -480,6 +483,8 @@ export function generateMealPlan(sales = [], budgetCap = null, servings = 1, exc
           for (const t of MEAL_TYPES) {
             const current = plan[DAYS[di]][t];
             if (!current) continue;
+            // Don't swap out a user-starred favorite even if it's the most expensive.
+            if (favoriteRecipeIds.includes(current.id)) continue;
             const prevC = respectAdjacency && di > 0 && plan[DAYS[di - 1]][t] ? recipeCategory(plan[DAYS[di - 1]][t]) : null;
             const nextC = respectAdjacency && di < DAYS.length - 1 && plan[DAYS[di + 1]][t] ? recipeCategory(plan[DAYS[di + 1]][t]) : null;
             for (const candidate of byType[t]) {

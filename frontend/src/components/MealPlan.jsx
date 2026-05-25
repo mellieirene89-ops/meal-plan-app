@@ -48,7 +48,7 @@ function fitFontSize(name, base, min, maxChars) {
   return Math.max(min, Math.round((base * maxChars) / longest));
 }
 
-function MealCard({ meal, mealType, day, taxRate = 0, isSkipped = false, onToggleSkip, onMealClick, onNeverAgain }) {
+function MealCard({ meal, mealType, day, taxRate = 0, isSkipped = false, onToggleSkip, onMealClick, onNeverAgain, isFavorite = false, onToggleFavoriteRecipe }) {
   const wt = (v) => Math.round(v * (1 + taxRate) * 100) / 100;
   const { accent, bg } = MEAL_CONFIG[mealType];
 
@@ -132,22 +132,44 @@ function MealCard({ meal, mealType, day, taxRate = 0, isSkipped = false, onToggl
       }}>
         {day}
       </div>
-      {/* Deal tag */}
-      {onSale && (
-        <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-          <span style={{
-            background: 'var(--sale)',
-            color: '#1a1400',
-            fontSize: 12,
-            fontWeight: 800,
-            padding: '2px 7px',
-            borderRadius: 4,
-            letterSpacing: '0.06em',
-            fontFamily: 'JetBrains Mono, monospace',
-            boxShadow: '1px 2px 3px rgba(0,0,0,0.4), 3px 4px 8px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.4), inset 0 -1px 0 rgba(0,0,0,0.15)',
-          }}>
-            ★ DEAL
-          </span>
+      {/* Deal tag + favorite star (clickable on the card so the user can star without opening the recipe) */}
+      {(onSale || onToggleFavoriteRecipe) && (
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 6 }}>
+          {onToggleFavoriteRecipe && meal.id ? (
+            <button
+              onClick={e => { e.stopPropagation(); onToggleFavoriteRecipe(meal.id); }}
+              title={isFavorite ? 'Remove from favorites' : 'Favorite this recipe'}
+              aria-label={isFavorite ? 'Unfavorite recipe' : 'Favorite recipe'}
+              style={{
+                background: 'transparent',
+                border: 'none',
+                padding: '0 2px',
+                fontSize: 22,
+                lineHeight: 1,
+                cursor: 'pointer',
+                color: isFavorite ? '#eaa221' : 'rgba(240, 232, 218, 0.4)',
+                textShadow: isFavorite ? '0 0 8px rgba(234,162,33,0.65), 1px 2px 3px rgba(0,0,0,0.6)' : '1px 2px 3px rgba(0,0,0,0.5)',
+                transition: 'color 0.2s, text-shadow 0.2s',
+              }}
+            >
+              {isFavorite ? '★' : '☆'}
+            </button>
+          ) : <span />}
+          {onSale && (
+            <span style={{
+              background: 'var(--sale)',
+              color: '#1a1400',
+              fontSize: 12,
+              fontWeight: 800,
+              padding: '2px 7px',
+              borderRadius: 4,
+              letterSpacing: '0.06em',
+              fontFamily: 'JetBrains Mono, monospace',
+              boxShadow: '1px 2px 3px rgba(0,0,0,0.4), 3px 4px 8px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.4), inset 0 -1px 0 rgba(0,0,0,0.15)',
+            }}>
+              ★ DEAL
+            </span>
+          )}
         </div>
       )}
 
@@ -305,7 +327,8 @@ const cardBase = {
   boxShadow: 'inset 0 2px 0 rgba(255,235,200,0.12), inset 0 -3px 8px rgba(0,0,0,0.25), 4px 6px 14px rgba(0,0,0,0.4), 8px 10px 20px rgba(0,0,0,0.18)',
 };
 
-export default function MealPlan({ plan, taxRate = 0, skippedMeals = {}, onToggleSkip, onMealClick, onNeverAgain }) {
+export default function MealPlan({ plan, taxRate = 0, skippedMeals = {}, onToggleSkip, onMealClick, onNeverAgain, favoritedRecipes = [], onToggleFavoriteRecipe }) {
+  const favoriteSet = new Set(favoritedRecipes);
   const wt = (v) => Math.round(v * (1 + taxRate) * 100) / 100;
   const days = Object.keys(plan);
 
@@ -369,7 +392,7 @@ export default function MealPlan({ plan, taxRate = 0, skippedMeals = {}, onToggl
               </span>
             </div>
             {days.map(day => (
-              <MealCard key={`${day}-${type}`} meal={plan[day][type]} mealType={type} day={day} taxRate={taxRate} isSkipped={!!skippedMeals[`${day}-${type}`]} onToggleSkip={() => onToggleSkip?.(`${day}-${type}`)} onMealClick={onMealClick} onNeverAgain={onNeverAgain} />
+              <MealCard key={`${day}-${type}`} meal={plan[day][type]} mealType={type} day={day} taxRate={taxRate} isSkipped={!!skippedMeals[`${day}-${type}`]} onToggleSkip={() => onToggleSkip?.(`${day}-${type}`)} onMealClick={onMealClick} onNeverAgain={onNeverAgain} isFavorite={!!plan[day][type]?.id && favoriteSet.has(plan[day][type].id)} onToggleFavoriteRecipe={onToggleFavoriteRecipe} />
             ))}
           </>
         ))}

@@ -59,12 +59,13 @@ app.get('/api/meal-plan', async (req, res) => {
     const cuisines = req.query.cuisines ? req.query.cuisines.split(',') : [];
     // Default true — Change It Up explicitly opts out via respectBudget=false
     const respectBudget = req.query.respectBudget !== 'false';
+    const favoriteRecipes = req.query.favoriteRecipes ? req.query.favoriteRecipes.split(',') : [];
     // ids={"Monday":{"breakfast":"...","lunch":"...","dinner":"..."},...} — Saved Menus path.
     let savedIds = null;
     try { if (req.query.ids) savedIds = JSON.parse(decodeURIComponent(req.query.ids)); } catch {}
     const plan = savedIds
       ? populateMealPlanFromIds(savedIds, filteredSales, servings, onhand)
-      : generateMealPlan(filteredSales, budget, servings, exclude, favs, variation, customRecipes, onhand, diff, excludeRecipes, cuisines, respectBudget);
+      : generateMealPlan(filteredSales, budget, servings, exclude, favs, variation, customRecipes, onhand, diff, excludeRecipes, cuisines, respectBudget, favoriteRecipes);
 
     res.json({
       ...plan,
@@ -118,9 +119,10 @@ app.get('/api/grocery-list', async (req, res) => {
     // grocery total could be 50%+ higher than the BudgetBar weekly total.
     const budget = req.query.budget ? parseFloat(req.query.budget) : null;
     const respectBudget = req.query.respectBudget !== 'false';
+    const favoriteRecipes = req.query.favoriteRecipes ? req.query.favoriteRecipes.split(',') : [];
     const planData = savedIds
       ? populateMealPlanFromIds(savedIds, filteredSales, servings, onhand)
-      : generateMealPlan(filteredSales, budget, servings, exclude, favs, variation, customRecipes, onhand, diff, excludeRecipes, cuisines, respectBudget);
+      : generateMealPlan(filteredSales, budget, servings, exclude, favs, variation, customRecipes, onhand, diff, excludeRecipes, cuisines, respectBudget, favoriteRecipes);
 
     // Build a set of on-hand ingredient names from IDs, plus a lookup for unit
     const ingredientList = getIngredientList();

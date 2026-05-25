@@ -28,8 +28,9 @@ const recipeCard = {
   boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.4), inset 0 0 20px rgba(180,160,120,0.1), 0 3px 5px rgba(0,0,0,0.3), 0 8px 16px rgba(0,0,0,0.3), 0 16px 30px rgba(0,0,0,0.2)',
 };
 
-export default function Recipes({ plan, focusTarget, onFocusHandled, onBackToPlan, onHand = [] }) {
+export default function Recipes({ plan, focusTarget, onFocusHandled, onBackToPlan, onHand = [], favoritedRecipes = [], onToggleFavoriteRecipe }) {
   const onHandSet = new Set(onHand);
+  const favoriteSet = new Set(favoritedRecipes);
   const today = DAYS[new Date().getDay()];
   const [expandedDays, setExpandedDays] = useState({ [today]: true });
   const [highlightKey, setHighlightKey] = useState(null);
@@ -152,16 +153,40 @@ export default function Recipes({ plan, focusTarget, onFocusHandled, onBackToPla
                         {type.charAt(0).toUpperCase() + type.slice(1)}
                       </p>
 
-                      {/* Recipe name */}
-                      <h3 style={{
-                        fontFamily: 'Pinyon Script, cursive',
-                        fontSize: 30,
-                        fontWeight: 400,
-                        color: '#2a1a0e',
-                        marginBottom: 14,
-                      }}>
-                        {meal.name}
-                      </h3>
+                      {/* Recipe name + favorite star */}
+                      <div style={{ display: 'flex', alignItems: 'flex-start', gap: 8, marginBottom: 14 }}>
+                        <h3 style={{
+                          fontFamily: 'Pinyon Script, cursive',
+                          fontSize: 30,
+                          fontWeight: 400,
+                          color: '#2a1a0e',
+                          flex: 1,
+                          minWidth: 0,
+                        }}>
+                          {meal.name}
+                        </h3>
+                        {meal.id && onToggleFavoriteRecipe && (
+                          <button
+                            onClick={() => onToggleFavoriteRecipe(meal.id)}
+                            title={favoriteSet.has(meal.id) ? 'Remove from favorites' : 'Add to favorites — it will appear in plans more often'}
+                            aria-label={favoriteSet.has(meal.id) ? 'Unfavorite recipe' : 'Favorite recipe'}
+                            style={{
+                              flex: 'none',
+                              background: 'transparent',
+                              border: 'none',
+                              padding: 4,
+                              fontSize: 28,
+                              lineHeight: 1,
+                              cursor: 'pointer',
+                              color: favoriteSet.has(meal.id) ? '#eaa221' : 'rgba(80, 60, 30, 0.35)',
+                              textShadow: favoriteSet.has(meal.id) ? '0 0 8px rgba(234,162,33,0.55), 1px 2px 3px rgba(0,0,0,0.35)' : 'none',
+                              transition: 'color 0.2s, text-shadow 0.2s',
+                            }}
+                          >
+                            {favoriteSet.has(meal.id) ? '★' : '☆'}
+                          </button>
+                        )}
+                      </div>
 
                       {/* Ingredients */}
                       <div style={{ marginBottom: 14 }}>

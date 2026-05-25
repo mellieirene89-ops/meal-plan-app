@@ -181,6 +181,18 @@ export default function App() {
   useEffect(() => {
     try { localStorage.setItem('mealmaker_saved_menus', JSON.stringify(savedMenus)); } catch {}
   }, [savedMenus]);
+  // Favorited recipes (by id) — separate from the ingredient-level `favorites`
+  // above. Boosts the recipe's optimizer score so it surfaces more often, and
+  // renders a star indicator on both the recipe card and meal card.
+  const [favoritedRecipes, setFavoritedRecipes] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('mealmaker_favorited_recipes')) || []; } catch { return []; }
+  });
+  useEffect(() => {
+    try { localStorage.setItem('mealmaker_favorited_recipes', JSON.stringify(favoritedRecipes)); } catch {}
+  }, [favoritedRecipes]);
+  const toggleFavoriteRecipe = (id) => {
+    setFavoritedRecipes(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
+  };
   const [selectedCuisines, setSelectedCuisines] = useState(() => {
     try { return JSON.parse(localStorage.getItem('mealmaker_cuisines')) || []; } catch { return []; }
   });
@@ -286,6 +298,7 @@ export default function App() {
     const excludeParam = ex.length ? `&exclude=${ex.join(',')}` : '';
     const onHandParam = oh.length ? `&onhand=${oh.join(',')}` : '';
     const favParam = fav.length ? `&favorites=${fav.join(',')}` : '';
+    const favRecipesParam = favoritedRecipes.length ? `&favoriteRecipes=${favoritedRecipes.join(',')}` : '';
     const customParam = customRecipes.length ? `&custom=${encodeURIComponent(JSON.stringify(customRecipes))}` : '';
     const storeParam = preferredStore ? `&store=${encodeURIComponent(preferredStore)}` : '';
     const diffParam = difficulty !== 'all' ? `&difficulty=${difficulty}` : '';
@@ -300,8 +313,8 @@ export default function App() {
     setSalesData(null);
     try {
       const [planRes, grocRes, salesRes] = await Promise.all([
-        fetch(`${API}/meal-plan?zip=${zip}&budget=${budget}&servings=${servings}&refresh=${refresh}&radius=${radius}&variation=${v}${excludeParam}${onHandParam}${favParam}${customParam}${storeParam}${diffParam}${excludeRecipesParam}${cuisinesParam}${budgetParam}`),
-        fetch(`${API}/grocery-list?zip=${zip}&budget=${budget}&servings=${servings}&radius=${radius}&variation=${v}${excludeParam}${onHandParam}${favParam}${customParam}${storeParam}${diffParam}${excludeRecipesParam}${cuisinesParam}${budgetParam}`),
+        fetch(`${API}/meal-plan?zip=${zip}&budget=${budget}&servings=${servings}&refresh=${refresh}&radius=${radius}&variation=${v}${excludeParam}${onHandParam}${favParam}${customParam}${storeParam}${diffParam}${excludeRecipesParam}${cuisinesParam}${favRecipesParam}${budgetParam}`),
+        fetch(`${API}/grocery-list?zip=${zip}&budget=${budget}&servings=${servings}&radius=${radius}&variation=${v}${excludeParam}${onHandParam}${favParam}${customParam}${storeParam}${diffParam}${excludeRecipesParam}${cuisinesParam}${favRecipesParam}${budgetParam}`),
         fetch(`${API}/sales?zip=${zip}&refresh=${refresh}&radius=${radius}`)
       ]);
       if (!planRes.ok) throw new Error('Failed to load meal plan');
@@ -1615,7 +1628,7 @@ export default function App() {
                 );
               })()}
               <div id="weekly-plan-grid" style={{ scrollMarginTop: 16 }}>
-              <MealPlan plan={effectivePlan} taxRate={groceryTaxRate} skippedMeals={{}} onNeverAgain={(recipe) => {
+              <MealPlan plan={effectivePlan} taxRate={groceryTaxRate} skippedMeals={{}} favoritedRecipes={favoritedRecipes} onToggleFavoriteRecipe={toggleFavoriteRecipe} onNeverAgain={(recipe) => {
               if (!recipe?.id || excludedRecipes.some(r => r.id === recipe.id)) return;
               const next = [...excludedRecipes, { id: recipe.id, name: recipe.name }];
               setExcludedRecipes(next);
@@ -1666,7 +1679,7 @@ export default function App() {
             }} />
               </div>
             </>}
-            {tab === 'recipes' && planData && <Recipes plan={effectivePlan} focusTarget={recipeFocus} onFocusHandled={() => setRecipeFocus(null)} onBackToPlan={() => setTab('plan')} onHand={onHand} />}
+            {tab === 'recipes' && planData && <Recipes plan={effectivePlan} focusTarget={recipeFocus} onFocusHandled={() => setRecipeFocus(null)} onBackToPlan={() => setTab('plan')} onHand={onHand} favoritedRecipes={favoritedRecipes} onToggleFavoriteRecipe={toggleFavoriteRecipe} />}
             {tab === 'grocery' && filteredGroceryData && (
               <GroceryList
                 items={filteredGroceryData.items}
