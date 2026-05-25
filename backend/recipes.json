@@ -18788,5 +18788,1293 @@
       "Cover off-heat 5 minutes until cheese melts and the cottage cheese softens into ricotta-like pockets. Serve straight from the pan."
     ],
     "difficulty": "intermediate"
+  },
+  {
+    "id": "cinnamon_banana_overnight_oats_jar",
+    "name": "Cinnamon Banana Overnight Oats Jar",
+    "mealType": "breakfast",
+    "prepMinutes": 5,
+    "ingredients": [
+      {
+        "id": "oats",
+        "qty": 1,
+        "measure": "1/2 cup"
+      },
+      {
+        "id": "milk",
+        "qty": 1,
+        "measure": "3/4 cup"
+      },
+      {
+        "id": "banana",
+        "qty": 1,
+        "measure": "1, sliced"
+      },
+      {
+        "id": "peanut_butter",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "honey",
+        "qty": 1,
+        "measure": "1 tsp"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "kid-friendly",
+      "make-ahead",
+      "quick"
+    ],
+    "instructions": [
+      "Layer oats, milk, peanut butter, honey, and a pinch of cinnamon (if you have it) in a mason jar.",
+      "Add half the banana slices and stir to combine.",
+      "Seal and refrigerate overnight (or at least 4 hours).",
+      "In the morning, top with the remaining banana slices and eat straight from the jar."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "berry_granola_skillet",
+    "name": "Berry Granola Skillet",
+    "mealType": "breakfast",
+    "prepMinutes": 12,
+    "ingredients": [
+      {
+        "id": "oats",
+        "qty": 1.5,
+        "measure": "3/4 cup"
+      },
+      {
+        "id": "frozen_berries",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "honey",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "greek_yogurt",
+        "qty": 1,
+        "measure": "1/2 cup, to serve"
+      },
+      {
+        "id": "banana",
+        "qty": 1,
+        "measure": "1, sliced"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "garden-fresh",
+      "kid-friendly",
+      "quick"
+    ],
+    "instructions": [
+      "Melt butter in a skillet over medium. Stir in oats and honey; toast 5 minutes until golden and fragrant.",
+      "Push oats to one side; add frozen berries to the empty side and warm for 2 minutes until juicy.",
+      "Spoon yogurt into bowls; top with the toasted oats, warm berries, and banana slices.",
+      "Drizzle with a touch more honey if you like."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "sweet_potato_hash_poached_eggs",
+    "name": "Sweet Potato Hash with Poached Eggs",
+    "mealType": "breakfast",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "sweet_potato",
+        "qty": 2,
+        "measure": "2 medium, small dice"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2 large"
+      },
+      {
+        "id": "bacon",
+        "qty": 1,
+        "measure": "3 strips, chopped"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion diced + 2 cloves garlic"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, diced"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tsp smoked"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tsp white vinegar (for poaching)"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "garden-fresh"
+    ],
+    "instructions": [
+      "Cook bacon in a wide skillet until crisp; lift out and reserve, leave the fat in the pan.",
+      "Add olive oil if needed. Toss in sweet potato, onion, pepper, garlic, paprika, salt, and pepper. Cook 12-15 minutes, stirring occasionally, until crispy at the edges.",
+      "While hash finishes, bring a small pot of water to a bare simmer; add vinegar. Crack each egg into a small cup, then slip into the swirling water. Poach 3 minutes until whites set but yolks are runny.",
+      "Lift eggs with a slotted spoon onto paper towels to drain briefly.",
+      "Plate hash, top with the poached eggs and reserved bacon. Crack pepper over and serve."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "lemon_cottage_cheese_pancakes",
+    "name": "Lemon Cottage Cheese Pancakes",
+    "mealType": "breakfast",
+    "prepMinutes": 20,
+    "ingredients": [
+      {
+        "id": "flour",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "cottage_cheese",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2 large, separated"
+      },
+      {
+        "id": "milk",
+        "qty": 0.5,
+        "measure": "1/2 cup"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, zested and juiced"
+      },
+      {
+        "id": "sugar",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "butter",
+        "qty": 2,
+        "measure": "2 tbsp, for the pan"
+      },
+      {
+        "id": "honey",
+        "qty": 1,
+        "measure": "to drizzle"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "pinch"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein"
+    ],
+    "instructions": [
+      "Whisk egg yolks, cottage cheese, milk, lemon zest and juice, sugar, and salt until smooth-ish (chunks are fine).",
+      "Stir in flour just until combined — don't overwork.",
+      "Beat egg whites to soft peaks; fold gently into the batter for extra-light pancakes.",
+      "Melt butter in a nonstick skillet over medium-low. Drop 1/4-cup pancakes; cook 2 minutes until bubbles dot the surface, flip, cook 1 minute more.",
+      "Stack hot pancakes with honey and an extra squeeze of lemon."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "spinach_feta_mini_quiches",
+    "name": "Spinach & Feta Mini Quiches",
+    "mealType": "breakfast",
+    "prepMinutes": 55,
+    "ingredients": [
+      {
+        "id": "flour",
+        "qty": 1.5,
+        "measure": "1 1/2 cups (for crust)"
+      },
+      {
+        "id": "butter",
+        "qty": 6,
+        "measure": "6 tbsp cold, cubed"
+      },
+      {
+        "id": "eggs",
+        "qty": 4,
+        "measure": "4 large"
+      },
+      {
+        "id": "milk",
+        "qty": 1,
+        "measure": "3/4 cup"
+      },
+      {
+        "id": "feta_cheese",
+        "qty": 2,
+        "measure": "3/4 cup crumbled"
+      },
+      {
+        "id": "frozen_spinach",
+        "qty": 1,
+        "measure": "1 cup, thawed and squeezed dry"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion finely diced + 1 clove garlic"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mediterranean",
+      "greek",
+      "make-ahead",
+      "high-protein"
+    ],
+    "instructions": [
+      "Pulse flour, butter, and a pinch of salt in a food processor (or rub by hand) until pea-sized crumbs. Drizzle 3-4 tbsp ice water in until the dough just clumps. Chill 20 minutes.",
+      "Heat oven to 375°F. Roll dough thin, cut into rounds, press into a 12-cup muffin tin.",
+      "Sauté onion and garlic in olive oil 3 minutes; stir in spinach and Italian seasoning. Cool slightly.",
+      "Whisk eggs, milk, salt, and pepper. Stir in the spinach mixture and crumbled feta.",
+      "Divide custard between crusts. Bake 22-26 minutes until tops are golden and just set.",
+      "Cool 5 minutes before unmolding. Keep up to 4 days in the fridge."
+    ],
+    "difficulty": "expert"
+  },
+  {
+    "id": "berry_cream_cheese_crepes",
+    "name": "Crepes with Berry Cream Cheese Filling",
+    "mealType": "breakfast",
+    "prepMinutes": 40,
+    "ingredients": [
+      {
+        "id": "flour",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "eggs",
+        "qty": 3,
+        "measure": "3 large"
+      },
+      {
+        "id": "milk",
+        "qty": 1.5,
+        "measure": "1 1/2 cups"
+      },
+      {
+        "id": "butter",
+        "qty": 4,
+        "measure": "4 tbsp, melted (plus more for pan)"
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 2,
+        "measure": "6 oz, softened"
+      },
+      {
+        "id": "frozen_berries",
+        "qty": 1.5,
+        "measure": "1 1/2 cups"
+      },
+      {
+        "id": "sugar",
+        "qty": 3,
+        "measure": "1/4 cup"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, zested and juiced"
+      },
+      {
+        "id": "honey",
+        "qty": 1,
+        "measure": "to drizzle (optional)"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "pinch"
+      }
+    ],
+    "tags": [
+      "comfort-food",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Blend flour, eggs, milk, melted butter, a pinch of salt, and 1 tbsp sugar into a thin batter. Rest 15 minutes.",
+      "Warm berries with the remaining sugar and lemon juice in a small pot, 8 minutes, until thickened. Cool slightly.",
+      "Whip cream cheese with lemon zest and a drizzle of honey until smooth.",
+      "Heat a nonstick pan over medium with a little butter. Pour ~1/3 cup batter, swirl to coat, cook 60 seconds; flip and cook 20 seconds more. Stack between parchment as you go.",
+      "Spread each crepe with cream cheese filling, spoon berries down the center, roll up.",
+      "Plate 2 per serving; drizzle with extra berry sauce."
+    ],
+    "difficulty": "expert"
+  },
+  {
+    "id": "tomato_mozzarella_bagel_sandwich",
+    "name": "Tomato Mozzarella Bagel Sandwich",
+    "mealType": "lunch",
+    "prepMinutes": 10,
+    "ingredients": [
+      {
+        "id": "bread",
+        "qty": 2,
+        "measure": "1 bagel (or 2 thick slices)"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1,
+        "measure": "2 oz, sliced"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 1,
+        "measure": "1, sliced"
+      },
+      {
+        "id": "lettuce",
+        "qty": 0.5,
+        "measure": "small handful"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "mediterranean",
+      "garden-fresh",
+      "quick",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Split and lightly toast the bagel.",
+      "Drizzle olive oil onto the bottom half; sprinkle Italian seasoning, salt, and pepper.",
+      "Layer mozzarella, tomato slices, and lettuce.",
+      "Close with the top, slice in half, and serve."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "turkey_cheddar_pinwheel_wraps",
+    "name": "Turkey & Cheddar Pinwheel Wraps",
+    "mealType": "lunch",
+    "prepMinutes": 10,
+    "ingredients": [
+      {
+        "id": "tortillas",
+        "qty": 2,
+        "measure": "2 large flour"
+      },
+      {
+        "id": "deli_turkey",
+        "qty": 1,
+        "measure": "6 slices"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "4 slices"
+      },
+      {
+        "id": "lettuce",
+        "qty": 1,
+        "measure": "4 leaves"
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 2,
+        "measure": "4 tbsp, softened"
+      },
+      {
+        "id": "mustard",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 1,
+        "measure": "1, thinly sliced"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "kid-friendly",
+      "quick",
+      "high-protein"
+    ],
+    "instructions": [
+      "Whisk cream cheese with mustard until smooth.",
+      "Spread the mixture across each tortilla edge-to-edge.",
+      "Layer with turkey, cheddar, lettuce, and tomato.",
+      "Roll up tightly. Trim ends, then slice into 1-inch pinwheels.",
+      "Serve right away or wrap and refrigerate up to a day."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "greek_beef_pita_tzatziki",
+    "name": "Greek Beef Pita with Tzatziki",
+    "mealType": "lunch",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1,
+        "measure": "1/2 lb"
+      },
+      {
+        "id": "bread",
+        "qty": 2,
+        "measure": "2 pita rounds (or 4 slices)"
+      },
+      {
+        "id": "greek_yogurt",
+        "qty": 1,
+        "measure": "1/2 cup"
+      },
+      {
+        "id": "cucumber",
+        "qty": 1,
+        "measure": "1, grated and squeezed dry"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "2 cloves garlic + 1/4 onion finely diced"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 1,
+        "measure": "1, diced"
+      },
+      {
+        "id": "lettuce",
+        "qty": 1,
+        "measure": "small handful, shredded"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp (oregano-leaning)"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "greek",
+      "mediterranean",
+      "high-protein",
+      "garden-fresh"
+    ],
+    "instructions": [
+      "Stir yogurt, grated cucumber, 1 clove garlic (minced), half the lemon juice, salt, and pepper into tzatziki. Chill while you cook.",
+      "Mix beef with diced onion, the other clove of garlic, Italian seasoning, cumin, the rest of the lemon juice, salt, and pepper. Form into 8 small patties (kefta-style).",
+      "Sear patties in olive oil over medium-high, 3 minutes per side.",
+      "Warm the pitas in a dry pan, 20 seconds per side.",
+      "Stuff each pita with patties, tomato, lettuce, and a generous spoon of tzatziki."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "salmon_avocado_power_bowl",
+    "name": "Salmon Avocado Power Bowl",
+    "mealType": "lunch",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "salmon",
+        "qty": 1,
+        "measure": "2 fillets (6 oz each)"
+      },
+      {
+        "id": "brown_rice",
+        "qty": 2,
+        "measure": "1 cup, cooked per package"
+      },
+      {
+        "id": "avocado",
+        "qty": 1,
+        "measure": "1, sliced"
+      },
+      {
+        "id": "cucumber",
+        "qty": 1,
+        "measure": "1/2, sliced into half-moons"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "1, julienned"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "honey",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "2 stalks, sliced"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "measure": "1, cut in wedges"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "asian",
+      "high-protein",
+      "garden-fresh"
+    ],
+    "instructions": [
+      "Pat salmon dry, season with salt. Sear skin-side down in olive oil over medium-high 4 minutes; flip and cook 2 minutes more. Let rest, then flake into large chunks.",
+      "Whisk soy sauce, sesame oil, and honey for a quick dressing.",
+      "Build bowls: rice base, salmon, avocado, cucumber, carrots, green onion.",
+      "Drizzle the dressing over and serve with lime wedges to squeeze."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "pasta_carbonara",
+    "name": "Pasta Carbonara",
+    "mealType": "lunch",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "pasta",
+        "qty": 2,
+        "measure": "8 oz spaghetti"
+      },
+      {
+        "id": "eggs",
+        "qty": 3,
+        "measure": "2 whole + 1 yolk"
+      },
+      {
+        "id": "parmesan",
+        "qty": 2,
+        "measure": "3/4 cup grated, plus more to serve"
+      },
+      {
+        "id": "bacon",
+        "qty": 2,
+        "measure": "4 strips, diced (or pancetta)"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 clove garlic, smashed"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "freshly cracked, lots"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "for pasta water"
+      }
+    ],
+    "tags": [
+      "italian",
+      "comfort-food",
+      "high-protein"
+    ],
+    "instructions": [
+      "Boil pasta in well-salted water until just al dente. Reserve 1 cup pasta water before draining.",
+      "While pasta cooks, render bacon in a wide cold skillet over medium until crisp. Lift bacon out, leave a film of fat. Toss in garlic and bloom 30 seconds, then discard.",
+      "In a bowl, whisk eggs, yolk, parmesan, and a ton of black pepper into a thick paste.",
+      "Drop drained pasta into the warm skillet with butter; remove from heat (this is critical — no live heat).",
+      "Pour egg mixture over while tossing constantly. Splash in pasta water a tablespoon at a time until the sauce turns silky and clings.",
+      "Fold bacon back in. Plate with more parmesan and pepper on top."
+    ],
+    "difficulty": "expert"
+  },
+  {
+    "id": "banh_mi_inspired_sandwich",
+    "name": "Banh Mi-Inspired Pork Sandwich",
+    "mealType": "lunch",
+    "prepMinutes": 35,
+    "ingredients": [
+      {
+        "id": "pork_chops",
+        "qty": 1,
+        "measure": "2 boneless, thinly sliced"
+      },
+      {
+        "id": "bread",
+        "qty": 2,
+        "measure": "2 small baguette pieces (or 4 slices)"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "1, julienned"
+      },
+      {
+        "id": "cucumber",
+        "qty": 1,
+        "measure": "1/2, julienned"
+      },
+      {
+        "id": "vinegar",
+        "qty": 2,
+        "measure": "2 tbsp rice vinegar"
+      },
+      {
+        "id": "sugar",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "honey",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "2 cloves garlic"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1 tsp grated"
+      },
+      {
+        "id": "mayo",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 1,
+        "measure": "1 tsp sriracha-style"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "measure": "small handful"
+      },
+      {
+        "id": "jalapeno",
+        "qty": 1,
+        "measure": "1, sliced thin"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "measure": "1, cut in wedges"
+      }
+    ],
+    "tags": [
+      "asian",
+      "garden-fresh",
+      "high-protein"
+    ],
+    "instructions": [
+      "Whisk vinegar and sugar in a bowl; toss carrot and cucumber in to quick-pickle while you cook.",
+      "Marinate pork in soy sauce, honey, garlic, and ginger for 10 minutes.",
+      "Sear pork in a hot skillet 2 minutes per side until caramelized and just cooked through.",
+      "Stir mayo with hot sauce until pink.",
+      "Toast bread cut-side down briefly. Spread with spicy mayo, layer with pork, pickled vegetables, jalapeño, and cilantro.",
+      "Close, slice, and serve with lime wedges."
+    ],
+    "difficulty": "expert"
+  },
+  {
+    "id": "skillet_lemon_butter_salmon",
+    "name": "Skillet Lemon Butter Salmon with Rice",
+    "mealType": "dinner",
+    "prepMinutes": 20,
+    "ingredients": [
+      {
+        "id": "salmon",
+        "qty": 2,
+        "measure": "2 fillets (6 oz each)"
+      },
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 cup, cooked per package"
+      },
+      {
+        "id": "frozen_broccoli",
+        "qty": 1,
+        "measure": "2 cups, steamed"
+      },
+      {
+        "id": "butter",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, juiced + wedges to serve"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "3 cloves garlic, minced"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "high-protein",
+      "garden-fresh",
+      "quick"
+    ],
+    "instructions": [
+      "Pat salmon dry, season with salt, pepper, and Italian seasoning.",
+      "Heat olive oil in a skillet over medium-high. Sear salmon skin-side down 4 minutes until crispy; flip and cook 2 minutes more. Lift out.",
+      "Lower heat. Melt butter, add garlic, cook 30 seconds. Stir in lemon juice.",
+      "Return salmon briefly to spoon sauce over.",
+      "Plate over rice with steamed broccoli; serve with lemon wedges."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "garlic_butter_shrimp_rice",
+    "name": "Quick Garlic Butter Shrimp & Rice",
+    "mealType": "dinner",
+    "prepMinutes": 20,
+    "ingredients": [
+      {
+        "id": "shrimp",
+        "qty": 1,
+        "measure": "1 lb, peeled"
+      },
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 cup, cooked per package"
+      },
+      {
+        "id": "butter",
+        "qty": 4,
+        "measure": "4 tbsp"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "5 cloves garlic, minced"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "measure": "small handful, chopped"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "quick"
+    ],
+    "instructions": [
+      "Pat shrimp dry, toss with paprika, salt, and pepper.",
+      "Melt butter in a skillet over medium-high. Add garlic and cook 30 seconds until fragrant.",
+      "Add shrimp in a single layer; cook 90 seconds per side until pink and just opaque.",
+      "Off heat, stir in lemon juice and cilantro.",
+      "Serve over rice with hot sauce on the side."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "stuffed_bell_peppers",
+    "name": "Stuffed Bell Peppers with Beef & Rice",
+    "mealType": "dinner",
+    "prepMinutes": 60,
+    "ingredients": [
+      {
+        "id": "bell_pepper",
+        "qty": 4,
+        "measure": "4 large, tops cut, seeds removed"
+      },
+      {
+        "id": "ground_beef",
+        "qty": 1,
+        "measure": "1 lb"
+      },
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 cup, cooked"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1,
+        "measure": "1 can (15 oz)"
+      },
+      {
+        "id": "cheddar",
+        "qty": 2,
+        "measure": "1 cup shredded"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion diced + 3 cloves garlic"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling",
+      "garden-fresh"
+    ],
+    "instructions": [
+      "Heat oven to 375°F. Stand peppers cut-side up in a baking dish; pour 1/4 inch of water around them.",
+      "Sauté onion and garlic in olive oil 3 minutes. Add beef and brown, breaking it up. Drain fat.",
+      "Stir in cooked rice, half the tomato sauce, Italian seasoning, paprika, salt, and pepper.",
+      "Spoon filling into the peppers, mounding the tops. Pour remaining tomato sauce over and around.",
+      "Cover with foil; bake 35 minutes. Uncover, top with cheese, bake 10 more minutes until peppers are tender and cheese is bubbly.",
+      "Rest 5 minutes before serving."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "stovetop_korean_bulgogi_beef_bowl",
+    "name": "Stovetop Korean Bulgogi Beef Bowl",
+    "mealType": "dinner",
+    "prepMinutes": 30,
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1.5,
+        "measure": "1 lb flank or sirloin, sliced paper-thin"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 3,
+        "measure": "1/3 cup"
+      },
+      {
+        "id": "sugar",
+        "qty": 3,
+        "measure": "3 tbsp brown sugar"
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1 tbsp grated"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "4 cloves garlic + 1/2 onion sliced"
+      },
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 cup, cooked"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "1, julienned"
+      },
+      {
+        "id": "cucumber",
+        "qty": 1,
+        "measure": "1, sliced"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "3 stalks, sliced"
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      }
+    ],
+    "tags": [
+      "asian",
+      "high-protein",
+      "garden-fresh"
+    ],
+    "instructions": [
+      "Whisk soy sauce, brown sugar, sesame oil, ginger, and garlic. Toss with sliced beef; marinate 15 minutes (or up to overnight).",
+      "Heat vegetable oil in a wide skillet over high until shimmering. Sear beef in a single layer in two batches, 90 seconds per side, until edges are caramelized.",
+      "Return all beef to the pan with onion; toss 1 minute to coat in the glaze.",
+      "Build bowls: rice base, beef with sauce, raw carrots, cucumber, and green onions.",
+      "Pass hot sauce at the table."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "mushroom_parmesan_risotto",
+    "name": "Mushroom & Parmesan Risotto",
+    "mealType": "dinner",
+    "prepMinutes": 45,
+    "ingredients": [
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 1/2 cups arborio (or short-grain white rice)"
+      },
+      {
+        "id": "mushrooms",
+        "qty": 2,
+        "measure": "8 oz, sliced"
+      },
+      {
+        "id": "broth",
+        "qty": 5,
+        "measure": "5 cups chicken or vegetable, warmed"
+      },
+      {
+        "id": "parmesan",
+        "qty": 2,
+        "measure": "3/4 cup grated, plus more to serve"
+      },
+      {
+        "id": "butter",
+        "qty": 4,
+        "measure": "4 tbsp, divided"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion finely diced + 3 cloves garlic"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "comfort-food",
+      "veggie-rich"
+    ],
+    "instructions": [
+      "Sauté mushrooms in 2 tbsp butter and 1 tbsp olive oil over medium-high until deeply browned, 8 minutes; season, set aside.",
+      "In the same pan, heat 1 tbsp olive oil; sweat onion 4 minutes until soft. Stir in garlic, cook 30 seconds.",
+      "Add rice; toast 2 minutes, stirring, until edges are translucent.",
+      "Add warm broth one ladle at a time, stirring gently, waiting until each addition is absorbed before adding the next. Continue 20-25 minutes until rice is creamy and al dente.",
+      "Off heat, stir in mushrooms, the remaining 2 tbsp butter, parmesan, Italian seasoning, lemon juice, salt, and pepper.",
+      "Rest 2 minutes, then ladle into shallow bowls with more parmesan on top."
+    ],
+    "difficulty": "expert"
+  },
+  {
+    "id": "pork_schnitzel_lemon",
+    "name": "Crispy Pork Schnitzel with Lemon",
+    "mealType": "dinner",
+    "prepMinutes": 40,
+    "ingredients": [
+      {
+        "id": "pork_chops",
+        "qty": 2,
+        "measure": "4 boneless thin-cut chops, pounded 1/4 inch"
+      },
+      {
+        "id": "flour",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2 large, beaten"
+      },
+      {
+        "id": "bread",
+        "qty": 4,
+        "measure": "4 slices, blitzed to fine crumbs"
+      },
+      {
+        "id": "butter",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 3,
+        "measure": "1/3 cup for shallow frying"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, cut in wedges"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "potato",
+        "qty": 2,
+        "measure": "2 medium, boiled and buttered (side)"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "comfort-food",
+      "american-classic",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Boil potatoes for the side in salted water 15 minutes; drain, toss with 1 tbsp butter, salt, and pepper. Keep warm.",
+      "Set up dredging stations: seasoned flour (with paprika, salt, pepper), beaten eggs, breadcrumbs. Pat pork dry, season both sides.",
+      "Coat each cutlet: flour, egg, crumbs — press to adhere.",
+      "Heat oil and remaining butter in a wide skillet over medium-high until shimmering (not smoking).",
+      "Shallow-fry cutlets 2-3 minutes per side until deep golden and 145°F inside. Drain on paper towels.",
+      "Plate with buttered potatoes and big lemon wedges to squeeze over."
+    ],
+    "difficulty": "expert"
   }
 ]
