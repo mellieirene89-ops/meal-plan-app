@@ -5360,7 +5360,7 @@
     "prepMinutes": 35,
     "ingredients": [
       {
-        "id": "ground_beef",
+        "id": "steak",
         "qty": 1,
         "measure": "6 oz, or thin-sliced steak"
       },
@@ -9515,7 +9515,7 @@
     "prepMinutes": 25,
     "ingredients": [
       {
-        "id": "ground_beef",
+        "id": "steak",
         "qty": 1,
         "measure": "1 lb (or flank steak sliced thin)"
       },
@@ -17196,7 +17196,7 @@
     "prepMinutes": 20,
     "ingredients": [
       {
-        "id": "ground_beef",
+        "id": "beef_roast",
         "qty": 1.5,
         "measure": "1 lb stew beef or chuck, cubed"
       },
@@ -17285,7 +17285,7 @@
     "prepMinutes": 15,
     "ingredients": [
       {
-        "id": "ground_beef",
+        "id": "beef_roast",
         "qty": 2,
         "measure": "1 1/2 lb chuck roast"
       },
@@ -17627,7 +17627,7 @@
     "prepMinutes": 15,
     "ingredients": [
       {
-        "id": "ground_beef",
+        "id": "beef_roast",
         "qty": 1.5,
         "measure": "1 lb flank steak or chuck, sliced thin"
       },
@@ -18038,7 +18038,7 @@
     "prepMinutes": 15,
     "ingredients": [
       {
-        "id": "ground_beef",
+        "id": "beef_roast",
         "qty": 2,
         "measure": "1 1/2 lb chuck roast"
       },
@@ -18499,7 +18499,7 @@
     "prepMinutes": 25,
     "ingredients": [
       {
-        "id": "ground_beef",
+        "id": "steak",
         "qty": 1.5,
         "measure": "1 lb sirloin, sliced thin"
       },
@@ -19872,7 +19872,7 @@
     "prepMinutes": 30,
     "ingredients": [
       {
-        "id": "ground_beef",
+        "id": "steak",
         "qty": 1.5,
         "measure": "1 lb flank or sirloin, sliced paper-thin"
       },
@@ -24303,7 +24303,7 @@
     "difficulty": "intermediate",
     "ingredients": [
       {
-        "id": "ground_beef",
+        "id": "steak",
         "qty": 1,
         "measure": "8 oz ribeye or sirloin, sliced paper-thin"
       },
@@ -24791,7 +24791,7 @@
     "difficulty": "intermediate",
     "ingredients": [
       {
-        "id": "ground_beef",
+        "id": "beef_roast",
         "qty": 2,
         "measure": "1 1/2 lb chuck, slow-simmered (or use cooked brisket)"
       },
@@ -24880,7 +24880,7 @@
     "difficulty": "intermediate",
     "ingredients": [
       {
-        "id": "ground_beef",
+        "id": "beef_roast",
         "qty": 2,
         "measure": "1 1/2 lb chuck roast or sirloin, sliced thin"
       },
@@ -25326,7 +25326,7 @@
     "prepMinutes": 22,
     "ingredients": [
       {
-        "id": "ground_beef",
+        "id": "steak",
         "qty": 1,
         "measure": "6 oz sirloin steak"
       },
