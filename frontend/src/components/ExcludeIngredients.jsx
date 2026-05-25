@@ -53,6 +53,7 @@ function TomatoBullet({ size = 20 }) {
 }
 
 const CUISINES = [
+  { id: 'set-and-forget', label: 'Set & Forget' },
   { id: 'comfort-food', label: 'Comfort Food' },
   { id: 'american-classic', label: 'American Classic' },
   { id: 'asian', label: 'Asian' },

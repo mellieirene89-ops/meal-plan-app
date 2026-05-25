@@ -922,7 +922,8 @@
     "tags": [
       "meal-prep",
       "veggie-rich",
-      "budget"
+      "budget",
+      "set-and-forget"
     ],
     "instructions": [
       "Sauté diced onion and garlic in a pot until softened.",
@@ -1174,7 +1175,8 @@
       "budget",
       "meal-prep",
       "veggie-rich",
-      "high-protein"
+      "high-protein",
+      "set-and-forget"
     ],
     "instructions": [
       "Sauté onion, garlic, carrots, and celery in a pot with a little oil for 3-4 minutes.",
@@ -1716,7 +1718,8 @@
       "american-classic",
       "budget",
       "quick",
-      "vegetarian"
+      "vegetarian",
+      "set-and-forget"
     ],
     "instructions": [
       "Butter bread on one side, place cheese between slices.",
@@ -1804,7 +1807,8 @@
     "tags": [
       "high-protein",
       "veggie-rich",
-      "meal-prep"
+      "meal-prep",
+      "set-and-forget"
     ],
     "instructions": [
       "Cook brown rice according to package directions.",
@@ -2022,7 +2026,8 @@
     "tags": [
       "high-protein",
       "veggie-rich",
-      "meal-prep"
+      "meal-prep",
+      "set-and-forget"
     ],
     "instructions": [
       "Dice chicken thighs into bite-size pieces.",
@@ -2306,7 +2311,8 @@
     "tags": [
       "high-protein",
       "meal-prep",
-      "filling"
+      "filling",
+      "set-and-forget"
     ],
     "instructions": [
       "Brown ground beef with diced onion in a large pot.",
@@ -2706,7 +2712,8 @@
     ],
     "tags": [
       "filling",
-      "meal-prep"
+      "meal-prep",
+      "set-and-forget"
     ],
     "instructions": [
       "Cook chopped bacon in a pot until crispy, set aside.",
@@ -3763,7 +3770,8 @@
     "tags": [
       "vegetarian",
       "budget",
-      "filling"
+      "filling",
+      "set-and-forget"
     ],
     "instructions": [
       "Combine beans, tomatoes, and chili powder in a pot. Simmer 15 minutes.",
@@ -3806,7 +3814,8 @@
     ],
     "tags": [
       "quick",
-      "budget"
+      "budget",
+      "set-and-forget"
     ],
     "instructions": [
       "Bring broth to a gentle boil.",
@@ -3884,7 +3893,8 @@
     ],
     "tags": [
       "filling",
-      "budget"
+      "budget",
+      "set-and-forget"
     ],
     "instructions": [
       "Cook chopped bacon until crispy, set aside.",
@@ -4021,7 +4031,8 @@
     ],
     "tags": [
       "high-protein",
-      "veggie-rich"
+      "veggie-rich",
+      "set-and-forget"
     ],
     "instructions": [
       "Preheat oven to 400°F.",
@@ -4404,7 +4415,8 @@
     ],
     "tags": [
       "filling",
-      "meal-prep"
+      "meal-prep",
+      "set-and-forget"
     ],
     "instructions": [
       "Sauté onion and diced chicken in a pot until chicken is cooked.",
@@ -4592,7 +4604,8 @@
     ],
     "tags": [
       "high-protein",
-      "veggie-rich"
+      "veggie-rich",
+      "set-and-forget"
     ],
     "instructions": [
       "Heat oil in a skillet over medium-high. Add crumbled sausage and brown 4-5 minutes, breaking it up as it cooks.",
@@ -5081,7 +5094,8 @@
     ],
     "tags": [
       "high-protein",
-      "filling"
+      "filling",
+      "set-and-forget"
     ],
     "instructions": [
       "Heat 1 tbsp oil in a pot over medium. Add diced onion, cook 4 minutes.",
@@ -5200,7 +5214,8 @@
     "tags": [
       "high-protein",
       "meal-prep",
-      "filling"
+      "filling",
+      "set-and-forget"
     ],
     "instructions": [
       "Preheat oven to 425°F (220°C).",
@@ -5256,7 +5271,8 @@
     ],
     "tags": [
       "high-protein",
-      "filling"
+      "filling",
+      "set-and-forget"
     ],
     "instructions": [
       "Heat oil in a skillet over medium-high. Add diced onion and cook 2 minutes.",
@@ -5317,7 +5333,8 @@
     ],
     "tags": [
       "high-protein",
-      "filling"
+      "filling",
+      "set-and-forget"
     ],
     "instructions": [
       "Pat chicken thighs dry and season generously with salt and pepper.",
@@ -5597,7 +5614,8 @@
     "tags": [
       "high-protein",
       "veggie-rich",
-      "meal-prep"
+      "meal-prep",
+      "set-and-forget"
     ],
     "instructions": [
       "Preheat oven to 425°F (220°C). Line a sheet pan with parchment for easy cleanup.",
@@ -5660,7 +5678,8 @@
     ],
     "tags": [
       "high-protein",
-      "veggie-rich"
+      "veggie-rich",
+      "set-and-forget"
     ],
     "instructions": [
       "Preheat oven to 425°F (220°C). Start the rice in a small pot.",
@@ -5722,7 +5741,8 @@
     "tags": [
       "high-protein",
       "veggie-rich",
-      "low-carb"
+      "low-carb",
+      "set-and-forget"
     ],
     "instructions": [
       "Preheat oven to 425°F (220°C).",
@@ -5782,7 +5802,8 @@
     "tags": [
       "high-protein",
       "meal-prep",
-      "filling"
+      "filling",
+      "set-and-forget"
     ],
     "instructions": [
       "Place chicken breasts in the slow cooker. Pour salsa over the top and sprinkle with taco seasoning.",
@@ -5844,7 +5865,8 @@
       "high-protein",
       "veggie-rich",
       "filling",
-      "meal-prep"
+      "meal-prep",
+      "set-and-forget"
     ],
     "instructions": [
       "Dice onion, mince garlic, slice carrots and celery, and cube the potatoes. Pile everything into the slow cooker.",
@@ -5912,7 +5934,8 @@
     "tags": [
       "high-protein",
       "meal-prep",
-      "filling"
+      "filling",
+      "set-and-forget"
     ],
     "instructions": [
       "In a bowl, whisk together ketchup, honey, vinegar, mustard, paprika, chili powder, minced garlic, and 1/2 tsp salt — this is your homemade BBQ sauce.",
@@ -5988,7 +6011,8 @@
       "indian",
       "meal-prep",
       "vegetarian",
-      "veggie-rich"
+      "veggie-rich",
+      "set-and-forget"
     ],
     "instructions": [
       "Rinse lentils well in a strainer until the water runs clear.",
@@ -6071,7 +6095,8 @@
       "high-protein",
       "veggie-rich",
       "filling",
-      "meal-prep"
+      "meal-prep",
+      "set-and-forget"
     ],
     "instructions": [
       "Heat oil in a skillet over medium-high. Add diced onion and bell pepper, cooking 4 minutes.",
@@ -6954,7 +6979,8 @@
       "veggie",
       "vegetarian",
       "veggie-rich",
-      "meal-prep"
+      "meal-prep",
+      "set-and-forget"
     ],
     "instructions": [
       "Preheat oven to 425°F.",
@@ -7145,7 +7171,8 @@
     "tags": [
       "keto",
       "low-carb",
-      "high-protein"
+      "high-protein",
+      "set-and-forget"
     ],
     "instructions": [
       "Cook bacon in a cold skillet over medium, 6-8 min until crisp. Drain on paper towel, leave 1 tbsp fat in pan.",
@@ -7748,7 +7775,8 @@
       "american-classic",
       "comfort-food",
       "filling",
-      "high-protein"
+      "high-protein",
+      "set-and-forget"
     ],
     "instructions": [
       "Shred potatoes, squeeze out moisture in a towel.",
@@ -7812,7 +7840,8 @@
       "american-classic",
       "comfort-food",
       "high-protein",
-      "meal-prep"
+      "meal-prep",
+      "set-and-forget"
     ],
     "instructions": [
       "Preheat oven to 425°F. Line a sheet pan.",
@@ -8141,7 +8170,8 @@
       "american-classic",
       "comfort-food",
       "meal-prep",
-      "vegetarian"
+      "vegetarian",
+      "set-and-forget"
     ],
     "instructions": [
       "Preheat oven to 425°F. Butter a sheet pan or 9x13 dish.",
@@ -8277,7 +8307,8 @@
     "tags": [
       "comfort-food",
       "high-protein",
-      "filling"
+      "filling",
+      "set-and-forget"
     ],
     "instructions": [
       "Brown sausage in a skillet over medium-high 6 min, crumbling. Remove.",
@@ -8909,7 +8940,8 @@
       "american-classic",
       "comfort-food",
       "filling",
-      "vegetarian"
+      "vegetarian",
+      "set-and-forget"
     ],
     "instructions": [
       "Melt butter in a pot. Sauté onion and garlic 4 min. Add carrots, 2 min.",
@@ -9845,7 +9877,8 @@
       "comfort-food",
       "filling",
       "high-protein",
-      "meal-prep"
+      "meal-prep",
+      "set-and-forget"
     ],
     "instructions": [
       "Preheat oven to 375°F. Butter a 9x13 dish.",
@@ -11556,7 +11589,8 @@
       "mexican",
       "high-protein",
       "veggie-rich",
-      "filling"
+      "filling",
+      "set-and-forget"
     ],
     "instructions": [
       "Toss sliced chicken with taco seasoning.",
@@ -12374,7 +12408,8 @@
       "high-protein",
       "veggie-rich",
       "filling",
-      "meal-prep"
+      "meal-prep",
+      "set-and-forget"
     ],
     "instructions": [
       "Heat olive oil in a pot. Sauté onion, carrot, and celery 5 minutes.",
@@ -12448,7 +12483,8 @@
       "veggie-rich",
       "high-protein",
       "budget",
-      "meal-prep"
+      "meal-prep",
+      "set-and-forget"
     ],
     "instructions": [
       "Heat olive oil in a pot. Sauté onion 4 minutes.",
@@ -12506,7 +12542,8 @@
       "vegetarian",
       "comfort-food",
       "quick",
-      "meal-prep"
+      "meal-prep",
+      "set-and-forget"
     ],
     "instructions": [
       "Heat olive oil in a pot. Sauté onion 4 minutes, add garlic 30 seconds.",
@@ -13280,7 +13317,8 @@
       "asian",
       "high-protein",
       "filling",
-      "comfort-food"
+      "comfort-food",
+      "set-and-forget"
     ],
     "instructions": [
       "Combine broth, ginger, garlic, soy sauce, and sesame oil in a pot. Bring to a simmer for 8 minutes.",
@@ -13347,7 +13385,8 @@
       "high-protein",
       "veggie-rich",
       "filling",
-      "comfort-food"
+      "comfort-food",
+      "set-and-forget"
     ],
     "instructions": [
       "Mix turkey with parmesan, half the Italian seasoning, garlic, and a pinch of salt.",
@@ -13419,7 +13458,8 @@
       "veggie-rich",
       "filling",
       "meal-prep",
-      "budget"
+      "budget",
+      "set-and-forget"
     ],
     "instructions": [
       "Heat olive oil in a pot. Sauté onion, carrot, and celery 5 minutes.",
@@ -13486,7 +13526,8 @@
     "tags": [
       "american-classic",
       "comfort-food",
-      "filling"
+      "filling",
+      "set-and-forget"
     ],
     "instructions": [
       "Cook bacon in a soup pot until crisp. Remove, crumble, set aside. Keep 1 tbsp fat.",
@@ -13555,7 +13596,8 @@
       "american-classic",
       "comfort-food",
       "filling",
-      "high-protein"
+      "high-protein",
+      "set-and-forget"
     ],
     "instructions": [
       "Cook bacon in a pot until crisp. Crumble and set aside. Keep 1 tbsp fat.",
@@ -13626,7 +13668,8 @@
       "filling",
       "high-protein",
       "meal-prep",
-      "veggie-rich"
+      "veggie-rich",
+      "set-and-forget"
     ],
     "instructions": [
       "Brown beef in a soup pot, breaking it up. Drain excess fat.",
@@ -13755,7 +13798,8 @@
       "high-protein",
       "veggie-rich",
       "filling",
-      "budget"
+      "budget",
+      "set-and-forget"
     ],
     "instructions": [
       "Heat olive oil in a soup pot. Sauté onion 5 minutes.",
@@ -14536,7 +14580,8 @@
       "veggie-rich",
       "high-protein",
       "filling",
-      "meal-prep"
+      "meal-prep",
+      "set-and-forget"
     ],
     "instructions": [
       "Preheat oven to 425°F.",
@@ -14669,7 +14714,8 @@
       "american-classic",
       "high-protein",
       "filling",
-      "veggie-rich"
+      "veggie-rich",
+      "set-and-forget"
     ],
     "instructions": [
       "Heat olive oil in a large skillet over medium. Cook potato covered 8 minutes.",
@@ -14793,7 +14839,8 @@
       "comfort-food",
       "high-protein",
       "filling",
-      "meal-prep"
+      "meal-prep",
+      "set-and-forget"
     ],
     "instructions": [
       "Melt butter in a pot over medium. Sauté onion 4 minutes.",
@@ -15008,7 +15055,8 @@
       "high-protein",
       "veggie-rich",
       "filling",
-      "meal-prep"
+      "meal-prep",
+      "set-and-forget"
     ],
     "instructions": [
       "Marinate chicken cubes in yogurt, half the cumin, paprika, ginger, and salt for 10 minutes.",
@@ -15222,7 +15270,8 @@
       "american-classic",
       "high-protein",
       "filling",
-      "meal-prep"
+      "meal-prep",
+      "set-and-forget"
     ],
     "instructions": [
       "Toss chicken with paprika, chili powder, and salt.",
@@ -15613,7 +15662,8 @@
       "asian",
       "high-protein",
       "filling",
-      "comfort-food"
+      "comfort-food",
+      "set-and-forget"
     ],
     "instructions": [
       "Brown beef in a soup pot, breaking it small. Drain fat.",
@@ -15910,7 +15960,8 @@
       "american-classic",
       "high-protein",
       "filling",
-      "meal-prep"
+      "meal-prep",
+      "set-and-forget"
     ],
     "instructions": [
       "Brown beef in a deep skillet, breaking it up. Drain fat.",
@@ -15996,14 +16047,46 @@
     "mealType": "breakfast",
     "prepMinutes": 25,
     "ingredients": [
-      { "id": "flour", "qty": 1.25, "measure": "1 1/4 cups" },
-      { "id": "oats", "qty": 1, "measure": "1 cup" },
-      { "id": "apple", "qty": 1.5, "measure": "1 1/2 apples, diced" },
-      { "id": "eggs", "qty": 2, "measure": "2 large" },
-      { "id": "milk", "qty": 0.75, "measure": "3/4 cup" },
-      { "id": "sugar", "qty": 0.5, "measure": "1/2 cup" },
-      { "id": "butter", "qty": 4, "measure": "4 tbsp, melted" },
-      { "id": "salt", "qty": 1, "measure": "1/2 tsp" }
+      {
+        "id": "flour",
+        "qty": 1.25,
+        "measure": "1 1/4 cups"
+      },
+      {
+        "id": "oats",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "apple",
+        "qty": 1.5,
+        "measure": "1 1/2 apples, diced"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2 large"
+      },
+      {
+        "id": "milk",
+        "qty": 0.75,
+        "measure": "3/4 cup"
+      },
+      {
+        "id": "sugar",
+        "qty": 0.5,
+        "measure": "1/2 cup"
+      },
+      {
+        "id": "butter",
+        "qty": 4,
+        "measure": "4 tbsp, melted"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      }
     ],
     "tags": [
       "american-classic",
@@ -16026,12 +16109,36 @@
     "mealType": "breakfast",
     "prepMinutes": 25,
     "ingredients": [
-      { "id": "cornbread_mix", "qty": 1, "measure": "1 box (8.5 oz)" },
-      { "id": "eggs", "qty": 2, "measure": "2 large" },
-      { "id": "milk", "qty": 0.66, "measure": "2/3 cup" },
-      { "id": "cheddar", "qty": 2, "measure": "1 cup shredded" },
-      { "id": "green_onion", "qty": 0.5, "measure": "3 stalks, sliced" },
-      { "id": "jalapeno", "qty": 1, "measure": "1, finely diced (optional)" }
+      {
+        "id": "cornbread_mix",
+        "qty": 1,
+        "measure": "1 box (8.5 oz)"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2 large"
+      },
+      {
+        "id": "milk",
+        "qty": 0.66,
+        "measure": "2/3 cup"
+      },
+      {
+        "id": "cheddar",
+        "qty": 2,
+        "measure": "1 cup shredded"
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5,
+        "measure": "3 stalks, sliced"
+      },
+      {
+        "id": "jalapeno",
+        "qty": 1,
+        "measure": "1, finely diced (optional)"
+      }
     ],
     "tags": [
       "american-classic",
@@ -16054,14 +16161,46 @@
     "mealType": "breakfast",
     "prepMinutes": 30,
     "ingredients": [
-      { "id": "banana", "qty": 3, "measure": "3 ripe, mashed" },
-      { "id": "flour", "qty": 1.5, "measure": "1 1/2 cups" },
-      { "id": "eggs", "qty": 2, "measure": "2 large" },
-      { "id": "peanut_butter", "qty": 3, "measure": "3 tbsp" },
-      { "id": "sugar", "qty": 0.5, "measure": "1/2 cup" },
-      { "id": "milk", "qty": 0.25, "measure": "1/4 cup" },
-      { "id": "butter", "qty": 3, "measure": "3 tbsp, melted" },
-      { "id": "salt", "qty": 1, "measure": "1/2 tsp" }
+      {
+        "id": "banana",
+        "qty": 3,
+        "measure": "3 ripe, mashed"
+      },
+      {
+        "id": "flour",
+        "qty": 1.5,
+        "measure": "1 1/2 cups"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2 large"
+      },
+      {
+        "id": "peanut_butter",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "sugar",
+        "qty": 0.5,
+        "measure": "1/2 cup"
+      },
+      {
+        "id": "milk",
+        "qty": 0.25,
+        "measure": "1/4 cup"
+      },
+      {
+        "id": "butter",
+        "qty": 3,
+        "measure": "3 tbsp, melted"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      }
     ],
     "tags": [
       "american-classic",
@@ -16084,13 +16223,41 @@
     "mealType": "breakfast",
     "prepMinutes": 25,
     "ingredients": [
-      { "id": "flour", "qty": 1.75, "measure": "1 3/4 cups" },
-      { "id": "eggs", "qty": 2, "measure": "2 large, separated" },
-      { "id": "milk", "qty": 1.75, "measure": "1 3/4 cups" },
-      { "id": "butter", "qty": 5, "measure": "5 tbsp, melted" },
-      { "id": "frozen_berries", "qty": 1, "measure": "1 cup" },
-      { "id": "sugar", "qty": 2, "measure": "2 tbsp" },
-      { "id": "salt", "qty": 1, "measure": "1/2 tsp" }
+      {
+        "id": "flour",
+        "qty": 1.75,
+        "measure": "1 3/4 cups"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2 large, separated"
+      },
+      {
+        "id": "milk",
+        "qty": 1.75,
+        "measure": "1 3/4 cups"
+      },
+      {
+        "id": "butter",
+        "qty": 5,
+        "measure": "5 tbsp, melted"
+      },
+      {
+        "id": "frozen_berries",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "sugar",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      }
     ],
     "tags": [
       "american-classic",
@@ -16112,13 +16279,41 @@
     "mealType": "breakfast",
     "prepMinutes": 20,
     "ingredients": [
-      { "id": "flour", "qty": 1.5, "measure": "1 1/2 cups" },
-      { "id": "banana", "qty": 2, "measure": "2 ripe, mashed" },
-      { "id": "eggs", "qty": 2, "measure": "2 large" },
-      { "id": "milk", "qty": 1.25, "measure": "1 1/4 cups" },
-      { "id": "butter", "qty": 3, "measure": "3 tbsp, melted" },
-      { "id": "sugar", "qty": 2, "measure": "2 tbsp" },
-      { "id": "salt", "qty": 1, "measure": "1/2 tsp" }
+      {
+        "id": "flour",
+        "qty": 1.5,
+        "measure": "1 1/2 cups"
+      },
+      {
+        "id": "banana",
+        "qty": 2,
+        "measure": "2 ripe, mashed"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2 large"
+      },
+      {
+        "id": "milk",
+        "qty": 1.25,
+        "measure": "1 1/4 cups"
+      },
+      {
+        "id": "butter",
+        "qty": 3,
+        "measure": "3 tbsp, melted"
+      },
+      {
+        "id": "sugar",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      }
     ],
     "tags": [
       "american-classic",
@@ -16141,14 +16336,46 @@
     "mealType": "breakfast",
     "prepMinutes": 15,
     "ingredients": [
-      { "id": "tortillas", "qty": 6, "measure": "6 small" },
-      { "id": "eggs", "qty": 6, "measure": "6 large" },
-      { "id": "cheddar", "qty": 1, "measure": "1/2 cup shredded" },
-      { "id": "salsa", "qty": 0.5, "measure": "1/2 cup" },
-      { "id": "avocado", "qty": 1, "measure": "1, sliced" },
-      { "id": "cilantro", "qty": 0.25, "measure": "small handful, chopped" },
-      { "id": "butter", "qty": 1, "measure": "1 tbsp" },
-      { "id": "salt", "qty": 1, "measure": "pinch" }
+      {
+        "id": "tortillas",
+        "qty": 6,
+        "measure": "6 small"
+      },
+      {
+        "id": "eggs",
+        "qty": 6,
+        "measure": "6 large"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1/2 cup shredded"
+      },
+      {
+        "id": "salsa",
+        "qty": 0.5,
+        "measure": "1/2 cup"
+      },
+      {
+        "id": "avocado",
+        "qty": 1,
+        "measure": "1, sliced"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.25,
+        "measure": "small handful, chopped"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "pinch"
+      }
     ],
     "tags": [
       "mexican",
@@ -16171,15 +16398,51 @@
     "mealType": "breakfast",
     "prepMinutes": 15,
     "ingredients": [
-      { "id": "fresh_tomato", "qty": 2, "measure": "2, sliced" },
-      { "id": "mozzarella", "qty": 1, "measure": "4 oz, torn" },
-      { "id": "eggs", "qty": 4, "measure": "4 large" },
-      { "id": "lettuce", "qty": 0.5, "measure": "2 handfuls" },
-      { "id": "olive_oil", "qty": 2, "measure": "2 tbsp" },
-      { "id": "vinegar", "qty": 1, "measure": "1 tsp balsamic" },
-      { "id": "italian_seasoning", "qty": 1, "measure": "1/2 tsp" },
-      { "id": "salt", "qty": 1, "measure": "to taste" },
-      { "id": "pepper", "qty": 1, "measure": "to taste" }
+      {
+        "id": "fresh_tomato",
+        "qty": 2,
+        "measure": "2, sliced"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1,
+        "measure": "4 oz, torn"
+      },
+      {
+        "id": "eggs",
+        "qty": 4,
+        "measure": "4 large"
+      },
+      {
+        "id": "lettuce",
+        "qty": 0.5,
+        "measure": "2 handfuls"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tsp balsamic"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
     ],
     "tags": [
       "italian",
@@ -16203,14 +16466,46 @@
     "mealType": "breakfast",
     "prepMinutes": 20,
     "ingredients": [
-      { "id": "bread", "qty": 4, "measure": "4 slices, toasted" },
-      { "id": "sausage", "qty": 2, "measure": "2 patties" },
-      { "id": "sweet_potato", "qty": 1, "measure": "1 small, thinly sliced" },
-      { "id": "eggs", "qty": 2, "measure": "2 large" },
-      { "id": "cheddar", "qty": 1, "measure": "2 slices" },
-      { "id": "olive_oil", "qty": 1, "measure": "1 tbsp" },
-      { "id": "paprika", "qty": 1, "measure": "1/2 tsp" },
-      { "id": "salt", "qty": 1, "measure": "to taste" }
+      {
+        "id": "bread",
+        "qty": 4,
+        "measure": "4 slices, toasted"
+      },
+      {
+        "id": "sausage",
+        "qty": 2,
+        "measure": "2 patties"
+      },
+      {
+        "id": "sweet_potato",
+        "qty": 1,
+        "measure": "1 small, thinly sliced"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2 large"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "2 slices"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
     ],
     "tags": [
       "american-classic",
@@ -16233,19 +16528,67 @@
     "mealType": "dinner",
     "prepMinutes": 20,
     "ingredients": [
-      { "id": "ground_beef", "qty": 1, "measure": "1/3 lb patty" },
-      { "id": "bread", "qty": 2, "measure": "2 slices (or 1 bun)" },
-      { "id": "cheddar", "qty": 1, "measure": "1 slice" },
-      { "id": "lettuce", "qty": 1, "measure": "2 leaves" },
-      { "id": "fresh_tomato", "qty": 1, "measure": "2 slices" },
-      { "id": "garlic_onion", "qty": 1, "measure": "thin slices" },
-      { "id": "mayo", "qty": 1, "measure": "1 tbsp" },
-      { "id": "ketchup", "qty": 1, "measure": "1 tbsp" },
-      { "id": "butter", "qty": 1, "measure": "1 tsp, for the bun" },
-      { "id": "salt", "qty": 1, "measure": "to taste" },
-      { "id": "pepper", "qty": 1, "measure": "to taste" }
+      {
+        "id": "ground_beef",
+        "qty": 1,
+        "measure": "1/3 lb patty"
+      },
+      {
+        "id": "bread",
+        "qty": 2,
+        "measure": "2 slices (or 1 bun)"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1 slice"
+      },
+      {
+        "id": "lettuce",
+        "qty": 1,
+        "measure": "2 leaves"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 1,
+        "measure": "2 slices"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "thin slices"
+      },
+      {
+        "id": "mayo",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "ketchup",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "1 tsp, for the bun"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
     ],
-    "tags": ["american-classic", "comfort-food", "high-protein"],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein"
+    ],
     "instructions": [
       "Form ground beef into a loose 1/3 lb patty, slightly wider than the bun. Season both sides with salt and pepper.",
       "Heat a heavy skillet over high until smoking. Add the patty and press once; cook 2 minutes per side for medium.",
@@ -16261,19 +16604,68 @@
     "mealType": "dinner",
     "prepMinutes": 35,
     "ingredients": [
-      { "id": "ground_beef", "qty": 1, "measure": "1/3 lb patty" },
-      { "id": "bread", "qty": 2, "measure": "2 slices (or 1 bun)" },
-      { "id": "cheddar", "qty": 1, "measure": "1 slice" },
-      { "id": "bacon", "qty": 1, "measure": "2 strips" },
-      { "id": "lettuce", "qty": 1, "measure": "2 leaves" },
-      { "id": "garlic_onion", "qty": 2, "measure": "1 large onion, sliced into rings" },
-      { "id": "flour", "qty": 0.5, "measure": "1/2 cup" },
-      { "id": "milk", "qty": 0.5, "measure": "1/2 cup" },
-      { "id": "vegetable_oil", "qty": 1, "measure": "for frying" },
-      { "id": "paprika", "qty": 1, "measure": "1/2 tsp" },
-      { "id": "salt", "qty": 1, "measure": "to taste" }
+      {
+        "id": "ground_beef",
+        "qty": 1,
+        "measure": "1/3 lb patty"
+      },
+      {
+        "id": "bread",
+        "qty": 2,
+        "measure": "2 slices (or 1 bun)"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1 slice"
+      },
+      {
+        "id": "bacon",
+        "qty": 1,
+        "measure": "2 strips"
+      },
+      {
+        "id": "lettuce",
+        "qty": 1,
+        "measure": "2 leaves"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 2,
+        "measure": "1 large onion, sliced into rings"
+      },
+      {
+        "id": "flour",
+        "qty": 0.5,
+        "measure": "1/2 cup"
+      },
+      {
+        "id": "milk",
+        "qty": 0.5,
+        "measure": "1/2 cup"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1,
+        "measure": "for frying"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
     ],
-    "tags": ["american-classic", "comfort-food", "high-protein", "filling"],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling"
+    ],
     "instructions": [
       "Slice onion into thick rings, separate the layers. Soak in milk 5 minutes.",
       "Heat 1 inch of oil in a heavy pot to 360°F. Mix flour, paprika, and salt on a plate.",
@@ -16289,21 +16681,79 @@
     "mealType": "dinner",
     "prepMinutes": 40,
     "ingredients": [
-      { "id": "chicken_breast", "qty": 1, "measure": "8 oz, cut into 4 tenders" },
-      { "id": "flour", "qty": 0.5, "measure": "1/2 cup" },
-      { "id": "eggs", "qty": 1, "measure": "1 large, beaten" },
-      { "id": "bread", "qty": 2, "measure": "2 slices, blitzed to crumbs" },
-      { "id": "potato", "qty": 2, "measure": "2 medium, peeled and cubed" },
-      { "id": "butter", "qty": 3, "measure": "3 tbsp" },
-      { "id": "milk", "qty": 0.5, "measure": "1/2 cup, warmed" },
-      { "id": "green_beans", "qty": 1, "measure": "1/2 can, rinsed" },
-      { "id": "garlic_onion", "qty": 1, "measure": "1 clove garlic, minced" },
-      { "id": "paprika", "qty": 1, "measure": "1 tsp" },
-      { "id": "vegetable_oil", "qty": 2, "measure": "for shallow frying" },
-      { "id": "salt", "qty": 1, "measure": "to taste" },
-      { "id": "pepper", "qty": 1, "measure": "to taste" }
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "measure": "8 oz, cut into 4 tenders"
+      },
+      {
+        "id": "flour",
+        "qty": 0.5,
+        "measure": "1/2 cup"
+      },
+      {
+        "id": "eggs",
+        "qty": 1,
+        "measure": "1 large, beaten"
+      },
+      {
+        "id": "bread",
+        "qty": 2,
+        "measure": "2 slices, blitzed to crumbs"
+      },
+      {
+        "id": "potato",
+        "qty": 2,
+        "measure": "2 medium, peeled and cubed"
+      },
+      {
+        "id": "butter",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "milk",
+        "qty": 0.5,
+        "measure": "1/2 cup, warmed"
+      },
+      {
+        "id": "green_beans",
+        "qty": 1,
+        "measure": "1/2 can, rinsed"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 clove garlic, minced"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2,
+        "measure": "for shallow frying"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
     ],
-    "tags": ["american-classic", "comfort-food", "high-protein", "filling", "kid-friendly"],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling",
+      "kid-friendly"
+    ],
     "instructions": [
       "Boil cubed potato in salted water 15 minutes until fork-tender; drain.",
       "Mash with warm milk and 2 tbsp butter until smooth. Season with salt and pepper. Cover to keep warm.",
@@ -16321,19 +16771,68 @@
     "mealType": "dinner",
     "prepMinutes": 35,
     "ingredients": [
-      { "id": "chicken_breast", "qty": 1, "measure": "8 oz, cut into 4 tenders" },
-      { "id": "flour", "qty": 0.33, "measure": "1/3 cup" },
-      { "id": "eggs", "qty": 1, "measure": "1 large, beaten" },
-      { "id": "bread", "qty": 2, "measure": "2 slices, blitzed to crumbs" },
-      { "id": "sweet_potato", "qty": 2, "measure": "2 medium, cut into fries" },
-      { "id": "olive_oil", "qty": 2, "measure": "2 tbsp" },
-      { "id": "honey", "qty": 2, "measure": "2 tbsp" },
-      { "id": "mustard", "qty": 2, "measure": "2 tbsp" },
-      { "id": "mayo", "qty": 1, "measure": "1 tbsp" },
-      { "id": "paprika", "qty": 1, "measure": "1 tsp" },
-      { "id": "salt", "qty": 1, "measure": "to taste" }
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "measure": "8 oz, cut into 4 tenders"
+      },
+      {
+        "id": "flour",
+        "qty": 0.33,
+        "measure": "1/3 cup"
+      },
+      {
+        "id": "eggs",
+        "qty": 1,
+        "measure": "1 large, beaten"
+      },
+      {
+        "id": "bread",
+        "qty": 2,
+        "measure": "2 slices, blitzed to crumbs"
+      },
+      {
+        "id": "sweet_potato",
+        "qty": 2,
+        "measure": "2 medium, cut into fries"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "honey",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "mustard",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "mayo",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
     ],
-    "tags": ["american-classic", "comfort-food", "high-protein", "kid-friendly"],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "kid-friendly"
+    ],
     "instructions": [
       "Heat oven to 425°F. Toss sweet-potato fries with 1 tbsp olive oil, paprika, and salt. Spread on a sheet pan in a single layer.",
       "Roast 20 minutes, flipping once halfway through.",
@@ -16350,19 +16849,68 @@
     "mealType": "dinner",
     "prepMinutes": 75,
     "ingredients": [
-      { "id": "ground_beef", "qty": 1.5, "measure": "1 lb" },
-      { "id": "eggs", "qty": 1, "measure": "1 large" },
-      { "id": "bread", "qty": 2, "measure": "2 slices, blitzed to crumbs" },
-      { "id": "milk", "qty": 0.25, "measure": "1/4 cup" },
-      { "id": "garlic_onion", "qty": 1, "measure": "1/2 onion, finely diced + 1 clove garlic" },
-      { "id": "ketchup", "qty": 3, "measure": "3 tbsp + 2 tbsp for the glaze" },
-      { "id": "italian_seasoning", "qty": 1, "measure": "1 tsp" },
-      { "id": "potato", "qty": 2, "measure": "2 medium, peeled and cubed" },
-      { "id": "butter", "qty": 3, "measure": "3 tbsp" },
-      { "id": "salt", "qty": 1, "measure": "to taste" },
-      { "id": "pepper", "qty": 1, "measure": "to taste" }
+      {
+        "id": "ground_beef",
+        "qty": 1.5,
+        "measure": "1 lb"
+      },
+      {
+        "id": "eggs",
+        "qty": 1,
+        "measure": "1 large"
+      },
+      {
+        "id": "bread",
+        "qty": 2,
+        "measure": "2 slices, blitzed to crumbs"
+      },
+      {
+        "id": "milk",
+        "qty": 0.25,
+        "measure": "1/4 cup"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion, finely diced + 1 clove garlic"
+      },
+      {
+        "id": "ketchup",
+        "qty": 3,
+        "measure": "3 tbsp + 2 tbsp for the glaze"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "potato",
+        "qty": 2,
+        "measure": "2 medium, peeled and cubed"
+      },
+      {
+        "id": "butter",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
     ],
-    "tags": ["american-classic", "comfort-food", "high-protein", "filling"],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling"
+    ],
     "instructions": [
       "Heat oven to 375°F. Soak breadcrumbs in milk for 5 minutes.",
       "Mix beef, egg, soaked crumbs, onion-garlic, 3 tbsp ketchup, Italian seasoning, salt, and pepper just until combined — don't overwork.",
@@ -16379,19 +16927,67 @@
     "mealType": "dinner",
     "prepMinutes": 30,
     "ingredients": [
-      { "id": "chicken_breast", "qty": 1, "measure": "8 oz, cut into tenders" },
-      { "id": "flour", "qty": 0.5, "measure": "1/2 cup" },
-      { "id": "eggs", "qty": 1, "measure": "1 large, beaten" },
-      { "id": "hot_sauce", "qty": 3, "measure": "3 tbsp Frank's-style" },
-      { "id": "butter", "qty": 2, "measure": "2 tbsp, melted" },
-      { "id": "cabbage", "qty": 1, "measure": "2 cups, shredded" },
-      { "id": "carrots", "qty": 1, "measure": "1, shredded" },
-      { "id": "mayo", "qty": 3, "measure": "3 tbsp" },
-      { "id": "ranch_mix", "qty": 0.5, "measure": "1/2 packet" },
-      { "id": "vegetable_oil", "qty": 1, "measure": "for shallow frying" },
-      { "id": "salt", "qty": 1, "measure": "to taste" }
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "measure": "8 oz, cut into tenders"
+      },
+      {
+        "id": "flour",
+        "qty": 0.5,
+        "measure": "1/2 cup"
+      },
+      {
+        "id": "eggs",
+        "qty": 1,
+        "measure": "1 large, beaten"
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 3,
+        "measure": "3 tbsp Frank's-style"
+      },
+      {
+        "id": "butter",
+        "qty": 2,
+        "measure": "2 tbsp, melted"
+      },
+      {
+        "id": "cabbage",
+        "qty": 1,
+        "measure": "2 cups, shredded"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "1, shredded"
+      },
+      {
+        "id": "mayo",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "ranch_mix",
+        "qty": 0.5,
+        "measure": "1/2 packet"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1,
+        "measure": "for shallow frying"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
     ],
-    "tags": ["american-classic", "comfort-food", "high-protein"],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein"
+    ],
     "instructions": [
       "Toss cabbage and carrots with mayo, ranch mix, and a pinch of salt. Refrigerate while you cook.",
       "Whisk hot sauce and melted butter for the buffalo coating; set aside.",
@@ -16408,19 +17004,67 @@
     "mealType": "dinner",
     "prepMinutes": 30,
     "ingredients": [
-      { "id": "ground_beef", "qty": 1, "measure": "1/3 lb, divided into 2 balls" },
-      { "id": "bread", "qty": 2, "measure": "2 slices (or 1 bun)" },
-      { "id": "cheddar", "qty": 1, "measure": "2 slices" },
-      { "id": "garlic_onion", "qty": 2, "measure": "1 large onion for rings + thin slices for burger" },
-      { "id": "flour", "qty": 0.5, "measure": "1/2 cup" },
-      { "id": "milk", "qty": 0.5, "measure": "1/2 cup" },
-      { "id": "vegetable_oil", "qty": 1, "measure": "for frying" },
-      { "id": "mayo", "qty": 1, "measure": "1 tbsp" },
-      { "id": "butter", "qty": 1, "measure": "1 tsp for the bun" },
-      { "id": "salt", "qty": 1, "measure": "to taste" },
-      { "id": "pepper", "qty": 1, "measure": "to taste" }
+      {
+        "id": "ground_beef",
+        "qty": 1,
+        "measure": "1/3 lb, divided into 2 balls"
+      },
+      {
+        "id": "bread",
+        "qty": 2,
+        "measure": "2 slices (or 1 bun)"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "2 slices"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 2,
+        "measure": "1 large onion for rings + thin slices for burger"
+      },
+      {
+        "id": "flour",
+        "qty": 0.5,
+        "measure": "1/2 cup"
+      },
+      {
+        "id": "milk",
+        "qty": 0.5,
+        "measure": "1/2 cup"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1,
+        "measure": "for frying"
+      },
+      {
+        "id": "mayo",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "1 tsp for the bun"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
     ],
-    "tags": ["american-classic", "comfort-food", "high-protein"],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein"
+    ],
     "instructions": [
       "Cut onion into rings; soak in milk while you heat 1 inch of oil to 360°F.",
       "Dredge rings in seasoned flour and fry 2-3 minutes until deep golden; drain and salt immediately.",
@@ -16437,20 +17081,72 @@
     "mealType": "lunch",
     "prepMinutes": 30,
     "ingredients": [
-      { "id": "ground_turkey", "qty": 1, "measure": "1/3 lb patty" },
-      { "id": "bread", "qty": 2, "measure": "2 slices (or 1 bun)" },
-      { "id": "cheddar", "qty": 1, "measure": "1 slice" },
-      { "id": "lettuce", "qty": 1, "measure": "2 leaves" },
-      { "id": "fresh_tomato", "qty": 1, "measure": "2 slices" },
-      { "id": "garlic_onion", "qty": 1, "measure": "thin slices + 1 clove garlic for the patty" },
-      { "id": "sweet_potato", "qty": 2, "measure": "2 medium, cut into fries" },
-      { "id": "olive_oil", "qty": 2, "measure": "2 tbsp" },
-      { "id": "paprika", "qty": 1, "measure": "1 tsp" },
-      { "id": "mayo", "qty": 1, "measure": "1 tbsp" },
-      { "id": "italian_seasoning", "qty": 1, "measure": "1/2 tsp" },
-      { "id": "salt", "qty": 1, "measure": "to taste" }
+      {
+        "id": "ground_turkey",
+        "qty": 1,
+        "measure": "1/3 lb patty"
+      },
+      {
+        "id": "bread",
+        "qty": 2,
+        "measure": "2 slices (or 1 bun)"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1 slice"
+      },
+      {
+        "id": "lettuce",
+        "qty": 1,
+        "measure": "2 leaves"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 1,
+        "measure": "2 slices"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "thin slices + 1 clove garlic for the patty"
+      },
+      {
+        "id": "sweet_potato",
+        "qty": 2,
+        "measure": "2 medium, cut into fries"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "mayo",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
     ],
-    "tags": ["american-classic", "comfort-food", "high-protein"],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein"
+    ],
     "instructions": [
       "Heat oven to 425°F. Toss sweet-potato fries with 1 tbsp olive oil, paprika, and salt. Roast 20 minutes, flipping halfway.",
       "Mix ground turkey with minced garlic, Italian seasoning, and a pinch of salt. Form a 1/3 lb patty.",
@@ -16466,21 +17162,80 @@
     "mealType": "dinner",
     "prepMinutes": 20,
     "ingredients": [
-      { "id": "ground_beef", "qty": 1.5, "measure": "1 lb stew beef or chuck, cubed" },
-      { "id": "potato", "qty": 2, "measure": "2 medium, cubed" },
-      { "id": "carrots", "qty": 2, "measure": "2 large, sliced" },
-      { "id": "celery", "qty": 2, "measure": "2 stalks, sliced" },
-      { "id": "garlic_onion", "qty": 1, "measure": "1 onion, diced + 2 cloves garlic" },
-      { "id": "broth", "qty": 3, "measure": "3 cups" },
-      { "id": "tomato_sauce", "qty": 0.5, "measure": "1/2 can" },
-      { "id": "flour", "qty": 0.25, "measure": "1/4 cup, for dredging" },
-      { "id": "italian_seasoning", "qty": 1, "measure": "1 tsp" },
-      { "id": "paprika", "qty": 1, "measure": "1 tsp" },
-      { "id": "olive_oil", "qty": 2, "measure": "2 tbsp" },
-      { "id": "salt", "qty": 1, "measure": "to taste" },
-      { "id": "pepper", "qty": 1, "measure": "to taste" }
+      {
+        "id": "ground_beef",
+        "qty": 1.5,
+        "measure": "1 lb stew beef or chuck, cubed"
+      },
+      {
+        "id": "potato",
+        "qty": 2,
+        "measure": "2 medium, cubed"
+      },
+      {
+        "id": "carrots",
+        "qty": 2,
+        "measure": "2 large, sliced"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "measure": "2 stalks, sliced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion, diced + 2 cloves garlic"
+      },
+      {
+        "id": "broth",
+        "qty": 3,
+        "measure": "3 cups"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 0.5,
+        "measure": "1/2 can"
+      },
+      {
+        "id": "flour",
+        "qty": 0.25,
+        "measure": "1/4 cup, for dredging"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
     ],
-    "tags": ["american-classic", "comfort-food", "high-protein", "filling", "make-ahead"],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling",
+      "make-ahead",
+      "set-and-forget"
+    ],
     "instructions": [
       "Dredge cubed beef in seasoned flour. Sear in olive oil over high heat in batches until browned on all sides; transfer to slow cooker.",
       "Add onion, garlic, carrots, celery, and potato to the slow cooker.",
@@ -16496,18 +17251,65 @@
     "mealType": "dinner",
     "prepMinutes": 15,
     "ingredients": [
-      { "id": "ground_beef", "qty": 2, "measure": "1 1/2 lb chuck roast" },
-      { "id": "potato", "qty": 3, "measure": "3 medium, quartered" },
-      { "id": "carrots", "qty": 3, "measure": "3 large, cut into chunks" },
-      { "id": "garlic_onion", "qty": 1, "measure": "1 onion, quartered + 3 cloves garlic" },
-      { "id": "broth", "qty": 2, "measure": "2 cups" },
-      { "id": "ranch_mix", "qty": 1, "measure": "1 packet (optional, for flavor)" },
-      { "id": "italian_seasoning", "qty": 1, "measure": "1 tsp" },
-      { "id": "olive_oil", "qty": 2, "measure": "2 tbsp" },
-      { "id": "salt", "qty": 1, "measure": "to taste" },
-      { "id": "pepper", "qty": 1, "measure": "to taste" }
+      {
+        "id": "ground_beef",
+        "qty": 2,
+        "measure": "1 1/2 lb chuck roast"
+      },
+      {
+        "id": "potato",
+        "qty": 3,
+        "measure": "3 medium, quartered"
+      },
+      {
+        "id": "carrots",
+        "qty": 3,
+        "measure": "3 large, cut into chunks"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion, quartered + 3 cloves garlic"
+      },
+      {
+        "id": "broth",
+        "qty": 2,
+        "measure": "2 cups"
+      },
+      {
+        "id": "ranch_mix",
+        "qty": 1,
+        "measure": "1 packet (optional, for flavor)"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
     ],
-    "tags": ["american-classic", "comfort-food", "high-protein", "filling", "make-ahead"],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling",
+      "make-ahead",
+      "set-and-forget"
+    ],
     "instructions": [
       "Pat roast dry, season generously with salt and pepper. Sear in olive oil on all sides until deeply browned (~3 min/side).",
       "Place roast in slow cooker. Scatter onion, garlic, carrots, and potato around it.",
@@ -16523,20 +17325,76 @@
     "mealType": "dinner",
     "prepMinutes": 15,
     "ingredients": [
-      { "id": "pork_chops", "qty": 2, "measure": "2 lb pork shoulder (or thick-cut pork chops)" },
-      { "id": "bbq_sauce", "qty": 4, "measure": "1 cup" },
-      { "id": "garlic_onion", "qty": 1, "measure": "1 onion, sliced + 2 cloves garlic" },
-      { "id": "paprika", "qty": 1, "measure": "1 tbsp" },
-      { "id": "chili_powder", "qty": 1, "measure": "1 tsp" },
-      { "id": "bread", "qty": 4, "measure": "4 buns (or 8 slices)" },
-      { "id": "cabbage", "qty": 2, "measure": "3 cups shredded" },
-      { "id": "carrots", "qty": 1, "measure": "1, shredded" },
-      { "id": "mayo", "qty": 3, "measure": "3 tbsp" },
-      { "id": "vinegar", "qty": 1, "measure": "1 tbsp" },
-      { "id": "sugar", "qty": 1, "measure": "1 tsp" },
-      { "id": "salt", "qty": 1, "measure": "to taste" }
+      {
+        "id": "pork_chops",
+        "qty": 2,
+        "measure": "2 lb pork shoulder (or thick-cut pork chops)"
+      },
+      {
+        "id": "bbq_sauce",
+        "qty": 4,
+        "measure": "1 cup"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion, sliced + 2 cloves garlic"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "chili_powder",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "bread",
+        "qty": 4,
+        "measure": "4 buns (or 8 slices)"
+      },
+      {
+        "id": "cabbage",
+        "qty": 2,
+        "measure": "3 cups shredded"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "1, shredded"
+      },
+      {
+        "id": "mayo",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "sugar",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
     ],
-    "tags": ["american-classic", "barbecue", "comfort-food", "high-protein", "filling", "make-ahead"],
+    "tags": [
+      "american-classic",
+      "barbecue",
+      "comfort-food",
+      "high-protein",
+      "filling",
+      "make-ahead",
+      "set-and-forget"
+    ],
     "instructions": [
       "Rub pork with paprika, chili powder, and salt. Layer onion and garlic in the slow cooker; place pork on top.",
       "Pour half the BBQ sauce over the pork. Cook on LOW 8 hours or HIGH 5 hours until shreddable.",
@@ -16552,22 +17410,85 @@
     "mealType": "dinner",
     "prepMinutes": 15,
     "ingredients": [
-      { "id": "chicken_breast", "qty": 2, "measure": "1 lb (will shred)" },
-      { "id": "black_beans", "qty": 1, "measure": "1 can, drained" },
-      { "id": "corn", "qty": 1, "measure": "1 can, drained" },
-      { "id": "canned_tomatoes", "qty": 1, "measure": "1 can diced" },
-      { "id": "salsa", "qty": 1, "measure": "1 cup" },
-      { "id": "broth", "qty": 4, "measure": "4 cups chicken" },
-      { "id": "garlic_onion", "qty": 1, "measure": "1 onion diced + 2 cloves garlic" },
-      { "id": "cumin", "qty": 1, "measure": "1 tsp" },
-      { "id": "chili_powder", "qty": 1, "measure": "1 tsp" },
-      { "id": "tortillas", "qty": 4, "measure": "4, cut into strips and toasted" },
-      { "id": "cheddar", "qty": 1, "measure": "1/2 cup shredded, to serve" },
-      { "id": "cilantro", "qty": 0.5, "measure": "small handful, chopped" },
-      { "id": "lime", "qty": 1, "measure": "1, cut in wedges" },
-      { "id": "salt", "qty": 1, "measure": "to taste" }
+      {
+        "id": "chicken_breast",
+        "qty": 2,
+        "measure": "1 lb (will shred)"
+      },
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "measure": "1 can, drained"
+      },
+      {
+        "id": "corn",
+        "qty": 1,
+        "measure": "1 can, drained"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can diced"
+      },
+      {
+        "id": "salsa",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "broth",
+        "qty": 4,
+        "measure": "4 cups chicken"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion diced + 2 cloves garlic"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "chili_powder",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "tortillas",
+        "qty": 4,
+        "measure": "4, cut into strips and toasted"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1/2 cup shredded, to serve"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "measure": "small handful, chopped"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "measure": "1, cut in wedges"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
     ],
-    "tags": ["mexican", "comfort-food", "high-protein", "filling", "make-ahead"],
+    "tags": [
+      "mexican",
+      "comfort-food",
+      "high-protein",
+      "filling",
+      "make-ahead",
+      "set-and-forget"
+    ],
     "instructions": [
       "Combine chicken, beans, corn, tomatoes, salsa, broth, onion, garlic, cumin, chili powder, and salt in the slow cooker.",
       "Cook on LOW 6 hours or HIGH 3-4 hours until chicken is cooked through.",
@@ -16583,21 +17504,80 @@
     "mealType": "dinner",
     "prepMinutes": 20,
     "ingredients": [
-      { "id": "chicken_thighs", "qty": 2, "measure": "1 1/2 lb boneless thighs" },
-      { "id": "canned_tomatoes", "qty": 1, "measure": "1 can crushed" },
-      { "id": "greek_yogurt", "qty": 2, "measure": "3/4 cup (stirred in at the end)" },
-      { "id": "garlic_onion", "qty": 1.5, "measure": "1 large onion + 4 cloves garlic" },
-      { "id": "ginger", "qty": 1, "measure": "1 tbsp grated" },
-      { "id": "cumin", "qty": 1, "measure": "1 tbsp" },
-      { "id": "paprika", "qty": 1, "measure": "1 tbsp" },
-      { "id": "chili_powder", "qty": 1, "measure": "1 tsp" },
-      { "id": "broth", "qty": 1, "measure": "1 cup" },
-      { "id": "white_rice", "qty": 2, "measure": "1 cup, cooked per package" },
-      { "id": "cilantro", "qty": 0.5, "measure": "small handful, chopped" },
-      { "id": "olive_oil", "qty": 2, "measure": "2 tbsp" },
-      { "id": "salt", "qty": 1, "measure": "to taste" }
+      {
+        "id": "chicken_thighs",
+        "qty": 2,
+        "measure": "1 1/2 lb boneless thighs"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can crushed"
+      },
+      {
+        "id": "greek_yogurt",
+        "qty": 2,
+        "measure": "3/4 cup (stirred in at the end)"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1.5,
+        "measure": "1 large onion + 4 cloves garlic"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1 tbsp grated"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "chili_powder",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 cup, cooked per package"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "measure": "small handful, chopped"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
     ],
-    "tags": ["indian", "comfort-food", "high-protein", "filling", "make-ahead"],
+    "tags": [
+      "indian",
+      "comfort-food",
+      "high-protein",
+      "filling",
+      "make-ahead",
+      "set-and-forget"
+    ],
     "instructions": [
       "Sauté onion, garlic, and ginger in olive oil until soft (~5 min). Stir in cumin, paprika, and chili powder; cook 30 seconds until fragrant.",
       "Transfer to slow cooker with chicken thighs, crushed tomatoes, broth, and salt.",
@@ -16613,20 +17593,75 @@
     "mealType": "dinner",
     "prepMinutes": 15,
     "ingredients": [
-      { "id": "ground_beef", "qty": 1.5, "measure": "1 lb flank steak or chuck, sliced thin" },
-      { "id": "soy_sauce", "qty": 4, "measure": "1/2 cup" },
-      { "id": "brown_rice", "qty": 2, "measure": "1 cup, cooked per package" },
-      { "id": "garlic_onion", "qty": 1, "measure": "1 onion sliced + 4 cloves garlic" },
-      { "id": "ginger", "qty": 1, "measure": "1 tbsp grated" },
-      { "id": "sugar", "qty": 4, "measure": "1/4 cup brown sugar" },
-      { "id": "sesame_oil", "qty": 1, "measure": "1 tbsp" },
-      { "id": "broth", "qty": 0.5, "measure": "1/2 cup beef" },
-      { "id": "green_onion", "qty": 1, "measure": "3 stalks, sliced for garnish" },
-      { "id": "carrots", "qty": 1, "measure": "1, julienned" },
-      { "id": "cabbage", "qty": 1, "measure": "2 cups shredded (raw, for crunch)" },
-      { "id": "hot_sauce", "qty": 1, "measure": "to taste" }
+      {
+        "id": "ground_beef",
+        "qty": 1.5,
+        "measure": "1 lb flank steak or chuck, sliced thin"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 4,
+        "measure": "1/2 cup"
+      },
+      {
+        "id": "brown_rice",
+        "qty": 2,
+        "measure": "1 cup, cooked per package"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion sliced + 4 cloves garlic"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1 tbsp grated"
+      },
+      {
+        "id": "sugar",
+        "qty": 4,
+        "measure": "1/4 cup brown sugar"
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "broth",
+        "qty": 0.5,
+        "measure": "1/2 cup beef"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "3 stalks, sliced for garnish"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "1, julienned"
+      },
+      {
+        "id": "cabbage",
+        "qty": 1,
+        "measure": "2 cups shredded (raw, for crunch)"
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 1,
+        "measure": "to taste"
+      }
     ],
-    "tags": ["asian", "comfort-food", "high-protein", "filling", "make-ahead"],
+    "tags": [
+      "asian",
+      "comfort-food",
+      "high-protein",
+      "filling",
+      "make-ahead",
+      "set-and-forget"
+    ],
     "instructions": [
       "Combine beef, onion, garlic, ginger, soy sauce, brown sugar, sesame oil, and broth in the slow cooker.",
       "Cook on LOW 6 hours or HIGH 3 hours until beef is tender.",
@@ -16642,18 +17677,64 @@
     "mealType": "dinner",
     "prepMinutes": 35,
     "ingredients": [
-      { "id": "shrimp", "qty": 1.5, "measure": "1 lb, peeled" },
-      { "id": "sausage", "qty": 2, "measure": "8 oz smoked sausage, sliced" },
-      { "id": "corn", "qty": 1, "measure": "2 ears (or 1 can drained)" },
-      { "id": "potato", "qty": 2, "measure": "2 lb baby potatoes, halved" },
-      { "id": "butter", "qty": 4, "measure": "4 tbsp, melted" },
-      { "id": "garlic_onion", "qty": 1, "measure": "4 cloves garlic, minced" },
-      { "id": "paprika", "qty": 1, "measure": "1 tbsp smoked paprika" },
-      { "id": "lemon", "qty": 1, "measure": "1, cut in wedges" },
-      { "id": "salt", "qty": 1, "measure": "to taste" },
-      { "id": "pepper", "qty": 1, "measure": "to taste" }
+      {
+        "id": "shrimp",
+        "qty": 1.5,
+        "measure": "1 lb, peeled"
+      },
+      {
+        "id": "sausage",
+        "qty": 2,
+        "measure": "8 oz smoked sausage, sliced"
+      },
+      {
+        "id": "corn",
+        "qty": 1,
+        "measure": "2 ears (or 1 can drained)"
+      },
+      {
+        "id": "potato",
+        "qty": 2,
+        "measure": "2 lb baby potatoes, halved"
+      },
+      {
+        "id": "butter",
+        "qty": 4,
+        "measure": "4 tbsp, melted"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "4 cloves garlic, minced"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tbsp smoked paprika"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, cut in wedges"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
     ],
-    "tags": ["american-classic", "comfort-food", "high-protein", "filling"],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling",
+      "set-and-forget"
+    ],
     "instructions": [
       "Heat oven to 425°F. Boil potatoes 8 minutes until just tender; drain.",
       "Spread potatoes, sausage, and corn on a sheet pan. Toss with half the melted butter, half the garlic, paprika, salt, and pepper.",
@@ -16669,20 +17750,75 @@
     "mealType": "dinner",
     "prepMinutes": 35,
     "ingredients": [
-      { "id": "ground_beef", "qty": 1.5, "measure": "1 lb" },
-      { "id": "eggs", "qty": 1, "measure": "1 large" },
-      { "id": "bread", "qty": 2, "measure": "2 slices, blitzed to crumbs" },
-      { "id": "parmesan", "qty": 2, "measure": "1/2 cup grated, divided" },
-      { "id": "garlic_onion", "qty": 1, "measure": "1/2 onion finely diced + 3 cloves garlic" },
-      { "id": "italian_seasoning", "qty": 1, "measure": "1 tbsp" },
-      { "id": "zucchini", "qty": 2, "measure": "2, sliced into half-moons" },
-      { "id": "bell_pepper", "qty": 2, "measure": "2, cut in chunks" },
-      { "id": "tomato_sauce", "qty": 1, "measure": "1 cup marinara, warmed" },
-      { "id": "olive_oil", "qty": 3, "measure": "3 tbsp" },
-      { "id": "salt", "qty": 1, "measure": "to taste" },
-      { "id": "pepper", "qty": 1, "measure": "to taste" }
+      {
+        "id": "ground_beef",
+        "qty": 1.5,
+        "measure": "1 lb"
+      },
+      {
+        "id": "eggs",
+        "qty": 1,
+        "measure": "1 large"
+      },
+      {
+        "id": "bread",
+        "qty": 2,
+        "measure": "2 slices, blitzed to crumbs"
+      },
+      {
+        "id": "parmesan",
+        "qty": 2,
+        "measure": "1/2 cup grated, divided"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion finely diced + 3 cloves garlic"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "zucchini",
+        "qty": 2,
+        "measure": "2, sliced into half-moons"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 2,
+        "measure": "2, cut in chunks"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1,
+        "measure": "1 cup marinara, warmed"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
     ],
-    "tags": ["italian", "comfort-food", "high-protein", "filling", "kid-friendly"],
+    "tags": [
+      "italian",
+      "comfort-food",
+      "high-protein",
+      "filling",
+      "kid-friendly",
+      "set-and-forget"
+    ],
     "instructions": [
       "Heat oven to 425°F. Mix beef, egg, breadcrumbs, half the parmesan, onion-garlic, Italian seasoning, salt, and pepper until just combined.",
       "Roll into 16 meatballs (about 1.5 inch each). Place on a parchment-lined sheet pan.",
@@ -16698,20 +17834,74 @@
     "mealType": "dinner",
     "prepMinutes": 35,
     "ingredients": [
-      { "id": "chicken_thighs", "qty": 2, "measure": "1 1/2 lb bone-in thighs" },
-      { "id": "potato", "qty": 2, "measure": "2 medium, quartered" },
-      { "id": "bell_pepper", "qty": 1, "measure": "1, cut in chunks" },
-      { "id": "zucchini", "qty": 1, "measure": "1, sliced thick" },
-      { "id": "fresh_tomato", "qty": 2, "measure": "2, cut in wedges" },
-      { "id": "feta_cheese", "qty": 2, "measure": "1/2 cup crumbled" },
-      { "id": "lemon", "qty": 2, "measure": "1 lemon, juiced + 1 cut in wedges" },
-      { "id": "garlic_onion", "qty": 1, "measure": "4 cloves garlic + 1 small onion in wedges" },
-      { "id": "italian_seasoning", "qty": 1, "measure": "1 tbsp (oregano-leaning)" },
-      { "id": "olive_oil", "qty": 4, "measure": "1/4 cup" },
-      { "id": "salt", "qty": 1, "measure": "to taste" },
-      { "id": "pepper", "qty": 1, "measure": "to taste" }
+      {
+        "id": "chicken_thighs",
+        "qty": 2,
+        "measure": "1 1/2 lb bone-in thighs"
+      },
+      {
+        "id": "potato",
+        "qty": 2,
+        "measure": "2 medium, quartered"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, cut in chunks"
+      },
+      {
+        "id": "zucchini",
+        "qty": 1,
+        "measure": "1, sliced thick"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 2,
+        "measure": "2, cut in wedges"
+      },
+      {
+        "id": "feta_cheese",
+        "qty": 2,
+        "measure": "1/2 cup crumbled"
+      },
+      {
+        "id": "lemon",
+        "qty": 2,
+        "measure": "1 lemon, juiced + 1 cut in wedges"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "4 cloves garlic + 1 small onion in wedges"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tbsp (oregano-leaning)"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 4,
+        "measure": "1/4 cup"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
     ],
-    "tags": ["greek", "mediterranean", "high-protein", "garden-fresh"],
+    "tags": [
+      "greek",
+      "mediterranean",
+      "high-protein",
+      "garden-fresh",
+      "set-and-forget"
+    ],
     "instructions": [
       "Heat oven to 425°F. Whisk olive oil, lemon juice, garlic, Italian seasoning, salt, and pepper.",
       "Toss chicken thighs, potatoes, peppers, zucchini, onion, and tomato wedges with the dressing on a large sheet pan.",
@@ -16727,20 +17917,75 @@
     "mealType": "dinner",
     "prepMinutes": 30,
     "ingredients": [
-      { "id": "chicken_breast", "qty": 1.5, "measure": "12 oz, cubed" },
-      { "id": "pasta", "qty": 2, "measure": "8 oz penne or rotini" },
-      { "id": "canned_tomatoes", "qty": 1, "measure": "1 can crushed" },
-      { "id": "cream_cheese", "qty": 2, "measure": "4 oz, cubed" },
-      { "id": "broth", "qty": 2, "measure": "2 cups chicken" },
-      { "id": "garlic_onion", "qty": 1, "measure": "1/2 onion diced + 4 cloves garlic" },
-      { "id": "italian_seasoning", "qty": 1, "measure": "1 tbsp" },
-      { "id": "parmesan", "qty": 1, "measure": "1/4 cup grated, plus extra to serve" },
-      { "id": "olive_oil", "qty": 2, "measure": "2 tbsp" },
-      { "id": "frozen_spinach", "qty": 1, "measure": "1 cup (optional, stirred in at the end)" },
-      { "id": "salt", "qty": 1, "measure": "to taste" },
-      { "id": "pepper", "qty": 1, "measure": "to taste" }
+      {
+        "id": "chicken_breast",
+        "qty": 1.5,
+        "measure": "12 oz, cubed"
+      },
+      {
+        "id": "pasta",
+        "qty": 2,
+        "measure": "8 oz penne or rotini"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can crushed"
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 2,
+        "measure": "4 oz, cubed"
+      },
+      {
+        "id": "broth",
+        "qty": 2,
+        "measure": "2 cups chicken"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion diced + 4 cloves garlic"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "1/4 cup grated, plus extra to serve"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "frozen_spinach",
+        "qty": 1,
+        "measure": "1 cup (optional, stirred in at the end)"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
     ],
-    "tags": ["italian", "comfort-food", "high-protein", "filling", "kid-friendly"],
+    "tags": [
+      "italian",
+      "comfort-food",
+      "high-protein",
+      "filling",
+      "kid-friendly",
+      "set-and-forget"
+    ],
     "instructions": [
       "Heat olive oil in a Dutch oven over medium-high. Season chicken with salt, pepper, and half the Italian seasoning; sear 4 minutes until browned. Lift out.",
       "Add onion and garlic to the pot; cook 3 minutes until soft.",
@@ -16750,5 +17995,776 @@
       "Serve in bowls with extra parmesan on top."
     ],
     "difficulty": "beginner"
+  },
+  {
+    "id": "slow_cooker_french_dip",
+    "name": "Slow Cooker French Dip Sandwiches",
+    "mealType": "dinner",
+    "prepMinutes": 15,
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 2,
+        "measure": "1 1/2 lb chuck roast"
+      },
+      {
+        "id": "broth",
+        "qty": 4,
+        "measure": "4 cups beef"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion sliced + 3 cloves garlic"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1,
+        "measure": "1 tbsp (deepens the au jus)"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "bread",
+        "qty": 4,
+        "measure": "4 hoagie rolls (or 8 slices)"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 2,
+        "measure": "4 slices provolone or mozzarella"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling",
+      "make-ahead"
+    ],
+    "instructions": [
+      "Season roast with salt and pepper. Sear in olive oil on all sides until deeply browned.",
+      "Transfer to slow cooker with onion, garlic, broth, soy sauce, and Italian seasoning.",
+      "Cook on LOW 8 hours until beef shreds easily.",
+      "Shred beef in the pot; strain broth into bowls for dipping (the au jus).",
+      "Pile beef on toasted rolls, top with cheese, broil 2 minutes until melty. Serve with au jus on the side."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "slow_cooker_cuban_mojo_pork",
+    "name": "Slow Cooker Cuban-Style Mojo Pork over Rice",
+    "mealType": "dinner",
+    "prepMinutes": 15,
+    "ingredients": [
+      {
+        "id": "pork_chops",
+        "qty": 2,
+        "measure": "2 lb pork shoulder (or thick pork chops)"
+      },
+      {
+        "id": "lime",
+        "qty": 2,
+        "measure": "2 limes, juiced + 1 cut in wedges"
+      },
+      {
+        "id": "orange",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 2,
+        "measure": "1 large onion + 6 cloves garlic"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 cup, cooked per package"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "measure": "small handful, chopped"
+      },
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "measure": "1 can, warmed"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling",
+      "make-ahead"
+    ],
+    "instructions": [
+      "Whisk lime juice, orange juice, garlic, cumin, olive oil, salt, and pepper for the mojo marinade.",
+      "Place pork and sliced onion in slow cooker; pour mojo over.",
+      "Cook on LOW 8 hours until shreddable.",
+      "Shred pork in the pot, toss in the cooking juices.",
+      "Serve over rice with warmed black beans, cilantro, and lime wedges."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "slow_cooker_honey_garlic_chicken_thighs",
+    "name": "Slow Cooker Honey Garlic Chicken Thighs",
+    "mealType": "dinner",
+    "prepMinutes": 10,
+    "ingredients": [
+      {
+        "id": "chicken_thighs",
+        "qty": 2,
+        "measure": "6 boneless thighs"
+      },
+      {
+        "id": "honey",
+        "qty": 3,
+        "measure": "1/3 cup"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 3,
+        "measure": "1/3 cup"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "6 cloves garlic, minced"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1 tbsp grated"
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "brown_rice",
+        "qty": 2,
+        "measure": "1 cup, cooked per package"
+      },
+      {
+        "id": "frozen_broccoli",
+        "qty": 2,
+        "measure": "3 cups, steamed"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "2 stalks, sliced for garnish"
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 1,
+        "measure": "to taste (optional)"
+      }
+    ],
+    "tags": [
+      "asian",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "kid-friendly",
+      "make-ahead"
+    ],
+    "instructions": [
+      "Whisk honey, soy sauce, garlic, ginger, and sesame oil. Pour over chicken thighs in the slow cooker.",
+      "Cook on LOW 5 hours or HIGH 3 hours until chicken is tender.",
+      "Lift chicken out; reduce the sauce in a small pot over high heat 5 minutes until syrupy.",
+      "Steam broccoli while sauce reduces.",
+      "Plate chicken over rice with broccoli; spoon sauce over and scatter green onions on top."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "sheet_pan_pork_chops_apple_sweet_potato",
+    "name": "Sheet Pan Pork Chops with Apple & Sweet Potato",
+    "mealType": "dinner",
+    "prepMinutes": 35,
+    "ingredients": [
+      {
+        "id": "pork_chops",
+        "qty": 2,
+        "measure": "2 thick-cut bone-in chops"
+      },
+      {
+        "id": "apple",
+        "qty": 2,
+        "measure": "2, cored and sliced thick"
+      },
+      {
+        "id": "sweet_potato",
+        "qty": 2,
+        "measure": "2, cubed"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 red onion, sliced + 3 cloves garlic"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "honey",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "mustard",
+        "qty": 1,
+        "measure": "1 tbsp Dijon"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Heat oven to 425°F. Toss sweet potato and onion with 2 tbsp olive oil, paprika, salt, and pepper. Spread on a sheet pan.",
+      "Roast 15 minutes while you season the pork chops with salt, pepper, and Italian seasoning.",
+      "Whisk honey and mustard. Push veggies to one side; add chops and apple slices to the pan. Brush chops with the honey-mustard glaze.",
+      "Roast another 18-22 minutes until pork reaches 145°F and apples are caramelized.",
+      "Rest pork 5 minutes before serving with the apples and sweet potatoes."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "sheet_pan_maple_mustard_salmon",
+    "name": "Sheet Pan Maple-Mustard Salmon with Broccoli",
+    "mealType": "dinner",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "salmon",
+        "qty": 2,
+        "measure": "4 fillets (6 oz each)"
+      },
+      {
+        "id": "frozen_broccoli",
+        "qty": 2,
+        "measure": "4 cups florets"
+      },
+      {
+        "id": "potato",
+        "qty": 2,
+        "measure": "2 medium, cubed"
+      },
+      {
+        "id": "honey",
+        "qty": 2,
+        "measure": "2 tbsp (or maple syrup)"
+      },
+      {
+        "id": "mustard",
+        "qty": 2,
+        "measure": "2 tbsp Dijon"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "3 cloves garlic, minced"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, cut in wedges"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "set-and-forget",
+      "high-protein",
+      "garden-fresh"
+    ],
+    "instructions": [
+      "Heat oven to 425°F. Toss potatoes with 1 tbsp olive oil, salt, and pepper. Roast on a sheet pan 15 minutes.",
+      "Whisk honey, mustard, garlic, 1 tbsp olive oil, salt, and pepper into a glaze.",
+      "Toss broccoli with the remaining olive oil, salt, and pepper.",
+      "Push potatoes aside; add salmon (skin-side down) and broccoli. Brush salmon thickly with the maple-mustard glaze.",
+      "Roast another 10-12 minutes until salmon flakes and broccoli is just-tender. Serve with lemon wedges."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "sheet_pan_tex_mex_chicken_beans",
+    "name": "Sheet Pan Tex-Mex Chicken with Black Beans & Corn",
+    "mealType": "dinner",
+    "prepMinutes": 30,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 2,
+        "measure": "2 large, cubed"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 2,
+        "measure": "2, cut in strips"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion sliced + 3 cloves garlic"
+      },
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "measure": "1 can, drained"
+      },
+      {
+        "id": "corn",
+        "qty": 1,
+        "measure": "1 can, drained"
+      },
+      {
+        "id": "taco_seasoning",
+        "qty": 1,
+        "measure": "1 packet"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "cheddar",
+        "qty": 2,
+        "measure": "1 cup shredded"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "measure": "small handful, chopped"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "measure": "1, cut in wedges"
+      },
+      {
+        "id": "tortillas",
+        "qty": 6,
+        "measure": "6 warmed (optional, for wrapping)"
+      },
+      {
+        "id": "salsa",
+        "qty": 0.5,
+        "measure": "1/2 cup to serve"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Heat oven to 425°F. Toss chicken, peppers, and onion with olive oil and taco seasoning.",
+      "Spread on a sheet pan; roast 18 minutes, stirring once halfway.",
+      "Scatter black beans and corn over the pan; sprinkle cheese on top.",
+      "Roast another 5 minutes until cheese melts and edges crisp.",
+      "Serve straight from the pan with warm tortillas, cilantro, salsa, and lime."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "one_pot_beef_broccoli",
+    "name": "One-Pot Beef & Broccoli over Rice",
+    "mealType": "dinner",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1.5,
+        "measure": "1 lb sirloin, sliced thin"
+      },
+      {
+        "id": "frozen_broccoli",
+        "qty": 2,
+        "measure": "3 cups florets"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 3,
+        "measure": "1/3 cup"
+      },
+      {
+        "id": "honey",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "4 cloves garlic, minced"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1 tbsp grated"
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 cup, cooked per package"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "2 stalks, sliced"
+      }
+    ],
+    "tags": [
+      "asian",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling",
+      "quick"
+    ],
+    "instructions": [
+      "Heat sesame oil in a deep skillet over high. Sear beef in a single layer 2 minutes until browned; flip and add garlic and ginger. Cook 1 minute.",
+      "Pour in soy sauce, honey, and broth. Bring to a simmer.",
+      "Add broccoli; cover and cook 5 minutes until tender and the sauce thickens.",
+      "Taste and adjust salt if needed.",
+      "Spoon over rice; garnish with green onions."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "one_pot_cheesy_chicken_broccoli_rice",
+    "name": "One-Pot Cheesy Chicken & Broccoli Rice",
+    "mealType": "dinner",
+    "prepMinutes": 30,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1.5,
+        "measure": "12 oz, cubed"
+      },
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 cup, dry"
+      },
+      {
+        "id": "frozen_broccoli",
+        "qty": 2,
+        "measure": "3 cups florets"
+      },
+      {
+        "id": "broth",
+        "qty": 4,
+        "measure": "2 1/4 cups"
+      },
+      {
+        "id": "cheddar",
+        "qty": 2,
+        "measure": "1 cup shredded"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion diced + 3 cloves garlic"
+      },
+      {
+        "id": "butter",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Melt butter in a Dutch oven over medium-high. Season chicken with salt, pepper, and paprika; cook 5 minutes until browned. Lift out.",
+      "Add onion and garlic to the pot; cook 2 minutes.",
+      "Stir in rice; toast 1 minute. Pour in broth and bring to a boil.",
+      "Cover, reduce heat, and simmer 15 minutes. Add broccoli on top (don't stir) and cook another 5 minutes until rice is tender.",
+      "Return chicken to the pot; stir in cheese until melted. Serve in bowls."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "one_pot_cheesy_beef_taco_skillet",
+    "name": "One-Pot Cheesy Beef Taco Skillet",
+    "mealType": "dinner",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1.5,
+        "measure": "1 lb"
+      },
+      {
+        "id": "taco_seasoning",
+        "qty": 1,
+        "measure": "1 packet"
+      },
+      {
+        "id": "white_rice",
+        "qty": 2,
+        "measure": "1 cup, dry"
+      },
+      {
+        "id": "broth",
+        "qty": 4,
+        "measure": "2 cups"
+      },
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "measure": "1 can, drained"
+      },
+      {
+        "id": "corn",
+        "qty": 1,
+        "measure": "1 can, drained"
+      },
+      {
+        "id": "salsa",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "cheddar",
+        "qty": 2,
+        "measure": "1 1/2 cups shredded"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion diced + 2 cloves garlic"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "measure": "small handful, chopped"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Heat olive oil in a deep skillet. Sauté onion and garlic 2 minutes; add beef and brown, breaking it up.",
+      "Drain excess fat. Stir in taco seasoning to coat.",
+      "Add rice, broth, beans, corn, and salsa. Bring to a simmer.",
+      "Cover and cook 18 minutes until rice is tender and liquid is absorbed.",
+      "Sprinkle cheese over the top; cover off-heat 2 minutes to melt. Garnish with cilantro and serve from the pan."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "skillet_lasagna",
+    "name": "Skillet Lasagna",
+    "mealType": "dinner",
+    "prepMinutes": 35,
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1.5,
+        "measure": "1 lb"
+      },
+      {
+        "id": "pasta",
+        "qty": 2,
+        "measure": "8 oz broken lasagna sheets (or rotini)"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 2,
+        "measure": "2 cans marinara (~3 1/2 cups)"
+      },
+      {
+        "id": "cottage_cheese",
+        "qty": 2,
+        "measure": "1 cup (stand-in for ricotta)"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 2,
+        "measure": "1 1/2 cups shredded"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "1/4 cup grated"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion diced + 3 cloves garlic"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "broth",
+        "qty": 2,
+        "measure": "1 1/2 cups"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "comfort-food",
+      "set-and-forget",
+      "high-protein",
+      "filling",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Brown beef with onion and garlic in olive oil in a deep skillet, breaking it up. Drain fat.",
+      "Stir in Italian seasoning, marinara, and broth. Bring to a simmer.",
+      "Submerge broken pasta in the sauce. Cover and cook 12-15 minutes, stirring once, until pasta is al dente.",
+      "Dollop cottage cheese over the top in spoonfuls; scatter mozzarella and parmesan.",
+      "Cover off-heat 5 minutes until cheese melts and the cottage cheese softens into ricotta-like pockets. Serve straight from the pan."
+    ],
+    "difficulty": "intermediate"
   }
 ]
