@@ -154,6 +154,7 @@ export function populateMealPlanFromIds(idsByDay = {}, sales = [], servings = 1,
         onSaleIngredients: r.ingredients.filter(it => ingredientMap[it.id]?.onSale).map(it => ingredientMap[it.id].name),
         tags: r.tags,
         instructions: r.instructions || [],
+        suggestedSide: r.suggestedSide || null,
         ingredients: r.ingredients.map(item => ({
           id: item.id,
           name: ingredientMap[item.id]?.name || item.id,
@@ -210,6 +211,7 @@ export function getAvailableRecipes(sales = [], servings = 1, excludeIds = [], f
         veggie_count: calcVeggieCount(r, ingredientMap),
         tags: r.tags,
         instructions: r.instructions || [],
+        suggestedSide: r.suggestedSide || null,
         ingredients: r.ingredients.map(item => ({
           id: item.id,
           name: ingredientMap[item.id]?.name || item.id,
@@ -443,6 +445,7 @@ export function generateMealPlan(sales = [], budgetCap = null, servings = 1, exc
         onSaleIngredients: meal.onSaleIngredients,
         tags: meal.tags,
         instructions: meal.instructions || [],
+        suggestedSide: meal.suggestedSide || null,
         ingredients: meal.ingredients.map(item => ({
           id: item.id,
           name: ingredientMap[item.id]?.name || item.id,
@@ -514,6 +517,7 @@ export function generateMealPlan(sales = [], budgetCap = null, servings = 1, exc
           onSaleIngredients: c.onSaleIngredients,
           tags: c.tags,
           instructions: c.instructions || [],
+          suggestedSide: c.suggestedSide || null,
           ingredients: c.ingredients.map(item => ({
             id: item.id,
             name: ingredientMap[item.id]?.name || item.id,

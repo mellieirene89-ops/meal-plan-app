@@ -296,6 +296,41 @@ export default function Recipes({ plan, focusTarget, onFocusHandled, onBackToPla
                         </div>
                       )}
 
+                      {/* Suggested side — handwritten chef's note */}
+                      {meal.suggestedSide && (
+                        <div style={{
+                          marginTop: 14,
+                          padding: '10px 14px',
+                          background: 'rgba(234, 162, 33, 0.10)',
+                          border: '1px dashed rgba(138, 106, 64, 0.45)',
+                          borderRadius: 6,
+                          display: 'flex',
+                          alignItems: 'baseline',
+                          gap: 10,
+                        }}>
+                          <span style={{
+                            fontFamily: 'JetBrains Mono, monospace',
+                            fontSize: 11,
+                            fontWeight: 700,
+                            color: '#8a6a40',
+                            letterSpacing: '0.18em',
+                            textTransform: 'uppercase',
+                            flexShrink: 0,
+                          }}>
+                            Side
+                          </span>
+                          <span style={{
+                            fontFamily: 'Caveat, cursive',
+                            fontWeight: 500,
+                            fontSize: 20,
+                            color: '#3a2a18',
+                            lineHeight: 1.25,
+                          }}>
+                            {meal.suggestedSide}
+                          </span>
+                        </div>
+                      )}
+
                       {/* Back to Meal Plan */}
                       {onBackToPlan && (
                         <div style={{ marginTop: 18, display: 'flex', justifyContent: 'flex-end' }}>
