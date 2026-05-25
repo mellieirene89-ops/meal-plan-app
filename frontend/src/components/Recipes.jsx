@@ -174,16 +174,31 @@ export default function Recipes({ plan, focusTarget, onFocusHandled, onBackToPla
                               flex: 'none',
                               background: 'transparent',
                               border: 'none',
-                              padding: 4,
-                              fontSize: 28,
-                              lineHeight: 1,
+                              padding: '4px 8px',
                               cursor: 'pointer',
-                              color: favoriteSet.has(meal.id) ? '#eaa221' : 'rgba(80, 60, 30, 0.35)',
-                              textShadow: favoriteSet.has(meal.id) ? '0 0 8px rgba(234,162,33,0.55), 1px 2px 3px rgba(0,0,0,0.35)' : 'none',
-                              transition: 'color 0.2s, text-shadow 0.2s',
+                              color: favoriteSet.has(meal.id) ? '#eaa221' : 'rgba(80, 60, 30, 0.65)',
+                              textShadow: favoriteSet.has(meal.id)
+                                ? '0 0 14px rgba(234,162,33,0.9), 0 0 28px rgba(234,162,33,0.45), 2px 3px 4px rgba(0,0,0,0.45)'
+                                : '1px 2px 3px rgba(0,0,0,0.25)',
+                              transition: 'color 0.2s, text-shadow 0.2s, transform 0.15s',
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: 6,
+                              lineHeight: 1,
                             }}
+                            onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.06)'}
+                            onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
                           >
-                            {favoriteSet.has(meal.id) ? '★' : '☆'}
+                            <span style={{ fontSize: 46 }}>{favoriteSet.has(meal.id) ? '★' : '☆'}</span>
+                            <span style={{
+                              fontFamily: 'Amatic SC, cursive',
+                              fontWeight: 700,
+                              fontSize: 26,
+                              letterSpacing: '0.08em',
+                              textTransform: 'uppercase',
+                            }}>
+                              Favorite
+                            </span>
                           </button>
                         )}
                       </div>

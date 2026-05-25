@@ -143,16 +143,32 @@ function MealCard({ meal, mealType, day, taxRate = 0, isSkipped = false, onToggl
               style={{
                 background: 'transparent',
                 border: 'none',
-                padding: '0 2px',
-                fontSize: 22,
-                lineHeight: 1,
+                padding: '2px 4px',
                 cursor: 'pointer',
-                color: isFavorite ? '#eaa221' : 'rgba(240, 232, 218, 0.4)',
-                textShadow: isFavorite ? '0 0 8px rgba(234,162,33,0.65), 1px 2px 3px rgba(0,0,0,0.6)' : '1px 2px 3px rgba(0,0,0,0.5)',
-                transition: 'color 0.2s, text-shadow 0.2s',
+                color: isFavorite ? '#eaa221' : 'rgba(240, 232, 218, 0.7)',
+                textShadow: isFavorite
+                  ? '0 0 14px rgba(234,162,33,1), 0 0 28px rgba(234,162,33,0.6), 0 0 42px rgba(234,162,33,0.3), 2px 3px 4px rgba(0,0,0,0.65)'
+                  : '1px 2px 3px rgba(0,0,0,0.6)',
+                filter: isFavorite ? 'drop-shadow(0 2px 4px rgba(0,0,0,0.5))' : 'none',
+                transition: 'color 0.2s, text-shadow 0.2s, transform 0.15s',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 4,
+                lineHeight: 1,
               }}
+              onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.08)'}
+              onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
             >
-              {isFavorite ? '★' : '☆'}
+              <span style={{ fontSize: 34 }}>{isFavorite ? '★' : '☆'}</span>
+              <span style={{
+                fontFamily: 'Amatic SC, cursive',
+                fontWeight: 700,
+                fontSize: 18,
+                letterSpacing: '0.08em',
+                textTransform: 'uppercase',
+              }}>
+                Favorite
+              </span>
             </button>
           ) : <span />}
           {onSale && (
