@@ -3828,8 +3828,8 @@
   },
   {
     "id": "caprese_toast",
-    "name": "Caprese Toast",
-    "mealType": "lunch",
+    "name": "Caprese Breakfast Toast",
+    "mealType": "breakfast",
     "prepMinutes": 5,
     "ingredients": [
       {
@@ -10700,8 +10700,8 @@
   },
   {
     "id": "caprese_breakfast_toast",
-    "name": "Caprese Breakfast Toast",
-    "mealType": "breakfast",
+    "name": "Caprese Toast",
+    "mealType": "lunch",
     "prepMinutes": 5,
     "ingredients": [
       {
