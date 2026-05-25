@@ -132,60 +132,89 @@ function MealCard({ meal, mealType, day, taxRate = 0, isSkipped = false, onToggl
       }}>
         {day}
       </div>
-      {/* Deal tag + favorite star (clickable on the card so the user can star without opening the recipe) */}
-      {(onSale || onToggleFavoriteRecipe) && (
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 6 }}>
-          {onToggleFavoriteRecipe && meal.id ? (
-            <button
-              onClick={e => { e.stopPropagation(); onToggleFavoriteRecipe(meal.id); }}
-              title={isFavorite ? 'Remove from favorites' : 'Favorite this recipe'}
-              aria-label={isFavorite ? 'Unfavorite recipe' : 'Favorite recipe'}
-              style={{
-                background: 'transparent',
-                border: 'none',
-                padding: '2px 4px',
-                cursor: 'pointer',
-                color: isFavorite ? '#eaa221' : 'rgba(240, 232, 218, 0.7)',
-                textShadow: isFavorite
-                  ? '0 0 14px rgba(234,162,33,1), 0 0 28px rgba(234,162,33,0.6), 0 0 42px rgba(234,162,33,0.3), 2px 3px 4px rgba(0,0,0,0.65)'
-                  : '1px 2px 3px rgba(0,0,0,0.6)',
-                filter: isFavorite ? 'drop-shadow(0 2px 4px rgba(0,0,0,0.5))' : 'none',
-                transition: 'color 0.2s, text-shadow 0.2s, transform 0.15s',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: 4,
-                lineHeight: 1,
-              }}
-              onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.08)'}
-              onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
-            >
-              <span style={{ fontSize: 34 }}>{isFavorite ? '★' : '☆'}</span>
-              <span style={{
-                fontFamily: 'Amatic SC, cursive',
-                fontWeight: 700,
-                fontSize: 18,
-                letterSpacing: '0.08em',
-                textTransform: 'uppercase',
-              }}>
-                Favorite
-              </span>
-            </button>
-          ) : <span />}
-          {onSale && (
+      {/* DEAL on a piece of washi tape — top-left corner, slightly rotated. Layered
+          grain + jagged ends mimic the WashiTape component but with the word "DEAL"
+          legible on top. The pushpin (top-center) stays where it is. */}
+      {onSale && (
+        <div
+          aria-label="On sale"
+          style={{
+            position: 'absolute',
+            top: 6,
+            left: -12,
+            transform: 'rotate(-12deg)',
+            transformOrigin: 'left top',
+            width: 88,
+            height: 26,
+            background: `
+              url("data:image/svg+xml;utf8,${encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' width='120' height='40'><filter id='g'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.1  0 0 0 0 0.06  0 0 0 0 0.02  0 0 0 0.5 0'/></filter><rect width='100%' height='100%' filter='url(#g)' opacity='0.45'/></svg>`)}"),
+              linear-gradient(180deg,
+                rgba(196, 154, 92, 0.78) 0%,
+                rgba(255, 208, 68, 0.88) 18%,
+                rgba(255, 208, 68, 0.88) 82%,
+                rgba(150, 95, 18, 0.78) 100%
+              )
+            `,
+            backgroundSize: '120px 40px, auto',
+            backgroundBlendMode: 'multiply, normal',
+            boxShadow: '0 2px 3px rgba(0,0,0,0.45), 0 5px 9px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,235,200,0.5), inset 0 -1px 0 rgba(0,0,0,0.2)',
+            clipPath: 'polygon(2% 8%, 6% 0, 12% 12%, 18% 4%, 24% 14%, 96% 6%, 100% 0, 98% 22%, 96% 100%, 92% 88%, 86% 96%, 80% 86%, 74% 96%, 4% 92%, 0 100%, 2% 78%)',
+            zIndex: 4,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <span style={{
+            fontFamily: 'JetBrains Mono, monospace',
+            fontSize: 13,
+            fontWeight: 900,
+            letterSpacing: '0.12em',
+            color: '#1a1400',
+            textShadow: '0 1px 0 rgba(255,255,255,0.4)',
+          }}>
+            ★ DEAL
+          </span>
+        </div>
+      )}
+
+      {/* Favorite button — its own row on the left so it doesn't compete with DEAL */}
+      {onToggleFavoriteRecipe && meal.id && (
+        <div>
+          <button
+            onClick={e => { e.stopPropagation(); onToggleFavoriteRecipe(meal.id); }}
+            title={isFavorite ? 'Remove from favorites' : 'Favorite this recipe'}
+            aria-label={isFavorite ? 'Unfavorite recipe' : 'Favorite recipe'}
+            style={{
+              background: 'transparent',
+              border: 'none',
+              padding: '2px 4px',
+              cursor: 'pointer',
+              color: isFavorite ? '#eaa221' : 'rgba(240, 232, 218, 0.7)',
+              textShadow: isFavorite
+                ? '0 0 14px rgba(234,162,33,1), 0 0 28px rgba(234,162,33,0.6), 0 0 42px rgba(234,162,33,0.3), 2px 3px 4px rgba(0,0,0,0.65)'
+                : '1px 2px 3px rgba(0,0,0,0.6)',
+              filter: isFavorite ? 'drop-shadow(0 2px 4px rgba(0,0,0,0.5))' : 'none',
+              transition: 'color 0.2s, text-shadow 0.2s, transform 0.15s',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 4,
+              lineHeight: 1,
+            }}
+            onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.08)'}
+            onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+          >
+            <span style={{ fontSize: 34 }}>{isFavorite ? '★' : '☆'}</span>
             <span style={{
-              background: 'var(--sale)',
-              color: '#1a1400',
-              fontSize: 12,
-              fontWeight: 800,
-              padding: '2px 7px',
-              borderRadius: 4,
-              letterSpacing: '0.06em',
-              fontFamily: 'JetBrains Mono, monospace',
-              boxShadow: '1px 2px 3px rgba(0,0,0,0.4), 3px 4px 8px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.4), inset 0 -1px 0 rgba(0,0,0,0.15)',
+              fontFamily: 'Amatic SC, cursive',
+              fontWeight: 700,
+              fontSize: 18,
+              letterSpacing: '0.08em',
+              textTransform: 'uppercase',
             }}>
-              ★ DEAL
+              Favorite
             </span>
-          )}
+          </button>
         </div>
       )}
 
