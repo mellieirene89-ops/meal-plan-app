@@ -23831,5 +23831,1135 @@
       "Adjust salt; finish with chopped herbs and a crack of pepper. Serve in deep bowls."
     ],
     "suggestedSide": "Crusty bread for dunking."
+  },
+  {
+    "id": "bagel_lox_cream_cheese",
+    "name": "Bagel Lox with Cream Cheese & Cucumber",
+    "mealType": "breakfast",
+    "prepMinutes": 12,
+    "difficulty": "beginner",
+    "ingredients": [
+      {
+        "id": "bread",
+        "qty": 2,
+        "measure": "1 bagel, split"
+      },
+      {
+        "id": "salmon",
+        "qty": 1,
+        "measure": "3 oz smoked-style"
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 2,
+        "measure": "3 tbsp, softened"
+      },
+      {
+        "id": "cucumber",
+        "qty": 1,
+        "measure": "1/2, sliced thin"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "2 stalks, sliced"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, cut in wedges"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "high-protein",
+      "quick"
+    ],
+    "instructions": [
+      "Lightly toast bagel halves.",
+      "Spread cream cheese on both halves.",
+      "Layer cucumber slices, then salmon, on the bottom.",
+      "Scatter green onion and a crack of pepper. Squeeze lemon over.",
+      "Close and slice in half."
+    ],
+    "suggestedSide": "Fresh fruit or a side of capers if you have them."
+  },
+  {
+    "id": "avocado_egg_breakfast_sandwich",
+    "name": "Avocado Egg & Cheddar Breakfast Sandwich",
+    "mealType": "breakfast",
+    "prepMinutes": 12,
+    "difficulty": "beginner",
+    "ingredients": [
+      {
+        "id": "bread",
+        "qty": 2,
+        "measure": "2 slices sourdough (or English muffin)"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2 large"
+      },
+      {
+        "id": "avocado",
+        "qty": 0.5,
+        "measure": "1/2, mashed"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1 slice"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "squeeze"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "high-protein",
+      "quick",
+      "garden-fresh"
+    ],
+    "instructions": [
+      "Toast bread. Mash avocado with a squeeze of lemon, salt, and pepper.",
+      "Melt butter in a skillet. Crack eggs in, season, fry to your liking; lay cheese over the eggs to melt in the last 30 seconds.",
+      "Spread avocado on one slice. Top with egg + cheese.",
+      "Drizzle hot sauce, close with the second slice, and serve."
+    ]
+  },
+  {
+    "id": "bacon_avocado_breakfast_bagel",
+    "name": "Bacon, Avocado & Egg Breakfast Bagel",
+    "mealType": "breakfast",
+    "prepMinutes": 18,
+    "difficulty": "beginner",
+    "ingredients": [
+      {
+        "id": "bread",
+        "qty": 2,
+        "measure": "1 bagel, split"
+      },
+      {
+        "id": "bacon",
+        "qty": 1,
+        "measure": "3 strips"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2 large"
+      },
+      {
+        "id": "avocado",
+        "qty": 0.5,
+        "measure": "1/2, sliced"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 0.5,
+        "measure": "2 slices"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1 slice"
+      },
+      {
+        "id": "mayo",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein"
+    ],
+    "instructions": [
+      "Cook bacon in a skillet until crisp; drain on paper towels.",
+      "Toast bagel halves.",
+      "In the bacon fat, fry eggs and lay cheese on top to melt the last 30 seconds.",
+      "Spread mayo on the bottom bagel. Stack: avocado, tomato, egg + cheese, bacon. Close with the top."
+    ]
+  },
+  {
+    "id": "sausage_gravy_biscuit_open_faced",
+    "name": "Open-Faced Biscuit with Sausage Gravy",
+    "mealType": "breakfast",
+    "prepMinutes": 35,
+    "difficulty": "intermediate",
+    "ingredients": [
+      {
+        "id": "flour",
+        "qty": 2.25,
+        "measure": "2 cups (biscuits) + 1/4 cup (gravy)"
+      },
+      {
+        "id": "butter",
+        "qty": 6,
+        "measure": "6 tbsp cold, cubed (for biscuits)"
+      },
+      {
+        "id": "milk",
+        "qty": 2.5,
+        "measure": "3/4 cup biscuit + 2 cups gravy"
+      },
+      {
+        "id": "sausage",
+        "qty": 2,
+        "measure": "8 oz breakfast sausage"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "1/2 tsp + to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "lots, freshly cracked"
+      },
+      {
+        "id": "sugar",
+        "qty": 1,
+        "measure": "1 tsp (for biscuits)"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "barbecue",
+      "filling"
+    ],
+    "instructions": [
+      "Heat oven to 425°F. Whisk 2 cups flour with sugar, 1/2 tsp salt, and 1 tsp baking powder (if you have it).",
+      "Cut cold butter into the dry mixture; rub to pea-sized crumbs. Stir in 3/4 cup milk just until shaggy.",
+      "Pat into a 1-inch rectangle, cut 4 biscuits. Bake on parchment 14-16 minutes until golden.",
+      "Meanwhile brown sausage in a skillet, breaking it up. Sprinkle 1/4 cup flour over; cook 1 minute.",
+      "Slowly whisk in 2 cups milk; simmer 4 minutes until thickened. Season generously with salt and lots of pepper.",
+      "Split warm biscuits, ladle gravy over the cut sides. Serve open-faced."
+    ],
+    "suggestedSide": "Sliced fresh fruit to cut the richness."
+  },
+  {
+    "id": "croque_madame",
+    "name": "Croque Madame (Ham, Cheese & Egg)",
+    "mealType": "breakfast",
+    "prepMinutes": 25,
+    "difficulty": "intermediate",
+    "ingredients": [
+      {
+        "id": "bread",
+        "qty": 4,
+        "measure": "4 slices brioche or sourdough"
+      },
+      {
+        "id": "deli_turkey",
+        "qty": 2,
+        "measure": "4 slices ham (or deli turkey)"
+      },
+      {
+        "id": "cheddar",
+        "qty": 2,
+        "measure": "4 slices (or gruyere if you have it)"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2 large"
+      },
+      {
+        "id": "milk",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "butter",
+        "qty": 4,
+        "measure": "4 tbsp, divided"
+      },
+      {
+        "id": "flour",
+        "qty": 0.25,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "mustard",
+        "qty": 1,
+        "measure": "1 tsp Dijon"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "2 tbsp grated"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "comfort-food",
+      "high-protein"
+    ],
+    "instructions": [
+      "BECHAMEL: melt 2 tbsp butter; whisk in flour, cook 1 minute. Slowly whisk in milk; simmer 4 minutes until thick. Stir in mustard, salt, pepper, and parmesan. Cool slightly.",
+      "Heat oven to broil. Butter one side of each bread slice.",
+      "Toast bread butter-side down in a skillet until golden.",
+      "On the un-buttered side of 2 slices, layer ham and cheese; close into sandwiches. Brown both sides in butter, melting the cheese.",
+      "Transfer sandwiches to a sheet pan. Spread a generous spoonful of bechamel on top of each. Broil 90 seconds until golden and bubbly.",
+      "Meanwhile fry eggs in the remaining butter. Slide one egg onto each sandwich. Crack pepper over and serve."
+    ],
+    "suggestedSide": "A bitter greens salad with sharp vinaigrette."
+  },
+  {
+    "id": "classic_blt",
+    "name": "Classic BLT",
+    "mealType": "lunch",
+    "prepMinutes": 15,
+    "difficulty": "beginner",
+    "ingredients": [
+      {
+        "id": "bread",
+        "qty": 2,
+        "measure": "2 slices toasted"
+      },
+      {
+        "id": "bacon",
+        "qty": 2,
+        "measure": "4 strips"
+      },
+      {
+        "id": "lettuce",
+        "qty": 1,
+        "measure": "2 large leaves"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 1,
+        "measure": "3 thick slices"
+      },
+      {
+        "id": "mayo",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "quick"
+    ],
+    "instructions": [
+      "Cook bacon in a skillet until crisp; drain on paper towels.",
+      "Toast bread.",
+      "Spread mayo on both slices. Layer lettuce, tomato (salt and pepper the tomato), bacon.",
+      "Close and slice diagonally."
+    ],
+    "suggestedSide": "Kettle chips or a small bowl of tomato soup."
+  },
+  {
+    "id": "italian_sub_sandwich",
+    "name": "Italian Sub Sandwich",
+    "mealType": "lunch",
+    "prepMinutes": 15,
+    "difficulty": "beginner",
+    "ingredients": [
+      {
+        "id": "bread",
+        "qty": 2,
+        "measure": "1 hoagie roll, split"
+      },
+      {
+        "id": "deli_turkey",
+        "qty": 2,
+        "measure": "4 slices"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1,
+        "measure": "3 slices (or provolone)"
+      },
+      {
+        "id": "lettuce",
+        "qty": 1,
+        "measure": "shredded handful"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 1,
+        "measure": "3 slices"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/4 red onion, thinly sliced"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tsp red wine vinegar"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      },
+      {
+        "id": "mustard",
+        "qty": 1,
+        "measure": "1 tsp Dijon"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "comfort-food",
+      "high-protein",
+      "quick"
+    ],
+    "instructions": [
+      "Whisk olive oil, vinegar, Italian seasoning, mustard, salt, and pepper into a quick vinaigrette.",
+      "Open the roll. Drizzle half the vinaigrette on the bottom.",
+      "Layer turkey, mozzarella, tomato, onion, and lettuce.",
+      "Drizzle the rest of the vinaigrette over and close.",
+      "Press lightly and slice on a diagonal."
+    ],
+    "suggestedSide": "Chips and a few pepperoncini if you have them."
+  },
+  {
+    "id": "philly_cheesesteak",
+    "name": "Philly Cheesesteak",
+    "mealType": "lunch",
+    "prepMinutes": 25,
+    "difficulty": "intermediate",
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1,
+        "measure": "8 oz ribeye or sirloin, sliced paper-thin"
+      },
+      {
+        "id": "bread",
+        "qty": 2,
+        "measure": "1 hoagie roll, split"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 2,
+        "measure": "4 slices (or provolone)"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, thinly sliced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion, thinly sliced + 2 cloves garlic"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Heat 1 tbsp olive oil in a wide skillet over medium-high. Sauté onion and pepper 6 minutes until softened and lightly charred; add garlic in the last 30 seconds. Push to one side.",
+      "Add the rest of the oil. Spread sliced beef in a single layer; season with salt and pepper. Sear 90 seconds without stirring, then chop and mix with the spatula until just cooked, 90 seconds more.",
+      "Mix beef with the peppers and onion. Lay cheese over the top; cover briefly to melt.",
+      "Toast the split hoagie with butter. Scoop the meat-cheese mixture into the roll.",
+      "Press lightly, slice in half, and serve."
+    ],
+    "suggestedSide": "Kettle chips or a quick pickle."
+  },
+  {
+    "id": "tuna_melt",
+    "name": "Classic Tuna Melt",
+    "mealType": "lunch",
+    "prepMinutes": 15,
+    "difficulty": "beginner",
+    "ingredients": [
+      {
+        "id": "bread",
+        "qty": 4,
+        "measure": "4 slices sourdough"
+      },
+      {
+        "id": "canned_tuna",
+        "qty": 2,
+        "measure": "2 cans, drained"
+      },
+      {
+        "id": "cheddar",
+        "qty": 2,
+        "measure": "4 slices"
+      },
+      {
+        "id": "mayo",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "celery",
+        "qty": 1,
+        "measure": "1 stalk, finely diced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "2 tbsp red onion, minced"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "mustard",
+        "qty": 1,
+        "measure": "1 tsp Dijon"
+      },
+      {
+        "id": "butter",
+        "qty": 2,
+        "measure": "2 tbsp, for griddling"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein"
+    ],
+    "instructions": [
+      "Mix tuna with mayo, celery, onion, lemon juice, mustard, salt, and pepper.",
+      "Butter one side of each bread slice.",
+      "Build sandwiches butter-side out: bread, cheese, tuna mixture, cheese, bread.",
+      "Griddle in a skillet over medium-low 3-4 minutes per side, pressing gently, until cheese melts and bread is deeply golden.",
+      "Slice in half and serve hot."
+    ],
+    "suggestedSide": "A cup of tomato soup for dunking."
+  },
+  {
+    "id": "avocado_chicken_salad_sandwich",
+    "name": "Avocado Chicken Salad Sandwich",
+    "mealType": "lunch",
+    "prepMinutes": 20,
+    "difficulty": "beginner",
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "measure": "8 oz, cooked and shredded"
+      },
+      {
+        "id": "bread",
+        "qty": 4,
+        "measure": "4 slices"
+      },
+      {
+        "id": "avocado",
+        "qty": 1,
+        "measure": "1, mashed"
+      },
+      {
+        "id": "mayo",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "celery",
+        "qty": 1,
+        "measure": "1 stalk, diced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "2 tbsp red onion, minced"
+      },
+      {
+        "id": "lettuce",
+        "qty": 1,
+        "measure": "2 leaves"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 1,
+        "measure": "2 slices"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "measure": "small handful, chopped"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "garden-fresh",
+      "high-protein"
+    ],
+    "instructions": [
+      "Mash avocado with lemon juice, salt, and pepper.",
+      "Fold in shredded chicken, mayo, celery, onion, and cilantro.",
+      "Toast bread if you like.",
+      "Pile chicken salad on 2 slices; top with lettuce and tomato. Close with the other slices and slice diagonally."
+    ],
+    "suggestedSide": "A handful of grapes or carrot sticks."
+  },
+  {
+    "id": "meatball_sub_marinara",
+    "name": "Meatball Sub with Marinara & Mozzarella",
+    "mealType": "dinner",
+    "prepMinutes": 40,
+    "difficulty": "intermediate",
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1.5,
+        "measure": "1 lb"
+      },
+      {
+        "id": "bread",
+        "qty": 4,
+        "measure": "4 hoagie rolls, split"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 2,
+        "measure": "2 cups marinara"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 2,
+        "measure": "1 cup shredded"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "1/3 cup grated"
+      },
+      {
+        "id": "eggs",
+        "qty": 1,
+        "measure": "1 large"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "3 cloves garlic + 1/4 onion finely diced"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "milk",
+        "qty": 0.25,
+        "measure": "1/4 cup"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "1 tbsp (for toasting buns)"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "comfort-food",
+      "high-protein",
+      "filling",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Mix beef with egg, garlic, onion, half the parmesan, Italian seasoning, milk, salt, and pepper. Form 12 meatballs.",
+      "Sear meatballs in olive oil in a wide skillet, 2 minutes per side, until browned.",
+      "Pour marinara around the meatballs. Cover and simmer 12 minutes until meatballs are cooked through.",
+      "Butter and toast the hoagie rolls under the broiler.",
+      "Place 3 meatballs in each roll; spoon extra sauce over and top with shredded mozzarella + the rest of the parmesan.",
+      "Broil 90 seconds until cheese is bubbly and golden."
+    ],
+    "suggestedSide": "A simple green salad with a sharp vinaigrette."
+  },
+  {
+    "id": "open_face_hot_turkey_gravy",
+    "name": "Open-Faced Hot Turkey Sandwich with Gravy",
+    "mealType": "dinner",
+    "prepMinutes": 40,
+    "difficulty": "intermediate",
+    "ingredients": [
+      {
+        "id": "deli_turkey",
+        "qty": 3,
+        "measure": "12 oz roasted turkey (or thick deli)"
+      },
+      {
+        "id": "bread",
+        "qty": 4,
+        "measure": "4 thick slices"
+      },
+      {
+        "id": "potato",
+        "qty": 3,
+        "measure": "3 medium, peeled and cubed (for mash)"
+      },
+      {
+        "id": "butter",
+        "qty": 6,
+        "measure": "6 tbsp, divided"
+      },
+      {
+        "id": "flour",
+        "qty": 0.25,
+        "measure": "3 tbsp (for gravy)"
+      },
+      {
+        "id": "broth",
+        "qty": 4,
+        "measure": "3 cups turkey or chicken"
+      },
+      {
+        "id": "milk",
+        "qty": 0.5,
+        "measure": "1/2 cup (for mash)"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion finely diced"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp (thyme-leaning)"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Boil potatoes in salted water 15 minutes; drain and mash with 3 tbsp butter, warm milk, salt, and pepper. Keep warm.",
+      "For the gravy: melt 3 tbsp butter; sauté onion 3 minutes. Whisk in flour and cook 90 seconds.",
+      "Slowly whisk in broth; simmer 5 minutes until thickened. Stir in Italian seasoning, salt, and pepper.",
+      "Warm turkey gently in the gravy.",
+      "Toast bread. Plate each slice with a scoop of mashed potatoes on the side. Lay warmed turkey across the bread; ladle gravy generously over the whole plate."
+    ],
+    "suggestedSide": "A scoop of buttered peas or carrots."
+  },
+  {
+    "id": "sloppy_joes",
+    "name": "Classic Sloppy Joes",
+    "mealType": "dinner",
+    "prepMinutes": 25,
+    "difficulty": "beginner",
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1.5,
+        "measure": "1 lb"
+      },
+      {
+        "id": "bread",
+        "qty": 4,
+        "measure": "4 hamburger buns"
+      },
+      {
+        "id": "ketchup",
+        "qty": 4,
+        "measure": "1/2 cup"
+      },
+      {
+        "id": "mustard",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1,
+        "measure": "1/2 can (about 1/2 cup)"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion diced + 2 cloves garlic"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, diced"
+      },
+      {
+        "id": "sugar",
+        "qty": 1,
+        "measure": "1 tbsp brown"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tsp apple cider"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "chili_powder",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "1 tbsp (for buns)"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "kid-friendly",
+      "filling"
+    ],
+    "instructions": [
+      "Brown beef with onion, pepper, and garlic in a wide skillet, breaking it up; drain fat.",
+      "Stir in ketchup, mustard, tomato sauce, brown sugar, vinegar, paprika, chili powder, salt, and pepper.",
+      "Simmer 8 minutes until thick and glossy.",
+      "Toast buns with butter cut-side down.",
+      "Pile sloppy beef onto the bottom bun, cap with the top."
+    ],
+    "suggestedSide": "Potato chips and a quick coleslaw."
+  },
+  {
+    "id": "bbq_brisket_sandwich_slaw",
+    "name": "BBQ Brisket-Style Sandwich with Slaw",
+    "mealType": "dinner",
+    "prepMinutes": 35,
+    "difficulty": "intermediate",
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 2,
+        "measure": "1 1/2 lb chuck, slow-simmered (or use cooked brisket)"
+      },
+      {
+        "id": "bread",
+        "qty": 4,
+        "measure": "4 buns"
+      },
+      {
+        "id": "bbq_sauce",
+        "qty": 4,
+        "measure": "1 cup"
+      },
+      {
+        "id": "cabbage",
+        "qty": 2,
+        "measure": "3 cups shredded"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "1, shredded"
+      },
+      {
+        "id": "mayo",
+        "qty": 3,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tbsp apple cider"
+      },
+      {
+        "id": "sugar",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tbsp smoked"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "3 cloves garlic"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "1 tbsp (for buns)"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "barbecue",
+      "comfort-food",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Whisk mayo, vinegar, sugar, salt, and pepper. Toss with cabbage and carrots; chill while you cook.",
+      "Season beef with paprika, salt, pepper, and minced garlic. Sear in a Dutch oven on all sides until deeply browned.",
+      "Add 1 cup water and simmer covered 25 minutes until shreddable (or much longer for tougher cuts).",
+      "Shred with two forks; stir half the BBQ sauce in to coat.",
+      "Toast buns with butter. Pile beef on the bottom buns; drizzle more BBQ sauce, top with slaw, cap with the top bun."
+    ],
+    "suggestedSide": "Pickles and chips."
+  },
+  {
+    "id": "italian_beef_pepper_sandwich",
+    "name": "Italian Beef Sandwich with Peppers",
+    "mealType": "dinner",
+    "prepMinutes": 45,
+    "difficulty": "intermediate",
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 2,
+        "measure": "1 1/2 lb chuck roast or sirloin, sliced thin"
+      },
+      {
+        "id": "bread",
+        "qty": 4,
+        "measure": "4 hoagie rolls"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 2,
+        "measure": "8 slices provolone or mozzarella"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 2,
+        "measure": "2, sliced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion sliced + 4 cloves garlic"
+      },
+      {
+        "id": "broth",
+        "qty": 3,
+        "measure": "2 cups beef"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "jalapeno",
+        "qty": 1,
+        "measure": "1, sliced (for giardiniera kick)"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tbsp red wine vinegar"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Season beef with Italian seasoning, paprika, salt, and pepper.",
+      "Sear in olive oil in a wide skillet 4 minutes until deeply browned; lift out.",
+      "In the same pan sauté onion, pepper, garlic, and jalapeño 6 minutes. Stir in vinegar.",
+      "Pour in broth; return beef. Simmer 15 minutes until beef is tender and the jus is rich.",
+      "Toast hoagie rolls and lay 2 slices of cheese on each bottom.",
+      "Pile beef and peppers on top; close with the top roll. Serve a small bowl of the hot jus on the side for dipping."
+    ],
+    "suggestedSide": "A small green salad and the warm jus for dunking."
   }
 ]
