@@ -28402,5 +28402,1867 @@
     ],
     "suggestedSide": "Cornbread for a proper Southern plate.",
     "difficulty": "intermediate"
+  },
+  {
+    "id": "easy_meatloaf",
+    "name": "Easy Weeknight Meatloaf",
+    "mealType": "dinner",
+    "prepMinutes": 45,
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1,
+        "measure": "1 1/2 lb"
+      },
+      {
+        "id": "bread",
+        "qty": 1,
+        "measure": "1/2 cup breadcrumbs (or 2 slices torn)"
+      },
+      {
+        "id": "eggs",
+        "qty": 1,
+        "measure": "1"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 small onion, finely diced"
+      },
+      {
+        "id": "ketchup",
+        "qty": 1,
+        "measure": "1/4 cup + 2 tbsp for glaze"
+      },
+      {
+        "id": "mustard",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "kid-friendly",
+      "filling"
+    ],
+    "instructions": [
+      "Mix ground beef, breadcrumbs, egg, diced onion, 1/4 cup ketchup, mustard, Italian seasoning, salt, and pepper. Don't overmix — just until combined.",
+      "Shape into a loaf on a lined sheet pan (or press into a loaf pan).",
+      "Mix remaining 2 tbsp ketchup with a squeeze of mustard. Spread over the top.",
+      "Bake at 375°F for 40 minutes until the center reaches 160°F.",
+      "Rest 10 minutes before slicing."
+    ],
+    "suggestedSide": "Mashed potatoes and green beans.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "easy_lasagna",
+    "name": "Easy No-Boil Lasagna",
+    "mealType": "dinner",
+    "prepMinutes": 55,
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1,
+        "measure": "1 lb"
+      },
+      {
+        "id": "pasta",
+        "qty": 1,
+        "measure": "9 lasagna noodles (no-boil)"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1,
+        "measure": "1 jar (24 oz) marinara"
+      },
+      {
+        "id": "cottage_cheese",
+        "qty": 1,
+        "measure": "15 oz ricotta or cottage cheese"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1,
+        "measure": "2 cups shredded"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "1/2 cup grated"
+      },
+      {
+        "id": "eggs",
+        "qty": 1,
+        "measure": "1"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "comfort-food",
+      "high-protein",
+      "kid-friendly",
+      "filling"
+    ],
+    "instructions": [
+      "Brown ground beef, drain fat. Stir in marinara sauce.",
+      "Mix ricotta (or cottage cheese) with egg, half the parmesan, Italian seasoning, salt, and pepper.",
+      "Spread 1/2 cup meat sauce in a 9x13 dish. Layer: 3 noodles, 1/3 ricotta mix, 1/3 meat sauce, 1/3 mozzarella. Repeat twice.",
+      "Top with remaining parmesan. Cover tightly with foil.",
+      "Bake at 375°F covered for 35 minutes, then uncover and bake 10 more minutes until bubbly.",
+      "Rest 15 minutes before cutting — it holds together much better."
+    ],
+    "suggestedSide": "Garlic bread and a simple green salad.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "easy_chicken_pot_pie",
+    "name": "Easy Chicken Pot Pie",
+    "mealType": "dinner",
+    "prepMinutes": 40,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "measure": "2, cooked and shredded (or rotisserie)"
+      },
+      {
+        "id": "frozen_mixed_veg",
+        "qty": 1,
+        "measure": "2 cups (peas, carrots, corn)"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "4 tbsp"
+      },
+      {
+        "id": "flour",
+        "qty": 1,
+        "measure": "1/4 cup"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "1 1/2 cups chicken"
+      },
+      {
+        "id": "milk",
+        "qty": 1,
+        "measure": "1/2 cup"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 small onion, diced"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "kid-friendly",
+      "filling"
+    ],
+    "instructions": [
+      "Melt butter in a pot. Sauté onion 3 minutes until soft.",
+      "Stir in flour and cook 1 minute to make a roux.",
+      "Slowly whisk in broth and milk. Simmer until thickened, about 4 minutes.",
+      "Stir in shredded chicken, frozen veggies, salt, and pepper.",
+      "Pour filling into a 9-inch pie dish or oven-safe skillet. Top with a sheet of puff pastry or pie crust, crimping the edges. Cut a few slits for steam.",
+      "Bake at 400°F for 25 minutes until the crust is golden and the filling bubbles."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "chicken_caesar_salad_dinner",
+    "name": "Classic Chicken Caesar Salad",
+    "mealType": "dinner",
+    "prepMinutes": 20,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "measure": "1 large"
+      },
+      {
+        "id": "lettuce",
+        "qty": 1,
+        "measure": "1 large romaine heart, chopped"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "1/4 cup shaved"
+      },
+      {
+        "id": "bread",
+        "qty": 1,
+        "measure": "2 slices, cubed for croutons"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "2 cloves garlic, minced"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "mustard",
+        "qty": 1,
+        "measure": "1 tsp dijon"
+      },
+      {
+        "id": "mayo",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "high-protein",
+      "garden-fresh",
+      "filling"
+    ],
+    "instructions": [
+      "Season chicken with salt and pepper. Sear in 1 tbsp olive oil 5 minutes per side until golden and cooked through. Rest, then slice.",
+      "Toss bread cubes with a drizzle of olive oil and a pinch of salt. Toast in a skillet until crunchy, about 3 minutes.",
+      "Whisk remaining olive oil, lemon juice, minced garlic, dijon, mayo, salt, and pepper into a creamy dressing.",
+      "Toss chopped romaine with the dressing. Top with sliced chicken, croutons, and shaved parmesan."
+    ],
+    "suggestedSide": "A warm baguette to round it out.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "easy_chicken_fajitas",
+    "name": "Easy Chicken Fajitas",
+    "mealType": "dinner",
+    "prepMinutes": 20,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "measure": "1 lb, sliced into strips"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "2, sliced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion, sliced"
+      },
+      {
+        "id": "tortillas",
+        "qty": 1,
+        "measure": "6 flour tortillas"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "measure": "1, cut into wedges"
+      },
+      {
+        "id": "chili_powder",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "sour_cream",
+        "qty": 1,
+        "measure": "for serving"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "high-protein",
+      "quick",
+      "kid-friendly",
+      "veggie-rich"
+    ],
+    "instructions": [
+      "Toss chicken strips with chili powder, cumin, paprika, and salt.",
+      "Heat oil in a large skillet over high heat. Sear chicken 4-5 minutes until charred and cooked through. Remove.",
+      "Add peppers and onion to the same pan. Cook 4 minutes until softened with a bit of char.",
+      "Return chicken and toss everything together.",
+      "Warm tortillas and serve with sour cream and lime wedges."
+    ],
+    "suggestedSide": "Guacamole, salsa, and shredded cheese on the side.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "chicken_stuffing_bake",
+    "name": "Chicken & Stuffing Bake",
+    "mealType": "dinner",
+    "prepMinutes": 40,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "measure": "2, cooked and shredded (or rotisserie)"
+      },
+      {
+        "id": "bread",
+        "qty": 1,
+        "measure": "4 cups cubed (day-old, or stuffing mix)"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "1 1/2 cups chicken"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "4 tbsp, melted"
+      },
+      {
+        "id": "celery",
+        "qty": 1,
+        "measure": "2 stalks, diced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion, diced"
+      },
+      {
+        "id": "canned_soup",
+        "qty": 1,
+        "measure": "1 can cream of chicken or mushroom"
+      },
+      {
+        "id": "frozen_mixed_veg",
+        "qty": 1,
+        "measure": "1 cup (peas, carrots)"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp sage or poultry seasoning"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "kid-friendly",
+      "filling"
+    ],
+    "instructions": [
+      "Sauté onion and celery in 1 tbsp butter until soft, about 4 minutes.",
+      "Mix bread cubes with melted butter, broth, sage, salt, and pepper. Toss until bread absorbs the liquid.",
+      "Stir cream of chicken soup with the shredded chicken and frozen veggies.",
+      "Spread chicken mixture in a greased 9x13 dish. Top evenly with the stuffing.",
+      "Bake at 375°F for 25-30 minutes until the stuffing is golden and crispy on top."
+    ],
+    "suggestedSide": "Cranberry sauce and steamed green beans.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "chicken_ramen_dinner",
+    "name": "Chicken Ramen with Soft-Boiled Egg",
+    "mealType": "dinner",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "chicken_thighs",
+        "qty": 1,
+        "measure": "2 boneless, sliced"
+      },
+      {
+        "id": "ramen",
+        "qty": 1,
+        "measure": "2 packs noodles (discard seasoning packets)"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "4 cups chicken"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1 tbsp fresh, sliced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "3 cloves garlic, smashed"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "3, sliced"
+      },
+      {
+        "id": "frozen_spinach",
+        "qty": 1,
+        "measure": "1 cup fresh spinach or bok choy"
+      }
+    ],
+    "tags": [
+      "asian",
+      "comfort-food",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Soft-boil eggs: lower into boiling water for 6 1/2 minutes. Ice bath. Peel and halve.",
+      "Sear chicken in a drizzle of oil 3 minutes per side until golden. Remove and slice.",
+      "In the same pot, sauté garlic and ginger 30 seconds. Add broth and soy sauce, bring to a simmer.",
+      "Cook ramen noodles in the broth 3 minutes until tender.",
+      "Divide noodles and broth into bowls. Top with sliced chicken, soft-boiled egg, spinach, green onion, and a drizzle of sesame oil."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "beef_bourguignon",
+    "name": "Beef Bourguignon",
+    "mealType": "dinner",
+    "prepMinutes": 90,
+    "ingredients": [
+      {
+        "id": "beef_roast",
+        "qty": 1,
+        "measure": "2 lb chuck, cut into 2-inch cubes"
+      },
+      {
+        "id": "bacon",
+        "qty": 1,
+        "measure": "4 strips, diced"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "3, cut into chunks"
+      },
+      {
+        "id": "potato",
+        "qty": 1,
+        "measure": "3 medium, quartered"
+      },
+      {
+        "id": "mushrooms",
+        "qty": 1,
+        "measure": "8 oz, quartered"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion + 4 cloves garlic"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "2 cups beef"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1,
+        "measure": "2 tbsp tomato paste"
+      },
+      {
+        "id": "flour",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp thyme"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "comfort-food",
+      "high-protein",
+      "filling",
+      "set-and-forget"
+    ],
+    "instructions": [
+      "Cook diced bacon in a heavy pot until crispy. Remove, keep the fat.",
+      "Pat beef cubes very dry. Season with salt and pepper. Sear in batches in the bacon fat until deeply browned on all sides, about 8 minutes total. Remove.",
+      "Add butter, then sauté onion, carrots, and garlic 4 minutes. Stir in flour and tomato paste, cook 1 minute.",
+      "Add broth, thyme, and a pinch of salt. Return beef and bacon. Bring to a boil.",
+      "Cover and braise in a 325°F oven for 1 hour.",
+      "Add potatoes and mushrooms. Cover and cook 30 more minutes until beef is fork-tender and potatoes are done.",
+      "Season with salt and pepper."
+    ],
+    "suggestedSide": "Crusty bread for soaking up the sauce.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "easy_jambalaya",
+    "name": "Easy One-Pot Jambalaya",
+    "mealType": "dinner",
+    "prepMinutes": 35,
+    "ingredients": [
+      {
+        "id": "chicken_thighs",
+        "qty": 1,
+        "measure": "1 lb boneless, cubed"
+      },
+      {
+        "id": "sausage",
+        "qty": 1,
+        "measure": "2 links andouille or smoked, sliced"
+      },
+      {
+        "id": "white_rice",
+        "qty": 1,
+        "measure": "1 1/2 cups long-grain, uncooked"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can (14 oz) diced"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "2 1/2 cups chicken"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, diced"
+      },
+      {
+        "id": "celery",
+        "qty": 1,
+        "measure": "2 stalks, diced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion + 3 cloves garlic"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1/2 tsp cayenne"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Brown chicken and sausage in olive oil 5 minutes. Remove.",
+      "Sauté onion, celery, bell pepper, and garlic 4 minutes in the same pot.",
+      "Stir in paprika and cayenne, cook 30 seconds.",
+      "Add rice, tomatoes, broth, and return the meat. Stir once.",
+      "Bring to a boil, then cover and reduce to low. Simmer 20 minutes without lifting the lid.",
+      "Fluff with a fork, season with salt and pepper."
+    ],
+    "suggestedSide": "Hot sauce on the table and a cold drink.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "roasted_pork_tenderloin",
+    "name": "Roasted Pork Tenderloin with Garlic & Herbs",
+    "mealType": "dinner",
+    "prepMinutes": 30,
+    "ingredients": [
+      {
+        "id": "pork_chops",
+        "qty": 1,
+        "measure": "1 pork tenderloin (about 1 1/4 lb)"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "4 cloves garlic, minced"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "mustard",
+        "qty": 1,
+        "measure": "1 tbsp dijon"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp rosemary + 1 tsp thyme"
+      },
+      {
+        "id": "honey",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      }
+    ],
+    "tags": [
+      "high-protein",
+      "comfort-food",
+      "filling"
+    ],
+    "instructions": [
+      "Mix garlic, olive oil, dijon, rosemary, thyme, honey, salt, and pepper into a paste.",
+      "Rub all over the pork tenderloin.",
+      "Sear in a hot oven-safe skillet 2 minutes per side until browned.",
+      "Transfer to a 400°F oven and roast 15-18 minutes until internal temp hits 145°F.",
+      "Rest 5 minutes before slicing into medallions."
+    ],
+    "suggestedSide": "Roasted potatoes and steamed green beans.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "taco_casserole",
+    "name": "Taco Casserole",
+    "mealType": "dinner",
+    "prepMinutes": 35,
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1,
+        "measure": "1 lb"
+      },
+      {
+        "id": "tortillas",
+        "qty": 1,
+        "measure": "6 corn tortillas"
+      },
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "measure": "1 can (15 oz), drained"
+      },
+      {
+        "id": "corn",
+        "qty": 1,
+        "measure": "1 cup kernels"
+      },
+      {
+        "id": "taco_seasoning",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1,
+        "measure": "1 cup salsa or tomato sauce"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1 1/2 cups shredded"
+      },
+      {
+        "id": "sour_cream",
+        "qty": 1,
+        "measure": "for serving"
+      },
+      {
+        "id": "cilantro",
+        "qty": 1,
+        "measure": "for garnish"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "comfort-food",
+      "high-protein",
+      "kid-friendly",
+      "filling"
+    ],
+    "instructions": [
+      "Brown ground beef, drain fat. Stir in taco seasoning and 1/4 cup water. Simmer 3 minutes.",
+      "Mix beef with black beans and corn.",
+      "Spread a thin layer of salsa in a greased 9x13 dish. Layer: tortillas, half the beef mix, half the cheese. Repeat. Top with remaining salsa and cheese.",
+      "Bake at 375°F for 20 minutes until bubbly and golden.",
+      "Let rest 5 minutes. Top with sour cream and cilantro."
+    ],
+    "suggestedSide": "Shredded lettuce, diced tomatoes, and hot sauce.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "ham_and_beans",
+    "name": "Ham & Beans with Cornbread",
+    "mealType": "dinner",
+    "prepMinutes": 45,
+    "ingredients": [
+      {
+        "id": "deli_turkey",
+        "qty": 1,
+        "measure": "1 lb ham steak or leftover ham, cubed"
+      },
+      {
+        "id": "pinto_beans",
+        "qty": 1,
+        "measure": "2 cans (15 oz each) pinto or great northern beans, drained"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion + 3 cloves garlic"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "3 cups chicken"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "2, diced"
+      },
+      {
+        "id": "celery",
+        "qty": 1,
+        "measure": "2 stalks, diced"
+      },
+      {
+        "id": "cornbread_mix",
+        "qty": 1,
+        "measure": "1 box, prepared per package"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tbsp apple cider"
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling",
+      "budget"
+    ],
+    "instructions": [
+      "Sauté onion, garlic, carrots, and celery in a heavy pot 4 minutes.",
+      "Add cubed ham and cook 3 minutes until edges brown.",
+      "Add beans, broth, salt, and pepper. Bring to a boil, then simmer 30 minutes, mashing some beans against the side for a creamy broth.",
+      "Stir in apple cider vinegar. Season with salt and hot sauce.",
+      "Serve in bowls with a square of warm cornbread."
+    ],
+    "suggestedSide": "Warm buttered cornbread and pickled jalapeños.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "chili_cheese_baked_potato",
+    "name": "Chili Cheese Baked Potato",
+    "mealType": "dinner",
+    "prepMinutes": 50,
+    "ingredients": [
+      {
+        "id": "potato",
+        "qty": 2,
+        "measure": "2 large russet"
+      },
+      {
+        "id": "ground_beef",
+        "qty": 1,
+        "measure": "1/2 lb"
+      },
+      {
+        "id": "kidney_beans",
+        "qty": 1,
+        "measure": "1 can (15 oz), drained"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can (14 oz) diced"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1/2 cup shredded"
+      },
+      {
+        "id": "chili_powder",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion, diced"
+      },
+      {
+        "id": "sour_cream",
+        "qty": 1,
+        "measure": "for serving"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "2, sliced"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Prick potatoes with a fork. Bake at 400°F for 45 minutes until tender, or microwave 8-10 minutes.",
+      "While potatoes bake, brown ground beef with onion. Drain fat.",
+      "Add beans, tomatoes, chili powder, cumin, and salt. Simmer 15 minutes.",
+      "Split potatoes open and fluff the insides. Ladle chili over each.",
+      "Top with cheddar, sour cream, and green onion."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "broccoli_cheddar_baked_potato",
+    "name": "Broccoli Cheddar Baked Potato",
+    "mealType": "dinner",
+    "prepMinutes": 50,
+    "ingredients": [
+      {
+        "id": "potato",
+        "qty": 2,
+        "measure": "2 large russet"
+      },
+      {
+        "id": "frozen_broccoli",
+        "qty": 1,
+        "measure": "2 cups florets, steamed"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1 cup shredded"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "sour_cream",
+        "qty": 1,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "bacon",
+        "qty": 1,
+        "measure": "3 strips, cooked and crumbled"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "vegetarian",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Bake potatoes at 400°F for 45 minutes until tender, or microwave 8-10 minutes.",
+      "Steam broccoli until just tender, about 4 minutes.",
+      "Split potatoes and fluff insides with a fork. Add butter and a pinch of salt.",
+      "Pile broccoli into each potato. Smother with cheddar.",
+      "Pop back in the oven 3 minutes to melt the cheese. Top with bacon crumbles and sour cream."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "loaded_taco_baked_potato",
+    "name": "Loaded Taco Baked Potato",
+    "mealType": "dinner",
+    "prepMinutes": 50,
+    "ingredients": [
+      {
+        "id": "potato",
+        "qty": 2,
+        "measure": "2 large russet"
+      },
+      {
+        "id": "ground_turkey",
+        "qty": 1,
+        "measure": "1/2 lb"
+      },
+      {
+        "id": "taco_seasoning",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1/2 cup shredded"
+      },
+      {
+        "id": "salsa",
+        "qty": 1,
+        "measure": "1/4 cup"
+      },
+      {
+        "id": "lettuce",
+        "qty": 1,
+        "measure": "1/2 cup shredded"
+      },
+      {
+        "id": "sour_cream",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 1,
+        "measure": "1, diced"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "comfort-food",
+      "high-protein",
+      "kid-friendly",
+      "filling"
+    ],
+    "instructions": [
+      "Bake potatoes at 400°F for 45 minutes until tender, or microwave 8-10 minutes.",
+      "Brown ground turkey, drain fat. Stir in taco seasoning and 1/4 cup water, simmer 3 minutes.",
+      "Split potatoes and fluff insides.",
+      "Load with taco meat, salsa, cheddar, tomato, lettuce, and sour cream."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "philly_cheesesteak_baked_potato",
+    "name": "Philly Cheesesteak Baked Potato",
+    "mealType": "dinner",
+    "prepMinutes": 50,
+    "ingredients": [
+      {
+        "id": "potato",
+        "qty": 2,
+        "measure": "2 large russet"
+      },
+      {
+        "id": "steak",
+        "qty": 1,
+        "measure": "8 oz sirloin, sliced thin"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, sliced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion, sliced"
+      },
+      {
+        "id": "mushrooms",
+        "qty": 1,
+        "measure": "4 oz, sliced"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1,
+        "measure": "4 slices provolone or 1/2 cup mozzarella"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Bake potatoes at 400°F for 45 minutes until tender, or microwave 8-10 minutes.",
+      "Sauté onion, peppers, and mushrooms in olive oil 5 minutes until softened.",
+      "Push veggies aside, add steak slices and cook 2-3 minutes until just done.",
+      "Toss everything together, season with salt and pepper.",
+      "Split potatoes, pile with the cheesesteak filling, and drape cheese over the top. Broil 1-2 minutes to melt."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "southern_smothered_pork_chops",
+    "name": "Southern Smothered Pork Chops",
+    "mealType": "dinner",
+    "prepMinutes": 35,
+    "ingredients": [
+      {
+        "id": "pork_chops",
+        "qty": 1,
+        "measure": "4 bone-in chops"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 large onion, sliced into rings"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "1 1/2 cups chicken"
+      },
+      {
+        "id": "flour",
+        "qty": 1,
+        "measure": "1/4 cup"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Season pork chops with salt, pepper, and paprika. Dredge in flour, shaking off excess (save the leftover flour).",
+      "Sear chops in oil over medium-high heat 3 minutes per side until golden. Remove.",
+      "Melt butter in the same skillet. Add onion rings and cook 5 minutes until softened and golden.",
+      "Sprinkle 2 tbsp of the leftover flour over the onions. Stir 1 minute.",
+      "Pour in broth slowly, whisking to make a smooth gravy. Simmer 2 minutes until thickened.",
+      "Nestle pork chops back into the gravy. Cover and simmer 15 minutes until chops are cooked through."
+    ],
+    "suggestedSide": "White rice or mashed potatoes to catch the gravy.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "southern_chicken_fried_steak_skillet",
+    "name": "Southern Chicken-Fried Steak Skillet with Gravy",
+    "mealType": "dinner",
+    "prepMinutes": 30,
+    "ingredients": [
+      {
+        "id": "steak",
+        "qty": 1,
+        "measure": "1 lb cube steak or thin-cut sirloin"
+      },
+      {
+        "id": "flour",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2, beaten"
+      },
+      {
+        "id": "milk",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1,
+        "measure": "1/2 cup for frying"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "1 tsp"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Season flour with salt and pepper. Dip steaks in beaten egg, then dredge in seasoned flour. Double-dip for extra crunch.",
+      "Fry in hot oil over medium-high heat 3-4 minutes per side until golden and crispy. Drain on paper towels.",
+      "Pour off all but 3 tbsp of oil. Whisk in 3 tbsp of the leftover flour. Cook 1 minute.",
+      "Slowly pour in milk, whisking constantly. Simmer until the gravy thickens, about 3 minutes. Season with salt and lots of pepper.",
+      "Pour cream gravy over the steaks."
+    ],
+    "suggestedSide": "Mashed potatoes and buttered corn.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "southern_shrimp_grits",
+    "name": "Southern Shrimp & Grits",
+    "mealType": "dinner",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "shrimp",
+        "qty": 1,
+        "measure": "1 lb, peeled and deveined"
+      },
+      {
+        "id": "bacon",
+        "qty": 1,
+        "measure": "4 strips, diced"
+      },
+      {
+        "id": "corn",
+        "qty": 1,
+        "measure": "1 cup quick-cooking grits"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1/2 cup shredded sharp"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "3 cloves garlic, minced"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "3, sliced"
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Cook grits according to package directions. Stir in butter, cheddar, salt, and pepper. Keep warm.",
+      "Cook diced bacon until crispy. Remove bacon, keep the fat.",
+      "Season shrimp with salt, pepper, and a pinch of paprika. Sear in the bacon fat 2 minutes per side until pink.",
+      "Add garlic, cook 30 seconds. Squeeze lemon juice over the shrimp.",
+      "Spoon cheesy grits into bowls. Top with shrimp, crispy bacon, green onion, and hot sauce."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "southern_fried_cabbage_sausage",
+    "name": "Southern Fried Cabbage with Sausage",
+    "mealType": "dinner",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "cabbage",
+        "qty": 1,
+        "measure": "1/2 head, chopped"
+      },
+      {
+        "id": "sausage",
+        "qty": 1,
+        "measure": "2 links smoked sausage, sliced"
+      },
+      {
+        "id": "bacon",
+        "qty": 1,
+        "measure": "3 strips, diced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion, sliced"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, sliced"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tbsp apple cider"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "budget",
+      "veggie-rich"
+    ],
+    "instructions": [
+      "Cook diced bacon in a large skillet until crispy. Remove.",
+      "Brown sliced sausage in the bacon fat 3 minutes. Remove.",
+      "Add butter, onion, and bell pepper. Cook 3 minutes.",
+      "Add chopped cabbage and toss. Cover and cook 10 minutes, stirring occasionally, until cabbage is tender and edges are golden.",
+      "Return bacon and sausage. Splash with apple cider vinegar and season with salt and pepper."
+    ],
+    "suggestedSide": "Cornbread and a glass of sweet tea.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "southern_sausage_gravy_biscuits",
+    "name": "Southern Sausage Gravy & Biscuit Skillet",
+    "mealType": "dinner",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "sausage",
+        "qty": 1,
+        "measure": "1 lb breakfast sausage"
+      },
+      {
+        "id": "flour",
+        "qty": 1,
+        "measure": "1/4 cup"
+      },
+      {
+        "id": "milk",
+        "qty": 1,
+        "measure": "2 1/2 cups"
+      },
+      {
+        "id": "bread",
+        "qty": 1,
+        "measure": "6 biscuits (canned or homemade)"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "1 tsp (generous)"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Brown sausage in a large skillet, breaking into crumbles. Don't drain the fat.",
+      "Sprinkle flour over the sausage and stir 1 minute.",
+      "Slowly pour in milk, whisking constantly. Simmer 4-5 minutes until thick and creamy.",
+      "Season generously with pepper and salt.",
+      "Split warm biscuits and smother with gravy."
+    ],
+    "suggestedSide": "Fried eggs on top make it a complete meal.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "rotisserie_chicken_tacos",
+    "name": "Rotisserie Chicken Tacos",
+    "mealType": "dinner",
+    "prepMinutes": 15,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "measure": "2 cups shredded rotisserie chicken"
+      },
+      {
+        "id": "tortillas",
+        "qty": 1,
+        "measure": "8 small corn or flour tortillas"
+      },
+      {
+        "id": "cabbage",
+        "qty": 1,
+        "measure": "1 cup shredded"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "measure": "1, cut into wedges"
+      },
+      {
+        "id": "salsa",
+        "qty": 1,
+        "measure": "1/2 cup"
+      },
+      {
+        "id": "avocado",
+        "qty": 1,
+        "measure": "1, sliced"
+      },
+      {
+        "id": "cilantro",
+        "qty": 1,
+        "measure": "for garnish"
+      },
+      {
+        "id": "sour_cream",
+        "qty": 1,
+        "measure": "for serving"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "high-protein",
+      "quick",
+      "no-cook",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Warm tortillas in a dry skillet or over an open flame.",
+      "Pile shredded rotisserie chicken onto each tortilla.",
+      "Top with shredded cabbage, salsa, avocado, cilantro, and a squeeze of lime.",
+      "Serve with sour cream on the side."
+    ],
+    "suggestedSide": "Spanish rice or refried beans.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "rotisserie_chicken_enchiladas",
+    "name": "Rotisserie Chicken Enchiladas",
+    "mealType": "dinner",
+    "prepMinutes": 30,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "measure": "3 cups shredded rotisserie chicken"
+      },
+      {
+        "id": "tortillas",
+        "qty": 1,
+        "measure": "8 flour tortillas"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1,
+        "measure": "2 cups enchilada sauce"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "2 cups shredded"
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 1,
+        "measure": "4 oz, softened"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion, diced"
+      },
+      {
+        "id": "sour_cream",
+        "qty": 1,
+        "measure": "for serving"
+      },
+      {
+        "id": "cilantro",
+        "qty": 1,
+        "measure": "for garnish"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "comfort-food",
+      "high-protein",
+      "filling",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Mix shredded chicken with softened cream cheese, diced onion, 1 cup cheddar, and salt.",
+      "Spread 1/2 cup enchilada sauce on the bottom of a 9x13 dish.",
+      "Fill each tortilla with the chicken mixture, roll up, and place seam-side down in the dish.",
+      "Pour remaining sauce over the top. Sprinkle with remaining cheddar.",
+      "Bake at 375°F for 20 minutes until bubbly. Top with sour cream and cilantro."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "rotisserie_chicken_fried_rice",
+    "name": "Rotisserie Chicken Fried Rice",
+    "mealType": "dinner",
+    "prepMinutes": 15,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "measure": "2 cups shredded rotisserie chicken"
+      },
+      {
+        "id": "white_rice",
+        "qty": 1,
+        "measure": "3 cups cooked, cold (day-old is best)"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "measure": "2"
+      },
+      {
+        "id": "frozen_peas",
+        "qty": 1,
+        "measure": "1/2 cup"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "1, diced small"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "4, sliced"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "2 cloves garlic, minced"
+      }
+    ],
+    "tags": [
+      "asian",
+      "high-protein",
+      "quick",
+      "kid-friendly",
+      "filling"
+    ],
+    "instructions": [
+      "Heat oil in a wok or large skillet over high heat.",
+      "Add carrots and peas, stir-fry 2 minutes.",
+      "Push veggies to the side. Scramble eggs in the open space, then break into pieces.",
+      "Add cold rice and soy sauce. Toss over high heat 3 minutes until rice is hot and slightly crispy.",
+      "Add shredded chicken and garlic, toss 1 minute to heat through.",
+      "Finish with sesame oil and green onion."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "rotisserie_chicken_noodle_soup",
+    "name": "Rotisserie Chicken Noodle Soup",
+    "mealType": "dinner",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "measure": "2 cups shredded rotisserie chicken"
+      },
+      {
+        "id": "pasta",
+        "qty": 1,
+        "measure": "6 oz egg noodles"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "6 cups chicken"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "2, sliced"
+      },
+      {
+        "id": "celery",
+        "qty": 1,
+        "measure": "2 stalks, sliced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion + 2 cloves garlic"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp thyme"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Melt butter in a pot. Sauté onion, carrots, celery, and garlic 4 minutes.",
+      "Add broth, thyme, salt, and pepper. Bring to a boil.",
+      "Add egg noodles and cook 7 minutes until tender.",
+      "Stir in shredded rotisserie chicken and heat through, about 2 minutes.",
+      "Taste and adjust seasoning."
+    ],
+    "suggestedSide": "Saltine crackers and a warm roll.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "rotisserie_chicken_quesadillas",
+    "name": "Rotisserie Chicken Quesadillas",
+    "mealType": "lunch",
+    "prepMinutes": 12,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "measure": "1 1/2 cups shredded rotisserie chicken"
+      },
+      {
+        "id": "tortillas",
+        "qty": 1,
+        "measure": "4 large flour tortillas"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1 cup shredded"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1/2, diced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/4 onion, diced"
+      },
+      {
+        "id": "salsa",
+        "qty": 1,
+        "measure": "for dipping"
+      },
+      {
+        "id": "sour_cream",
+        "qty": 1,
+        "measure": "for dipping"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "1 tbsp"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "high-protein",
+      "quick",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Lay 2 tortillas flat. Spread chicken, cheese, bell pepper, and onion on each. Top with the remaining tortillas.",
+      "Melt butter in a skillet over medium heat. Cook each quesadilla 3 minutes per side until golden and cheese is melted.",
+      "Cut into wedges. Serve with salsa and sour cream."
+    ],
+    "difficulty": "beginner"
   }
 ]
