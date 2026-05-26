@@ -25681,5 +25681,740 @@
     ],
     "suggestedSide": "Grilled chicken or sausage on the side to make it heartier.",
     "difficulty": "beginner"
+  },
+  {
+    "id": "roasted_red_pepper_soup",
+    "name": "Roasted Red Pepper & Tomato Soup",
+    "mealType": "lunch",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "3 red, halved and seeded"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can (14 oz) diced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 small onion + 2 cloves garlic"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "1 cup vegetable or chicken"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 1,
+        "measure": "2 tbsp (or a splash of heavy cream)"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp basil"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "comfort-food",
+      "vegetarian",
+      "veggie-rich"
+    ],
+    "instructions": [
+      "Broil pepper halves skin-side up until charred, about 8 minutes. Let steam in a covered bowl, then peel.",
+      "Sauté onion and garlic in olive oil until soft, 4 minutes.",
+      "Add roasted peppers, canned tomatoes, broth, and basil. Simmer 10 minutes.",
+      "Blend until smooth. Stir in cream cheese until silky.",
+      "Season with salt and pepper and serve."
+    ],
+    "suggestedSide": "A grilled cheese sandwich for the classic combo.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "coconut_curry_sweet_potato_soup",
+    "name": "Coconut Curry Sweet Potato Soup",
+    "mealType": "lunch",
+    "prepMinutes": 28,
+    "ingredients": [
+      {
+        "id": "sweet_potato",
+        "qty": 1,
+        "measure": "2 medium, peeled and cubed"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 small onion + 2 cloves garlic"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "2 cups vegetable"
+      },
+      {
+        "id": "milk",
+        "qty": 1,
+        "measure": "1/2 cup coconut milk"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1 tbsp fresh, grated"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1 tsp curry powder"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "indian",
+      "vegetarian",
+      "comfort-food",
+      "veggie-rich"
+    ],
+    "instructions": [
+      "Sauté onion, garlic, and ginger in olive oil until fragrant, 3 minutes.",
+      "Add curry powder and stir 30 seconds until toasty.",
+      "Add sweet potato and broth. Bring to a boil, then simmer 15 minutes until tender.",
+      "Blend until smooth. Stir in coconut milk and lime juice.",
+      "Season with salt and serve with a swirl of extra coconut milk."
+    ],
+    "suggestedSide": "Warm naan or crusty bread for dipping.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "italian_sausage_white_bean_soup",
+    "name": "Italian Sausage & White Bean Soup",
+    "mealType": "lunch",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "sausage",
+        "qty": 1,
+        "measure": "2 links Italian, casings removed"
+      },
+      {
+        "id": "kidney_beans",
+        "qty": 1,
+        "measure": "1 can (15 oz) cannellini or white beans, drained"
+      },
+      {
+        "id": "frozen_spinach",
+        "qty": 1,
+        "measure": "2 cups (or 1/2 block frozen)"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can (14 oz) diced"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "2 cups chicken"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 small onion + 3 cloves garlic"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "for serving"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "comfort-food",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Brown sausage in olive oil, breaking into crumbles, about 5 minutes.",
+      "Add onion and garlic, cook 3 minutes until softened.",
+      "Stir in tomatoes, broth, beans, and Italian seasoning. Simmer 12 minutes.",
+      "Add spinach and cook 2 more minutes until wilted.",
+      "Ladle into bowls and top with grated parmesan."
+    ],
+    "suggestedSide": "Crusty Italian bread for sopping up the broth.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "thai_chicken_coconut_soup",
+    "name": "Thai Coconut Chicken Soup (Tom Kha Gai)",
+    "mealType": "lunch",
+    "prepMinutes": 22,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "measure": "1, sliced thin"
+      },
+      {
+        "id": "milk",
+        "qty": 1,
+        "measure": "1 can (13.5 oz) coconut milk"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "1 cup chicken"
+      },
+      {
+        "id": "mushrooms",
+        "qty": 1,
+        "measure": "4 oz, sliced"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1-inch piece, sliced into coins"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1,
+        "measure": "1 tbsp fish sauce (or soy sauce)"
+      },
+      {
+        "id": "sugar",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "cilantro",
+        "qty": 1,
+        "measure": "for garnish"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "2, sliced"
+      }
+    ],
+    "tags": [
+      "thai",
+      "asian",
+      "comfort-food",
+      "high-protein"
+    ],
+    "instructions": [
+      "Bring coconut milk, broth, and ginger slices to a gentle simmer.",
+      "Add chicken and mushrooms. Cook 6-8 minutes until chicken is cooked through.",
+      "Stir in fish sauce (or soy sauce), sugar, and lime juice.",
+      "Ladle into bowls and top with cilantro and green onion."
+    ],
+    "suggestedSide": "Steamed jasmine rice on the side.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "smoky_corn_poblano_soup",
+    "name": "Smoky Corn & Poblano Soup",
+    "mealType": "lunch",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "corn",
+        "qty": 1,
+        "measure": "3 cups kernels (fresh or frozen)"
+      },
+      {
+        "id": "jalapeno",
+        "qty": 1,
+        "measure": "1 poblano pepper, charred and diced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 small onion + 2 cloves garlic"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "2 cups chicken or vegetable"
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1/2 tsp smoked"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "comfort-food",
+      "veggie-rich"
+    ],
+    "instructions": [
+      "Char the poblano under the broiler or over a flame until blistered. Peel, seed, and dice.",
+      "Sauté onion and garlic in olive oil 3 minutes. Add cumin and smoked paprika, stir 30 seconds.",
+      "Add corn and broth. Simmer 12 minutes.",
+      "Blend half the soup until smooth, then stir back in for a chunky-creamy texture.",
+      "Stir in cream cheese, diced poblano, and lime juice. Season with salt."
+    ],
+    "suggestedSide": "Warm tortilla chips or cornbread.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "french_onion_soup",
+    "name": "Classic French Onion Soup",
+    "mealType": "dinner",
+    "prepMinutes": 45,
+    "ingredients": [
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "4 large onions, thinly sliced"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "4 cups beef broth"
+      },
+      {
+        "id": "flour",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "bread",
+        "qty": 1,
+        "measure": "2 thick slices, toasted"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1,
+        "measure": "1 cup gruyère or swiss, shredded"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tbsp dry white wine or sherry vinegar"
+      },
+      {
+        "id": "sugar",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "comfort-food",
+      "filling",
+      "set-and-forget"
+    ],
+    "instructions": [
+      "Melt butter in a heavy pot over medium-low heat. Add onions and sugar. Cook slowly, stirring every few minutes, for 25-30 minutes until deeply caramelized and golden.",
+      "Sprinkle flour over the onions and stir 1 minute.",
+      "Add wine or sherry vinegar and scrape up any fond. Pour in broth and simmer 10 minutes.",
+      "Season with salt and pepper. Ladle into oven-safe bowls.",
+      "Float a toasted bread slice on each bowl, pile on cheese, and broil 2-3 minutes until bubbly and golden."
+    ],
+    "suggestedSide": "A simple green salad with a sharp vinaigrette.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "pork_green_chile_stew",
+    "name": "Pork & Green Chile Stew",
+    "mealType": "dinner",
+    "prepMinutes": 40,
+    "ingredients": [
+      {
+        "id": "pork_chops",
+        "qty": 1,
+        "measure": "1 lb pork shoulder, cubed"
+      },
+      {
+        "id": "jalapeno",
+        "qty": 1,
+        "measure": "2 poblano or Hatch chiles, roasted and diced"
+      },
+      {
+        "id": "potato",
+        "qty": 1,
+        "measure": "2 medium, cubed"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion + 3 cloves garlic"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "3 cups chicken"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "cilantro",
+        "qty": 1,
+        "measure": "for garnish"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "measure": "1, cut into wedges"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "comfort-food",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Season pork with salt, pepper, and cumin. Brown in olive oil in a heavy pot, about 5 minutes. Remove.",
+      "Sauté onion and garlic in the same pot 3 minutes.",
+      "Return pork to the pot. Add potatoes, roasted chiles, and broth.",
+      "Bring to a boil, then simmer 25 minutes until pork is fork-tender and potatoes are cooked through.",
+      "Ladle into bowls and serve with cilantro and lime wedges."
+    ],
+    "suggestedSide": "Warm flour tortillas for dipping.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "creamy_mushroom_thyme_soup",
+    "name": "Creamy Wild Mushroom & Thyme Soup",
+    "mealType": "dinner",
+    "prepMinutes": 30,
+    "ingredients": [
+      {
+        "id": "mushrooms",
+        "qty": 1,
+        "measure": "1 lb mixed mushrooms, sliced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion + 3 cloves garlic"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "3 cups chicken or vegetable"
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 1,
+        "measure": "3 tbsp heavy cream or cream cheese"
+      },
+      {
+        "id": "flour",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp dried thyme"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1,
+        "measure": "1 tsp (for depth)"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "comfort-food",
+      "vegetarian",
+      "filling"
+    ],
+    "instructions": [
+      "Melt butter in a pot over medium-high heat. Add mushrooms in a single layer and cook without stirring 4 minutes for a deep sear. Stir and cook 3 more minutes.",
+      "Add onion and garlic, cook 3 minutes. Sprinkle in flour and thyme, stir 1 minute.",
+      "Pour in broth and soy sauce. Simmer 12 minutes.",
+      "Blend half the soup for a creamy-chunky texture, or blend fully for smooth.",
+      "Stir in cream, season with salt and pepper, and serve."
+    ],
+    "suggestedSide": "Crusty sourdough bread and salted butter.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "shrimp_andouille_gumbo",
+    "name": "Shrimp & Sausage Gumbo",
+    "mealType": "dinner",
+    "prepMinutes": 40,
+    "ingredients": [
+      {
+        "id": "shrimp",
+        "qty": 1,
+        "measure": "8 oz, peeled and deveined"
+      },
+      {
+        "id": "sausage",
+        "qty": 1,
+        "measure": "2 links andouille or smoked, sliced"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, diced"
+      },
+      {
+        "id": "celery",
+        "qty": 1,
+        "measure": "2 stalks, diced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion + 3 cloves garlic"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can (14 oz) diced"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "3 cups chicken"
+      },
+      {
+        "id": "flour",
+        "qty": 1,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "white_rice",
+        "qty": 1,
+        "measure": "1 cup cooked, for serving"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Make a roux: whisk flour into oil in a heavy pot over medium heat. Stir constantly 8-10 minutes until it turns deep peanut-butter brown.",
+      "Add onion, celery, bell pepper, and garlic to the roux. Cook 5 minutes until softened.",
+      "Stir in tomatoes, broth, paprika, salt, and pepper. Bring to a boil, then simmer 15 minutes.",
+      "Add sliced sausage and cook 5 minutes. Add shrimp and cook 3 more minutes until pink.",
+      "Serve over a scoop of white rice."
+    ],
+    "suggestedSide": "Hot sauce on the table and a cold beer.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "miso_ginger_salmon_soup",
+    "name": "Miso Ginger Soup with Salmon & Greens",
+    "mealType": "dinner",
+    "prepMinutes": 20,
+    "ingredients": [
+      {
+        "id": "salmon",
+        "qty": 1,
+        "measure": "6 oz fillet, cubed"
+      },
+      {
+        "id": "frozen_spinach",
+        "qty": 1,
+        "measure": "2 cups fresh spinach or bok choy"
+      },
+      {
+        "id": "mushrooms",
+        "qty": 1,
+        "measure": "4 oz, sliced"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "3 cups dashi or chicken broth"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1,
+        "measure": "2 tbsp white miso paste"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1 tbsp fresh, grated"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "3, sliced"
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "tofu",
+        "qty": 1,
+        "measure": "4 oz soft, cubed (optional)"
+      }
+    ],
+    "tags": [
+      "asian",
+      "high-protein",
+      "low-carb",
+      "veggie-rich"
+    ],
+    "instructions": [
+      "Bring broth and ginger to a simmer. Add mushrooms and cook 3 minutes.",
+      "Add salmon cubes and cook gently 4 minutes until just cooked through.",
+      "Remove from heat. Stir miso paste into a ladleful of broth until dissolved, then stir back into the pot.",
+      "Add spinach and tofu, letting the residual heat wilt the greens.",
+      "Drizzle with sesame oil and top with green onion."
+    ],
+    "suggestedSide": "A small bowl of steamed rice.",
+    "difficulty": "intermediate"
   }
 ]
