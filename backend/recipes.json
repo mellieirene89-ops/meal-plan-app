@@ -30562,5 +30562,630 @@
     ],
     "suggestedSide": "A simple green salad or steamed corn.",
     "difficulty": "beginner"
+  },
+  {
+    "id": "skillet_pizza",
+    "name": "Cast Iron Skillet Pizza",
+    "mealType": "dinner",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "flour",
+        "qty": 1,
+        "measure": "1 1/2 cups (or store-bought pizza dough)"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1,
+        "measure": "1/2 cup pizza or marinara sauce"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1,
+        "measure": "1 1/2 cups shredded"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "2 tbsp grated"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "2 cloves garlic, minced"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      }
+    ],
+    "tags": [
+      "italian",
+      "comfort-food",
+      "kid-friendly",
+      "vegetarian"
+    ],
+    "instructions": [
+      "If using homemade dough: mix flour, salt, 1/2 cup warm water, 1 tsp olive oil, and a pinch of yeast. Knead 5 minutes and let rest 10 minutes. Or use store-bought dough.",
+      "Coat a cast iron skillet with olive oil. Press the dough into the skillet, pushing it up the sides slightly.",
+      "Cook on the stovetop over medium heat 3 minutes until the bottom starts to crisp.",
+      "Spread sauce over the dough. Top with mozzarella, garlic, and Italian seasoning.",
+      "Transfer to a 475°F oven (or keep on the stovetop with a lid) for 10-12 minutes until the cheese is bubbly and the crust is golden.",
+      "Finish with grated parmesan. Let cool 2 minutes before slicing."
+    ],
+    "suggestedSide": "Add your favorite toppings — pepperoni, sausage, peppers, mushrooms.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "classic_tuna_salad",
+    "name": "Classic Tuna Salad with Celery & Dill Pickle",
+    "mealType": "lunch",
+    "prepMinutes": 10,
+    "ingredients": [
+      {
+        "id": "canned_tuna",
+        "qty": 1,
+        "measure": "2 cans (5 oz each), drained"
+      },
+      {
+        "id": "celery",
+        "qty": 1,
+        "measure": "2 stalks, diced small"
+      },
+      {
+        "id": "mayo",
+        "qty": 1,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "mustard",
+        "qty": 1,
+        "measure": "1 tsp dijon"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "2 tbsp red onion, finely diced"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1/2, juiced"
+      },
+      {
+        "id": "bread",
+        "qty": 1,
+        "measure": "4 slices for sandwiches"
+      },
+      {
+        "id": "lettuce",
+        "qty": 1,
+        "measure": "a few leaves"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "high-protein",
+      "no-cook",
+      "quick",
+      "budget"
+    ],
+    "instructions": [
+      "Drain tuna well and flake into a bowl.",
+      "Add diced celery and 2-3 tbsp chopped dill pickle for crunch.",
+      "Mix in mayo, dijon, red onion, lemon juice, salt, and pepper.",
+      "Taste and adjust — add more pickle or lemon if you like it brighter.",
+      "Serve on toasted bread with lettuce, or scoop onto crackers."
+    ],
+    "suggestedSide": "Chips, a cup of soup, or fresh fruit.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "classic_beef_stew",
+    "name": "Classic Beef Stew",
+    "mealType": "dinner",
+    "prepMinutes": 90,
+    "ingredients": [
+      {
+        "id": "beef_roast",
+        "qty": 1,
+        "measure": "2 lb chuck, cut into 1.5-inch cubes"
+      },
+      {
+        "id": "potato",
+        "qty": 1,
+        "measure": "3 medium, cubed"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "3, cut into thick rounds"
+      },
+      {
+        "id": "celery",
+        "qty": 1,
+        "measure": "2 stalks, chopped"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 large onion + 3 cloves garlic"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "4 cups beef"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1,
+        "measure": "2 tbsp tomato paste"
+      },
+      {
+        "id": "flour",
+        "qty": 1,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp thyme"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling",
+      "set-and-forget"
+    ],
+    "instructions": [
+      "Pat beef cubes very dry. Season with salt and pepper. Toss with flour.",
+      "Sear in olive oil in a heavy pot in batches, 3 minutes per side until deeply browned. Remove.",
+      "Sauté onion, garlic, carrots, and celery 4 minutes. Stir in tomato paste, cook 1 minute.",
+      "Return beef. Add broth and thyme. Bring to a boil.",
+      "Cover and reduce to low. Simmer 1 hour.",
+      "Add potatoes and cook 30 more minutes until beef is fork-tender and potatoes are done.",
+      "Season with salt and pepper."
+    ],
+    "suggestedSide": "Crusty bread or biscuits for soaking up the broth.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "chicken_rice_casserole",
+    "name": "Chicken & Rice Casserole",
+    "mealType": "dinner",
+    "prepMinutes": 45,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "measure": "2, cooked and shredded (or rotisserie)"
+      },
+      {
+        "id": "white_rice",
+        "qty": 1,
+        "measure": "1 1/2 cups uncooked long-grain"
+      },
+      {
+        "id": "canned_soup",
+        "qty": 1,
+        "measure": "1 can cream of chicken"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "2 cups chicken"
+      },
+      {
+        "id": "frozen_mixed_veg",
+        "qty": 1,
+        "measure": "1 cup (peas, carrots)"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1 cup shredded"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion, diced"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "kid-friendly",
+      "filling"
+    ],
+    "instructions": [
+      "Sauté onion in butter 3 minutes. Stir in rice and toast 1 minute.",
+      "Mix in cream of chicken soup, broth, frozen veggies, salt, and pepper.",
+      "Pour into a greased 9x13 dish. Nestle shredded chicken into the rice mixture.",
+      "Cover tightly with foil. Bake at 375°F for 35 minutes.",
+      "Remove foil, top with cheddar, and bake 5 more minutes until cheese is melted and rice is tender."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "taco_soup",
+    "name": "Taco Soup",
+    "mealType": "dinner",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1,
+        "measure": "1 lb"
+      },
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "measure": "1 can (15 oz), drained"
+      },
+      {
+        "id": "kidney_beans",
+        "qty": 1,
+        "measure": "1 can (15 oz), drained"
+      },
+      {
+        "id": "corn",
+        "qty": 1,
+        "measure": "1 can (15 oz), drained"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can (14 oz) diced"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1,
+        "measure": "1 can (8 oz)"
+      },
+      {
+        "id": "taco_seasoning",
+        "qty": 1,
+        "measure": "1 packet"
+      },
+      {
+        "id": "ranch_mix",
+        "qty": 1,
+        "measure": "1 packet"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "1 cup beef or chicken"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "for topping"
+      },
+      {
+        "id": "sour_cream",
+        "qty": 1,
+        "measure": "for topping"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "comfort-food",
+      "high-protein",
+      "filling",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Brown ground beef in a large pot. Drain fat.",
+      "Add everything else — beans, corn, tomatoes, tomato sauce, broth, taco seasoning, and ranch packet.",
+      "Stir well and bring to a boil. Reduce heat and simmer 15 minutes.",
+      "Ladle into bowls. Top with shredded cheese, sour cream, and crushed tortilla chips."
+    ],
+    "suggestedSide": "Cornbread or tortilla chips for dipping.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "creamy_potato_soup",
+    "name": "Creamy Potato Soup",
+    "mealType": "dinner",
+    "prepMinutes": 35,
+    "ingredients": [
+      {
+        "id": "potato",
+        "qty": 1,
+        "measure": "2 lb russet, peeled and cubed"
+      },
+      {
+        "id": "bacon",
+        "qty": 1,
+        "measure": "6 strips, diced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion + 3 cloves garlic"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "4 cups chicken"
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 1,
+        "measure": "4 oz, cubed"
+      },
+      {
+        "id": "milk",
+        "qty": 1,
+        "measure": "1/2 cup"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1/2 cup shredded for topping"
+      },
+      {
+        "id": "sour_cream",
+        "qty": 1,
+        "measure": "for topping"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "3, sliced"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "filling"
+    ],
+    "instructions": [
+      "Cook diced bacon until crispy. Remove, keep 2 tbsp fat in the pot.",
+      "Sauté onion and garlic in the bacon fat 3 minutes.",
+      "Add cubed potatoes and broth. Bring to a boil, then simmer 15 minutes until potatoes are tender.",
+      "Mash about half the potatoes in the pot with a fork for a thick, chunky texture.",
+      "Stir in cream cheese and milk until smooth. Season with salt and pepper.",
+      "Serve topped with bacon, cheddar, sour cream, and green onion."
+    ],
+    "suggestedSide": "Crusty bread or oyster crackers.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "cheeseburger_soup",
+    "name": "Cheeseburger Soup",
+    "mealType": "dinner",
+    "prepMinutes": 30,
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1,
+        "measure": "1 lb"
+      },
+      {
+        "id": "potato",
+        "qty": 1,
+        "measure": "3 medium, cubed"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1 1/2 cups shredded"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "3 cups chicken or beef"
+      },
+      {
+        "id": "milk",
+        "qty": 1,
+        "measure": "1 cup"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion + 2 cloves garlic"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "1, diced"
+      },
+      {
+        "id": "celery",
+        "qty": 1,
+        "measure": "1 stalk, diced"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "flour",
+        "qty": 1,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "ketchup",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "mustard",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "kid-friendly",
+      "filling"
+    ],
+    "instructions": [
+      "Brown ground beef in a pot. Drain fat and set beef aside.",
+      "Melt butter in the same pot. Sauté onion, garlic, carrots, and celery 4 minutes.",
+      "Stir in flour and cook 1 minute. Slowly whisk in broth.",
+      "Add cubed potatoes. Simmer 15 minutes until potatoes are tender.",
+      "Stir in milk, cheddar, ketchup, mustard, and cooked beef. Heat until cheese is melted and soup is creamy.",
+      "Season with salt and pepper. Serve with a sprinkle of extra cheese."
+    ],
+    "suggestedSide": "Dill pickle slices and toasted buns on the side for the full burger experience.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "tomato_soup_grilled_cheese",
+    "name": "Homestyle Tomato Soup with Grilled Cheese Dippers",
+    "mealType": "dinner",
+    "prepMinutes": 30,
+    "ingredients": [
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "2 cans (14 oz each) crushed"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "1 cup chicken or vegetable"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 small onion + 2 cloves garlic"
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 1,
+        "measure": "2 tbsp heavy cream or cream cheese"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "3 tbsp (1 for soup, 2 for sandwiches)"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp basil"
+      },
+      {
+        "id": "sugar",
+        "qty": 1,
+        "measure": "1 tsp (cuts acidity)"
+      },
+      {
+        "id": "bread",
+        "qty": 1,
+        "measure": "4 slices"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "4 slices or 1/2 cup shredded"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "kid-friendly",
+      "vegetarian"
+    ],
+    "instructions": [
+      "Melt 1 tbsp butter in a pot. Sauté onion and garlic 3 minutes.",
+      "Add crushed tomatoes, broth, basil, sugar, salt, and pepper. Simmer 15 minutes.",
+      "Blend until smooth (immersion blender or regular blender). Stir in cream.",
+      "While soup simmers, make grilled cheese: butter the outside of each bread slice, sandwich with cheese, and cook in a skillet 3 minutes per side until golden and melty.",
+      "Cut grilled cheese into strips for dipping. Serve alongside the soup."
+    ],
+    "difficulty": "beginner"
   }
 ]
