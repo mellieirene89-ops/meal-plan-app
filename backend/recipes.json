@@ -30264,5 +30264,89 @@
       "Cut into wedges. Serve with salsa and sour cream."
     ],
     "difficulty": "beginner"
+  },
+  {
+    "id": "crispy_parmesan_chicken",
+    "name": "Crispy Parmesan Chicken with Smoked Paprika",
+    "mealType": "dinner",
+    "prepMinutes": 30,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "measure": "2 breasts"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "1/2 cup finely grated"
+      },
+      {
+        "id": "bread",
+        "qty": 1,
+        "measure": "1/2 cup panko breadcrumbs"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tsp smoked"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "2 cloves garlic, minced"
+      },
+      {
+        "id": "flour",
+        "qty": 1,
+        "measure": "1/4 cup"
+      },
+      {
+        "id": "eggs",
+        "qty": 1,
+        "measure": "1, beaten"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "measure": "1, cut into wedges"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "high-protein",
+      "comfort-food",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Halve each chicken breast horizontally to make thin cutlets. Season with salt and pepper.",
+      "Set up a breading station: flour in one dish, beaten egg in another, and panko mixed with parmesan, smoked paprika, and garlic in a third.",
+      "Dredge each cutlet in flour, dip in egg, then press firmly into the panko-parmesan mixture on both sides.",
+      "Heat olive oil and butter in a skillet over medium heat until the butter foams.",
+      "Cook cutlets 3-4 minutes per side until the crust is deep golden and the chicken is cooked through.",
+      "Serve with lemon wedges for squeezing over the top."
+    ],
+    "suggestedSide": "Roasted potatoes and a green salad or steamed green beans.",
+    "difficulty": "beginner"
   }
 ]
