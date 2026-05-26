@@ -79,6 +79,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
   const toggleSection = (key) => setExpandedSections(prev => ({ ...prev, [key]: !prev[key] }));
   // Cuisine preview modal — null = closed; otherwise the cuisine object being shown.
   const [previewCuisine, setPreviewCuisine] = useState(null);
+  const [expandedPoolRecipe, setExpandedPoolRecipe] = useState(null);
   const [favorites, setFavorites] = useState(() => {
     try { return JSON.parse(localStorage.getItem('mealmaker_favorites')) || []; } catch { return []; }
   });
@@ -1215,7 +1216,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
       {/* === CUISINE PREVIEW MODAL === */}
       {previewCuisine && (
         <div
-          onClick={() => setPreviewCuisine(null)}
+          onClick={() => { setPreviewCuisine(null); setExpandedPoolRecipe(null); }}
           style={{
             position: 'fixed',
             inset: 0,
@@ -1246,7 +1247,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
             }}
           >
             <button
-              onClick={() => setPreviewCuisine(null)}
+              onClick={() => { setPreviewCuisine(null); setExpandedPoolRecipe(null); }}
               aria-label="Close"
               style={{
                 position: 'absolute',
@@ -1307,32 +1308,89 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
                     {mt} · {list.length}
                   </p>
                   <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                    {list.map(r => (
-                      <li key={r.id} style={{
-                        fontFamily: 'Cormorant Garamond, serif',
-                        fontSize: 16,
-                        fontWeight: 600,
-                        color: '#3a2a18',
-                        padding: '3px 0',
-                        borderBottom: '1px solid rgba(138,106,64,0.25)',
-                        display: 'flex',
-                        justifyContent: 'space-between',
-                        alignItems: 'baseline',
-                        gap: 8,
-                      }}>
-                        <span>{r.name}</span>
-                        {typeof r.cost === 'number' && (
-                          <span style={{
-                            fontFamily: 'JetBrains Mono, monospace',
-                            fontSize: 12,
-                            color: '#8a6a40',
-                            flex: 'none',
-                          }}>
-                            ${r.cost.toFixed(2)}
-                          </span>
-                        )}
-                      </li>
-                    ))}
+                    {list.map(r => {
+                      const isExpanded = expandedPoolRecipe === r.id;
+                      return (
+                        <li key={r.id} style={{
+                          borderBottom: '1px solid rgba(138,106,64,0.25)',
+                        }}>
+                          <div
+                            onClick={() => setExpandedPoolRecipe(isExpanded ? null : r.id)}
+                            style={{
+                              fontFamily: 'Cormorant Garamond, serif',
+                              fontSize: 16,
+                              fontWeight: 600,
+                              color: '#3a2a18',
+                              padding: '5px 0',
+                              display: 'flex',
+                              justifyContent: 'space-between',
+                              alignItems: 'baseline',
+                              gap: 8,
+                              cursor: 'pointer',
+                            }}
+                          >
+                            <span style={{ textDecoration: 'underline', textDecorationColor: 'rgba(138,106,64,0.35)', textUnderlineOffset: 2 }}>{r.name}</span>
+                            <span style={{ display: 'flex', alignItems: 'baseline', gap: 8, flex: 'none' }}>
+                              {typeof r.cost === 'number' && (
+                                <span style={{
+                                  fontFamily: 'JetBrains Mono, monospace',
+                                  fontSize: 12,
+                                  color: '#8a6a40',
+                                }}>
+                                  ${r.cost.toFixed(2)}
+                                </span>
+                              )}
+                              <span style={{ fontSize: 12, color: '#8a6a40', transition: 'transform 0.2s', transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
+                            </span>
+                          </div>
+                          {isExpanded && (
+                            <div style={{
+                              padding: '8px 0 12px',
+                              animation: 'fadeIn 0.15s ease',
+                            }}>
+                              <div style={{ display: 'flex', gap: 12, marginBottom: 8, flexWrap: 'wrap' }}>
+                                {r.prepMinutes && (
+                                  <span style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: 11, fontWeight: 700, color: '#5a4a30', background: 'rgba(58,42,24,0.1)', padding: '2px 7px', borderRadius: 4 }}>
+                                    {r.prepMinutes} min
+                                  </span>
+                                )}
+                                {(r.tags || []).slice(0, 4).map(tag => (
+                                  <span key={tag} style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: 11, fontWeight: 700, color: '#6b5a48', background: 'rgba(58,42,24,0.07)', padding: '2px 7px', borderRadius: 4 }}>
+                                    {tag}
+                                  </span>
+                                ))}
+                              </div>
+                              {r.ingredients && r.ingredients.length > 0 && (
+                                <div style={{ marginBottom: 8 }}>
+                                  <p style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 12, fontWeight: 700, color: '#8a6a40', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: 3 }}>Ingredients</p>
+                                  {r.ingredients.filter(ing => ing.name !== 'Salt' && ing.name !== 'Pepper').map((ing, i) => (
+                                    <div key={i} style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 14, color: '#3a2a18', padding: '2px 0', display: 'flex', justifyContent: 'space-between', gap: 8 }}>
+                                      <span style={{ fontWeight: 600 }}>{ing.name}</span>
+                                      <span style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: 11, color: '#8a6a40', flex: 'none' }}>{ing.measure}</span>
+                                    </div>
+                                  ))}
+                                </div>
+                              )}
+                              {r.instructions && r.instructions.length > 0 && (
+                                <div>
+                                  <p style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 12, fontWeight: 700, color: '#8a6a40', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: 3 }}>Instructions</p>
+                                  <ol style={{ margin: 0, paddingLeft: 18 }}>
+                                    {r.instructions.map((step, i) => (
+                                      <li key={i} style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 14, color: '#3a2a18', padding: '2px 0', lineHeight: 1.4 }}>{step}</li>
+                                    ))}
+                                  </ol>
+                                </div>
+                              )}
+                              {r.suggestedSide && (
+                                <p style={{ fontFamily: 'Caveat, cursive', fontSize: 15, color: '#6b5a48', marginTop: 8, fontStyle: 'italic' }}>
+                                  Pairs with: {r.suggestedSide}
+                                </p>
+                              )}
+                            </div>
+                          )}
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               );

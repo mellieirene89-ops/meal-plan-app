@@ -30348,5 +30348,219 @@
     ],
     "suggestedSide": "Roasted potatoes and a green salad or steamed green beans.",
     "difficulty": "beginner"
+  },
+  {
+    "id": "mississippi_pot_roast",
+    "name": "Mississippi Pot Roast",
+    "mealType": "dinner",
+    "prepMinutes": 300,
+    "ingredients": [
+      {
+        "id": "beef_roast",
+        "qty": 1,
+        "measure": "3 lb chuck roast"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "1/2 stick (4 tbsp)"
+      },
+      {
+        "id": "ranch_mix",
+        "qty": 1,
+        "measure": "1 packet ranch seasoning"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "4 cloves garlic"
+      },
+      {
+        "id": "jalapeno",
+        "qty": 1,
+        "measure": "5-6 pepperoncini peppers + 2 tbsp brine"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "1/2 cup beef broth"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "set-and-forget",
+      "filling"
+    ],
+    "instructions": [
+      "Season the chuck roast with salt and pepper. Sear in a hot skillet 3 minutes per side for a deep crust (optional but worth it).",
+      "Place roast in the slow cooker. Scatter garlic cloves around it.",
+      "Sprinkle the ranch seasoning packet over the top. Lay the butter on the roast.",
+      "Tuck pepperoncini around the sides. Pour in the brine and broth.",
+      "Cook on LOW for 8 hours or HIGH for 5 hours until the meat shreds with a fork.",
+      "Shred with two forks right in the pot, mixing the meat into the rich, tangy juices."
+    ],
+    "suggestedSide": "Mashed potatoes or egg noodles to soak up the gravy.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "slow_cooker_honey_garlic_chicken",
+    "name": "Slow Cooker Honey Garlic Chicken",
+    "mealType": "dinner",
+    "prepMinutes": 240,
+    "ingredients": [
+      {
+        "id": "chicken_thighs",
+        "qty": 1,
+        "measure": "2 lb bone-in thighs (or 6 boneless)"
+      },
+      {
+        "id": "honey",
+        "qty": 1,
+        "measure": "1/3 cup"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1,
+        "measure": "1/4 cup"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "6 cloves garlic, minced"
+      },
+      {
+        "id": "ketchup",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tbsp rice or apple cider"
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "3, sliced for garnish"
+      },
+      {
+        "id": "white_rice",
+        "qty": 1,
+        "measure": "2 cups cooked"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "asian",
+      "comfort-food",
+      "high-protein",
+      "set-and-forget",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Whisk honey, soy sauce, ketchup, garlic, vinegar, and sesame oil together.",
+      "Place chicken in the slow cooker. Pour the sauce over the top.",
+      "Cook on LOW for 4-5 hours or HIGH for 2.5-3 hours until chicken is tender and cooked through.",
+      "Remove chicken. If you want a thicker glaze, pour the sauce into a small pot and simmer 5 minutes.",
+      "Serve chicken over rice, spooning the glaze over the top. Garnish with green onion."
+    ],
+    "suggestedSide": "Steamed broccoli or roasted green beans.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "slow_cooker_ranch_pork_chops",
+    "name": "Slow Cooker Ranch Pork Chops with Potatoes",
+    "mealType": "dinner",
+    "prepMinutes": 270,
+    "ingredients": [
+      {
+        "id": "pork_chops",
+        "qty": 1,
+        "measure": "4 bone-in or boneless chops"
+      },
+      {
+        "id": "potato",
+        "qty": 1,
+        "measure": "1 1/2 lb baby potatoes, halved"
+      },
+      {
+        "id": "ranch_mix",
+        "qty": 1,
+        "measure": "1 packet ranch seasoning"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "1/2 cup chicken"
+      },
+      {
+        "id": "butter",
+        "qty": 1,
+        "measure": "3 tbsp, melted"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "3 cloves garlic, minced"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "set-and-forget",
+      "filling"
+    ],
+    "instructions": [
+      "Place halved potatoes in the bottom of the slow cooker.",
+      "Season pork chops with salt and pepper. Lay them on top of the potatoes.",
+      "Mix melted butter, ranch seasoning, garlic, and Italian seasoning. Pour over the chops.",
+      "Add broth around the sides.",
+      "Cook on LOW for 6-7 hours or HIGH for 3.5-4 hours until pork is tender and potatoes are cooked through.",
+      "Spoon the buttery ranch pan juices over everything when serving."
+    ],
+    "suggestedSide": "A simple green salad or steamed corn.",
+    "difficulty": "beginner"
   }
 ]
