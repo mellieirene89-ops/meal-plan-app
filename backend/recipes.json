@@ -27018,5 +27018,1389 @@
     ],
     "suggestedSide": "A simple fruit salad or fresh berries.",
     "difficulty": "beginner"
+  },
+  {
+    "id": "chicken_veggie_stir_fry_lunch",
+    "name": "Chicken & Veggie Stir-Fry with Rice",
+    "mealType": "lunch",
+    "prepMinutes": 18,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "measure": "1, sliced thin"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, sliced"
+      },
+      {
+        "id": "frozen_broccoli",
+        "qty": 1,
+        "measure": "1 cup florets"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "1, sliced on the diagonal"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1 tsp fresh, grated"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "2 cloves garlic, minced"
+      },
+      {
+        "id": "white_rice",
+        "qty": 1,
+        "measure": "1 cup cooked"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      }
+    ],
+    "tags": [
+      "asian",
+      "high-protein",
+      "quick",
+      "veggie-rich"
+    ],
+    "instructions": [
+      "Heat oil in a wok or large skillet over high heat until smoking.",
+      "Add chicken and stir-fry 3-4 minutes until golden. Remove.",
+      "Add carrots and broccoli, stir-fry 2 minutes. Add bell pepper, cook 1 more minute.",
+      "Return chicken to the pan. Add garlic, ginger, soy sauce, and sesame oil. Toss 30 seconds.",
+      "Serve over rice."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "peanut_tofu_stir_fry",
+    "name": "Peanut Tofu Stir-Fry",
+    "mealType": "lunch",
+    "prepMinutes": 20,
+    "ingredients": [
+      {
+        "id": "tofu",
+        "qty": 1,
+        "measure": "8 oz firm, pressed and cubed"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, sliced"
+      },
+      {
+        "id": "cabbage",
+        "qty": 1,
+        "measure": "2 cups shredded"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "3, sliced"
+      },
+      {
+        "id": "peanut_butter",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "honey",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "white_rice",
+        "qty": 1,
+        "measure": "1 cup cooked"
+      }
+    ],
+    "tags": [
+      "asian",
+      "vegetarian",
+      "high-protein",
+      "veggie-rich"
+    ],
+    "instructions": [
+      "Press tofu dry and cut into cubes. Pan-fry in 1 tbsp oil over medium-high 6-8 minutes, turning until crispy on all sides.",
+      "Whisk peanut butter, soy sauce, lime juice, honey, and 1 tbsp warm water into a smooth sauce.",
+      "In the same pan, stir-fry cabbage and bell pepper in remaining oil 3 minutes.",
+      "Return tofu to the pan. Pour peanut sauce over everything and toss to coat.",
+      "Serve over rice topped with green onion."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "white_bean_tomato_skillet",
+    "name": "Tuscan White Bean & Tomato Skillet",
+    "mealType": "lunch",
+    "prepMinutes": 15,
+    "ingredients": [
+      {
+        "id": "kidney_beans",
+        "qty": 1,
+        "measure": "1 can (15 oz) cannellini beans, drained"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can (14 oz) diced"
+      },
+      {
+        "id": "frozen_spinach",
+        "qty": 1,
+        "measure": "2 cups fresh spinach"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "3 cloves garlic, sliced"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "2 tbsp grated"
+      },
+      {
+        "id": "bread",
+        "qty": 1,
+        "measure": "2 slices crusty bread"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "vegetarian",
+      "quick",
+      "high-protein"
+    ],
+    "instructions": [
+      "Heat olive oil in a skillet. Add garlic and cook 30 seconds until fragrant.",
+      "Add tomatoes, beans, and Italian seasoning. Simmer 8 minutes until thickened.",
+      "Stir in spinach and cook until wilted, about 1 minute.",
+      "Season with salt and pepper. Top with parmesan.",
+      "Serve with crusty bread for scooping."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "black_bean_sweet_potato_bowl_lunch",
+    "name": "Spiced Black Bean & Sweet Potato Power Bowl",
+    "mealType": "lunch",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "measure": "1 can (15 oz), drained"
+      },
+      {
+        "id": "sweet_potato",
+        "qty": 1,
+        "measure": "1 medium, cubed"
+      },
+      {
+        "id": "brown_rice",
+        "qty": 1,
+        "measure": "1 cup cooked"
+      },
+      {
+        "id": "avocado",
+        "qty": 1,
+        "measure": "1/2, sliced"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "chili_powder",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "cilantro",
+        "qty": 1,
+        "measure": "for garnish"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "vegetarian",
+      "high-protein",
+      "veggie-rich",
+      "filling"
+    ],
+    "instructions": [
+      "Toss cubed sweet potato with olive oil, cumin, chili powder, and salt. Roast at 425°F for 18 minutes until caramelized.",
+      "Warm black beans in a small pot with a pinch of cumin.",
+      "Build bowls: rice on the bottom, roasted sweet potato and black beans on top.",
+      "Add sliced avocado, squeeze lime over everything, and garnish with cilantro."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "shrimp_snow_pea_stir_fry",
+    "name": "Garlic Shrimp & Snow Pea Stir-Fry",
+    "mealType": "lunch",
+    "prepMinutes": 15,
+    "ingredients": [
+      {
+        "id": "shrimp",
+        "qty": 1,
+        "measure": "6 oz, peeled and deveined"
+      },
+      {
+        "id": "frozen_peas",
+        "qty": 1,
+        "measure": "1 1/2 cups snow peas or sugar snaps"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "3 cloves garlic, sliced"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1 tsp fresh, minced"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1,
+        "measure": "1 1/2 tbsp"
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "white_rice",
+        "qty": 1,
+        "measure": "1 cup cooked"
+      }
+    ],
+    "tags": [
+      "asian",
+      "high-protein",
+      "quick",
+      "low-carb"
+    ],
+    "instructions": [
+      "Heat oil in a wok over high heat. Add shrimp and sear 1 minute per side. Remove.",
+      "Add garlic and ginger, stir 15 seconds. Add snow peas and stir-fry 2 minutes until bright green and crisp-tender.",
+      "Return shrimp. Add soy sauce and sesame oil, toss 30 seconds.",
+      "Serve over rice."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "chickpea_coconut_curry_lunch",
+    "name": "Quick Chickpea Coconut Curry",
+    "mealType": "lunch",
+    "prepMinutes": 18,
+    "ingredients": [
+      {
+        "id": "chickpeas",
+        "qty": 1,
+        "measure": "1 can (15 oz), drained"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can (14 oz) diced"
+      },
+      {
+        "id": "milk",
+        "qty": 1,
+        "measure": "1/2 cup coconut milk"
+      },
+      {
+        "id": "frozen_spinach",
+        "qty": 1,
+        "measure": "2 cups fresh spinach"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 small onion + 2 cloves garlic"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1 tsp curry powder"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1 tsp fresh, grated"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "white_rice",
+        "qty": 1,
+        "measure": "1 cup cooked"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "indian",
+      "vegetarian",
+      "high-protein",
+      "veggie-rich",
+      "quick"
+    ],
+    "instructions": [
+      "Sauté onion, garlic, and ginger in olive oil 3 minutes.",
+      "Add curry powder and stir 30 seconds until fragrant.",
+      "Add chickpeas, tomatoes, and coconut milk. Simmer 10 minutes.",
+      "Stir in spinach until wilted. Season with salt.",
+      "Serve over rice."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "korean_beef_lettuce_wraps",
+    "name": "Korean Beef Lettuce Wraps",
+    "mealType": "lunch",
+    "prepMinutes": 15,
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1,
+        "measure": "8 oz"
+      },
+      {
+        "id": "lettuce",
+        "qty": 1,
+        "measure": "1 head butter lettuce, leaves separated"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "honey",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1 tsp fresh, grated"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "3 cloves garlic, minced"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "3, sliced"
+      },
+      {
+        "id": "carrots",
+        "qty": 1,
+        "measure": "1, shredded"
+      },
+      {
+        "id": "white_rice",
+        "qty": 1,
+        "measure": "1 cup cooked"
+      }
+    ],
+    "tags": [
+      "asian",
+      "high-protein",
+      "quick",
+      "low-carb"
+    ],
+    "instructions": [
+      "Brown ground beef over medium-high heat 5 minutes, breaking into crumbles. Drain excess fat.",
+      "Add garlic and ginger, cook 30 seconds.",
+      "Stir in soy sauce, sesame oil, and honey. Cook 2 minutes until sticky and glazed.",
+      "Spoon beef and a little rice into lettuce cups. Top with shredded carrot and green onion."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "pinto_bean_taco_bowl",
+    "name": "Pinto Bean Taco Bowl with Pickled Onion",
+    "mealType": "lunch",
+    "prepMinutes": 18,
+    "ingredients": [
+      {
+        "id": "pinto_beans",
+        "qty": 1,
+        "measure": "1 can (15 oz), drained"
+      },
+      {
+        "id": "white_rice",
+        "qty": 1,
+        "measure": "1 cup cooked"
+      },
+      {
+        "id": "fresh_tomato",
+        "qty": 1,
+        "measure": "1, diced"
+      },
+      {
+        "id": "lettuce",
+        "qty": 1,
+        "measure": "1 cup shredded"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1/4 cup shredded"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 red onion, thinly sliced"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "2 tbsp apple cider"
+      },
+      {
+        "id": "taco_seasoning",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "measure": "1, juiced"
+      },
+      {
+        "id": "sour_cream",
+        "qty": 1,
+        "measure": "2 tbsp"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "vegetarian",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Quick-pickle the onion: toss sliced red onion with vinegar and a pinch of salt. Let sit while you prep.",
+      "Warm pinto beans in a small pot with taco seasoning and a splash of water. Mash lightly.",
+      "Build bowls: rice, seasoned beans, shredded lettuce, diced tomato.",
+      "Top with cheese, pickled onion, sour cream, and a squeeze of lime."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "teriyaki_chicken_stir_fry_lunch",
+    "name": "Teriyaki Chicken Stir-Fry with Broccoli",
+    "mealType": "lunch",
+    "prepMinutes": 18,
+    "ingredients": [
+      {
+        "id": "chicken_thighs",
+        "qty": 1,
+        "measure": "2 boneless, cut into bite-sized pieces"
+      },
+      {
+        "id": "frozen_broccoli",
+        "qty": 1,
+        "measure": "2 cups florets"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "honey",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tbsp rice vinegar"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "2 cloves garlic, minced"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1 tsp fresh, grated"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "white_rice",
+        "qty": 1,
+        "measure": "1 cup cooked"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "2, sliced"
+      }
+    ],
+    "tags": [
+      "asian",
+      "high-protein",
+      "quick",
+      "kid-friendly"
+    ],
+    "instructions": [
+      "Whisk soy sauce, honey, rice vinegar, garlic, and ginger into a teriyaki sauce.",
+      "Heat oil in a wok over high heat. Sear chicken pieces 4 minutes until browned. Remove.",
+      "Stir-fry broccoli 3 minutes until bright green and crisp-tender.",
+      "Return chicken, pour teriyaki sauce over, and toss 1 minute until glazed and sticky.",
+      "Serve over rice with green onion."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "lentil_taco_skillet",
+    "name": "Lentil Taco Skillet",
+    "mealType": "lunch",
+    "prepMinutes": 22,
+    "ingredients": [
+      {
+        "id": "lentils",
+        "qty": 1,
+        "measure": "3/4 cup dry brown or green"
+      },
+      {
+        "id": "taco_seasoning",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can (14 oz) diced"
+      },
+      {
+        "id": "corn",
+        "qty": 1,
+        "measure": "1/2 cup kernels"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1/4 cup shredded"
+      },
+      {
+        "id": "tortillas",
+        "qty": 1,
+        "measure": "2 small, warmed"
+      },
+      {
+        "id": "sour_cream",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "cilantro",
+        "qty": 1,
+        "measure": "for garnish"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "vegetarian",
+      "high-protein",
+      "budget",
+      "filling"
+    ],
+    "instructions": [
+      "Simmer lentils in 1 1/2 cups water for 15 minutes until tender but not mushy. Drain any excess.",
+      "Stir in taco seasoning, diced tomatoes, and corn. Cook 5 more minutes until thickened.",
+      "Top with cheddar, sour cream, and cilantro.",
+      "Serve with warm tortillas for scooping."
+    ],
+    "difficulty": "beginner"
+  },
+  {
+    "id": "kung_pao_chicken_dinner",
+    "name": "Kung Pao Chicken",
+    "mealType": "dinner",
+    "prepMinutes": 22,
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "measure": "1 lb, cubed"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, chopped"
+      },
+      {
+        "id": "zucchini",
+        "qty": 1,
+        "measure": "1 small, diced"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "measure": "4, cut into 1-inch pieces"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tbsp rice vinegar"
+      },
+      {
+        "id": "honey",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "chili_powder",
+        "qty": 1,
+        "measure": "1/2 tsp red pepper flakes"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "3 cloves garlic, minced"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1 tsp fresh, grated"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "white_rice",
+        "qty": 1,
+        "measure": "2 cups cooked"
+      }
+    ],
+    "tags": [
+      "asian",
+      "high-protein",
+      "quick",
+      "veggie-rich"
+    ],
+    "instructions": [
+      "Whisk soy sauce, rice vinegar, honey, and red pepper flakes into a sauce.",
+      "Heat oil in a wok over high heat. Stir-fry chicken 4-5 minutes until cooked. Remove.",
+      "Add bell pepper and zucchini, stir-fry 3 minutes.",
+      "Return chicken. Add garlic, ginger, and green onion. Pour sauce over and toss 1 minute until everything is glazed.",
+      "Serve over rice."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "red_beans_rice_sausage",
+    "name": "Red Beans & Rice with Smoked Sausage",
+    "mealType": "dinner",
+    "prepMinutes": 35,
+    "ingredients": [
+      {
+        "id": "kidney_beans",
+        "qty": 1,
+        "measure": "2 cans (15 oz each) red or kidney beans, drained"
+      },
+      {
+        "id": "sausage",
+        "qty": 1,
+        "measure": "2 links andouille or smoked, sliced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion + 3 cloves garlic"
+      },
+      {
+        "id": "celery",
+        "qty": 1,
+        "measure": "2 stalks, diced"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1 green, diced"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "1 cup chicken"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1/2 tsp"
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "white_rice",
+        "qty": 1,
+        "measure": "2 cups cooked"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Sauté onion, celery, bell pepper, and garlic in olive oil 5 minutes.",
+      "Add sliced sausage and cook 3 minutes until browned.",
+      "Add beans, broth, paprika, and cumin. Simmer 20 minutes, mashing some beans against the side of the pot for creaminess.",
+      "Season with salt and hot sauce.",
+      "Serve over rice."
+    ],
+    "suggestedSide": "Cornbread and a cold glass of sweet tea.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "thai_basil_pork_stir_fry",
+    "name": "Thai Basil Pork Stir-Fry",
+    "mealType": "dinner",
+    "prepMinutes": 18,
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1,
+        "measure": "1 lb ground pork"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, sliced"
+      },
+      {
+        "id": "green_beans",
+        "qty": 1,
+        "measure": "1 cup, trimmed and halved"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "4 cloves garlic, minced"
+      },
+      {
+        "id": "jalapeno",
+        "qty": 1,
+        "measure": "2 Thai chiles or 1 serrano, sliced"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1,
+        "measure": "1 tbsp oyster sauce or extra soy"
+      },
+      {
+        "id": "sugar",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "white_rice",
+        "qty": 1,
+        "measure": "2 cups cooked jasmine"
+      }
+    ],
+    "tags": [
+      "thai",
+      "asian",
+      "high-protein",
+      "quick"
+    ],
+    "instructions": [
+      "Heat oil in a wok over high heat. Add garlic and chiles, stir 15 seconds.",
+      "Add ground pork and stir-fry 5 minutes, breaking into crumbles until browned.",
+      "Add green beans and bell pepper. Cook 3 minutes until crisp-tender.",
+      "Stir in soy sauce, oyster sauce, and sugar. Toss 1 minute.",
+      "Serve over jasmine rice."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "black_bean_enchilada_bake",
+    "name": "Black Bean Enchilada Bake",
+    "mealType": "dinner",
+    "prepMinutes": 35,
+    "ingredients": [
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "measure": "2 cans (15 oz each), drained"
+      },
+      {
+        "id": "tortillas",
+        "qty": 1,
+        "measure": "6 corn tortillas"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1,
+        "measure": "1 1/2 cups enchilada or tomato sauce"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1,
+        "measure": "1 1/2 cups shredded"
+      },
+      {
+        "id": "corn",
+        "qty": 1,
+        "measure": "1 cup kernels"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "chili_powder",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "sour_cream",
+        "qty": 1,
+        "measure": "for serving"
+      },
+      {
+        "id": "cilantro",
+        "qty": 1,
+        "measure": "for garnish"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mexican",
+      "vegetarian",
+      "high-protein",
+      "comfort-food",
+      "filling"
+    ],
+    "instructions": [
+      "Mix black beans with corn, cumin, chili powder, and salt.",
+      "Spread 1/3 of the sauce in a greased 8x8 dish. Layer: tortillas, half the beans, 1/3 sauce, 1/2 cheese. Repeat layers. Top with remaining sauce and cheese.",
+      "Cover with foil and bake at 375°F for 20 minutes. Remove foil and bake 5 more minutes until bubbly.",
+      "Let rest 5 minutes. Top with sour cream and cilantro."
+    ],
+    "suggestedSide": "A simple salad with lime vinaigrette.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "szechuan_tofu_green_bean_stir_fry",
+    "name": "Szechuan Tofu & Green Bean Stir-Fry",
+    "mealType": "dinner",
+    "prepMinutes": 20,
+    "ingredients": [
+      {
+        "id": "tofu",
+        "qty": 1,
+        "measure": "14 oz extra-firm, pressed and cubed"
+      },
+      {
+        "id": "green_beans",
+        "qty": 1,
+        "measure": "2 cups, trimmed"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "4 cloves garlic, minced"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "measure": "1 tbsp fresh, minced"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tbsp rice vinegar"
+      },
+      {
+        "id": "chili_powder",
+        "qty": 1,
+        "measure": "1 tsp red pepper flakes or chili crisp"
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "sugar",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "white_rice",
+        "qty": 1,
+        "measure": "2 cups cooked"
+      }
+    ],
+    "tags": [
+      "asian",
+      "vegetarian",
+      "high-protein",
+      "veggie-rich"
+    ],
+    "instructions": [
+      "Press tofu dry and cube. Pan-fry in 1 tbsp oil over high heat 5-6 minutes until golden and crispy on all sides. Remove.",
+      "Add remaining oil. Stir-fry green beans 4 minutes until blistered and tender.",
+      "Add garlic and ginger, stir 30 seconds.",
+      "Whisk soy sauce, rice vinegar, sugar, red pepper flakes, and sesame oil. Pour into the wok with tofu. Toss 1 minute until glazed.",
+      "Serve over rice."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "white_bean_chicken_sausage_skillet",
+    "name": "White Bean & Chicken Sausage Skillet with Peppers",
+    "mealType": "dinner",
+    "prepMinutes": 20,
+    "ingredients": [
+      {
+        "id": "sausage",
+        "qty": 1,
+        "measure": "3 chicken sausage links, sliced"
+      },
+      {
+        "id": "kidney_beans",
+        "qty": 1,
+        "measure": "1 can (15 oz) cannellini beans, drained"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "2, sliced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1/2 onion + 2 cloves garlic"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can (14 oz) diced"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "measure": "2 tbsp grated"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "italian",
+      "high-protein",
+      "quick",
+      "filling"
+    ],
+    "instructions": [
+      "Brown sliced sausage in olive oil 3 minutes. Remove.",
+      "Sauté onion, garlic, and bell peppers 4 minutes.",
+      "Add beans, tomatoes, Italian seasoning, and sausage. Simmer 8 minutes until thickened.",
+      "Season with salt and pepper. Top with parmesan."
+    ],
+    "suggestedSide": "Garlic bread or a hunk of crusty Italian bread.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "chickpea_shakshuka_dinner",
+    "name": "Chickpea Shakshuka",
+    "mealType": "dinner",
+    "prepMinutes": 25,
+    "ingredients": [
+      {
+        "id": "chickpeas",
+        "qty": 1,
+        "measure": "1 can (15 oz), drained"
+      },
+      {
+        "id": "canned_tomatoes",
+        "qty": 1,
+        "measure": "1 can (14 oz) crushed"
+      },
+      {
+        "id": "eggs",
+        "qty": 4,
+        "measure": "4"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 small onion + 2 cloves garlic"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, diced"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "measure": "1 tsp smoked"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "feta_cheese",
+        "qty": 1,
+        "measure": "1/4 cup crumbled"
+      },
+      {
+        "id": "bread",
+        "qty": 1,
+        "measure": "crusty bread for serving"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "mediterranean",
+      "vegetarian",
+      "high-protein",
+      "comfort-food"
+    ],
+    "instructions": [
+      "Sauté onion, garlic, and bell pepper in olive oil 4 minutes.",
+      "Add cumin and smoked paprika, stir 30 seconds.",
+      "Pour in crushed tomatoes and chickpeas. Simmer 10 minutes until thickened.",
+      "Make 4 wells in the sauce. Crack an egg into each. Cover and cook 5-6 minutes until whites are set.",
+      "Scatter feta over the top. Serve with crusty bread for dipping."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "cashew_chicken_stir_fry",
+    "name": "Cashew Chicken Stir-Fry",
+    "mealType": "dinner",
+    "prepMinutes": 20,
+    "ingredients": [
+      {
+        "id": "chicken_thighs",
+        "qty": 1,
+        "measure": "1 lb boneless, cubed"
+      },
+      {
+        "id": "frozen_broccoli",
+        "qty": 1,
+        "measure": "1 1/2 cups florets"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "measure": "1, chopped"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "3 cloves garlic + 1/2 onion, diced"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1,
+        "measure": "3 tbsp"
+      },
+      {
+        "id": "honey",
+        "qty": 1,
+        "measure": "1 tbsp"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tbsp rice vinegar"
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1,
+        "measure": "1 tsp"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1,
+        "measure": "2 tbsp"
+      },
+      {
+        "id": "white_rice",
+        "qty": 1,
+        "measure": "2 cups cooked"
+      }
+    ],
+    "tags": [
+      "asian",
+      "high-protein",
+      "quick",
+      "filling"
+    ],
+    "instructions": [
+      "Whisk soy sauce, honey, rice vinegar, and sesame oil into a sauce.",
+      "Heat oil in a wok over high heat. Stir-fry chicken 5 minutes until golden. Remove.",
+      "Add onion, broccoli, and bell pepper. Stir-fry 3 minutes.",
+      "Return chicken and pour sauce over. Toss 1-2 minutes until everything is coated and glossy.",
+      "Serve over rice."
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "black_eyed_pea_collard_bowl",
+    "name": "Black-Eyed Pea & Collard Greens Bowl",
+    "mealType": "dinner",
+    "prepMinutes": 30,
+    "ingredients": [
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "measure": "2 cans (15 oz each) black-eyed peas, drained"
+      },
+      {
+        "id": "frozen_spinach",
+        "qty": 1,
+        "measure": "4 cups collard greens or kale, stemmed and chopped"
+      },
+      {
+        "id": "bacon",
+        "qty": 1,
+        "measure": "3 strips, diced"
+      },
+      {
+        "id": "garlic_onion",
+        "qty": 1,
+        "measure": "1 onion + 3 cloves garlic"
+      },
+      {
+        "id": "broth",
+        "qty": 1,
+        "measure": "1 cup chicken"
+      },
+      {
+        "id": "vinegar",
+        "qty": 1,
+        "measure": "1 tbsp apple cider"
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "white_rice",
+        "qty": 1,
+        "measure": "2 cups cooked"
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "measure": "to taste"
+      },
+      {
+        "id": "pepper",
+        "qty": 1,
+        "measure": "to taste"
+      }
+    ],
+    "tags": [
+      "american-classic",
+      "comfort-food",
+      "high-protein",
+      "filling"
+    ],
+    "instructions": [
+      "Cook diced bacon in a heavy pot until crispy. Remove bacon, keep the fat.",
+      "Sauté onion and garlic in the bacon fat 3 minutes.",
+      "Add chopped greens and broth. Cover and cook 10 minutes until greens are tender.",
+      "Stir in black-eyed peas, vinegar, salt, and pepper. Simmer 5 more minutes.",
+      "Serve over rice. Top with crispy bacon and hot sauce."
+    ],
+    "suggestedSide": "Cornbread for a proper Southern plate.",
+    "difficulty": "intermediate"
   }
 ]
