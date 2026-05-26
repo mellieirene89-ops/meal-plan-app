@@ -384,16 +384,31 @@ export function generateMealPlan(sales = [], budgetCap = null, servings = 1, exc
   // a different week. Priority tiers shuffled separately so they stay at the top:
   // starred favorites → on-hand → everything else. Day-assign walks index 0 first so
   // any starred recipe shows up in the week (subject to non-adjacency).
+  //
+  // Each variation uses a wildly different seed (multiplied + XOR) so consecutive
+  // clicks produce meaningfully different menus rather than shifting by one slot.
+  // Within the "others" tier, the pool is sliced at a variation-dependent offset
+  // before shuffling so recipes from every part of the pool surface quickly.
   for (const type of MEAL_TYPES) {
     const isFav = (r) => favoriteRecipeIds.includes(r.id);
     const usesOnHand = (r) => onHandIds.length > 0 && r.ingredients.some(i => onHandIds.includes(i.id));
     const favorites = byType[type].filter(isFav);
     const onHandTier = byType[type].filter(r => !isFav(r) && usesOnHand(r));
-    const others = byType[type].filter(r => !isFav(r) && !usesOnHand(r));
+    let others = byType[type].filter(r => !isFav(r) && !usesOnHand(r));
+
+    // Rotate the "others" pool by a variation-dependent offset so different
+    // regions of the recipe list get priority on each click. This ensures
+    // newer recipes (appended at the end of recipes.json) surface quickly.
+    if (others.length > 7 && variation > 0) {
+      const offset = Math.floor((variation * 7) % others.length);
+      others = [...others.slice(offset), ...others.slice(0, offset)];
+    }
+
+    const vSeed = variation * 2654435761; // large prime → big jumps between clicks
     byType[type] = [
-      ...seededShuffle(favorites, variation + type.length + 2000),
-      ...seededShuffle(onHandTier, variation + type.length),
-      ...seededShuffle(others, variation + type.length + 1000),
+      ...seededShuffle(favorites, vSeed + type.length + 2000),
+      ...seededShuffle(onHandTier, vSeed + type.length),
+      ...seededShuffle(others, vSeed + type.length + 1000),
     ];
   }
 
