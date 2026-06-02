@@ -1695,6 +1695,7 @@ export default function App() {
                 radiusMiles={salesData.radiusMiles ?? radius}
                 noStoresInRadius={salesData.noStoresInRadius}
                 scrapedAt={salesData.scrapedAt || salesData.cachedAt}
+                coverage={salesData.coverage}
               />
             )}
             {tab === 'preferences' && allIngredients.length > 0 && (

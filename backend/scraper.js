@@ -349,6 +349,22 @@ const ALLOWED_GROCERS = new Set([
   ...Object.keys(STORE_ALIASES).map(k => k.toLowerCase()),
 ]);
 
+// Map any merchant or OSM store name to its canonical STORE_ALIASES key, or null if not a known chain.
+// Used to compute coverage diagnostics (which nearby chains had deals vs which didn't).
+function canonicalBrand(name) {
+  if (!name) return null;
+  const lower = name.trim().toLowerCase();
+  for (const [key, aliases] of Object.entries(STORE_ALIASES)) {
+    const keyLower = key.toLowerCase();
+    if (lower === keyLower || lower.includes(keyLower) || keyLower.includes(lower)) return key;
+    for (const alias of aliases) {
+      const aliasLower = alias.toLowerCase();
+      if (lower.includes(aliasLower) || aliasLower.includes(lower)) return key;
+    }
+  }
+  return null;
+}
+
 // Check if a Flipp merchant is an allowed grocer with a physical store within radius
 function merchantHasNearbyStore(merchantName, nearbyStores) {
   const merchant = merchantName.trim();
@@ -482,7 +498,25 @@ export async function getSales(zip = '64683', forceRefresh = false, radiusMiles 
   }
   console.log(`[flipp] Found ${sales.length} deals from ${new Set(sales.map(s => s.store)).size} verified stores`);
 
-  const result = { sales, scrapedAt: new Date().toISOString(), zip, radiusMiles };
+  // Coverage: which nearby recognized chains the system *could* surface deals for,
+  // and which actually returned any. Chains in `checked` but not `withDeals` likely
+  // don't publish to Flipp (e.g., Walmart) — surface this so users don't assume bugs.
+  const checked = new Set();
+  for (const s of nearbyStores || []) {
+    const brand = canonicalBrand(s.brand) || canonicalBrand(s.name);
+    if (brand) checked.add(brand);
+  }
+  const withDeals = new Set();
+  for (const sale of sales) {
+    const brand = canonicalBrand(sale.store);
+    if (brand) withDeals.add(brand);
+  }
+  const coverage = {
+    checked: [...checked].sort(),
+    withDeals: [...withDeals].sort(),
+  };
+
+  const result = { sales, scrapedAt: new Date().toISOString(), zip, radiusMiles, coverage };
   saveCache(result, zip, radiusMiles);
   return result;
 }

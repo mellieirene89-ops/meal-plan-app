@@ -1,7 +1,18 @@
 import { useState } from 'react';
 
-export default function LocalDeals({ sales, zip, scrapedAt, radiusMiles, noStoresInRadius }) {
+export default function LocalDeals({ sales, zip, scrapedAt, radiusMiles, noStoresInRadius, coverage }) {
   const [expandedStores, setExpandedStores] = useState({});
+
+  // Chains that exist nearby but didn't return any deals — usually means they don't
+  // publish a weekly ad to our data source (e.g., Walmart isn't on Flipp).
+  const missing = coverage
+    ? coverage.checked.filter(c => !coverage.withDeals.includes(c))
+    : [];
+  // Dense metros can surface 10+ missing chains; cap the inline list and tuck
+  // the rest into a hover tooltip so the coverage line stays scannable.
+  const MISSING_VISIBLE = 4;
+  const missingVisible = missing.slice(0, MISSING_VISIBLE);
+  const missingHidden = missing.slice(MISSING_VISIBLE);
 
   if (!sales || sales.length === 0) {
     return (
@@ -57,7 +68,7 @@ export default function LocalDeals({ sales, zip, scrapedAt, radiusMiles, noStore
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'baseline',
-        marginBottom: 20,
+        marginBottom: 8,
       }}>
         <p style={{
           fontFamily: 'Cormorant Garamond, serif',
@@ -78,6 +89,40 @@ export default function LocalDeals({ sales, zip, scrapedAt, radiusMiles, noStore
           </p>
         )}
       </div>
+
+      {coverage && coverage.checked.length > 0 && (
+        <p style={{
+          fontFamily: 'Cormorant Garamond, serif',
+          fontSize: 13,
+          fontWeight: 600,
+          fontStyle: 'italic',
+          color: 'var(--chalk-muted)',
+          marginBottom: 20,
+          lineHeight: 1.5,
+        }}>
+          Checked within {radiusMiles}mi:{' '}
+          {coverage.withDeals.map((s, i) => (
+            <span key={s}>
+              <span style={{ color: 'var(--chalk)' }}>{s} <span style={{ color: '#6b8e3a' }}>✓</span></span>
+              {i < coverage.withDeals.length - 1 || missing.length > 0 ? ', ' : ''}
+            </span>
+          ))}
+          {missingVisible.map((s, i) => (
+            <span key={s} title="No weekly ad data available from our source for this chain">
+              {s} <span style={{ opacity: 0.7 }}>(no weekly ad data)</span>
+              {i < missingVisible.length - 1 || missingHidden.length > 0 ? ', ' : ''}
+            </span>
+          ))}
+          {missingHidden.length > 0 && (
+            <span
+              title={`Also no weekly ad data for: ${missingHidden.join(', ')}`}
+              style={{ borderBottom: '1px dotted currentColor', cursor: 'help' }}
+            >
+              +{missingHidden.length} more
+            </span>
+          )}
+        </p>
+      )}
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
         {Object.entries(byStore).map(([store, items]) => {
