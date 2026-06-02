@@ -1446,7 +1446,7 @@ export default function App() {
                   lineHeight: 1.1,
                   textShadow: '0 0 12px rgba(234,162,33,0.45), 0 0 28px rgba(234,162,33,0.25), 2px 3px 4px rgba(0,0,0,0.7), 4px 5px 8px rgba(0,0,0,0.45)',
                 }}>Craving something new?</strong>
-                Hit <em style={{ color: '#eaa221', fontStyle: 'normal', fontWeight: 700 }}>Change It Up!</em> below (or at the top) to shuffle in fresh recipes without losing your budget or store settings — or tap <em style={{ color: '#eaa221', fontStyle: 'normal', fontWeight: 700 }}>✕ Skip</em> on any individual meal for a new suggestion in its place.
+                Hit <em style={{ color: '#eaa221', fontStyle: 'normal', fontWeight: 700 }}>Change It Up!</em> below to shuffle in fresh recipes without losing your budget or store settings — or tap <em style={{ color: '#eaa221', fontStyle: 'normal', fontWeight: 700 }}>✕ Skip</em> on any individual meal for a new suggestion in its place.
                 <div style={{
                   marginTop: 10,
                   paddingTop: 10,
