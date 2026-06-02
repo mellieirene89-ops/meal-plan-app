@@ -69,6 +69,33 @@ const CUISINES = [
   { id: 'keto', label: 'Keto' },
 ];
 
+// Shared styling for the collapsible Customize panels. Extracted so all
+// sections stay visually identical and there's a single place to tweak them.
+const PANEL_STYLE = { background: 'rgba(160,140,100,0.15)', borderRadius: 6, overflow: 'hidden', border: '1px solid rgba(240,232,218,0.2)', borderTop: '2px solid rgba(255,255,255,0.18)', borderBottom: '3px solid rgba(0,0,0,0.45)', boxShadow: 'inset 0 2px 0 rgba(255,255,255,0.12), inset 0 -2px 4px rgba(0,0,0,0.15), 6px 8px 18px rgba(0,0,0,0.45), 10px 14px 30px rgba(0,0,0,0.25), 2px 3px 6px rgba(0,0,0,0.3)', opacity: 0.85 };
+const PANEL_HEADER_STYLE = { display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12, padding: '16px 20px', cursor: 'pointer', userSelect: 'none', background: 'linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 50%, transparent 100%)', borderBottom: '1px solid rgba(0,0,0,0.15)', transition: 'background 0.2s' };
+const PANEL_BADGE_STYLE = { fontFamily: 'JetBrains Mono, monospace', fontSize: 12, fontWeight: 700, whiteSpace: 'nowrap', color: 'rgba(240, 232, 218, 0.85)', textShadow: '1px 2px 3px rgba(0,0,0,0.6)' };
+const PANEL_CARET_STYLE = { fontSize: 18, color: '#eaa221', fontWeight: 'bold', textShadow: '0 0 6px rgba(234,162,33,0.4), 1px 1px 2px rgba(0,0,0,0.4)', transition: 'transform 0.2s' };
+
+// Collapsible panel used for every Customize section. `icon` is a distinct
+// emoji per section so the page is scannable; `badge` is an optional count.
+function Section({ icon, title, badge = null, expanded, onToggle, pad = '0 18px 18px', children }) {
+  return (
+    <div style={PANEL_STYLE}>
+      <div onClick={onToggle} style={PANEL_HEADER_STYLE}>
+        <h3 style={{ ...sectionHeader, fontSize: 34, color: '#eaa221', marginBottom: 0, display: 'flex', alignItems: 'center', gap: 12, minWidth: 0 }}>
+          <span aria-hidden="true" style={{ fontSize: 26, lineHeight: 1, flexShrink: 0, filter: 'drop-shadow(1px 2px 2px rgba(0,0,0,0.45))' }}>{icon}</span>
+          <span>{title}</span>
+        </h3>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexShrink: 0 }}>
+          {badge && <span style={PANEL_BADGE_STYLE}>{badge}</span>}
+          <span style={{ ...PANEL_CARET_STYLE, transform: expanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
+        </div>
+      </div>
+      {expanded && <div style={{ padding: pad }}>{children}</div>}
+    </div>
+  );
+}
+
 export default function ExcludeIngredients({ ingredients, excluded, onToggle, onHand = [], onToggleOnHand, onFavoritesChange, customRecipes = [], onAddCustomRecipe, onRemoveCustomRecipe, excludedRecipes = [], onRestoreRecipe, selectedCuisines = [], onToggleCuisine, savedMenus = [], onLoadSavedMenu, onDeleteSavedMenu, recipePool = null }) {
   const [searchExclude, setSearchExclude] = useState('');
   const [searchFav, setSearchFav] = useState('');
@@ -191,27 +218,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
       <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
 
       {/* === CUISINE PREFERENCES SECTION === */}
-      <div style={{ background: 'rgba(160,140,100,0.15)', borderRadius: 6, overflow: 'hidden', border: '1px solid rgba(240,232,218,0.2)', borderTop: '2px solid rgba(255,255,255,0.18)', borderBottom: '3px solid rgba(0,0,0,0.45)', boxShadow: 'inset 0 2px 0 rgba(255,255,255,0.12), inset 0 -2px 4px rgba(0,0,0,0.15), 6px 8px 18px rgba(0,0,0,0.45), 10px 14px 30px rgba(0,0,0,0.25), 2px 3px 6px rgba(0,0,0,0.3)', opacity: 0.85 }}>
-        <div onClick={() => toggleSection('cuisines')} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 20px', cursor: 'pointer', userSelect: 'none', background: 'linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 50%, transparent 100%)', borderBottom: '1px solid rgba(0,0,0,0.15)', transition: 'background 0.2s' }}>
-          <h3 style={{ ...sectionHeader, fontSize: 34, color: '#eaa221', marginBottom: 0 }}>
-            🌿 Cuisine Preferences
-          </h3>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            {selectedCuisines.length > 0 && (
-              <span style={{
-                fontFamily: 'JetBrains Mono, monospace',
-                fontSize: 12,
-                fontWeight: 700,
-                color: 'rgba(240, 232, 218, 0.85)',
-                textShadow: '1px 2px 3px rgba(0,0,0,0.6)',
-              }}>
-                {selectedCuisines.length} selected
-              </span>
-            )}
-            <span style={{ fontSize: 18, color: '#eaa221', fontWeight: 'bold', textShadow: '0 0 6px rgba(234,162,33,0.4), 1px 1px 2px rgba(0,0,0,0.4)', transition: 'transform 0.2s', transform: expandedSections.cuisines ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
-          </div>
-        </div>
-        {expandedSections.cuisines && <div style={{ padding: '0 18px 18px' }}>
+      <Section icon="🌍" title="Cuisine Preferences" badge={selectedCuisines.length > 0 ? `${selectedCuisines.length} selected` : null} expanded={expandedSections.cuisines} onToggle={() => toggleSection('cuisines')} pad="0 18px 18px">
           <p style={{
             fontFamily: 'JetBrains Mono, monospace',
             fontSize: 12,
@@ -243,31 +250,10 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
               );
             })}
           </div>
-        </div>}
-      </div>
+      </Section>
 
       {/* === SKIP INGREDIENTS SECTION === */}
-      <div style={{ background: 'rgba(160,140,100,0.15)', borderRadius: 6, overflow: 'hidden', border: '1px solid rgba(240,232,218,0.2)', borderTop: '2px solid rgba(255,255,255,0.18)', borderBottom: '3px solid rgba(0,0,0,0.45)', boxShadow: 'inset 0 2px 0 rgba(255,255,255,0.12), inset 0 -2px 4px rgba(0,0,0,0.15), 6px 8px 18px rgba(0,0,0,0.45), 10px 14px 30px rgba(0,0,0,0.25), 2px 3px 6px rgba(0,0,0,0.3)', opacity: 0.85 }}>
-        <div onClick={() => toggleSection('skip')} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 20px', cursor: 'pointer', userSelect: 'none', background: 'linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 50%, transparent 100%)', borderBottom: '1px solid rgba(0,0,0,0.15)', transition: 'background 0.2s' }}>
-          <h3 style={{ ...sectionHeader, fontSize: 34, color: '#eaa221', marginBottom: 0 }}>
-            🌿 Skip these ingredients this week
-          </h3>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            {excluded.length > 0 && (
-              <span style={{
-                fontFamily: 'JetBrains Mono, monospace',
-                fontSize: 12,
-                fontWeight: 700,
-                color: 'rgba(240, 232, 218, 0.85)',
-                textShadow: '1px 2px 3px rgba(0,0,0,0.6)',
-              }}>
-                {excluded.length} excluded
-              </span>
-            )}
-            <span style={{ fontSize: 18, color: '#eaa221', fontWeight: 'bold', textShadow: '0 0 6px rgba(234,162,33,0.4), 1px 1px 2px rgba(0,0,0,0.4)', transition: 'transform 0.2s', transform: expandedSections.skip ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
-          </div>
-        </div>
-        {expandedSections.skip && <div style={{ padding: '0 18px 16px' }}>
+      <Section icon="🚫" title="Skip Ingredients" badge={excluded.length > 0 ? `${excluded.length} excluded` : null} expanded={expandedSections.skip} onToggle={() => toggleSection('skip')} pad="0 18px 16px">
         <p style={{
           fontFamily: 'JetBrains Mono, monospace',
           fontSize: 12,
@@ -375,31 +361,10 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
             No ingredients skipped — search above to exclude something.
           </p>
         )}
-        </div>}
-      </div>
+      </Section>
 
       {/* === ON HAND SECTION === */}
-      <div style={{ background: 'rgba(160,140,100,0.15)', borderRadius: 6, overflow: 'hidden', border: '1px solid rgba(240,232,218,0.2)', borderTop: '2px solid rgba(255,255,255,0.18)', borderBottom: '3px solid rgba(0,0,0,0.45)', boxShadow: 'inset 0 2px 0 rgba(255,255,255,0.12), inset 0 -2px 4px rgba(0,0,0,0.15), 6px 8px 18px rgba(0,0,0,0.45), 10px 14px 30px rgba(0,0,0,0.25), 2px 3px 6px rgba(0,0,0,0.3)', opacity: 0.85 }}>
-        <div onClick={() => toggleSection('onhand')} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 20px', cursor: 'pointer', userSelect: 'none', background: 'linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 50%, transparent 100%)', borderBottom: '1px solid rgba(0,0,0,0.15)', transition: 'background 0.2s' }}>
-          <h3 style={{ ...sectionHeader, fontSize: 34, color: '#eaa221', marginBottom: 0 }}>
-            🌿 Already in my kitchen
-          </h3>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            {onHand.length > 0 && (
-              <span style={{
-                fontFamily: 'JetBrains Mono, monospace',
-                fontSize: 12,
-                fontWeight: 700,
-                color: 'rgba(240, 232, 218, 0.85)',
-                textShadow: '1px 2px 3px rgba(0,0,0,0.6)',
-              }}>
-                {onHand.length} on hand
-              </span>
-            )}
-            <span style={{ fontSize: 18, color: '#eaa221', fontWeight: 'bold', textShadow: '0 0 6px rgba(234,162,33,0.4), 1px 1px 2px rgba(0,0,0,0.4)', transition: 'transform 0.2s', transform: expandedSections.onhand ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
-          </div>
-        </div>
-        {expandedSections.onhand && <div style={{ padding: '0 18px 16px' }}>
+      <Section icon="🧺" title="In My Kitchen" badge={onHand.length > 0 ? `${onHand.length} on hand` : null} expanded={expandedSections.onhand} onToggle={() => toggleSection('onhand')} pad="0 18px 16px">
         <p style={{
           fontFamily: 'JetBrains Mono, monospace',
           fontSize: 12,
@@ -507,31 +472,10 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
             No on-hand items yet — search above to add what you already have.
           </p>
         )}
-        </div>}
-      </div>
+      </Section>
 
       {/* === FAVORITES SECTION === */}
-      <div style={{ background: 'rgba(160,140,100,0.15)', borderRadius: 6, overflow: 'hidden', border: '1px solid rgba(240,232,218,0.2)', borderTop: '2px solid rgba(255,255,255,0.18)', borderBottom: '3px solid rgba(0,0,0,0.45)', boxShadow: 'inset 0 2px 0 rgba(255,255,255,0.12), inset 0 -2px 4px rgba(0,0,0,0.15), 6px 8px 18px rgba(0,0,0,0.45), 10px 14px 30px rgba(0,0,0,0.25), 2px 3px 6px rgba(0,0,0,0.3)', opacity: 0.85 }}>
-        <div onClick={() => toggleSection('favs')} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 20px', cursor: 'pointer', userSelect: 'none', background: 'linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 50%, transparent 100%)', borderBottom: '1px solid rgba(0,0,0,0.15)', transition: 'background 0.2s' }}>
-          <h3 style={{ ...sectionHeader, fontSize: 34, color: '#eaa221', marginBottom: 0 }}>
-            🌿 Favorite Ingredients
-          </h3>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            {favorites.length > 0 && (
-              <span style={{
-                fontFamily: 'JetBrains Mono, monospace',
-                fontSize: 12,
-                fontWeight: 700,
-                color: 'rgba(240, 232, 218, 0.85)',
-                textShadow: '1px 2px 3px rgba(0,0,0,0.6)',
-              }}>
-                {favorites.length} in rotation
-              </span>
-            )}
-            <span style={{ fontSize: 18, color: '#eaa221', fontWeight: 'bold', textShadow: '0 0 6px rgba(234,162,33,0.4), 1px 1px 2px rgba(0,0,0,0.4)', transition: 'transform 0.2s', transform: expandedSections.favs ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
-          </div>
-        </div>
-        {expandedSections.favs && <div style={{ padding: '0 18px 16px' }}>
+      <Section icon="⭐" title="Favorite Ingredients" badge={favorites.length > 0 ? `${favorites.length} in rotation` : null} expanded={expandedSections.favs} onToggle={() => toggleSection('favs')} pad="0 18px 16px">
         <p style={{
           fontFamily: 'JetBrains Mono, monospace',
           fontSize: 12,
@@ -639,31 +583,10 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
             No favorites yet — search above to add ingredients you love.
           </p>
         )}
-        </div>}
-      </div>
+      </Section>
 
       {/* === MY RECIPES SECTION === */}
-      <div style={{ background: 'rgba(160,140,100,0.15)', borderRadius: 6, overflow: 'hidden', border: '1px solid rgba(240,232,218,0.2)', borderTop: '2px solid rgba(255,255,255,0.18)', borderBottom: '3px solid rgba(0,0,0,0.45)', boxShadow: 'inset 0 2px 0 rgba(255,255,255,0.12), inset 0 -2px 4px rgba(0,0,0,0.15), 6px 8px 18px rgba(0,0,0,0.45), 10px 14px 30px rgba(0,0,0,0.25), 2px 3px 6px rgba(0,0,0,0.3)', opacity: 0.85 }}>
-        <div onClick={() => toggleSection('recipes')} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 20px', cursor: 'pointer', userSelect: 'none', background: 'linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 50%, transparent 100%)', borderBottom: '1px solid rgba(0,0,0,0.15)', transition: 'background 0.2s' }}>
-          <h3 style={{ ...sectionHeader, fontSize: 34, color: '#eaa221', marginBottom: 0 }}>
-            🌿 My Recipes
-          </h3>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            {customRecipes.length > 0 && (
-              <span style={{
-                fontFamily: 'JetBrains Mono, monospace',
-                fontSize: 12,
-                fontWeight: 700,
-                color: 'rgba(240, 232, 218, 0.85)',
-                textShadow: '1px 2px 3px rgba(0,0,0,0.6)',
-              }}>
-                {customRecipes.length} saved
-              </span>
-            )}
-            <span style={{ fontSize: 18, color: '#eaa221', fontWeight: 'bold', textShadow: '0 0 6px rgba(234,162,33,0.4), 1px 1px 2px rgba(0,0,0,0.4)', transition: 'transform 0.2s', transform: expandedSections.recipes ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
-          </div>
-        </div>
-        {expandedSections.recipes && <div style={{ padding: '0 18px 16px' }}>
+      <Section icon="📖" title="My Recipes" badge={customRecipes.length > 0 ? `${customRecipes.length} saved` : null} expanded={expandedSections.recipes} onToggle={() => toggleSection('recipes')} pad="0 18px 16px">
         <p style={{
           fontFamily: 'JetBrains Mono, monospace',
           fontSize: 12,
@@ -1006,31 +929,10 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
             </p>
           )
         )}
-        </div>}
-      </div>
+      </Section>
 
       {/* === NEVER AGAIN SECTION === */}
-      <div style={{ background: 'rgba(160,140,100,0.15)', borderRadius: 6, overflow: 'hidden', border: '1px solid rgba(240,232,218,0.2)', borderTop: '2px solid rgba(255,255,255,0.18)', borderBottom: '3px solid rgba(0,0,0,0.45)', boxShadow: 'inset 0 2px 0 rgba(255,255,255,0.12), inset 0 -2px 4px rgba(0,0,0,0.15), 6px 8px 18px rgba(0,0,0,0.45), 10px 14px 30px rgba(0,0,0,0.25), 2px 3px 6px rgba(0,0,0,0.3)', opacity: 0.85 }}>
-        <div onClick={() => toggleSection('neverAgain')} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 20px', cursor: 'pointer', userSelect: 'none', background: 'linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 50%, transparent 100%)', borderBottom: '1px solid rgba(0,0,0,0.15)', transition: 'background 0.2s' }}>
-          <h3 style={{ ...sectionHeader, fontSize: 34, color: '#eaa221', marginBottom: 0 }}>
-            🌿 Never Again
-          </h3>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            {excludedRecipes.length > 0 && (
-              <span style={{
-                fontFamily: 'JetBrains Mono, monospace',
-                fontSize: 12,
-                fontWeight: 700,
-                color: 'rgba(240, 232, 218, 0.85)',
-                textShadow: '1px 2px 3px rgba(0,0,0,0.6)',
-              }}>
-                {excludedRecipes.length} hidden
-              </span>
-            )}
-            <span style={{ fontSize: 18, color: '#eaa221', fontWeight: 'bold', textShadow: '0 0 6px rgba(234,162,33,0.4), 1px 1px 2px rgba(0,0,0,0.4)', transition: 'transform 0.2s', transform: expandedSections.neverAgain ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
-          </div>
-        </div>
-        {expandedSections.neverAgain && <div style={{ padding: '0 18px 18px' }}>
+      <Section icon="✋" title="Never Again" badge={excludedRecipes.length > 0 ? `${excludedRecipes.length} hidden` : null} expanded={expandedSections.neverAgain} onToggle={() => toggleSection('neverAgain')} pad="0 18px 18px">
           <p style={{
             fontFamily: 'JetBrains Mono, monospace',
             fontSize: 12,
@@ -1071,31 +973,10 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
               ))}
             </div>
           )}
-        </div>}
-      </div>
+      </Section>
 
       {/* === SAVED MENUS SECTION === */}
-      <div style={{ background: 'rgba(160,140,100,0.18)', borderRadius: 6, overflow: 'hidden', border: '1px solid rgba(240,232,218,0.2)', borderTop: '2px solid rgba(255,255,255,0.18)', borderBottom: '3px solid rgba(0,0,0,0.45)', boxShadow: 'inset 0 2px 0 rgba(255,255,255,0.12), inset 0 -2px 4px rgba(0,0,0,0.15), 6px 8px 18px rgba(0,0,0,0.45), 10px 14px 30px rgba(0,0,0,0.25), 2px 3px 6px rgba(0,0,0,0.3)' }}>
-        <div onClick={() => toggleSection('savedMenus')} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 20px', cursor: 'pointer', userSelect: 'none', background: 'linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 50%, transparent 100%)', borderBottom: '1px solid rgba(0,0,0,0.15)', transition: 'background 0.2s' }}>
-          <h3 style={{ ...sectionHeader, fontSize: 34, color: '#eaa221', marginBottom: 0 }}>
-            ♥ Saved Menus
-          </h3>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            {savedMenus.length > 0 && (
-              <span style={{
-                fontFamily: 'JetBrains Mono, monospace',
-                fontSize: 12,
-                fontWeight: 700,
-                color: 'rgba(240, 232, 218, 0.85)',
-                textShadow: '1px 2px 3px rgba(0,0,0,0.6)',
-              }}>
-                {savedMenus.length} saved
-              </span>
-            )}
-            <span style={{ fontSize: 18, color: '#eaa221', fontWeight: 'bold', textShadow: '0 0 6px rgba(234,162,33,0.4), 1px 1px 2px rgba(0,0,0,0.4)', transition: 'transform 0.2s', transform: expandedSections.savedMenus ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
-          </div>
-        </div>
-        {expandedSections.savedMenus && <div style={{ padding: '0 18px 18px' }}>
+      <Section icon="📋" title="Saved Menus" badge={savedMenus.length > 0 ? `${savedMenus.length} saved` : null} expanded={expandedSections.savedMenus} onToggle={() => toggleSection('savedMenus')} pad="0 18px 18px">
           <p style={{
             fontFamily: 'JetBrains Mono, monospace',
             fontSize: 12,
@@ -1209,8 +1090,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
               })}
             </div>
           )}
-        </div>}
-      </div>
+      </Section>
       </div>
 
       {/* === CUISINE PREVIEW MODAL === */}

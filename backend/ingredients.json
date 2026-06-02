@@ -43,6 +43,7 @@
   { "id": "lettuce", "name": "Lettuce", "unit": "head", "basePrice": 1.00, "category": "vegetable", "protein_g_per_unit": 1, "per_serving": 0.2, "keywords": ["lettuce", "romaine", "iceberg"] },
   { "id": "fresh_tomato", "name": "Fresh Tomato", "unit": "each", "basePrice": 0.50, "category": "vegetable", "protein_g_per_unit": 1, "keywords": ["tomato", "tomatoes"] },
   { "id": "potato", "name": "Potato", "unit": "each", "basePrice": 0.40, "category": "vegetable", "protein_g_per_unit": 2, "keywords": ["potato", "potatoes", "russet"] },
+  { "id": "frozen_hash_browns", "name": "Frozen Hash Browns", "unit": "serving", "basePrice": 0.40, "category": "vegetable", "protein_g_per_unit": 2, "keywords": ["hash browns", "hashbrowns", "hash brown", "hashbrown", "shredded potatoes", "shredded hash browns", "diced hash browns"] },
   { "id": "frozen_mixed_veg", "name": "Frozen Mixed Vegetables", "unit": "serving", "basePrice": 0.35, "category": "vegetable", "protein_g_per_unit": 2, "keywords": ["mixed vegetables", "frozen vegetables"] },
   { "id": "jalapeno", "name": "Jalapeño", "unit": "each", "basePrice": 0.15, "category": "vegetable", "protein_g_per_unit": 0, "keywords": ["jalapeno", "jalapeño"] },
   { "id": "avocado", "name": "Avocado", "unit": "each", "basePrice": 1.00, "category": "vegetable", "protein_g_per_unit": 2, "per_serving": 0.5, "keywords": ["avocado"] },
