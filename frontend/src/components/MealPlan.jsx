@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import Pushpin from './Pushpin.jsx';
 
 const MEAL_TYPES = ['breakfast', 'lunch', 'dinner'];
@@ -408,9 +409,9 @@ export default function MealPlan({ plan, taxRate = 0, skippedMeals = {}, onToggl
 
         {/* Meal rows */}
         {MEAL_TYPES.map(type => (
-          <>
+          <Fragment key={type}>
             {/* Row label */}
-            <div key={`label-${type}`} className="row-label" style={{
+            <div className="row-label" style={{
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'flex-start',
@@ -439,7 +440,7 @@ export default function MealPlan({ plan, taxRate = 0, skippedMeals = {}, onToggl
             {days.map(day => (
               <MealCard key={`${day}-${type}`} meal={plan[day][type]} mealType={type} day={day} taxRate={taxRate} isSkipped={!!skippedMeals[`${day}-${type}`]} onToggleSkip={() => onToggleSkip?.(`${day}-${type}`)} onMealClick={onMealClick} onNeverAgain={onNeverAgain} isFavorite={!!plan[day][type]?.id && favoriteSet.has(plan[day][type].id)} onToggleFavoriteRecipe={onToggleFavoriteRecipe} />
             ))}
-          </>
+          </Fragment>
         ))}
 
         {/* Day totals */}
