@@ -1318,7 +1318,7 @@
     "difficulty": "intermediate"
   },
   {
-    "id": "tuna_melt",
+    "id": "open_face_tuna_melt",
     "name": "Open-Face Tuna Melt",
     "mealType": "lunch",
     "prepMinutes": 10,
@@ -24213,8 +24213,8 @@
     "suggestedSide": "Kettle chips or a small bowl of tomato soup."
   },
   {
-    "id": "italian_sub_sandwich",
-    "name": "Italian Sub Sandwich",
+    "id": "italian_sub_sandwich_deluxe",
+    "name": "Deluxe Italian Sub Sandwich",
     "mealType": "lunch",
     "prepMinutes": 15,
     "difficulty": "beginner",
@@ -24364,7 +24364,7 @@
     "suggestedSide": "Kettle chips or a quick pickle."
   },
   {
-    "id": "tuna_melt",
+    "id": "classic_tuna_melt",
     "name": "Classic Tuna Melt",
     "mealType": "lunch",
     "prepMinutes": 15,
