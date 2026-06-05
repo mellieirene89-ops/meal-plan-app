@@ -187,6 +187,47 @@ main {
   }
 }
 
+@media (max-width: 700px) {
+  /* Header was designed desktop-first with fixed font sizes and no-wrap rows.
+     Below ~700px the title clipped, the taglines overflowed, and the mode cards
+     squished to one word per line. These rules let the header reflow. */
+  .mode-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .taglines-row {
+    justify-content: flex-start !important;
+    gap: 6px 18px !important;
+  }
+  .fresh-ideas {
+    margin-left: 0 !important;
+    margin-top: 4px !important;
+  }
+  /* Tabs: the 26px serif tabs each wrapped to their own line on a phone, so you
+     scrolled past 5 stacked tabs to reach content. Switch to a single horizontal
+     scroll strip (standard mobile pattern) with tighter sizing. */
+  .tabs-row {
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .tabs-row::-webkit-scrollbar { display: none; }
+  .tabs-row [role="tab"] {
+    flex: 0 0 auto;
+    font-size: 16px !important;
+    letter-spacing: 0.1em !important;
+    padding: 8px 12px !important;
+    margin-right: 4px !important;
+    white-space: nowrap;
+  }
+  /* The "N deals nearby · Serves" status can't sit in a no-wrap scroll row;
+     it's redundant with the Deals tab and the plan header, so drop it on mobile. */
+  .tabs-status {
+    display: none !important;
+  }
+}
+
 @media (max-width: 600px) {
   .header-inner {
     padding: 24px 16px 20px !important;

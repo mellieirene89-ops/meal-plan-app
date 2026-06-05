@@ -462,6 +462,15 @@ export default function App() {
     if (!validTabs.includes(tab)) setTab(mode === 'deals' ? 'deals' : 'plan');
   }, [mode]);
 
+  // On mobile the tab bar is a horizontal scroll strip, so the active tab can sit
+  // off-screen (e.g. landing on "Deals Near Me", the last tab). Keep the selected
+  // tab scrolled into view horizontally. block:'nearest' avoids yanking the page
+  // vertically; this is a no-op on desktop where all tabs already fit.
+  useEffect(() => {
+    const el = document.querySelector('[role="tab"][aria-selected="true"]');
+    el?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+  }, [tab, mode]);
+
   // Recompute grocery list when meals are skipped, using plan data
   function getFilteredGroceryData() {
     if (!effectivePlan || !groceryData) return groceryData;
@@ -679,10 +688,10 @@ export default function App() {
           {/* Title block */}
           <div style={{ textAlign: 'left', alignSelf: 'flex-start' }}>
             {/* "MEAL MAKER" + "FRESH IDEAS!" */}
-            <div style={{ display: 'flex', alignItems: 'flex-start', gap: 'clamp(16px, 3vw, 32px)' }}>
-              <h1 style={{
+            <div className="title-row" style={{ display: 'flex', alignItems: 'flex-start', gap: 'clamp(16px, 3vw, 32px)', flexWrap: 'wrap' }}>
+              <h1 className="app-title" style={{
                 fontFamily: 'Pinyon Script, cursive',
-                fontSize: 'clamp(85px, 14vw, 155px)',
+                fontSize: 'clamp(52px, 13vw, 155px)',
                 fontWeight: 400,
                 color: '#faf5e8',
                 lineHeight: 0.95,
@@ -709,7 +718,7 @@ export default function App() {
               }}>
                 Meal Maker
               </h1>
-              <span style={{
+              <span className="fresh-ideas" style={{
                 fontFamily: 'Cormorant Garamond, serif',
                 fontSize: 'clamp(24px, 4vw, 36px)',
                 fontWeight: 700,
@@ -767,7 +776,10 @@ export default function App() {
               ) : zip ? (
                 zip
               ) : (
-                <span style={{ fontStyle: 'italic', opacity: 0.55 }}>your city</span>
+                <span style={{ fontStyle: 'italic', opacity: 0.6 }}>
+                  your city
+                  <span style={{ fontFamily: 'Caveat, cursive', fontStyle: 'normal', fontSize: 22, opacity: 0.9, marginLeft: 10 }}>— add your ZIP below ↓</span>
+                </span>
               )}
             </p>
 
@@ -793,7 +805,7 @@ export default function App() {
             )}
 
             {/* Taglines — ALL CAPS, wide tracking, marigold with tomato bullets */}
-            <div style={{ display: 'flex', marginTop: 10, alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+            <div className="taglines-row" style={{ display: 'flex', marginTop: 10, alignItems: 'center', justifyContent: 'space-between', width: '100%', flexWrap: 'wrap', gap: '8px 20px' }}>
               {['RECIPE PLANNER', 'DEAL-FINDER', 'BUDGET CALCULATOR'].map((tag, i) => (
                 <span key={tag} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                   {(
@@ -875,7 +887,7 @@ export default function App() {
             }}>
               Add your info below, then pick what you’d like to focus on for this session.
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 10 }}>
+            <div className="mode-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 10 }}>
               {MODES.map(m => {
                 const isActive = mode === m.id;
                 return (
@@ -1359,7 +1371,8 @@ export default function App() {
             }} style={{
               display: 'flex',
               alignItems: 'center',
-              gap: 0,
+              flexWrap: 'wrap',
+              gap: '4px 0',
               marginBottom: 28,
               borderBottom: '1px solid var(--chalk-border)',
               paddingBottom: 0,
@@ -1386,13 +1399,14 @@ export default function App() {
                     marginRight: 12,
                     marginBottom: -1,
                     fontFamily: 'Cormorant Garamond, serif',
-                    fontSize: 26,
+                    fontSize: 20,
                     fontWeight: 700,
+                    whiteSpace: 'nowrap',
                     borderRadius: tab === key ? '6px 6px 0 0' : 0,
                     boxShadow: tab === key
                       ? 'inset 0 1px 0 rgba(255,255,255,0.12), 0 4px 10px rgba(0,0,0,0.35)'
                       : 'none',
-                    letterSpacing: '0.28em',
+                    letterSpacing: '0.14em',
                     textTransform: 'uppercase',
                     transition: 'color 0.2s, border-color 0.2s, text-shadow 0.2s',
                     textShadow: tab === key

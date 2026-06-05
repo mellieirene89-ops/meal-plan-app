@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { CornerPins } from './Pushpin.jsx';
 
 const CATEGORY_ORDER = ['protein', 'vegetable', 'carb', 'fat', 'aromatics', 'produce', 'pantry'];
@@ -162,7 +163,15 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
     const out = { breakfast: [], lunch: [], dinner: [] };
     for (const mt of ['breakfast', 'lunch', 'dinner']) {
       const list = recipePool[mt] || [];
-      out[mt] = list.filter(r => (r.tags || []).includes(previewCuisine.id));
+      // Dedupe by id — the pool can contain the same recipe twice, which would
+      // otherwise produce duplicate React keys (and a visibly duplicated row).
+      const seen = new Set();
+      out[mt] = list.filter(r => {
+        if (!(r.tags || []).includes(previewCuisine.id)) return false;
+        if (seen.has(r.id)) return false;
+        seen.add(r.id);
+        return true;
+      });
     }
     out.total = out.breakfast.length + out.lunch.length + out.dinner.length;
     return out;
@@ -716,7 +725,7 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
                   border: '1px solid rgba(180,160,120,0.35)',
                   borderRadius: 6,
                   padding: '8px 12px',
-                  color: '#ffffff',
+                  color: '#3a2a18',
                   fontFamily: 'Cormorant Garamond, serif',
                   fontSize: 14,
                   fontWeight: 600,
@@ -1093,8 +1102,12 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
       </Section>
       </div>
 
-      {/* === CUISINE PREVIEW MODAL === */}
-      {previewCuisine && (
+      {/* === CUISINE PREVIEW MODAL ===
+          Rendered via a portal to document.body. The Customize tab lives inside a
+          wrapper with `animation: fadeUp ... both`, whose lingering transform makes
+          it the containing block for position:fixed — which otherwise anchors this
+          modal to that tall wrapper instead of the viewport (off-screen once scrolled). */}
+      {previewCuisine && createPortal(
         <div
           onClick={() => { setPreviewCuisine(null); setExpandedPoolRecipe(null); }}
           style={{
@@ -1322,7 +1335,8 @@ export default function ExcludeIngredients({ ingredients, excluded, onToggle, on
               </button>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );
