@@ -82,7 +82,7 @@ export default function BudgetBar({ weeklyTotal, budget, taxRate = 0 }) {
           letterSpacing: '0.25em',
           textShadow: '2px 2px 0 rgba(0,0,0,0.75), 3px 4px 5px rgba(0,0,0,0.4)',
         }}>
-          Weekly Cost
+          Est. Weekly Cost
         </span>
         <span style={{
           fontFamily: 'Bebas Neue, sans-serif',
@@ -96,7 +96,7 @@ export default function BudgetBar({ weeklyTotal, budget, taxRate = 0 }) {
           textShadow: '2px 3px 4px rgba(0,0,0,0.35)',
           display: 'block',
         }}>
-          ${weeklyTotal.toFixed(2).split('.')[0]}.<span style={{ fontSize: '0.55em', verticalAlign: 'super', letterSpacing: '0.04em' }}>{weeklyTotal.toFixed(2).split('.')[1]}</span>
+          <span style={{ fontSize: '0.6em', opacity: 0.75, marginRight: 2 }}>~</span>${weeklyTotal.toFixed(2).split('.')[0]}.<span style={{ fontSize: '0.55em', verticalAlign: 'super', letterSpacing: '0.04em' }}>{weeklyTotal.toFixed(2).split('.')[1]}</span>
         </span>
         <span style={{
           fontFamily: 'Cormorant Garamond, serif',
@@ -107,7 +107,7 @@ export default function BudgetBar({ weeklyTotal, budget, taxRate = 0 }) {
           display: 'block',
           marginTop: 4,
         }}>
-          {taxRate > 0 ? `(incl. ${(taxRate * 100).toFixed(1)}% grocery tax)` : '(no grocery tax)'}
+          {taxRate > 0 ? `(incl. ${(taxRate * 100).toFixed(1)}% grocery tax · register may vary)` : '(no grocery tax · register may vary)'}
         </span>
       </div>
 

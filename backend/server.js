@@ -11,6 +11,15 @@ const PORT = 3001;
 function formatGroceryQty(totalQty, unit) {
   if (!unit || totalQty <= 0) return null;
   if (unit === 'use') return null; // "8 uses of olive oil" doesn't help anyone
+  // Meat sold by weight: round UP to the next 1/4 lb. You can't ask the counter
+  // for 1.37 lb, and rounding down would under-buy for the week.
+  if (unit === 'lb') {
+    const lb = Math.max(0.25, Math.ceil(totalQty * 4) / 4);
+    const whole = Math.floor(lb);
+    const frac = { 0: '', 0.25: '1/4', 0.5: '1/2', 0.75: '3/4' }[Math.round((lb - whole) * 100) / 100];
+    const display = whole === 0 ? frac : (frac ? `${whole} ${frac}` : String(whole));
+    return `${display} lb`;
+  }
   // Countable units (you can't buy half a lemon or a third of a can) round UP
   // to the next whole; fractional display is reserved for measure units like cup/tbsp.
   const COUNTABLE = new Set(['each', 'can', 'head', 'slice', 'bunch', 'block', 'jar', 'packet', 'pack', 'box', 'piece', 'stalk']);
@@ -130,6 +139,7 @@ app.get('/api/grocery-list', async (req, res) => {
       onhand.map(id => ingredientList.find(i => i.id === id)?.name).filter(Boolean)
     );
     const unitById = Object.fromEntries(ingredientList.map(i => [i.id, i.unit]));
+    const lbPerUnitById = Object.fromEntries(ingredientList.map(i => [i.id, i.lb_per_unit]));
 
     // Aggregate all ingredients across the week — sum qty and cost per ingredient.
     const aggregated = {};
@@ -145,6 +155,7 @@ app.get('/api/grocery-list', async (req, res) => {
               totalCost: 0,
               totalQty: 0,
               unit: unitById[ing.id] || null,
+              lbPerUnit: lbPerUnitById[ing.id] ?? null,
               onSale: ing.onSale,
               saleStore: ing.saleStore || null,
               onHand: onHandNames.has(ing.name),
@@ -163,7 +174,9 @@ app.get('/api/grocery-list', async (req, res) => {
         // Human-readable "buy this much" string. Hides the count for abstract
         // units ("use", "serving") since "8 uses of olive oil" is unhelpful;
         // shows raw count for "each" (12 eggs reads better than "12 each eggs").
-        quantityLabel: formatGroceryQty(i.totalQty, i.unit),
+        // totalQty is in abstract serving-units; meats convert to pounds for
+        // display since that's the unit you actually buy and stores advertise.
+        quantityLabel: formatGroceryQty(i.totalQty * (i.lbPerUnit ?? 1), i.unit),
       }))
       .sort((a, b) => b.totalCost - a.totalCost);
 

@@ -64,65 +64,81 @@ export default function LocalDeals({ sales, zip, scrapedAt, radiusMiles, noStore
 
   return (
     <div>
+      {/* Dark backing strip (matches the tabs row): this header used to sit as
+          half-opacity text directly on the busy photo background and was hard
+          to read. Same surface treatment as the tabs. */}
       <div style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'baseline',
-        marginBottom: 8,
+        background: 'linear-gradient(180deg, rgba(25,16,8,0.55) 0%, rgba(25,16,8,0.38) 100%)',
+        borderRadius: 10,
+        padding: '12px 18px',
+        marginBottom: 20,
+        border: '1px solid rgba(240,232,218,0.12)',
+        boxShadow: 'inset 0 1px 0 rgba(255,245,215,0.08), 0 3px 8px rgba(0,0,0,0.2)',
       }}>
-        <p style={{
-          fontFamily: 'Cormorant Garamond, serif',
-          fontSize: 16,
-          fontWeight: 700,
-          color: 'var(--chalk)',
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'baseline',
+          flexWrap: 'wrap',
+          gap: '2px 12px',
         }}>
-          {sales.length} deals near ZIP {zip}
-        </p>
-        {scrapedAt && (
+          <p style={{
+            fontFamily: 'Cormorant Garamond, serif',
+            fontSize: 17,
+            fontWeight: 700,
+            color: 'var(--chalk)',
+            textShadow: '1px 2px 3px rgba(0,0,0,0.5)',
+          }}>
+            {sales.length} deals near ZIP {zip}
+          </p>
+          {scrapedAt && (
+            <p style={{
+              fontFamily: 'Cormorant Garamond, serif',
+              fontSize: 14,
+              fontWeight: 600,
+              color: 'rgba(240, 232, 218, 0.75)',
+              textShadow: '1px 2px 3px rgba(0,0,0,0.5)',
+            }}>
+              updated {new Date(scrapedAt).toLocaleDateString()}
+            </p>
+          )}
+        </div>
+
+        {coverage && coverage.checked.length > 0 && (
           <p style={{
             fontFamily: 'Cormorant Garamond, serif',
             fontSize: 14,
             fontWeight: 600,
-            color: 'var(--chalk-muted)',
+            fontStyle: 'italic',
+            color: 'rgba(240, 232, 218, 0.8)',
+            marginTop: 4,
+            lineHeight: 1.5,
+            textShadow: '1px 2px 3px rgba(0,0,0,0.5)',
           }}>
-            updated {new Date(scrapedAt).toLocaleDateString()}
+            Checked within {radiusMiles}mi:{' '}
+            {coverage.withDeals.map((s, i) => (
+              <span key={s}>
+                <span style={{ color: 'var(--chalk)' }}>{s} <span style={{ color: '#9dc25e' }}>✓</span></span>
+                {i < coverage.withDeals.length - 1 || missing.length > 0 ? ', ' : ''}
+              </span>
+            ))}
+            {missingVisible.map((s, i) => (
+              <span key={s} title="No weekly ad data available from our source for this chain">
+                {s} <span style={{ opacity: 0.75 }}>(no weekly ad data)</span>
+                {i < missingVisible.length - 1 || missingHidden.length > 0 ? ', ' : ''}
+              </span>
+            ))}
+            {missingHidden.length > 0 && (
+              <span
+                title={`Also no weekly ad data for: ${missingHidden.join(', ')}`}
+                style={{ borderBottom: '1px dotted currentColor', cursor: 'help' }}
+              >
+                +{missingHidden.length} more
+              </span>
+            )}
           </p>
         )}
       </div>
-
-      {coverage && coverage.checked.length > 0 && (
-        <p style={{
-          fontFamily: 'Cormorant Garamond, serif',
-          fontSize: 13,
-          fontWeight: 600,
-          fontStyle: 'italic',
-          color: 'var(--chalk-muted)',
-          marginBottom: 20,
-          lineHeight: 1.5,
-        }}>
-          Checked within {radiusMiles}mi:{' '}
-          {coverage.withDeals.map((s, i) => (
-            <span key={s}>
-              <span style={{ color: 'var(--chalk)' }}>{s} <span style={{ color: '#6b8e3a' }}>✓</span></span>
-              {i < coverage.withDeals.length - 1 || missing.length > 0 ? ', ' : ''}
-            </span>
-          ))}
-          {missingVisible.map((s, i) => (
-            <span key={s} title="No weekly ad data available from our source for this chain">
-              {s} <span style={{ opacity: 0.7 }}>(no weekly ad data)</span>
-              {i < missingVisible.length - 1 || missingHidden.length > 0 ? ', ' : ''}
-            </span>
-          ))}
-          {missingHidden.length > 0 && (
-            <span
-              title={`Also no weekly ad data for: ${missingHidden.join(', ')}`}
-              style={{ borderBottom: '1px dotted currentColor', cursor: 'help' }}
-            >
-              +{missingHidden.length} more
-            </span>
-          )}
-        </p>
-      )}
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
         {Object.entries(byStore).map(([store, items]) => {

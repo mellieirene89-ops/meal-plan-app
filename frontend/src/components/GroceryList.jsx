@@ -1,8 +1,67 @@
+import { useState } from 'react';
 import { CornerPins } from './Pushpin.jsx';
+
+// Plain-text rendering of the list, sized for a phone screen: short lines, ASCII
+// checkboxes (survive any font/app you paste into), on-hand items kept in place
+// so you can still verify the pantry while you shop.
+function buildListText(items, saleItems, regularItems, estimatedTotal, taxRate, taxAmount) {
+  const line = (item) => {
+    const parts = [item.name];
+    if (item.onHand) {
+      parts.push('on hand');
+    } else {
+      if (item.quantityLabel) parts.push(item.quantityLabel);
+      parts.push(`$${item.totalCost.toFixed(2)}`);
+      if (item.saleStore) parts.push(`@ ${item.saleStore}`);
+    }
+    return `${item.onHand ? '[x]' : '[ ]'} ${parts.join(' · ')}`;
+  };
+
+  const out = [
+    'SHOPPING LIST',
+    `${items.length} items · ${items.filter(i => i.onHand).length} on hand · ${saleItems.length} deals`,
+  ];
+
+  if (saleItems.length) {
+    out.push('', '* DEALS', ...saleItems.map(line));
+    if (regularItems.length) out.push('', 'REGULAR PRICE', ...regularItems.map(line));
+  } else {
+    out.push('', ...regularItems.map(line));
+  }
+
+  out.push('', '----------------', `EST. TOTAL  ~$${estimatedTotal?.toFixed(2)}`);
+  if (taxRate > 0) {
+    out.push(`(incl. $${taxAmount.toFixed(2)} est. tax @ ${(taxRate * 100).toFixed(1)}%)`);
+  }
+  out.push('', 'Estimated from local averages + this week’s ads — register may vary a few dollars.');
+
+  return out.join('\n');
+}
 
 export default function GroceryList({ items, estimatedTotal, taxRate = 0, taxAmount = 0 }) {
   const saleItems = items.filter(i => i.onSale);
   const regularItems = items.filter(i => !i.onSale);
+  const [copyState, setCopyState] = useState('idle'); // idle | copied | failed
+
+  async function copyList() {
+    const text = buildListText(items, saleItems, regularItems, estimatedTotal, taxRate, taxAmount);
+    let ok = false;
+    try {
+      await navigator.clipboard.writeText(text);
+      ok = true;
+    } catch {
+      // Older browsers, or a non-secure origin, where the async clipboard is unavailable.
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;';
+      document.body.appendChild(ta);
+      ta.select();
+      try { ok = document.execCommand('copy'); } catch { ok = false; }
+      document.body.removeChild(ta);
+    }
+    setCopyState(ok ? 'copied' : 'failed');
+    setTimeout(() => setCopyState('idle'), 2000);
+  }
 
   return (
     <div className="grocery-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 290px', gap: 20, alignItems: 'start' }}>
@@ -21,25 +80,60 @@ export default function GroceryList({ items, estimatedTotal, taxRate = 0, taxAmo
         <div style={{
           padding: '20px 26px 18px',
           borderBottom: '2px solid #c4b8a0',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'flex-start',
+          flexWrap: 'wrap',
+          gap: 12,
         }}>
-          <h2 style={{
-            fontFamily: 'Pinyon Script, cursive',
-            fontSize: 34,
-            fontWeight: 400,
-            color: '#3a2a18',
-          }}>
-            Shopping List
-          </h2>
-          <p style={{
-            fontFamily: 'JetBrains Mono, monospace',
-            fontSize: 13,
-            fontWeight: 700,
-            color: '#8a7a66',
-            marginTop: 5,
-            letterSpacing: '0.03em',
-          }}>
-            {items.length} items · {items.filter(i => i.onHand).length} on hand · {saleItems.length} deals
-          </p>
+          <div>
+            <h2 style={{
+              fontFamily: 'Pinyon Script, cursive',
+              fontSize: 34,
+              fontWeight: 400,
+              color: '#3a2a18',
+            }}>
+              Shopping List
+            </h2>
+            <p style={{
+              fontFamily: 'JetBrains Mono, monospace',
+              fontSize: 13,
+              fontWeight: 700,
+              color: '#8a7a66',
+              marginTop: 5,
+              letterSpacing: '0.03em',
+            }}>
+              {items.length} items · {items.filter(i => i.onHand).length} on hand · {saleItems.length} deals
+            </p>
+          </div>
+          <button
+            onClick={copyList}
+            aria-label="Copy shopping list to clipboard"
+            style={{
+              background: copyState === 'copied'
+                ? 'linear-gradient(180deg, #cfe0bc 0%, #a8c48c 50%, #85a468 100%)'
+                : copyState === 'failed'
+                  ? 'linear-gradient(180deg, #e8c4b4 0%, #cf9c84 50%, #b07a60 100%)'
+                  : 'linear-gradient(180deg, #f0e4c8 0%, #ddd0aa 20%, #c8b888 50%, #b0a070 80%, #9a8a5e 100%)',
+              color: '#2a1a0e',
+              fontFamily: 'Amatic SC, cursive',
+              fontWeight: 700,
+              padding: '7px 18px',
+              fontSize: 20,
+              lineHeight: 1.1,
+              letterSpacing: '0.06em',
+              textTransform: 'uppercase',
+              border: '1px solid rgba(140,120,70,0.6)',
+              borderTop: '2px solid rgba(255,245,220,0.7)',
+              borderBottom: '3px solid rgba(80,60,30,0.7)',
+              borderRadius: 8,
+              cursor: 'pointer',
+              whiteSpace: 'nowrap',
+              flexShrink: 0,
+            }}
+          >
+            {copyState === 'copied' ? '✓ Copied!' : copyState === 'failed' ? 'Copy Failed' : 'Copy List'}
+          </button>
         </div>
 
         {saleItems.length > 0 && (
@@ -95,7 +189,7 @@ export default function GroceryList({ items, estimatedTotal, taxRate = 0, taxAmo
             color: '#3a2a18',
             letterSpacing: '0.01em',
           }}>
-            ${estimatedTotal?.toFixed(2)}
+            <span style={{ fontSize: '0.65em', opacity: 0.7 }}>~</span>${estimatedTotal?.toFixed(2)}
           </span>
         </div>
         {taxRate > 0 && (
@@ -125,7 +219,9 @@ export default function GroceryList({ items, estimatedTotal, taxRate = 0, taxAmo
           padding: '0 26px 14px',
           lineHeight: 1.4,
         }}>
-          *Prices shown are averages for your zip code and may not reflect exact in-store pricing.
+          Prices are estimates from local averages and this week's ads — expect your register total to
+          land within a few dollars. The savings come from <em>which</em> meals made the list, not the
+          pennies: every pick is anchored to what's actually on sale near you.
         </p>
       </div>
 
@@ -166,7 +262,7 @@ export default function GroceryList({ items, estimatedTotal, taxRate = 0, taxAmo
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-          <SummaryLine label="Groceries" value={`$${estimatedTotal?.toFixed(2)}`} large />
+          <SummaryLine label="Groceries" value={`~$${estimatedTotal?.toFixed(2)}`} large />
           <SummaryLine label="On hand" value={items.filter(i => i.onHand).length} />
           <SummaryLine label="To buy" value={items.filter(i => !i.onHand).length} />
           <SummaryLine label="Deals" value={saleItems.filter(i => !i.onHand).length} />

@@ -187,6 +187,14 @@ main {
   }
 }
 
+/* Hover affordance for inactive tabs — inline styles can't express :hover.
+   Scoped to aria-selected="false" so the active tab's gradient is untouched. */
+.tabs-row [role="tab"][aria-selected="false"]:hover {
+  color: #ffffff !important;
+  background: rgba(0, 0, 0, 0.45) !important;
+  border-color: rgba(240, 232, 218, 0.3) !important;
+}
+
 @media (max-width: 700px) {
   /* Header was designed desktop-first with fixed font sizes and no-wrap rows.
      Below ~700px the title clipped, the taglines overflowed, and the mode cards

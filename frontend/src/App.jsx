@@ -1374,8 +1374,13 @@ export default function App() {
               flexWrap: 'wrap',
               gap: '4px 0',
               marginBottom: 28,
-              borderBottom: '1px solid var(--chalk-border)',
-              paddingBottom: 0,
+              // Dark backing strip: the tabs used to sit as bare text on the busy
+              // photo background and blended in. This gives them a consistent surface.
+              background: 'linear-gradient(180deg, rgba(25,16,8,0.55) 0%, rgba(25,16,8,0.38) 100%)',
+              borderRadius: '10px 10px 0 0',
+              padding: '8px 10px 0',
+              borderBottom: '2px solid rgba(234,162,33,0.4)',
+              boxShadow: 'inset 0 1px 0 rgba(255,245,215,0.08), 0 3px 8px rgba(0,0,0,0.2)',
             }}>
               {(mode === 'deals'
                 ? [['preferences', 'Customize'], ['deals', 'Deals Near Me']]
@@ -1389,12 +1394,13 @@ export default function App() {
                   onClick={() => setTab(key)}
                   style={{
                     background: tab === key
-                      ? 'linear-gradient(180deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.04) 60%, transparent 100%)'
-                      : 'transparent',
-                    color: tab === key ? '#ffffff' : 'rgba(255, 255, 255, 0.45)',
-                    border: tab === key ? '1px solid rgba(255,255,255,0.1)' : '1px solid transparent',
+                      ? 'linear-gradient(180deg, rgba(234,162,33,0.28) 0%, rgba(255,255,255,0.07) 60%, transparent 100%)'
+                      : 'rgba(0,0,0,0.28)',
+                    color: tab === key ? '#ffffff' : 'rgba(240, 232, 218, 0.85)',
+                    borderLeft: tab === key ? '1px solid rgba(255,255,255,0.14)' : '1px solid rgba(240,232,218,0.14)',
+                    borderRight: tab === key ? '1px solid rgba(255,255,255,0.14)' : '1px solid rgba(240,232,218,0.14)',
                     borderBottom: tab === key ? '4px solid #eaa221' : '4px solid transparent',
-                    borderTop: tab === key ? '1px solid rgba(234,162,33,0.3)' : '1px solid transparent',
+                    borderTop: tab === key ? '1px solid rgba(234,162,33,0.45)' : '1px solid rgba(240,232,218,0.1)',
                     padding: '10px 16px',
                     marginRight: 12,
                     marginBottom: -1,
@@ -1402,10 +1408,10 @@ export default function App() {
                     fontSize: 20,
                     fontWeight: 700,
                     whiteSpace: 'nowrap',
-                    borderRadius: tab === key ? '6px 6px 0 0' : 0,
+                    borderRadius: '6px 6px 0 0',
                     boxShadow: tab === key
-                      ? 'inset 0 1px 0 rgba(255,255,255,0.12), 0 4px 10px rgba(0,0,0,0.35)'
-                      : 'none',
+                      ? 'inset 0 1px 0 rgba(255,255,255,0.15), 0 4px 10px rgba(0,0,0,0.4)'
+                      : 'inset 0 1px 0 rgba(255,255,255,0.05)',
                     letterSpacing: '0.14em',
                     textTransform: 'uppercase',
                     transition: 'color 0.2s, border-color 0.2s, text-shadow 0.2s',

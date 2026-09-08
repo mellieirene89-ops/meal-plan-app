@@ -33,6 +33,46 @@ function loadData() {
   return { recipes, ingredients };
 }
 
+// Word-boundary keyword match, so "ham" can't match "hamburger" and "chicken"
+// can't match "chickpea". Substring matching was letting both through.
+export function matchesKeyword(saleName, keyword) {
+  const esc = keyword.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(`\\b${esc}s?\\b`, 'i').test(saleName);
+}
+
+// Species named in a product title. "fish" is deliberately absent — it shows up
+// as a department/brand ("Fish Market cooked shrimp") rather than the product.
+const SPECIES = {
+  beef: /\b(beef|hamburger|ground chuck|sirloin|ribeye|brisket)\b/i,
+  pork: /\b(pork|bacon|ham|sausage|chorizo|prosciutto)\b/i,
+  chicken: /\bchicken\b/i,
+  turkey: /\bturkey\b/i,
+  tuna: /\btuna\b/i,
+  salmon: /\bsalmon\b/i,
+  shrimp: /\b(shrimp|prawn)\b/i,
+};
+
+// Products that borrow a meat word but aren't the raw cut you'd buy by the pound.
+const NOT_RAW_MEAT = /\b(helper|broth|stock|bouillon|soup|gravy|seasoning|flavou?red|marinade|jerky|wrapped|stuffed|pet|dog|cat|treat)\b/i;
+
+// Guards the per-pound sale match for meats. A Flipp title only counts if it
+// names this ingredient's species and no OTHER species — "Chicken of the Sea
+// tuna" and "Bacon wrapped chicken griller" both name two, so both are junk.
+export function isBadMeatMatch(saleName, ing) {
+  if (!ing.lb_per_unit) return false; // only guards by-the-pound meats
+  if (NOT_RAW_MEAT.test(saleName)) return true;
+  const own = new Set();
+  const other = new Set();
+  const text = `${ing.name} ${ing.keywords.join(' ')}`;
+  for (const [species, re] of Object.entries(SPECIES)) {
+    if (re.test(text)) own.add(species);
+  }
+  for (const [species, re] of Object.entries(SPECIES)) {
+    if (re.test(saleName) && !own.has(species)) other.add(species);
+  }
+  return other.size > 0;
+}
+
 function buildIngredientMap(ingredients, sales = []) {
   const map = {};
   for (const ing of ingredients) {
@@ -41,10 +81,8 @@ function buildIngredientMap(ingredients, sales = []) {
   // Apply sale prices where keywords match
   for (const sale of sales) {
     for (const ing of ingredients) {
-      const match = ing.keywords.some(kw =>
-        sale.name.toLowerCase().includes(kw.toLowerCase())
-      );
-      if (match && sale.salePrice < map[ing.id].basePrice) {
+      const match = ing.keywords.some(kw => matchesKeyword(sale.name, kw));
+      if (match && !isBadMeatMatch(sale.name, ing) && sale.salePrice < map[ing.id].basePrice) {
         map[ing.id].currentPrice = sale.salePrice;
         map[ing.id].onSale = true;
         map[ing.id].saleName = sale.name;
@@ -72,12 +110,21 @@ function perServing(ing) {
   return ing?.per_serving ?? 1;
 }
 
+// Meats are priced per POUND (that's how stores actually advertise them), while
+// recipe qty stays in abstract serving-units so protein scoring is unaffected.
+// lb_per_unit bridges the two: one serving-unit of ground beef is 0.333 lb, so
+// $5.29/lb becomes $1.76 per serving-unit. Ingredients without lb_per_unit are
+// already priced per serving-unit and pass through unchanged.
+function unitPrice(ing) {
+  return (ing?.currentPrice || 0) * (ing?.lb_per_unit ?? 1);
+}
+
 function calcRecipeCost(recipe, ingredientMap) {
   let cost = 0;
   for (const item of recipe.ingredients) {
     const ing = ingredientMap[item.id];
     if (!ing) continue;
-    cost += ing.currentPrice * item.qty * perServing(ing);
+    cost += unitPrice(ing) * item.qty * perServing(ing);
   }
   return Math.round(cost * 100) / 100;
 }
@@ -121,7 +168,7 @@ function scoreRecipe(recipe, ingredientMap, favoriteIds = [], onHandIds = [], fa
 
 export function getIngredientList() {
   const { ingredients } = loadData();
-  return ingredients.map(i => ({ id: i.id, name: i.name, category: i.category, unit: i.unit }));
+  return ingredients.map(i => ({ id: i.id, name: i.name, category: i.category, unit: i.unit, lb_per_unit: i.lb_per_unit }));
 }
 
 // Build a meal-plan response from an explicit recipe-id-per-day-per-meal-type map.
@@ -161,7 +208,7 @@ export function populateMealPlanFromIds(idsByDay = {}, sales = [], servings = 1,
           measure: scaleMeasure(item.measure, servings / BASE_SERVINGS),
           onSale: ingredientMap[item.id]?.onSale || false,
           saleStore: ingredientMap[item.id]?.saleStore || null,
-          qty: item.qty * perServing(ingredientMap[item.id]) * servings, cost: Math.round((ingredientMap[item.id]?.currentPrice || 0) * item.qty * perServing(ingredientMap[item.id]) * servings * 100) / 100,
+          qty: item.qty * perServing(ingredientMap[item.id]) * servings, cost: Math.round(unitPrice(ingredientMap[item.id]) * item.qty * perServing(ingredientMap[item.id]) * servings * 100) / 100,
         })),
       };
       dayTotal += cost;
@@ -218,7 +265,7 @@ export function getAvailableRecipes(sales = [], servings = 1, excludeIds = [], f
           measure: scaleMeasure(item.measure, servings / BASE_SERVINGS),
           onSale: ingredientMap[item.id]?.onSale || false,
           saleStore: ingredientMap[item.id]?.saleStore || null,
-          qty: item.qty * perServing(ingredientMap[item.id]) * servings, cost: Math.round((ingredientMap[item.id]?.currentPrice || 0) * item.qty * perServing(ingredientMap[item.id]) * servings * 100) / 100
+          qty: item.qty * perServing(ingredientMap[item.id]) * servings, cost: Math.round(unitPrice(ingredientMap[item.id]) * item.qty * perServing(ingredientMap[item.id]) * servings * 100) / 100
         }))
       }))
       .sort((a, b) => b.score - a.score);
@@ -449,7 +496,7 @@ export function generateMealPlan(sales = [], budgetCap = null, servings = 1, exc
           measure: scaleMeasure(item.measure, servings / BASE_SERVINGS),
           onSale: ingredientMap[item.id]?.onSale || false,
           saleStore: ingredientMap[item.id]?.saleStore || null,
-          qty: item.qty * perServing(ingredientMap[item.id]) * servings, cost: Math.round((ingredientMap[item.id]?.currentPrice || 0) * item.qty * perServing(ingredientMap[item.id]) * servings * 100) / 100
+          qty: item.qty * perServing(ingredientMap[item.id]) * servings, cost: Math.round(unitPrice(ingredientMap[item.id]) * item.qty * perServing(ingredientMap[item.id]) * servings * 100) / 100
         }))
       };
       dayTotal += meal.cost;
@@ -521,7 +568,7 @@ export function generateMealPlan(sales = [], budgetCap = null, servings = 1, exc
             measure: scaleMeasure(item.measure, servings / BASE_SERVINGS),
             onSale: ingredientMap[item.id]?.onSale || false,
             saleStore: ingredientMap[item.id]?.saleStore || null,
-            qty: item.qty * perServing(ingredientMap[item.id]) * servings, cost: Math.round((ingredientMap[item.id]?.currentPrice || 0) * item.qty * perServing(ingredientMap[item.id]) * servings * 100) / 100
+            qty: item.qty * perServing(ingredientMap[item.id]) * servings, cost: Math.round(unitPrice(ingredientMap[item.id]) * item.qty * perServing(ingredientMap[item.id]) * servings * 100) / 100
           }))
         };
         let dt = 0;
