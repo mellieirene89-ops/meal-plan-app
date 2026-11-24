@@ -5,6 +5,9 @@ import { dirname, join } from 'path';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const CACHE_DIR = join(__dirname, 'sales_cache');
 const CACHE_TTL_MS = 12 * 60 * 60 * 1000; // 12 hours
+// Deals scraped without verified store locations may include chains with no
+// store nearby, so keep them only long enough to absorb a burst of requests.
+const UNVERIFIED_CACHE_TTL_MS = 5 * 60 * 1000; // 5 minutes
 
 // Search terms that cover our ingredient list
 const SEARCH_TERMS = [
@@ -259,7 +262,7 @@ function loadCache(zip, radius) {
   try {
     const data = JSON.parse(readFileSync(file, 'utf-8'));
     const age = Date.now() - new Date(data.cachedAt).getTime();
-    if (age < CACHE_TTL_MS) return data;
+    if (age < (data.storesUnverified ? UNVERIFIED_CACHE_TTL_MS : CACHE_TTL_MS)) return data;
   } catch {
     // ignore
   }
@@ -293,13 +296,15 @@ async function getZipCoords(zip) {
 // Find actual grocery stores within radius using OpenStreetMap Overpass API
 // Returns an array (possibly empty) on a successful API call, or `null` when the call failed —
 // callers use null to mean "uncertain, fall back" and [] to mean "verified zero stores in range".
+const OVERPASS_RETRY_MS = 2000;
+
 async function findNearbyStores(lat, lng, radiusMiles) {
   const radiusMeters = Math.round(radiusMiles * 1609.34);
   const query = `[out:json][timeout:15];(nwr["shop"="supermarket"](around:${radiusMeters},${lat},${lng});nwr["shop"="grocery"](around:${radiusMeters},${lat},${lng});nwr["shop"="convenience"]["brand"](around:${radiusMeters},${lat},${lng}););out center body;`;
 
   try {
     const url = `https://overpass-api.de/api/interpreter`;
-    const res = await fetch(url, {
+    const post = () => fetch(url, {
       method: 'POST',
       body: 'data=' + encodeURIComponent(query),
       headers: {
@@ -307,6 +312,14 @@ async function findNearbyStores(lat, lng, radiusMiles) {
         'User-Agent': 'MealMakerApp/1.0',
       },
     });
+    let res = await post();
+    // Overpass rate-limits bursts (429) and sheds load (502/503/504). One retry
+    // after a short pause usually succeeds and keeps us on verified store locations.
+    if (res.status === 429 || res.status >= 500) {
+      console.warn(`[overpass] HTTP ${res.status} — retrying in ${OVERPASS_RETRY_MS}ms`);
+      await new Promise(r => setTimeout(r, OVERPASS_RETRY_MS));
+      res = await post();
+    }
     if (!res.ok) {
       console.warn(`[overpass] HTTP ${res.status} — store lookup failed`);
       return null;
@@ -432,7 +445,16 @@ async function searchFlipp(query, zip) {
   }
 }
 
+// Scrapes in progress, keyed by ZIP+radius. One page load fires several API
+// calls at once; without this each would run its own scrape, hammer Flipp and
+// Overpass in parallel (triggering 429s), and race to overwrite the cache.
+const inFlight = new Map();
+
 export async function getSales(zip = '64683', forceRefresh = false, radiusMiles = 30) {
+  const key = cacheKey(zip, radiusMiles);
+  // A scrape already running is fresh by definition, so refresh requests join it too.
+  if (inFlight.has(key)) return inFlight.get(key);
+
   if (!forceRefresh) {
     const cached = loadCache(zip, radiusMiles);
     if (cached) {
@@ -441,6 +463,12 @@ export async function getSales(zip = '64683', forceRefresh = false, radiusMiles 
     }
   }
 
+  const promise = scrapeSales(zip, radiusMiles).finally(() => inFlight.delete(key));
+  inFlight.set(key, promise);
+  return promise;
+}
+
+async function scrapeSales(zip, radiusMiles) {
   console.log(`[flipp] Fetching deals within ${radiusMiles}mi of ZIP ${zip}...`);
 
   // Step 1: Find actual store locations within radius.
@@ -496,7 +524,7 @@ export async function getSales(zip = '64683', forceRefresh = false, radiusMiles 
   if (filteredStores.size > 0) {
     console.log(`[flipp] Filtered out stores with no location within ${radiusMiles}mi:`, [...filteredStores]);
   }
-  console.log(`[flipp] Found ${sales.length} deals from ${new Set(sales.map(s => s.store)).size} verified stores`);
+  console.log(`[flipp] Found ${sales.length} deals from ${new Set(sales.map(s => s.store)).size} ${nearbyStores ? 'verified' : 'UNVERIFIED'} stores`);
 
   // Coverage: which nearby recognized chains the system *could* surface deals for,
   // and which actually returned any. Chains in `checked` but not `withDeals` likely
@@ -516,7 +544,15 @@ export async function getSales(zip = '64683', forceRefresh = false, radiusMiles 
     withDeals: [...withDeals].sort(),
   };
 
-  const result = { sales, scrapedAt: new Date().toISOString(), zip, radiusMiles, coverage };
+  // nearbyStores === null means we couldn't verify locations (ZIP or Overpass
+  // lookup failed, no stores cache), so every known chain was let through —
+  // including ones with no store nearby. Serve it so deals aren't blank, but
+  // cache it briefly (see UNVERIFIED_CACHE_TTL_MS) so we soon try to verify again.
+  const storesUnverified = nearbyStores === null;
+  const result = { sales, scrapedAt: new Date().toISOString(), zip, radiusMiles, coverage, storesUnverified };
+  if (storesUnverified) {
+    console.warn(`[flipp] Store locations unverified for ${zip} — caching these deals for 5 min only`);
+  }
   saveCache(result, zip, radiusMiles);
   return result;
 }
