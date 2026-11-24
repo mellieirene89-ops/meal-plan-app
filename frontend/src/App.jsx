@@ -118,6 +118,10 @@ function handleControlKey(e) {
   }
 }
 
+// Every price and deal depends on location, so nothing is fetched without a ZIP.
+// Shown as-is in the error banner (no "is the backend running?" hint).
+const ZIP_REQUIRED_MSG = 'Enter your 5-digit ZIP code so we can find stores and prices near you.';
+
 export default function App() {
   const [tab, setTab] = useState('plan');
   const [recipeFocus, setRecipeFocus] = useState(null);
@@ -125,7 +129,9 @@ export default function App() {
   const [groceryData, setGroceryData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [zip, setZip] = useState('');
+  const [zip, setZip] = useState(() => {
+    try { return localStorage.getItem('mealmaker_zip') || ''; } catch { return ''; }
+  });
   const [budget, setBudget] = useState(100);
   const [servings, setServings] = useState(2);
   const [salesData, setSalesData] = useState(null);
@@ -201,6 +207,8 @@ export default function App() {
   // Debounce timer for auto-advancing focus after typing in number inputs.
   const advanceTimerRef = useRef(null);
   const ctaButtonRef = useRef(null);
+  const zipInputRef = useRef(null);
+  const errorBannerRef = useRef(null);
   const modeCardRefs = useRef({});
   const scheduleAdvance = (el, delay = 700) => {
     if (advanceTimerRef.current) clearTimeout(advanceTimerRef.current);
@@ -266,6 +274,26 @@ export default function App() {
     return () => { cancelled = true; };
   }, [zip]);
 
+  // Remember a complete ZIP across reloads; clearing the field forgets it.
+  useEffect(() => {
+    try {
+      if (zip.length === 5) {
+        localStorage.setItem('mealmaker_zip', zip);
+        setError(e => (e === ZIP_REQUIRED_MSG ? null : e));
+      }
+      else if (zip.length === 0) localStorage.removeItem('mealmaker_zip');
+    } catch {}
+  }, [zip]);
+
+  // Five digits that the lookup hasn't rejected. A pending or failed lookup
+  // still counts — the backend can resolve the ZIP on its own.
+  const zipIsValid = zip.length === 5 && cityState !== 'Not a valid US ZIP';
+
+  // The banner renders below the form, often off-screen — bring it into view.
+  useEffect(() => {
+    if (error === ZIP_REQUIRED_MSG) errorBannerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }, [error]);
+
   // Reflect the resolved city in the browser tab title so multiple tabs are
   // distinguishable. Falls back to plain "Meal Maker" when the ZIP doesn't
   // resolve to a real city (empty, partial, invalid, or lookup failed).
@@ -275,6 +303,7 @@ export default function App() {
   }, [cityState]);
 
   async function fetchDealsOnly(refresh) {
+    if (!zipIsValid) { setError(ZIP_REQUIRED_MSG); return; }
     setLoading(true);
     setError(null);
     setSalesData(null);
@@ -305,6 +334,7 @@ export default function App() {
     const excludeRecipesParam = excludedRecipes.length ? `&excludeRecipes=${excludedRecipes.map(r => r.id).join(',')}` : '';
     const cuisinesParam = selectedCuisines.length ? `&cuisines=${selectedCuisines.join(',')}` : '';
     const budgetParam = respectBudget ? '' : '&respectBudget=false';
+    if (!zipIsValid) { setError(ZIP_REQUIRED_MSG); return; }
     setLoading(true);
     setError(null);
     setSkippedMeals({});
@@ -364,8 +394,8 @@ export default function App() {
   // Restore a saved menu by sending its recipe IDs to /api/meal-plan?ids=...
   // The backend reprices each recipe against today's sales.
   async function loadSavedMenu(menu) {
-    if (!menu?.recipeIds || zip.length !== 5) {
-      setError('Enter a ZIP code first so we can pull current prices.');
+    if (!menu?.recipeIds || !zipIsValid) {
+      setError(ZIP_REQUIRED_MSG);
       return;
     }
     setLoading(true);
@@ -1026,7 +1056,7 @@ export default function App() {
                 const val = e.target.value.replace(/\D/g, '').slice(0, 5);
                 setZip(val);
                 if (val.length === 5) focusNextControl(e.target);
-              }, type: 'text', maxLength: 5, width: 72, placeholder: 'ZIP', inputMode: 'numeric' },
+              }, type: 'text', maxLength: 5, width: 72, placeholder: 'ZIP', inputMode: 'numeric', ref: zipInputRef },
               { label: 'SHOPPING\nRADIUS', value: null, type: 'select', width: 90 },
               { label: 'BUDGET $', value: budget, setter: e => {
                 const v = e.target.value;
@@ -1219,6 +1249,11 @@ export default function App() {
               <button
                 ref={ctaButtonRef}
                 onClick={async () => {
+                  if (!zipIsValid) {
+                    setError(ZIP_REQUIRED_MSG);
+                    zipInputRef.current?.focus({ preventScroll: true });
+                    return;
+                  }
                   if (mode === 'deals') {
                     setTab('deals');
                     await fetchDealsOnly(true);
@@ -1320,7 +1355,7 @@ export default function App() {
       <main style={{ maxWidth: 1200, margin: '0 auto', padding: 'clamp(16px, 3vw, 32px) clamp(12px, 2vw, 24px)', position: 'relative', zIndex: 1 }}>
 
         {error && (
-          <div style={{
+          <div ref={errorBannerRef} style={{
             background: 'var(--terra-bg)',
             border: '1px solid rgba(232,112,90,0.3)',
             borderRadius: 8,
@@ -1331,7 +1366,7 @@ export default function App() {
             fontWeight: 700,
             fontFamily: 'JetBrains Mono, monospace',
           }}>
-            {error} — Make sure the backend is running on port 3001.
+            {error}{error !== ZIP_REQUIRED_MSG && ' — Make sure the backend is running on port 3001.'}
           </div>
         )}
 
@@ -1662,6 +1697,7 @@ export default function App() {
               const customParam = customRecipes.length ? `&custom=${encodeURIComponent(JSON.stringify(customRecipes))}` : '';
               const storeParam = preferredStore ? `&store=${encodeURIComponent(preferredStore)}` : '';
               const diffParam = difficulty !== 'all' ? `&difficulty=${difficulty}` : '';
+              if (!zipIsValid) { setError(ZIP_REQUIRED_MSG); return; }
               setLoading(true);
               setSkippedMeals({});
               setReplacements({});

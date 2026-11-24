@@ -450,7 +450,7 @@ async function searchFlipp(query, zip) {
 // Overpass in parallel (triggering 429s), and race to overwrite the cache.
 const inFlight = new Map();
 
-export async function getSales(zip = '64683', forceRefresh = false, radiusMiles = 30) {
+export async function getSales(zip, forceRefresh = false, radiusMiles = 30) {
   const key = cacheKey(zip, radiusMiles);
   // A scrape already running is fresh by definition, so refresh requests join it too.
   if (inFlight.has(key)) return inFlight.get(key);
